@@ -1,4 +1,4 @@
-# DKCR PopTracker (v0.1.0)
+# DKCR PopTracker (v0.1.1)
 
 
 
@@ -8,7 +8,7 @@ This is the PopTracker package designed to work with the ***Donkey Kong Country 
 
 ### Installation
 
-Download and place the folder containing all of the pack files (named "dkcr\_poptracker\_v0.1.0") into the "packs" folder of your PopTracker installation. It may be either a zipped or unzipped folder, but make sure there aren't two layers of folders to get to the core files. If you have any issues, ping @magicmason1000 in the Archipelago Discord server.
+Download and place the folder containing all of the pack files (named "dkcr\_poptracker\_v0.1.1") into the "packs" folder of your PopTracker installation. It may be either a zipped or unzipped folder, but make sure there aren't two layers of folders to get to the core files. If you have any issues, ping @magicmason1000 in the Archipelago Discord server.
 
 
 
