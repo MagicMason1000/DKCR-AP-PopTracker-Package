@@ -902,7 +902,7 @@
 						"x": 415,
 						"y": 255,
 						"size": 26,
-						"border_thickness": "4"
+						"border_thickness": 4
 					}
 				]
 			},
@@ -955,7 +955,7 @@
 						"x": 1047,
 						"y": 350,
 						"size": 26,
-						"border_thickness": "4"
+						"border_thickness": 4
 					}
 				]
 			},

@@ -1058,7 +1058,7 @@
                         "x": 1112,
                         "y": 350,
 						"size": 25,
-						"border_thickness": "4"
+						"border_thickness": 4
                     }
                 ]
             },
