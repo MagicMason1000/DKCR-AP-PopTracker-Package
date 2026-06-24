@@ -1,6 +1,12 @@
 {
 	"versions": [
 		{
+			"package_version": "0.1.1",
+			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.1.1/dkcr_poptracker_v0.1.1.zip",
+			"sha256": "893a231a1a8ef646d0d3716784f13eb82e1092a95138375e24ac8e2fad3e1cca",
+			"changelog": ["Removed unused Discord webhook, implemented auto-update popups"]
+		},
+		{
 			"package_version": "0.1.0",
 			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.1.0/dkcr_poptracker_v0.1.0.zip",
 			"sha256": "39cef2d472758c344f25d712f0bf00f95081420606f259dc8de5dd12bbd5d960",
