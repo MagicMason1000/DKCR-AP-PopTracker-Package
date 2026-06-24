@@ -1,0 +1,46 @@
+[
+	{
+		"name": "World Progress",
+		"children": [
+			{
+				"name": "Jungle KONG Letters",
+				"sections": [
+				],
+				"map_locations": [
+					{
+						"map": "world_progress",
+						"shape": "diamond",
+						"x": 210,
+						"y": 340
+					}
+				]
+			},
+			{
+				"name": "Jungle Puzzle Pieces",
+				"sections": [
+				],
+				"map_locations": [
+					{
+						"map": "world_progress",
+						"shape": "diamond",
+						"x": 100,
+						"y": 340
+					}
+				]
+			},
+			{
+				"name": "Jungle Level Completions",
+				"sections": [
+				],
+				"map_locations": [
+					{
+						"map": "world_progress",
+						"shape": "diamond",
+						"x": 320,
+						"y": 340
+					}
+				]
+			}
+		]
+	}
+]

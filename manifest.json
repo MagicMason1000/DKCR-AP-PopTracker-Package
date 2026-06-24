@@ -1,0 +1,18 @@
+{
+  "name": "Donkey Kong Country Returns (Wii) - Archipelago Tracker",
+  "game_name": "Donkey Kong Country Returns",
+  "package_uid": "dkcr_ap_tracker",
+  "package_version": "0.1.0",
+  "platform": "Wii",
+  "author": "MagicMason1000",
+  "versions_url": "",
+  "variants": {
+    "standard": {
+      "display_name": "Map Tracker",
+      "flags": [
+        "ap"
+      ]
+    }
+  },
+  "target_poptracker_version": "0.35.3"
+}

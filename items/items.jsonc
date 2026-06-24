@@ -1,0 +1,249 @@
+[
+    // MARK: Abilities
+    {
+        "name": "Ground Pound",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/ability_ground_pound.jpg",
+        "codes": "ground_pound"
+    },
+    {
+        "name": "Roll",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/ability_roll.jpg",
+        "codes": "roll"
+    },
+    {
+        "name": "Grab",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/ability_grab.jpg",
+        "codes": "grab"
+    },
+    {
+        "name": "Diddy Kong",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/ability_diddy.jpg",
+        "codes": "diddy"
+    },
+    {
+        "name": "Throwing Barrel",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/ability_throwing_barrel.jpg",
+        "codes": "throwing_barrel"
+    },
+    {
+        "name": "Duck",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/ability_duck.jpg",
+        "codes": "duck"
+    },
+    {
+        "name": "Blow",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/ability_blow.jpg",
+        "codes": "blow"
+    },
+    // MARK: Vehicles
+    {
+        "name": "Arrow Barrel",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/vehicle_arrow_barrel.png",
+        "codes": "arrow_barrel"
+    },
+    {
+        "name": "Blast Barrel",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/vehicle_blast_barrel.png",
+        "codes": "blast_barrel"
+    },
+    {
+        "name": "Skull Barrel",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/vehicle_skull_barrel.png",
+        "codes": "skull_barrel"
+    },
+    {
+        "name": "Skull-Blast Barrel",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/vehicle_skull-blast_barrel.png",
+        "codes": "skull-blast_barrel"
+    },
+    {
+        "name": "Mine Cart",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/vehicle_mine_cart.png",
+        "disabled_img": "images/items/vehicle_mine_cart_unchecked.png",
+        "codes": "mine_cart"
+    },
+    {
+        "name": "Rambi's Saddle",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/vehicle_rambi.png",
+        "disabled_img": "images/items/vehicle_rambi_unchecked.png",
+        "codes": "rambi"
+    },
+    {
+        "name": "Rocket Barrel",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/vehicle_rocket_barrel.png",
+        "disabled_img": "images/items/vehicle_rocket_barrel_unchecked.png",
+        "codes": "rocket_barrel"
+    },
+    // MARK: Collectibles
+    {
+        "name": "Mirror Shard",
+        "type": "consumable",
+        "img": "images/locations/mirror_mode.png",
+        "codes": "mirror_shard",
+        "max_quantity": 25
+    },
+    {
+        "name": "Puzzle Piece",
+        "type": "consumable",
+        "img": "images/items/puzzle_piece.png",
+        "disabled_img": "images/items/puzzle_piece_unchecked.png",
+        "codes": "puzzle_piece",
+        "max_quantity": 366
+    },
+    {
+        "name": "Jungle KONG Letter",
+        "type": "consumable",
+        "img": "images/items/kong_letters_jungle.png",
+        "codes": "letters_jungle",
+        "max_quantity": 24
+    },
+    {
+        "name": "Beach KONG Letter",
+        "type": "consumable",
+        "img": "images/items/kong_letters_beach.png",
+        "codes": "letters_beach",
+        "max_quantity": 28
+    },
+    {
+        "name": "Ruins KONG Letter",
+        "type": "consumable",
+        "img": "images/items/kong_letters_ruins.png",
+        "codes": "letters_ruins",
+        "max_quantity": 24
+    },
+    {
+        "name": "Cave KONG Letter",
+        "type": "consumable",
+        "img": "images/items/kong_letters_cave.png",
+        "codes": "letters_cave",
+        "max_quantity": 20
+    },
+    {
+        "name": "Forest KONG Letter",
+        "type": "consumable",
+        "img": "images/items/kong_letters_forest.png",
+        "codes": "letters_forest",
+        "max_quantity": 32
+    },
+    {
+        "name": "Cliff KONG Letter",
+        "type": "consumable",
+        "img": "images/items/kong_letters_cliff.png",
+        "codes": "letters_cliff",
+        "max_quantity": 32
+    },
+    {
+        "name": "Factory KONG Letter",
+        "type": "consumable",
+        "img": "images/items/kong_letters_factory.png",
+        "codes": "letters_factory",
+        "max_quantity": 28
+    },
+    {
+        "name": "Volcano KONG Letter",
+        "type": "consumable",
+        "img": "images/items/kong_letters_volcano.png",
+        "codes": "letters_volcano",
+        "max_quantity": 28
+    },
+    {
+        "name": "Rare Orb",
+        "type": "consumable",
+        "img": "images/items/item_rare_orb.png",
+        "codes": "rare_orb",
+        "max_quantity": 8
+    },
+    // MARK: Map Keys
+    {
+        "name": "Jungle Map Key",
+        "type": "toggle",
+        "img": "images/items/item_map_key.png",
+        "codes": "key_jungle"
+    },
+    {
+        "name": "Beach Map Key",
+        "type": "toggle",
+        "img": "images/items/item_map_key.png",
+        "codes": "key_beach"
+    },
+    {
+        "name": "Ruins Map Key",
+        "type": "toggle",
+        "img": "images/items/item_map_key.png",
+        "codes": "key_ruins"
+    },
+    {
+        "name": "Cave Map Key",
+        "type": "toggle",
+        "img": "images/items/item_map_key.png",
+        "codes": "key_cave"
+    },
+    {
+        "name": "Forest Map Key",
+        "type": "toggle",
+        "img": "images/items/item_map_key.png",
+        "codes": "key_forest"
+    },
+    {
+        "name": "Cliff Map Key",
+        "type": "toggle",
+        "img": "images/items/item_map_key.png",
+        "codes": "key_cliff"
+    },
+    {
+        "name": "Factory Map Key",
+        "type": "toggle",
+        "img": "images/items/item_map_key.png",
+        "codes": "key_factory"
+    },
+    {
+        "name": "Volcano Map Key",
+        "type": "toggle",
+        "img": "images/items/item_map_key.png",
+        "codes": "key_volcano"
+    },
+    // MARK: Inventory
+    {
+        "name": "Banana Juice",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/item_banana_juice.png",
+        "disabled_img": "images/items/item_banana_juice_unchecked.png",
+        "codes": "banana_juice"
+    },
+    {
+        "name": "Heart Boost",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/item_heart_boost.png",
+        "disabled_img": "images/items/item_heart_boost_unchecked.png",
+        "codes": "heart_boost"
+    },
+    {
+        "name": "Squawks",
+        "type": "static", // change to toggle once receiving items is implemented
+        "img": "images/items/item_squawks.png",
+        "disabled_img": "images/items/item_squawks_unchecked.png",
+        "codes": "squawks"
+    },
+    {
+        "name": "Balloons",
+        "type": "consumable",
+        "img": "images/items/item_balloons.png",
+        "disabled_img": "images/items/item_balloons_unchecked.png",
+        "codes": "balloons",
+        "max_quantity": 1000
+    }
+]

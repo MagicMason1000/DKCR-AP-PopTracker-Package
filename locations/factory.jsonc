@@ -1,0 +1,1195 @@
+[
+    {
+        "name": "Factory",
+        "children": [
+            { // MARK: 7-1
+                "name": "7-1 Foggy Fumes",
+                "sections": [
+					{
+						"name": "Puzzle Piece 1",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "KONG Letter K",
+						"chest_unopened_img": "images/locations/collectible_letter_k.png",
+						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece 2",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "KONG Letter O",
+						"chest_unopened_img": "images/locations/collectible_letter_o.png",
+						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 3",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, roll", "arrow_barrel, diddy"]
+					},
+					{
+						"name": "Puzzle Piece 4",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, blow"]
+					},
+					{
+						"name": "KONG Letter N",
+						"chest_unopened_img": "images/locations/collectible_letter_n.png",
+						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 5",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "KONG Letter G",
+						"chest_unopened_img": "images/locations/collectible_letter_g.png",
+						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, roll", "arrow_barrel, diddy"]
+					},
+					{
+						"name": "Puzzle Piece 6",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, blow"]
+					},
+					{
+						"name": "Puzzle Piece 7",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "Complete Level",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, ground_pound"]
+					},
+					{
+						"name": "KONG Letter Set",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece Set",
+						"chest_unopened_img": "images/locations/collectible_pp_set_7.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_7_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Beat in Mirror Mode",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1,
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["arrow_barrel, ground_pound"]
+					},
+					{
+						"name": "Time Attack: Bronze",
+						"chest_unopened_img": "images/locations/time_attack_bronze.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Silver",
+						"chest_unopened_img": "images/locations/time_attack_silver.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Gold",
+						"chest_unopened_img": "images/locations/time_attack_gold.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 367,
+                        "y": 259
+                    }
+                ]
+            },
+            { // MARK: 7-2
+                "name": "7-2 Slammin' Steel",
+                "sections": [
+					{
+						"name": "Puzzle Piece 1",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["roll"]
+					},
+					{
+						"name": "KONG Letter K",
+						"chest_unopened_img": "images/locations/collectible_letter_k.png",
+						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "KONG Letter O",
+						"chest_unopened_img": "images/locations/collectible_letter_o.png",
+						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece 2",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["blow"]
+					},
+					{
+						"name": "Puzzle Piece 3",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece 4",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["ground_pound"]
+					},
+					{
+						"name": "KONG Letter N",
+						"chest_unopened_img": "images/locations/collectible_letter_n.png",
+						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece 5",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["duck", "roll"]
+					},
+					{
+						"name": "KONG Letter G",
+						"chest_unopened_img": "images/locations/collectible_letter_g.png",
+						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"item_count": 1,
+						"access_rules": ["duck", "roll"]
+					},
+					{
+						"name": "Complete Level",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["duck", "roll"]
+					},
+					{
+						"name": "KONG Letter Set",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece Set",
+						"chest_unopened_img": "images/locations/collectible_pp_set_5.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_5_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Beat in Mirror Mode",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1,
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["duck", "roll"]
+					},
+					{
+						"name": "Time Attack: Bronze",
+						"chest_unopened_img": "images/locations/time_attack_bronze.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Silver",
+						"chest_unopened_img": "images/locations/time_attack_silver.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Gold",
+						"chest_unopened_img": "images/locations/time_attack_gold.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 345,
+                        "y": 448
+                    }
+                ]
+            },
+            { // MARK: 7-3
+                "name": "7-3 Handy Hazards",
+				"access_rules": ["key_factory"],
+                "sections": [
+					{
+						"name": "Puzzle Piece 1",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece 2",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["skull_barrel"]
+					},
+					{
+						"name": "KONG Letter K",
+						"chest_unopened_img": "images/locations/collectible_letter_k.png",
+						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece 3",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 4",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "KONG Letter O",
+						"chest_unopened_img": "images/locations/collectible_letter_o.png",
+						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "KONG Letter N",
+						"chest_unopened_img": "images/locations/collectible_letter_n.png",
+						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 5",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 6",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 7",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "KONG Letter G",
+						"chest_unopened_img": "images/locations/collectible_letter_g.png",
+						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "Complete Level",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, blast_barrel"]
+					},
+					{
+						"name": "KONG Letter Set",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece Set",
+						"chest_unopened_img": "images/locations/collectible_pp_set_7.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_7_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Beat in Mirror Mode",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1,
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["arrow_barrel, blast_barrel"]
+					},
+					{
+						"name": "Time Attack: Bronze",
+						"chest_unopened_img": "images/locations/time_attack_bronze.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Silver",
+						"chest_unopened_img": "images/locations/time_attack_silver.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Gold",
+						"chest_unopened_img": "images/locations/time_attack_gold.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 458,
+                        "y": 435
+                    }
+                ]
+            },
+            { // MARK: 7-4
+                "name": "7-4 Gear Getaway",
+                "sections": [
+					{
+						"name": "Puzzle Piece 1",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["grab, diddy"]
+					},
+					{
+						"name": "Puzzle Piece 2",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece 3",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["blast_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 4",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["rocket_barrel"]
+					},
+					{
+						"name": "KONG Letter K",
+						"chest_unopened_img": "images/locations/collectible_letter_k.png",
+						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"item_count": 1,
+						"access_rules": ["rocket_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 5",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["rocket_barrel"]
+					},
+					{
+						"name": "KONG Letter O",
+						"chest_unopened_img": "images/locations/collectible_letter_o.png",
+						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"item_count": 1,
+						"access_rules": ["rocket_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 6",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["rocket_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 7",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["rocket_barrel"]
+					},
+					{
+						"name": "KONG Letter N",
+						"chest_unopened_img": "images/locations/collectible_letter_n.png",
+						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"item_count": 1,
+						"access_rules": ["rocket_barrel"]
+					},
+					{
+						"name": "KONG Letter G",
+						"chest_unopened_img": "images/locations/collectible_letter_g.png",
+						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"item_count": 1,
+						"access_rules": ["rocket_barrel"]
+					},
+					{
+						"name": "Complete Level",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["rocket_barrel"]
+					},
+					{
+						"name": "KONG Letter Set",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece Set",
+						"chest_unopened_img": "images/locations/collectible_pp_set_7.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_7_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Beat in Mirror Mode",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1,
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["rocket_barrel"]
+					},
+					{
+						"name": "Time Attack: Bronze",
+						"chest_unopened_img": "images/locations/time_attack_bronze.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Silver",
+						"chest_unopened_img": "images/locations/time_attack_silver.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Gold",
+						"chest_unopened_img": "images/locations/time_attack_gold.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 445,
+                        "y": 545
+                    }
+                ]
+            },
+            { // MARK: 7-5
+                "name": "7-5 Cog Jog",
+                "sections": [
+					{
+						"name": "Puzzle Piece 1",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "KONG Letter K",
+						"chest_unopened_img": "images/locations/collectible_letter_k.png",
+						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel", "roll"]
+					},
+					{
+						"name": "Puzzle Piece 2",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, blast_barrel", "roll, blast_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 3",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, blow", "roll, blow"]
+					},
+					{
+						"name": "KONG Letter O",
+						"chest_unopened_img": "images/locations/collectible_letter_o.png",
+						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel", "roll"]
+					},
+					{
+						"name": "Puzzle Piece 4",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel", "roll"]
+					},
+					{
+						"name": "Puzzle Piece 5",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel", "roll"]
+					},
+					{
+						"name": "Puzzle Piece 6",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel", "roll"]
+					},
+					{
+						"name": "Puzzle Piece 7",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, grab", "roll, grab"]
+					},
+					{
+						"name": "Puzzle Piece 8",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, roll", "arrow_barrel, diddy"]
+					},
+					{
+						"name": "KONG Letter N",
+						"chest_unopened_img": "images/locations/collectible_letter_n.png",
+						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 9",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel"]
+					},
+					{
+						"name": "KONG Letter G",
+						"chest_unopened_img": "images/locations/collectible_letter_g.png",
+						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, grab", "arrow_barrel, roll"]
+					},
+					{
+						"name": "Complete Level",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, grab", "arrow_barrel, roll"]
+					},
+					{
+						"name": "KONG Letter Set",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece Set",
+						"chest_unopened_img": "images/locations/collectible_pp_set_9.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_9_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Beat in Mirror Mode",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1,
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["arrow_barrel, grab", "arrow_barrel, roll"]
+					},
+					{
+						"name": "Time Attack: Bronze",
+						"chest_unopened_img": "images/locations/time_attack_bronze.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Silver",
+						"chest_unopened_img": "images/locations/time_attack_silver.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Gold",
+						"chest_unopened_img": "images/locations/time_attack_gold.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 585,
+                        "y": 533
+                    }
+                ]
+            },
+            { // MARK: 7-6
+                "name": "7-6 Switcheroo",
+                "sections": [
+					{
+						"name": "Puzzle Piece 1",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["skull_barrel, roll", "skull_barrel, diddy"]
+					},
+					{
+						"name": "KONG Letter K",
+						"chest_unopened_img": "images/locations/collectible_letter_k.png",
+						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"item_count": 1,
+						"access_rules": ["grab"]
+					},
+					{
+						"name": "KONG Letter O",
+						"chest_unopened_img": "images/locations/collectible_letter_o.png",
+						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"item_count": 1,
+						"access_rules": ["grab"]
+					},
+					{
+						"name": "Puzzle Piece 2",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["grab, roll"]
+					},
+					{
+						"name": "Puzzle Piece 3",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["grab, roll, skull_barrel, arrow_barrel"]
+					},
+					{
+						"name": "KONG Letter N",
+						"chest_unopened_img": "images/locations/collectible_letter_n.png",
+						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"item_count": 1,
+						"access_rules": ["grab"]
+					},
+					{
+						"name": "Puzzle Piece 4",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["grab, roll"]
+					},
+					{
+						"name": "KONG Letter G",
+						"chest_unopened_img": "images/locations/collectible_letter_g.png",
+						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"item_count": 1,
+						"access_rules": ["grab"]
+					},
+					{
+						"name": "Puzzle Piece 5",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["grab, roll, diddy"]
+					},
+					{
+						"name": "Complete Level",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["grab, diddy"]
+					},
+					{
+						"name": "KONG Letter Set",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece Set",
+						"chest_unopened_img": "images/locations/collectible_pp_set_5.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_5_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Beat in Mirror Mode",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1,
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["grab, diddy"]
+					},
+					{
+						"name": "Time Attack: Bronze",
+						"chest_unopened_img": "images/locations/time_attack_bronze.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Silver",
+						"chest_unopened_img": "images/locations/time_attack_silver.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Gold",
+						"chest_unopened_img": "images/locations/time_attack_gold.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 828,
+                        "y": 530
+                    }
+                ]
+            },
+            { // MARK: 7-7
+                "name": "7-7 Music Madness",
+                "sections": [
+					{
+						"name": "Puzzle Piece 1",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["grab"]
+					},
+					{
+						"name": "KONG Letter K",
+						"chest_unopened_img": "images/locations/collectible_letter_k.png",
+						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece 2",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["ground_pound, arrow_barrel, skull-blast_barrel, arrow_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 3",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["ground_pound, arrow_barrel"]
+					},
+					{
+						"name": "KONG Letter O",
+						"chest_unopened_img": "images/locations/collectible_letter_o.png",
+						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"item_count": 1,
+						"access_rules": ["ground_pound, arrow_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 4",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["ground_pound, arrow_barrel"]
+					},
+					{
+						"name": "KONG Letter N",
+						"chest_unopened_img": "images/locations/collectible_letter_n.png",
+						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"item_count": 1,
+						"access_rules": ["ground_pound, arrow_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 5",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["ground_pound, arrow_barrel"]
+					},
+					{
+						"name": "KONG Letter G",
+						"chest_unopened_img": "images/locations/collectible_letter_g.png",
+						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"item_count": 1,
+						"access_rules": ["ground_pound, arrow_barrel"]
+					},
+					{
+						"name": "Complete Level",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["ground_pound, arrow_barrel"]
+					},
+					{
+						"name": "KONG Letter Set",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece Set",
+						"chest_unopened_img": "images/locations/collectible_pp_set_5.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_5_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Beat in Mirror Mode",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1,
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["ground_pound, arrow_barrel"]
+					},
+					{
+						"name": "Time Attack: Bronze",
+						"chest_unopened_img": "images/locations/time_attack_bronze.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Silver",
+						"chest_unopened_img": "images/locations/time_attack_silver.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Gold",
+						"chest_unopened_img": "images/locations/time_attack_gold.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 804,
+                        "y": 362
+                    }
+                ]
+            },
+            { // MARK: 7-R
+                "name": "7-R Lift-off Launch",
+                "sections": [
+					{
+						"name": "Complete Level",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["ground_pound, rocket_barrel"]
+					},
+					{
+						"name": "Beat in Mirror Mode",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1,
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["ground_pound, rocket_barrel"]
+					},
+					{
+						"name": "Time Attack: Bronze",
+						"chest_unopened_img": "images/locations/time_attack_bronze.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Silver",
+						"chest_unopened_img": "images/locations/time_attack_silver.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Gold",
+						"chest_unopened_img": "images/locations/time_attack_gold.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 589,
+                        "y": 363
+                    }
+                ]
+            },
+            { // MARK: 7-K
+                "name": "7-K Treacherous Track",
+                "sections": [
+					{
+						"name": "Puzzle Piece 1",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, blast_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 2",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, blast_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 3",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, blast_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 4",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, blast_barrel"]
+					},
+					{
+						"name": "Puzzle Piece 5",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, blast_barrel"]
+					},
+					{
+						"name": "Complete Level",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, blast_barrel"]
+					},
+					{
+						"name": "KONG Letter Set",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Puzzle Piece Set",
+						"chest_unopened_img": "images/locations/collectible_pp_set_5.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_5_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Beat in Mirror Mode",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1,
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["arrow_barrel, blast_barrel"]
+					},
+					{
+						"name": "Time Attack: Bronze",
+						"chest_unopened_img": "images/locations/time_attack_bronze.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Silver",
+						"chest_unopened_img": "images/locations/time_attack_silver.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Gold",
+						"chest_unopened_img": "images/locations/time_attack_gold.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 465,
+                        "y": 344
+                    }
+                ]
+            },
+            { // MARK: 7-B
+                "name": "7-B Feather Fiend",
+                "sections": [
+					{
+						"name": "Boss Clear",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["grab, ground_pound"]
+					},
+					{
+						"name": "Beat in Mirror Mode",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1,
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["grab, ground_pound"]
+					},
+					{
+						"name": "Time Attack: Bronze",
+						"chest_unopened_img": "images/locations/time_attack_bronze.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Silver",
+						"chest_unopened_img": "images/locations/time_attack_silver.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Gold",
+						"chest_unopened_img": "images/locations/time_attack_gold.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": [""]
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 955,
+                        "y": 174
+                    }
+                ]
+            },
+            { // MARK: 7-S
+                "name": "7-S Cranky Kong's Shop",
+				"visibility_rules": ["shopsanity_enabled"],
+                "sections": [
+					{
+						"name": "Factory Map Key",
+						"chest_unopened_img": "images/locations/item_map_key.png",
+						"chest_opened_img": "images/locations/item_map_key_purchased.png",
+						"item_count": 1
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 224,
+                        "y": 473
+                    }
+                ]
+            }
+        ]
+    }
+]

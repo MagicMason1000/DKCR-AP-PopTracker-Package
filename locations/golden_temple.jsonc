@@ -1,0 +1,109 @@
+[
+    {
+        "name": "Golden Temple",
+        "children": [
+            {
+                "name": "9-1 Golden Temple",
+                "visibility_rules": ["golden_temple_enabled"],
+                "access_rules": ["$orbCheck"], // ORBS HERE
+                "sections": [
+                    {
+						"name": "Puzzle Piece 1",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+                        "access_rules": ["ground_pound"]
+                    },
+                    {
+						"name": "Puzzle Piece 2",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+                        "access_rules": [""]
+                    },
+                    {
+						"name": "Puzzle Piece 3",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+                        "access_rules": [""]
+                    },
+                    {
+						"name": "Puzzle Piece 4",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+                        "access_rules": [""]
+                    },
+                    {
+						"name": "Puzzle Piece 5",
+						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
+						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"item_count": 1,
+                        "access_rules": [""]
+                    },
+					{
+						"name": "Mirror Mode Unlock",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1,
+						"access_rules": ["skull_barrel, arrow_barrel"]
+					},
+					{
+						"name": "Complete Level",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["skull_barrel, arrow_barrel"]
+					},
+					{
+						"name": "Puzzle Piece Set",
+						"chest_unopened_img": "images/locations/collectible_pp_set_5.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_5_collected.png",
+						"item_count": 1,
+						"access_rules": [""]
+					},
+					{
+						"name": "Beat in Mirror Mode",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1,
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["skull_barrel, arrow_barrel"]
+					},
+					{
+						"name": "Time Attack: Bronze",
+						"chest_unopened_img": "images/locations/time_attack_bronze.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": ["skull_barrel, arrow_barrel"]
+					},
+					{
+						"name": "Time Attack: Silver",
+						"chest_unopened_img": "images/locations/time_attack_silver.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": ["skull_barrel, arrow_barrel"]
+					},
+					{
+						"name": "Time Attack: Gold",
+						"chest_unopened_img": "images/locations/time_attack_gold.png",
+						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["time_attack_enabled"],
+						"access_rules": ["skull_barrel, arrow_barrel"]
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "golden_temple",
+                        "x": 644,
+                        "y": 365
+                    }
+                ]
+            }
+        ]
+    }
+]

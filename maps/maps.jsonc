@@ -1,0 +1,62 @@
+[
+    {
+        "name": "world_progress",
+        "location_size": 55,
+        "location_border_thickness": 9,
+        "img": "images/maps/map_world_progress.png"
+    },
+    {
+        "name": "jungle",
+        "location_size": 20,
+        "location_border_thickness": 3,
+        "img": "images/maps/map_jungle.jpg"
+    },
+    {
+        "name": "beach",
+        "location_size": 20,
+        "location_border_thickness": 3,
+        "img": "images/maps/map_beach.jpg"
+    },
+    {
+        "name": "ruins",
+        "location_size": 24,
+        "location_border_thickness": 4,
+        "img": "images/maps/map_ruins.jpg"
+    },
+    {
+        "name": "cave",
+        "location_size": 22,
+        "location_border_thickness": 3,
+        "img": "images/maps/map_cave.jpg"
+    },
+    {
+        "name": "forest",
+        "location_size": 22,
+        "location_border_thickness": 3,
+        "img": "images/maps/map_forest.jpg"
+    },
+    {
+        "name": "cliff",
+        "location_size": 22,
+        "location_border_thickness": 3,
+        "img": "images/maps/map_cliff.jpg"
+    },
+    {
+        "name": "factory",
+        "location_size": 20,
+        "location_border_thickness": 3,
+        "img": "images/maps/map_factory.jpg"
+    },
+    {
+        "name": "volcano",
+        "location_size": 20,
+        "location_border_thickness": 3,
+        "img": "images/maps/map_volcano.jpg"
+    },
+    {
+        "name": "golden_temple",
+        "location_size": 28,
+        "location_border_thickness": 4,
+        "img": "images/maps/map_golden_temple.jpg"
+    }
+]

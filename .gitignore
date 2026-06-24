@@ -1,0 +1,5 @@
+todo.*
+.~lock.*
+*.xcf
+.idea
+/DEV SANDBOX
