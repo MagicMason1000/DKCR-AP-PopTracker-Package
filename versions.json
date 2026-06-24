@@ -1,0 +1,10 @@
+{
+	"versions": [
+		{
+			"package_version": "0.1.0",
+			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.1.0/dkcr_poptracker_v0.1.0.zip",
+			"sha256": "39cef2d472758c344f25d712f0bf00f95081420606f259dc8de5dd12bbd5d960",
+			"changelog": ["Initial release"]
+		}
+	]
+}
