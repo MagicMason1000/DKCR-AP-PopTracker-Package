@@ -5,7 +5,7 @@
   "package_version": "0.1.0",
   "platform": "Wii",
   "author": "MagicMason1000",
-  "versions_url": "",
+  "versions_url": "https://raw.githubusercontent.com/MagicMason1000/DKCR-AP-PopTracker-Package/versions/versions.json",
   "variants": {
     "standard": {
       "display_name": "Map Tracker",
