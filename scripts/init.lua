@@ -16,7 +16,7 @@ end
 ScriptHost:LoadScript("scripts/utils.lua")
 
 -- Logic
-ScriptHost:LoadScript("scripts/logic/logic.lua")
+-- ScriptHost:LoadScript("scripts/logic/logic.lua")
 
 -- Custom Items
 ScriptHost:LoadScript("scripts/custom_items/class.lua")

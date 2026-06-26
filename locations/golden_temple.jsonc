@@ -5,7 +5,7 @@
             {
                 "name": "9-1 Golden Temple",
                 "visibility_rules": ["golden_temple_enabled"],
-                "access_rules": ["$orbCheck"], // ORBS HERE
+                "access_rules": [""], // ORBS HERE
                 "sections": [
                     {
 						"name": "Puzzle Piece 1",
