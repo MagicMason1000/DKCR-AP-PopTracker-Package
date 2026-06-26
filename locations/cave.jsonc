@@ -132,7 +132,7 @@
                 ]
             },
             { // MARK: 4-2
-                "name": "4-2 Grip 'n' Trip",
+                "name": "4-2 Grip & Trip",
 				"access_rules": ["grab, arrow_barrel, mine_cart", "roll, mine_cart"],
                 "sections": [
 					{
