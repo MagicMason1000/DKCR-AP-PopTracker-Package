@@ -24,6 +24,31 @@
                         "orbs_setting"
                     ]
                 ]
+            },
+            {
+                "type": "item",
+                "item": "bossreq_header",
+                "max_width": 275
+            },
+            {
+                "type": "itemgrid",
+                "item_margin": "4,4",
+                "h_alignment": "left",
+                "item_size": "96,96",
+                "rows": [
+                    [
+                        "bossreq1",
+                        "bossreq2",
+                        "bossreq3",
+                        "bossreq4"
+                    ],
+                    [
+                        "bossreq5",
+                        "bossreq6",
+                        "bossreq7",
+                        "bossreq8"
+                    ]
+                ]
             }
         ]
     }

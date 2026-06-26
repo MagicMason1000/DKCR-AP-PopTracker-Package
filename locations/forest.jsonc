@@ -1215,6 +1215,7 @@
             },
             { // MARK: 5-B
                 "name": "5-B Mangoruby Run",
+				"access_rules": ["$BossCheck|5"],
                 "sections": [
 					{
 						"name": "Boss Clear",

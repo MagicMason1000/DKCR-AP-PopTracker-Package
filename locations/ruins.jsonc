@@ -962,6 +962,7 @@
             },
             { // MARK: 3-B
                 "name": "3-B Ruined Roost",
+				"access_rules": ["$BossCheck|3"],
                 "sections": [
 					{
 						"name": "Boss Clear",

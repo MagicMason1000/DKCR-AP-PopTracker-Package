@@ -6,6 +6,12 @@
         "codes": "settings_header"
     },
     {
+        "name": "Boss Requirement Header",
+        "type": "static",
+        "img": "images/settings/static_bossreq_header.png",
+        "codes": "bossreq_header"
+    },
+    {
         "name": "Mirror Mode Setting",
         "type": "progressive",
         "loop": true,
@@ -151,5 +157,62 @@
                 "inherit_codes": false
             }
         ]
+    },
+    // MARK: Boss Reqs
+    {
+        "name": "Boss Puzzle Piece Requirement (W1)",
+        "type": "consumable",
+        "img": "images/settings/setting_bossreq_w1.png",
+        "codes": "bossreq1",
+        "max_quantity": 371
+    },
+    {
+        "name": "Boss Puzzle Piece Requirement (W2)",
+        "type": "consumable",
+        "img": "images/settings/setting_bossreq_w2.png",
+        "codes": "bossreq2",
+        "max_quantity": 371
+    },
+    {
+        "name": "Boss Puzzle Piece Requirement (W3)",
+        "type": "consumable",
+        "img": "images/settings/setting_bossreq_w3.png",
+        "codes": "bossreq3",
+        "max_quantity": 371
+    },
+    {
+        "name": "Boss Puzzle Piece Requirement (W4)",
+        "type": "consumable",
+        "img": "images/settings/setting_bossreq_w4.png",
+        "codes": "bossreq4",
+        "max_quantity": 371
+    },
+    {
+        "name": "Boss Puzzle Piece Requirement (W5)",
+        "type": "consumable",
+        "img": "images/settings/setting_bossreq_w5.png",
+        "codes": "bossreq5",
+        "max_quantity": 371
+    },
+    {
+        "name": "Boss Puzzle Piece Requirement (W6)",
+        "type": "consumable",
+        "img": "images/settings/setting_bossreq_w6.png",
+        "codes": "bossreq6",
+        "max_quantity": 371
+    },
+    {
+        "name": "Boss Puzzle Piece Requirement (W7)",
+        "type": "consumable",
+        "img": "images/settings/setting_bossreq_w7.png",
+        "codes": "bossreq7",
+        "max_quantity": 371
+    },
+    {
+        "name": "Boss Puzzle Piece Requirement (W8)",
+        "type": "consumable",
+        "img": "images/settings/setting_bossreq_w8.png",
+        "codes": "bossreq8",
+        "max_quantity": 371
     }
 ]

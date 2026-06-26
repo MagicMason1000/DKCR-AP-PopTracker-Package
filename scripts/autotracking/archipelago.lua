@@ -99,9 +99,29 @@ function incrementItem(item_code, item_type, multiplier)
 	end
 end
 
--- apply everything needed from slot_data, called from onClear
+-- MARK: SLOTDATA
 function apply_slot_data(slot_data)
-	-- put any code here that slot_data should affect (toggling setting items for example)
+	local requirements = {
+		slot_data["jungle_boss_access"],
+		slot_data["beach_boss_access"],
+		slot_data["ruins_boss_access"],
+		slot_data["cave_boss_access"],
+		slot_data["forest_boss_access"],
+		slot_data["cliff_boss_access"],
+		slot_data["factory_boss_access"],
+		slot_data["volcano_boss_access"],
+	}
+	for world = 1, 8 do
+		local reqObj = Tracker:FindObjectForCode("bossreq" .. tostring(world))
+		if reqObj then
+			reqObj.AcquiredCount = reqObj.AcquiredCount + requirements[world]
+			if ENABLE_DEBUG_LOG then
+				print(string.format("DEBUG: bossreq%s set to %s.", world, reqObj.AcquiredCount + requirements[world]))
+			end
+		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
+			print(string.format("apply_slot_data: could not find object for code %s", reqObj))
+		end
+	end
 end
 
 -- called right after an AP slot is connected

@@ -908,6 +908,7 @@
 			},
 			{ // MARK: 1-B
 				"name": "1-B Mugly's Mound",
+				"access_rules": ["$BossCheck|1"],
 				"sections": [
 					{
 						"name": "Boss Clear",

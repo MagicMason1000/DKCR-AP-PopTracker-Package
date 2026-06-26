@@ -1011,6 +1011,7 @@
             },
             { // MARK: 2-B
                 "name": "2-B Pinchin' Pirates",
+				"access_rules": ["$BossCheck|2"],
                 "sections": [
 					{
 						"name": "Boss Clear",

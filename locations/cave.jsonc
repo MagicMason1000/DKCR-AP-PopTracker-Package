@@ -742,6 +742,7 @@
             },
             { // MARK: 4-B
                 "name": "4-B The Mole Train",
+				"access_rules": ["$BossCheck|4"],
                 "sections": [
 					{
 						"name": "Boss Clear",

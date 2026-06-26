@@ -1122,6 +1122,7 @@
             },
             { // MARK: 7-B
                 "name": "7-B Feather Fiend",
+				"access_rules": ["$BossCheck|7"],
                 "sections": [
 					{
 						"name": "Boss Clear",

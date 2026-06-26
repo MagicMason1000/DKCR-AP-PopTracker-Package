@@ -1201,6 +1201,7 @@
             },
             { // MARK: 6-B
                 "name": "6-B Thugly's Highrise",
+				"access_rules": ["$BossCheck|6"],
                 "sections": [
 					{
 						"name": "Boss Clear",

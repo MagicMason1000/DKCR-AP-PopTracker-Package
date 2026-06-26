@@ -1017,6 +1017,7 @@
             },
             { // MARK: 8-B
                 "name": "8-B Tiki Tong Terror",
+				"access_rules": ["$BossCheck|8"],
                 "sections": [
 					{
 						"name": "Boss Clear",
