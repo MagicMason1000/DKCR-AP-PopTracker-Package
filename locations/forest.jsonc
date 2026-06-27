@@ -843,6 +843,7 @@
             },
             { // MARK: 5-7
                 "name": "5-7 Wigglevine Wonders",
+				"access_rules": ["key_forest"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
