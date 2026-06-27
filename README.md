@@ -1,12 +1,12 @@
-# DKCR PopTracker (v0.2.0)
+# DKCR PopTracker (v0.2.1)
 
-This is the PopTracker package designed to work with the ***Donkey Kong Country Returns*** [**APWorld v0.0.2**](https://github.com/CallmeZewo/DKCR_APWorld), built for either manual tracking or automatic tracking through Archipelago. The logic in this pack is based on the original 2010 release of the game on the Nintendo Wii, so if used for any other version of the game, it may have logic inaccuracies. This version of the pack was built for the v0.35.3 release of PopTracker. (It should still work with later versions.) You can install the PopTracker program [here](https://github.com/black-sliver/PopTracker/releases/latest).
+This is the PopTracker package designed to work with the ***Donkey Kong Country Returns*** [**APWorld v0.0.4**](https://github.com/CallmeZewo/DKCR_APWorld), built for either manual tracking or automatic tracking through Archipelago. The logic in this pack is based on the original 2010 release of the game on the Nintendo Wii, so if used for any other version of the game, it may have logic inaccuracies. This version of the pack was built for the v0.35.3 release of PopTracker. (It should still work with later versions.) You can install the PopTracker program [here](https://github.com/black-sliver/PopTracker/releases/latest).
 
 
 
 ### Installation
 
-Download and place the folder containing all of the pack files (named "dkcr\_poptracker\_v0.2.0") into the "packs" folder of your PopTracker installation. It may be either a zipped or unzipped folder, but make sure there aren't two layers of folders to get to the core files. If you have any issues, ping @magicmason1000 in the Archipelago Discord server.
+Download and place the folder containing all of the pack files (named "dkcr\_ap\_tracker\_v0.2.1") into the "packs" folder of your PopTracker installation. It may be either a zipped or unzipped folder, but make sure there aren't two layers of folders to get to the core files. If you have any issues, ping @magicmason1000 in the Archipelago Discord server.
 
 
 
