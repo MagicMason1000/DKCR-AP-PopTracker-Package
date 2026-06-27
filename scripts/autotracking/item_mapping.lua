@@ -1,7 +1,7 @@
-WORLD_OFFEST = 0x100
+WORLD_OFFEST = 0x1000
+ITEM_OFFSET = 0x2000
 ITEM_MAPPING = {
-	[01] = { { "puzzle_piece" } },
-
+	[ITEM_OFFSET + 0x01] = { { "puzzle_piece" } },
 	[WORLD_OFFEST + 0x00] = { { "letters_beach" } },
 	[WORLD_OFFEST + 0x01] = { { "letters_cave" } },
 	[WORLD_OFFEST + 0x02] = { { "letters_cliff" } },
