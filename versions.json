@@ -1,6 +1,12 @@
 {
 	"versions": [
 		{
+			"package_version": "0.2.2",
+			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.2.2/dkcr_ap_tracker_v0.2.2.zip",
+			"sha256": "d2bf50f145c252d1daed2b9ad1dca377bca7af752c283e190a313f53a78b990a",
+			"changelog": ["Fixed 5-7 access rules, added logic to K levels requiring all KONG Letters for each world"]
+		},
+		{
 			"package_version": "0.2.1",
 			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.2.1/dkcr_ap_tracker_v0.2.1.zip",
 			"sha256": "577d5bfc16ce4322a140c9d2eac0a0a5bec4fada262d34ef089dadea8729d306",
