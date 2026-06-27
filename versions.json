@@ -1,6 +1,12 @@
 {
 	"versions": [
 		{
+			"package_version": "0.2.0",
+			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.2.0/dkcr_poptracker_v0.2.0.zip",
+			"sha256": "dc1ef0900fd0c332bdb9056336995bb06cbb64ee5587c751821f5c730a7e5ebe",
+			"changelog": ["Fixed/updated auto-tracking for v0.0.2 of the APWorld, added Puzzle Piece Boss Access setting, added World Progress functionality"]
+		},
+		{
 			"package_version": "0.1.1",
 			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.1.1/dkcr_poptracker_v0.1.1.zip",
 			"sha256": "893a231a1a8ef646d0d3716784f13eb82e1092a95138375e24ac8e2fad3e1cca",
