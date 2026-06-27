@@ -862,6 +862,7 @@
             },
             { // MARK: 3-K
                 "name": "3-K Shifty Smashers",
+				"access_rules": ["$LetterCheck|3"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",

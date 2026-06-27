@@ -813,6 +813,7 @@
 			},
 			{ // MARK: 1-K
 				"name": "1-K Platform Panic",
+				"access_rules": ["$LetterCheck|1"],
 				"sections": [
 					{
 						"name": "Puzzle Piece 1",

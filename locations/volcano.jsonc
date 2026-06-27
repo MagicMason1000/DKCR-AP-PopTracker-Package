@@ -915,6 +915,7 @@
             },
             { // MARK: 8-K
                 "name": "8-K Five Monkey Trial",
+				"access_rules": ["$LetterCheck|8"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",

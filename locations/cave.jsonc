@@ -642,6 +642,7 @@
             },
             { // MARK: 4-K
                 "name": "4-K Jagged Jewels",
+				"access_rules": ["$LetterCheck|4"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",

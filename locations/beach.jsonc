@@ -917,6 +917,7 @@
             },
             { // MARK: 2-K
                 "name": "2-K Tumblin' Temple",
+				"access_rules": ["$LetterCheck|2"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",

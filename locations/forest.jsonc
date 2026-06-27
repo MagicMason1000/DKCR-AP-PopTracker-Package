@@ -1113,6 +1113,7 @@
             },
             { // MARK: 5-K
                 "name": "5-K Blast & Bounce",
+				"access_rules": ["$LetterCheck|5"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",

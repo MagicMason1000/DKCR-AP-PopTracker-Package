@@ -134,7 +134,7 @@ function WorldCheck(world, checkType)
         print(string.format("DEBUG: Called WorldCheck. WORLD: %s, checkType: %s", world, checkType))
     end
 
-    if (checkType == 1) then
+    if (checkType == 1) then -- KONG LETTERS
         local completionCountdown = ((WORLD_LEVEL_AMOUNT[world] - 1) * 4)
         for lvlCount = (WORLD_LEVEL_OFFSET[world]), (WORLD_LEVEL_OFFSET[world + 1] - 2) do
             for kongCount = 1, 4 do
@@ -171,11 +171,11 @@ function WorldCheck(world, checkType)
         end
     end
 
-    if (checkType == 2) then
+    if (checkType == 2) then -- PUZZLE PIECES
         return false
     end
 
-    if (checkType == 3 or checkType == 4) then
+    if (checkType == 3 or checkType == 4) then -- LEVEL/MIRROR COMPLETIONS
         for lvlCount = (WORLD_LEVEL_OFFSET[world]), (WORLD_LEVEL_OFFSET[world + 1] - 1) do
             local access
             if (checkType == 3) then
@@ -199,6 +199,10 @@ function WorldCheck(world, checkType)
         end
     end
 
+    if (checkType == 6) then -- TIME ATTACK MEDALS
+        
+    end
+
     if ENABLE_DEBUG_LOG then
         print(string.format("WARNING: WorldCheck reached end of function without a proper checkType value. checkType value was %s", checkType))
     end
@@ -208,7 +212,7 @@ end
 function BossCheck(world)
     if ENABLE_DEBUG_LOG then
         print("")
-        print(string.format("DEBUG: Called bossCheck. World = %s", world))
+        print(string.format("DEBUG: Called BossCheck. World = %s", world))
     end
     
     local req = Tracker:FindObjectForCode("bossreq" .. world).AcquiredCount
@@ -216,19 +220,48 @@ function BossCheck(world)
     local pp = Tracker:FindObjectForCode("puzzle_piece").AcquiredCount
     if (req > pp) then
         if ENABLE_DEBUG_LOG then
-            print(string.format("DEBUG [FAIL]: bossCheck finished. Boss requirement NOT satisfied for world %s.", world))
+            print(string.format("DEBUG [FAIL]: BossCheck finished. Boss requirement NOT satisfied for world %s.", world))
         end
         return false
     end
     if (req <= pp) then
         if ENABLE_DEBUG_LOG then
-            print(string.format("DEBUG [SUCCESS]: bossCheck finished. Boss requirement satisfied for world %s.", world))
+            print(string.format("DEBUG [SUCCESS]: BossCheck finished. Boss requirement satisfied for world %s.", world))
         end
         return true
     end
 
     if ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: bossCheck reached end of function without a proper return. World was %s, req was %s, pp was %s.", world, req, pp))
+        print(string.format("WARNING: BossCheck reached end of function without a proper return. World was %s, req was %s, pp was %s.", world, req, pp))
+    end
+    return false
+end
+
+function LetterCheck(world)
+    if ENABLE_DEBUG_LOG then
+        print("")
+        print(string.format("DEBUG: Called LetterCheck. World = %s", world))
+    end
+    
+    world = tonumber(world)
+    local kReqs = { 24, 28, 24, 20, 32, 32, 28, 28 }
+    local worldStrings = { "jungle", "beach", "ruins", "cave", "forest", "cliff", "factory", "volcano"}
+    local letters = Tracker:FindObjectForCode("letters_" .. worldStrings[world]).AcquiredCount
+    if (letters < kReqs[world]) then
+        if ENABLE_DEBUG_LOG then
+            print(string.format("DEBUG [FAIL]: LetterCheck finished. Letter requirement NOT satisfied for world %s.", world))
+        end
+        return false
+    end
+    if (letters >= kReqs[world]) then
+        if ENABLE_DEBUG_LOG then
+            print(string.format("DEBUG [SUCCESS]: LetterCheck finished. Letter requirement satisfied for world %s.", world))
+        end
+        return true
+    end
+    
+    if ENABLE_DEBUG_LOG then
+        print(string.format("WARNING: LetterCheck reached end of function without a proper return. World was %s, letters was %s.", world, letters))
     end
     return false
 end

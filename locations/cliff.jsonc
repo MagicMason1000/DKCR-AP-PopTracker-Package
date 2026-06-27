@@ -1099,6 +1099,7 @@
             },
             { // MARK: 6-K
                 "name": "6-K Perilous Passage",
+				"access_rules": ["$LetterCheck|6"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
