@@ -114,7 +114,7 @@ function apply_slot_data(slot_data)
 	for world = 1, 8 do
 		local reqObj = Tracker:FindObjectForCode("bossreq" .. tostring(world))
 		if reqObj then
-			reqObj.AcquiredCount = reqObj.AcquiredCount + requirements[world]
+			reqObj.AcquiredCount = requirements[world]
 			if ENABLE_DEBUG_LOG then
 				print(string.format("DEBUG: bossreq%s set to %s.", world, reqObj.AcquiredCount + requirements[world]))
 			end
