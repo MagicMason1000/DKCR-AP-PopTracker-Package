@@ -1144,13 +1144,6 @@
 						"access_rules": ["skull_barrel"]
 					},
 					{
-						"name": "KONG Letter Set",
-						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
-						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
-						"item_count": 1,
-						"access_rules": [""]
-					},
-					{
 						"name": "Puzzle Piece Set",
 						"chest_unopened_img": "images/locations/collectible_pp_set_5.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_5_collected.png",

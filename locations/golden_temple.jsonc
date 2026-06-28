@@ -43,16 +43,16 @@
                         "access_rules": [""]
                     },
 					{
-						"name": "Mirror Mode Unlock",
-						"chest_unopened_img": "images/locations/mirror_mode.png",
-						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"name": "Complete Level",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
 						"item_count": 1,
 						"access_rules": ["skull_barrel, arrow_barrel"]
 					},
 					{
-						"name": "Complete Level",
-						"chest_unopened_img": "images/locations/level_goal.png",
-						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"name": "Mirror Mode Unlock",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"access_rules": ["skull_barrel, arrow_barrel"]
 					},
