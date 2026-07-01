@@ -4,6 +4,7 @@
         "children": [
             { // MARK: 7-1
                 "name": "7-1 Foggy Fumes",
+				"access_rules": ["$BossCheck|6"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -146,6 +147,7 @@
             },
             { // MARK: 7-2
                 "name": "7-2 Slammin' Steel",
+				"access_rules": ["$BossCheck|6"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -274,7 +276,7 @@
             },
             { // MARK: 7-3
                 "name": "7-3 Handy Hazards",
-				"access_rules": ["key_factory"],
+				"access_rules": ["$BossCheck|6, key_factory"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -417,6 +419,7 @@
             },
             { // MARK: 7-4
                 "name": "7-4 Gear Getaway",
+				"access_rules": ["$BossCheck|6"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -559,6 +562,7 @@
             },
             { // MARK: 7-5
                 "name": "7-5 Cog Jog",
+				"access_rules": ["$BossCheck|6"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -715,6 +719,7 @@
             },
             { // MARK: 7-6
                 "name": "7-6 Switcheroo",
+				"access_rules": ["$BossCheck|6"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -843,6 +848,7 @@
             },
             { // MARK: 7-7
                 "name": "7-7 Music Madness",
+				"access_rules": ["$BossCheck|6"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -971,6 +977,7 @@
             },
             { // MARK: 7-R
                 "name": "7-R Lift-off Launch",
+				"access_rules": ["$BossCheck|6"],
                 "sections": [
 					{
 						"name": "Complete Level",
@@ -1022,7 +1029,7 @@
             },
             { // MARK: 7-K
                 "name": "7-K Treacherous Track",
-				"access_rules": ["$LetterCheck|7"],
+				"access_rules": ["$BossCheck|6, $LetterCheck|7"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -1169,6 +1176,7 @@
             { // MARK: 7-S
                 "name": "7-S Cranky Kong's Shop",
 				"visibility_rules": ["shopsanity_enabled"],
+				"access_rules": ["$BossCheck|6"],
                 "sections": [
 					{
 						"name": "Factory Map Key",

@@ -1,4 +1,5 @@
 ENABLE_DEBUG_LOG = false
+ENABLE_DETAILED_DEBUG_LOG = false
 local variant = Tracker.ActiveVariantUID
 IS_ITEMS_ONLY = variant:find("itemsonly")
 

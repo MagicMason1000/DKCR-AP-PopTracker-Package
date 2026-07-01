@@ -4,6 +4,7 @@
         "children": [
             { // MARK: 3-1
                 "name": "3-1 Wonky Waterway",
+				"access_rules": ["$BossCheck|2"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -148,6 +149,7 @@
             },
             { // MARK: 3-2
                 "name": "3-2 Button Bash",
+				"access_rules": ["$BossCheck|2"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -290,6 +292,7 @@
             },
             { // MARK: 3-3
                 "name": "3-3 Mast Blast",
+				"access_rules": ["$BossCheck|2"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -432,7 +435,7 @@
             },
             { // MARK: 3-4
                 "name": "3-4 Damp Dungeon",
-				"access_rules": ["key_ruins"],
+				"access_rules": ["$BossCheck|2, key_ruins"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -592,6 +595,7 @@
             },
             { // MARK: 3-5
                 "name": "3-5 Itty Bitty Biters",
+				"access_rules": ["$BossCheck|2"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -734,6 +738,7 @@
             },
             { // MARK: 3-6
                 "name": "3-6 Temple Topple",
+				"access_rules": ["$BossCheck|2"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -862,7 +867,7 @@
             },
             { // MARK: 3-K
                 "name": "3-K Shifty Smashers",
-				"access_rules": ["$LetterCheck|3"],
+				"access_rules": ["$BossCheck|2, $LetterCheck|3"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -1011,6 +1016,7 @@
             { // MARK: 3-S
                 "name": "3-S Cranky Kong's Shop",
 				"visibility_rules": ["shopsanity_enabled"],
+				"access_rules": ["$BossCheck|2"],
                 "sections": [
 					{
 						"name": "Ruins Map Key",

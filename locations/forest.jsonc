@@ -4,6 +4,7 @@
         "children": [
             { // MARK: 5-1
                 "name": "5-1 Vine Valley",
+				"access_rules": ["$BossCheck|4"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -146,6 +147,7 @@
             },
             { // MARK: 5-2
                 "name": "5-2 Clingy Swingy",
+				"access_rules": ["$BossCheck|4"],
                 "sections": [
 					{
 						"name": "KONG Letter K",
@@ -274,6 +276,7 @@
             },
             { // MARK: 5-3
                 "name": "5-3 Flutter Flyaway",
+				"access_rules": ["$BossCheck|4"],
                 "sections": [
 					{
 						"name": "KONG Letter K",
@@ -416,6 +419,7 @@
             },
             { // MARK: 5-4
                 "name": "5-4 Tippin' Totems",
+				"access_rules": ["$BossCheck|4"],
                 "sections": [
 					{
 						"name": "KONG Letter K",
@@ -558,6 +562,7 @@
             },
             { // MARK: 5-5
                 "name": "5-5 Longshot Launch",
+				"access_rules": ["$BossCheck|4"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -700,7 +705,7 @@
             },
             { // MARK: 5-6
                 "name": "5-6 Springy Spores",
-				"access_rules": ["key_forest"],
+				"access_rules": ["$BossCheck|4, key_forest"],
                 "sections": [
 					{
 						"name": "KONG Letter K",
@@ -843,7 +848,7 @@
             },
             { // MARK: 5-7
                 "name": "5-7 Wigglevine Wonders",
-				"access_rules": ["key_forest"],
+				"access_rules": ["$BossCheck|4, key_forest"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -986,6 +991,7 @@
             },
             { // MARK: 5-8
                 "name": "5-8 Muncher Marathon",
+				"access_rules": ["$BossCheck|4"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -1114,7 +1120,7 @@
             },
             { // MARK: 5-K
                 "name": "5-K Blast & Bounce",
-				"access_rules": ["$LetterCheck|5"],
+				"access_rules": ["$BossCheck|4, $LetterCheck|5"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -1265,6 +1271,7 @@
             { // MARK: 5-S
                 "name": "5-S Cranky Kong's Shop",
 				"visibility_rules": ["shopsanity_enabled"],
+				"access_rules": ["$BossCheck|4"],
                 "sections": [
 					{
 						"name": "Forest Map Key",

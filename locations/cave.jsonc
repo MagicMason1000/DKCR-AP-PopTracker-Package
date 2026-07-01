@@ -4,7 +4,7 @@
         "children": [
             { // MARK: 4-1
                 "name": "4-1 Rickety Rails",
-				"access_rules": ["arrow_barrel"],
+				"access_rules": ["$BossCheck|3, arrow_barrel"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -133,7 +133,7 @@
             },
             { // MARK: 4-2
                 "name": "4-2 Grip & Trip",
-				"access_rules": ["grab, arrow_barrel, mine_cart", "roll, mine_cart"],
+				"access_rules": ["$BossCheck|3, grab, arrow_barrel, mine_cart", "$BossCheck|3, roll, mine_cart"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -259,7 +259,7 @@
             },
             { // MARK: 4-3
                 "name": "4-3 Bombs Away",
-				"access_rules": ["mine_cart"],
+				"access_rules": ["$BossCheck|3, mine_cart"],
                 "sections": [
 					{
 						"name": "KONG Letter K",
@@ -388,7 +388,7 @@
             },
             { // MARK: 4-4
                 "name": "4-4 Mole Patrol",
-				"access_rules": ["key_cave"],
+				"access_rules": ["$BossCheck|3, key_cave"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -516,6 +516,7 @@
             },
             { // MARK: 4-5
                 "name": "4-5 Crowded Cavern",
+				"access_rules": ["$BossCheck|3"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -642,7 +643,7 @@
             },
             { // MARK: 4-K
                 "name": "4-K Jagged Jewels",
-				"access_rules": ["$LetterCheck|4"],
+				"access_rules": ["$BossCheck|3, $LetterCheck|4"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -789,6 +790,7 @@
             { // MARK: 4-S
                 "name": "4-S Cranky Kong's Shop",
 				"visibility_rules": ["shopsanity_enabled"],
+				"access_rules": ["$BossCheck|3"],
                 "sections": [
 					{
 						"name": "Cave Map Key",

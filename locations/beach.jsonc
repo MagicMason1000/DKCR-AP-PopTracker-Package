@@ -4,6 +4,7 @@
         "children": [
             { // MARK: 2-1
                 "name": "2-1 Poppin' Planks",
+				"access_rules": ["$BossCheck|1"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -131,7 +132,7 @@
             },
             { // MARK: 2-2
                 "name": "2-2 Sloppy Sands",
-				"access_rules": ["ground_pound", "roll", "diddy, grab"],
+				"access_rules": ["$BossCheck|1, ground_pound", "$BossCheck|1, roll", "$BossCheck|1, diddy, grab"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -271,6 +272,7 @@
             },
             { // MARK: 2-3
                 "name": "2-3 Peaceful Pier",
+				"access_rules": ["$BossCheck|1"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -399,6 +401,7 @@
             },
             { // MARK: 2-4
                 "name": "2-4 Cannon Cluster",
+				"access_rules": ["$BossCheck|1"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -537,7 +540,7 @@
             },
             { // MARK: 2-5
                 "name": "2-5 Stormy Shore",
-                "access_rules": ["grab"],
+				"access_rules": ["$BossCheck|1, grab"],
                 "sections": [
 					{
 						"name": "KONG Letter K",
@@ -663,7 +666,7 @@
             },
             { // MARK: 2-6
                 "name": "2-6 Blowhole Bound",
-                "access_rules": ["key_beach"],
+				"access_rules": ["$BossCheck|1, key_beach"],
                 "sections": [
 					{
 						"name": "KONG Letter K",
@@ -791,6 +794,7 @@
             },
             { // MARK: 2-7
                 "name": "2-7 Tidal Terror",
+				"access_rules": ["$BossCheck|1"],
                 "sections": [
 					{
 						"name": "KONG Letter K",
@@ -917,7 +921,7 @@
             },
             { // MARK: 2-K
                 "name": "2-K Tumblin' Temple",
-				"access_rules": ["$LetterCheck|2"],
+				"access_rules": ["$BossCheck|1, $LetterCheck|2"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -1067,6 +1071,7 @@
             { // MARK: 2-S
                 "name": "2-S Cranky Kong's Shop",
 				"visibility_rules": ["shopsanity_enabled"],
+				"access_rules": ["$BossCheck|1"],
                 "sections": [
 					{
 						"name": "Beach Map Key",

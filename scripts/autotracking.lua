@@ -122,6 +122,8 @@ PUZZLES = {
 -- checkType 1 = KONG Letters
 -- checkType 2 = Puzzle Pieces
 -- checkType 3 = Level Completions
+-- checkType 4 = Mirror Mode Completions
+-- checkType 5 = Time Attack Medals
 
 function WorldCheck(world, checkType)
     world = tonumber(world)
@@ -131,7 +133,7 @@ function WorldCheck(world, checkType)
 
     if ENABLE_DEBUG_LOG then
         print("")
-        print(string.format("DEBUG: Called WorldCheck. WORLD: %s, checkType: %s", world, checkType))
+        print(string.format("DEBUG: Called WorldCheck. WORLD = %s, checkType = %s", world, checkType))
     end
 
     if (checkType == 1) then -- KONG LETTERS
@@ -145,7 +147,7 @@ function WorldCheck(world, checkType)
                 if (access == 7) then
                     completionCountdown = completionCountdown - 1
                 end
-                if ENABLE_DEBUG_LOG then
+                if ENABLE_DETAILED_DEBUG_LOG then
                     print(string.format("DEBUG: %s - AccLvl = %s, Count = %s, comCntdwn = %s", LEVELS[lvlCount] .. ":" .. kongCount, access, count, completionCountdown))
                 end
             end
@@ -171,7 +173,7 @@ function WorldCheck(world, checkType)
         end
     end
 
-    if (checkType == 2) then -- PUZZLE PIECES
+    if (checkType == 2) then -- PUZZLE PIECES (WIP)
         return false
     end
 
@@ -187,20 +189,30 @@ function WorldCheck(world, checkType)
             if (access == 6) then
                 count = count + 1
             end
-            if ENABLE_DEBUG_LOG then
+            if ENABLE_DETAILED_DEBUG_LOG then
                 print(string.format("DEBUG: %s - AccLevel = %s, Count = %s", LEVELS[lvlCount], access, count))
             end
         end
 
         if (count ~= 0) then
+            if ENABLE_DEBUG_LOG and checkType == 3 then
+                print(string.format("DEBUG [SUCCESS]: WorldCheck complete. Level Completion checks are available in World %s.", world))
+            elseif ENABLE_DEBUG_LOG and checkType == 4 then
+                print(string.format("DEBUG [SUCCESS]: WorldCheck complete. Mirror Mode checks are available in World %s.", world))
+            end
             return true
         else
+            if ENABLE_DEBUG_LOG and checkType == 3 then
+                print(string.format("DEBUG [FAIL]: WorldCheck complete. Level Completion checks are NOT available in World %s.", world))
+            elseif ENABLE_DEBUG_LOG and checkType == 4 then
+                print(string.format("DEBUG [SUCCESS]: WorldCheck complete. Mirror Mode checks are NOT available in World %s.", world))
+            end
             return false
         end
     end
 
-    if (checkType == 6) then -- TIME ATTACK MEDALS
-        
+    if (checkType == 5) then -- TIME ATTACK MEDALS (WIP)
+        return false
     end
 
     if ENABLE_DEBUG_LOG then
@@ -208,6 +220,7 @@ function WorldCheck(world, checkType)
     end
     return false
 end
+
 -- MARK: BossCheck
 function BossCheck(world)
     if ENABLE_DEBUG_LOG then
@@ -215,20 +228,38 @@ function BossCheck(world)
         print(string.format("DEBUG: Called BossCheck. World = %s", world))
     end
     
-    local req = Tracker:FindObjectForCode("bossreq" .. world).AcquiredCount
     world = tonumber(world)
     local pp = Tracker:FindObjectForCode("puzzle_piece").AcquiredCount
-    if (req > pp) then
-        if ENABLE_DEBUG_LOG then
-            print(string.format("DEBUG [FAIL]: BossCheck finished. Boss requirement NOT satisfied for world %s.", world))
+    local bossReqs = {
+        Tracker:FindObjectForCode("bossreq1").AcquiredCount,
+        Tracker:FindObjectForCode("bossreq2").AcquiredCount,
+        Tracker:FindObjectForCode("bossreq3").AcquiredCount,
+        Tracker:FindObjectForCode("bossreq4").AcquiredCount,
+        Tracker:FindObjectForCode("bossreq5").AcquiredCount,
+        Tracker:FindObjectForCode("bossreq6").AcquiredCount,
+        Tracker:FindObjectForCode("bossreq7").AcquiredCount,
+        Tracker:FindObjectForCode("bossreq8").AcquiredCount
+    }
+    for i = 1, (world + 1) do
+        if (pp < bossReqs[i]) then
+            if ENABLE_DEBUG_LOG then
+                print(string.format("DEBUG: BossCheck for World %s FAILED on World %s.", world, i))
+                print(string.format("DEBUG [FAIL]: BossCheck finished. Boss requirement NOT satisfied for world %s.", world))
+            end
+            return false
+        elseif (pp >= bossReqs[i]) then
+            if ENABLE_DETAILED_DEBUG_LOG then
+                print(string.format("DEBUG: BossCheck for World %s SUCCEEDED on World %s.", world, i))
+            end
+            if i == world then
+                if ENABLE_DEBUG_LOG then
+                    print(string.format("DEBUG [SUCCESS]: BossCheck finished. Boss requirement satisfied for world %s.", world))
+                end
+                return true
+            end
+        elseif ENABLE_DEBUG_LOG then
+            print(string.format("DEBUG: BossCheck reached end of loop. World was %s, i was %s, bossREqs[i] was %s.", world, i, bossReqs[i]))
         end
-        return false
-    end
-    if (req <= pp) then
-        if ENABLE_DEBUG_LOG then
-            print(string.format("DEBUG [SUCCESS]: BossCheck finished. Boss requirement satisfied for world %s.", world))
-        end
-        return true
     end
 
     if ENABLE_DEBUG_LOG then
@@ -237,6 +268,7 @@ function BossCheck(world)
     return false
 end
 
+-- MARK: LetterCheck
 function LetterCheck(world)
     if ENABLE_DEBUG_LOG then
         print("")

@@ -4,6 +4,7 @@
         "children": [
             { // MARK: 8-1
                 "name": "8-1 Furious Fire",
+				"access_rules": ["$BossCheck|7"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -132,6 +133,7 @@
             },
             { // MARK: 8-2
                 "name": "8-2 Hot Rocket",
+				"access_rules": ["$BossCheck|7"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -260,6 +262,7 @@
             },
             { // MARK: 8-3
                 "name": "8-3 Roasting Rails",
+				"access_rules": ["$BossCheck|7"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -388,7 +391,7 @@
             },
             { // MARK: 8-4
                 "name": "8-4 Smokey Peak",
-				"access_rules": ["key_volcano"],
+				"access_rules": ["$BossCheck|7, key_volcano"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -517,6 +520,7 @@
             },
             { // MARK: 8-5
                 "name": "8-5 Bobbing Basalt",
+				"access_rules": ["$BossCheck|7"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -659,6 +663,7 @@
             },
             { // MARK: 8-6
                 "name": "8-6 Moving Melters",
+				"access_rules": ["$BossCheck|7"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -787,6 +792,7 @@
             },
             { // MARK: 8-7
                 "name": "8-7 Red Red Rising",
+				"access_rules": ["$BossCheck|7"],
                 "sections": [
 					{
 						"name": "KONG Letter K",
@@ -915,7 +921,7 @@
             },
             { // MARK: 8-K
                 "name": "8-K Five Monkey Trial",
-				"access_rules": ["$LetterCheck|8"],
+				"access_rules": ["$BossCheck|7, $LetterCheck|8"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -1066,6 +1072,7 @@
             { // MARK: 8-S
                 "name": "8-S Cranky Kong's Shop",
 				"visibility_rules": ["shopsanity_enabled"],
+				"access_rules": ["$BossCheck|7"],
                 "sections": [
 					{
 						"name": "Volcano Map Key",

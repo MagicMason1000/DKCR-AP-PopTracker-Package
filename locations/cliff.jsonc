@@ -4,6 +4,7 @@
         "children": [
             { // MARK: 6-1
                 "name": "6-1 Sticky Situation",
+				"access_rules": ["$BossCheck|5"],
                 "sections": [
 					{
 						"name": "KONG Letter K",
@@ -160,6 +161,7 @@
             },
             { // MARK: 6-2
                 "name": "6-2 Prehistoric Path",
+				"access_rules": ["$BossCheck|5"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -288,6 +290,7 @@
             },
             { // MARK: 6-3
                 "name": "6-3 Weighty Way",
+				"access_rules": ["$BossCheck|5"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -416,6 +419,7 @@
             },
             { // MARK: 6-4
                 "name": "6-4 Boulder Roller",
+				"access_rules": ["$BossCheck|5"],
                 "sections": [
 					{
 						"name": "KONG Letter K",
@@ -558,7 +562,7 @@
             },
             { // MARK: 6-5
                 "name": "6-5 Precarious Plateau",
-				"access_rules": ["key_cliff"],
+				"access_rules": ["$BossCheck|5, key_cliff"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -687,6 +691,7 @@
             },
             { // MARK: 6-6
                 "name": "6-6 Crumble Canyon",
+				"access_rules": ["$BossCheck|5"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -843,6 +848,7 @@
             },
             { // MARK: 6-7
                 "name": "6-7 Tippy Shippy",
+				"access_rules": ["$BossCheck|5"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -971,6 +977,7 @@
             },
             { // MARK: 6-8
                 "name": "6-8 Clifftop Climb",
+				"access_rules": ["$BossCheck|5"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -1099,7 +1106,7 @@
             },
             { // MARK: 6-K
                 "name": "6-K Perilous Passage",
-				"access_rules": ["$LetterCheck|6"],
+				"access_rules": ["$BossCheck|5, $LetterCheck|6"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -1250,6 +1257,7 @@
             { // MARK: 6-S
                 "name": "6-S Cranky Kong's Shop",
 				"visibility_rules": ["shopsanity_enabled"],
+				"access_rules": ["$BossCheck|5"],
                 "sections": [
 					{
 						"name": "Cliff Map Key",
