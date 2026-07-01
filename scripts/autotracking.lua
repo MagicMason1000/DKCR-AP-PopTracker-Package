@@ -258,12 +258,12 @@ function BossCheck(world)
                 return true
             end
         elseif ENABLE_DEBUG_LOG then
-            print(string.format("DEBUG: BossCheck reached end of loop. World was %s, i was %s, bossREqs[i] was %s.", world, i, bossReqs[i]))
+            print(string.format("DEBUG: BossCheck reached end of loop. World was %s, i was %s, bossReqs[i] was %s.", world, i, bossReqs[i]))
         end
     end
 
     if ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: BossCheck reached end of function without a proper return. World was %s, req was %s, pp was %s.", world, req, pp))
+        print(string.format("WARNING: BossCheck reached end of function without a proper return. World was %s, pp was %s.", world, pp))
     end
     return false
 end
