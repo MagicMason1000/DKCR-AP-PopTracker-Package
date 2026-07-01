@@ -5,10 +5,14 @@ IS_ITEMS_ONLY = variant:find("itemsonly")
 
 print("")
 print("-- Donkey Kong Country Returns — Archipelago PopTracker Package --")
-print(string.format("Loaded variant: %s", variant))
 if ENABLE_DEBUG_LOG then
     print("DEBUG: Logging is enabled! You can change this in init.lua.")
 end
+if ENABLE_DETAILED_DEBUG_LOG then
+    print("DEBUG: Detailed logging is enabled! This has more in-depth logs, but may be pretty spammy. You can change this in init.lua.")
+end
+print(string.format("Loaded variant: %s", variant))
+print("")
 
 -- Utility Script for helper functions etc.
 ScriptHost:LoadScript("scripts/utils.lua")
