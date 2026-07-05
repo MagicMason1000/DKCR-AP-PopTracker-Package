@@ -1,6 +1,12 @@
 {
 	"versions": [
 		{
+			"package_version": "0.2.3",
+			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.2.3/dkcr_ap_tracker_v0.2.3.zip",
+			"sha256": "95285b7d0ff99493da57a0a79817a24da64bd53b4def5ae72fb5ff6d475dffe7",
+			"changelog": ["Removed KONG Letter Set checks on K levels, multiple fixes to Boss Puzzle Piece Access setting"]
+		},
+		{
 			"package_version": "0.2.2",
 			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.2.2/dkcr_ap_tracker_v0.2.2.zip",
 			"sha256": "d2bf50f145c252d1daed2b9ad1dca377bca7af752c283e190a313f53a78b990a",
