@@ -277,8 +277,7 @@ function LetterCheck(world)
     
     world = tonumber(world)
     local kReqs = { 24, 28, 24, 20, 32, 32, 28, 28 }
-    local worldStrings = { "jungle", "beach", "ruins", "cave", "forest", "cliff", "factory", "volcano"}
-    local letters = Tracker:FindObjectForCode("letters_" .. worldStrings[world]).AcquiredCount
+    local letters = Tracker:FindObjectForCode("letters_" .. world).AcquiredCount
     if (letters < kReqs[world]) then
         if ENABLE_DEBUG_LOG then
             print(string.format("DEBUG [FAIL]: LetterCheck finished. Letter requirement NOT satisfied for world %s.", world))

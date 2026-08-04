@@ -10,36 +10,6 @@
                 "content": [
                     {
                         "type": "group",
-                        "header": "Abilities",
-                        "margin": "0,0,3,0",
-                        "content": {
-                            "type": "layout",
-                            "v_alignment": "center",
-                            "key": "abilities"
-                        }
-                    },
-                    {
-                        "type": "group",
-                        "header": "Vehicles",
-                        "margin": "0,0,3,0",
-                        "content": {
-                            "type": "layout",
-                            "v_alignment": "center",
-                            "key": "vehicles"
-                        }
-                    },
-                    {
-                        "type": "group",
-                        "header": "Shop Items",
-                        "margin": "0,0,3,0",
-                        "content": {
-                            "type": "layout",
-                            "v_alignment": "center",
-                            "key": "shop_items"
-                        }
-                    },
-                    {
-                        "type": "group",
                         "header": "KONG Letters, Map Keys, and Puzzle Pieces",
                         "margin": "0,0,3,0",
                         "content": {
@@ -47,6 +17,79 @@
                             "v_alignment": "center",
                             "key": "letters_and_keys"
                         }
+                    },
+                    {
+                        "type": "tabbed",
+                        "tabs": [
+                            {
+                                "title": "Abilities/Vehicles",
+                                "content": {
+                                    "background": "#0c0c0c",
+                                    "type": "array",
+                                    "content": [
+                                        {
+                                            "type": "group",
+                                            "header": "Abilities",
+                                            "margin": "0,0,3,0",
+                                            "content": {
+                                                "type": "layout",
+                                                "v_alignment": "center",
+                                                "key": "abilities"
+                                            }
+                                        },
+                                        {
+                                            "type": "group",
+                                            "header": "Vehicles",
+                                            "margin": "0,0,3,0",
+                                            "content": {
+                                                "type": "layout",
+                                                "v_alignment": "center",
+                                                "key": "vehicles"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "title": "???",
+                                "content": {
+                                    "background": "#0c0c0c",
+                                    "type": "array",
+                                    "content": [
+                                        {
+                                            "type": "group",
+                                            "header": "Shop Items",
+                                            "margin": "0,0,3,0",
+                                            "content": {
+                                                "type": "layout",
+                                                "v_alignment": "center",
+                                                "key": "shop_items"
+                                            }
+                                        },
+                                        {
+                                            "type": "group",
+                                            "header": "Rare Orbs",
+                                            "margin": "0,0,3,0",
+                                            "content": {
+                                                "type": "layout",
+                                                "v_alignment": "center",
+                                                "key": "rare_orbs"
+                                            }
+                                        },
+                                        {
+                                            "type": "group",
+                                            "header": "Filler",
+                                            "margin": "0,0,3,0",
+                                            "content": {
+                                                "type": "layout",
+                                                "v_alignment": "center",
+                                                "key": "filler"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
                     }
                 ]
             },

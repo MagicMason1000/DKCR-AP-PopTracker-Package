@@ -48,8 +48,42 @@
             [
                 "banana_juice",
                 "heart_boost",
-                "squawks",
-                "balloons"
+                "squawks"
+            ]
+        ]
+    },
+    "rare_orbs": {
+        "background": "#1F1F1F",
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "item_size": 4,
+        "h_alignment": "center",
+        "rows": [
+            [
+                "rare_orb_1",
+                "rare_orb_2",
+                "rare_orb_3",
+                "rare_orb_4"
+            ],
+            [
+                "rare_orb_5",
+                "rare_orb_6",
+                "rare_orb_7",
+                "rare_orb_8"
+            ]
+        ]
+    },
+    "filler": {
+        "background": "#1F1F1F",
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "item_size": 4,
+        "h_alignment": "center",
+        "rows": [
+            [
+                "banana",
+                "coin",
+                "balloon"
             ]
         ]
     },
@@ -61,32 +95,31 @@
         "h_alignment": "center",
         "rows": [
             [
-                "letters_jungle",
-                "key_jungle",
-                "letters_beach",
-                "key_beach"
+                "letters_1",
+                "key_1",
+                "letters_2",
+                "key_2"
             ],
             [
-                "letters_ruins",
-                "key_ruins",
-                "letters_cave",
-                "key_cave"
+                "letters_3",
+                "key_3",
+                "letters_4",
+                "key_4"
             ],
             [
-                "letters_forest",
-                "key_forest",
-                "letters_cliff",
-                "key_cliff"
+                "letters_5",
+                "key_5",
+                "letters_6",
+                "key_6"
             ],
             [
-                "letters_factory",
-                "key_factory",
-                "letters_volcano",
-                "key_volcano"
+                "letters_7",
+                "key_7",
+                "letters_8",
+                "key_8"
             ],
             [
                 "puzzle_piece"
-                //"rare_orb"
             ]
         ]
     }

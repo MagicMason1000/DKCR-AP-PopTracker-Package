@@ -71,21 +71,21 @@
         "name": "Mine Cart",
         "type": "static", // change to toggle once receiving items is implemented
         "img": "images/items/vehicle_mine_cart.png",
-        "disabled_img": "images/items/vehicle_mine_cart_unchecked.png",
+        "disabled_img": "images/items/vehicle_mine_cart_uncollected.png",
         "codes": "mine_cart"
     },
     {
         "name": "Rambi's Saddle",
         "type": "static", // change to toggle once receiving items is implemented
         "img": "images/items/vehicle_rambi.png",
-        "disabled_img": "images/items/vehicle_rambi_unchecked.png",
+        "disabled_img": "images/items/vehicle_rambi_uncollected.png",
         "codes": "rambi"
     },
     {
         "name": "Rocket Barrel",
         "type": "static", // change to toggle once receiving items is implemented
         "img": "images/items/vehicle_rocket_barrel.png",
-        "disabled_img": "images/items/vehicle_rocket_barrel_unchecked.png",
+        "disabled_img": "images/items/vehicle_rocket_barrel_uncollected.png",
         "codes": "rocket_barrel"
     },
     // MARK: Collectibles
@@ -99,151 +99,210 @@
     {
         "name": "Puzzle Piece",
         "type": "consumable",
-        "img": "images/items/puzzle_piece.png",
-        "disabled_img": "images/items/puzzle_piece_unchecked.png",
+        "img": "images/items/item_puzzle_piece.png",
+        "disabled_img": "images/items/item_puzzle_piece_uncollected.png",
         "codes": "puzzle_piece",
         "max_quantity": 366
     },
     {
         "name": "Jungle KONG Letter",
         "type": "consumable",
-        "img": "images/items/kong_letters_jungle.png",
-        "codes": "letters_jungle",
+        "img": "images/items/kong_letters_1.png",
+        "codes": "letters_1",
         "max_quantity": 24
     },
     {
         "name": "Beach KONG Letter",
         "type": "consumable",
-        "img": "images/items/kong_letters_beach.png",
-        "codes": "letters_beach",
+        "img": "images/items/kong_letters_2.png",
+        "codes": "letters_2",
         "max_quantity": 28
     },
     {
         "name": "Ruins KONG Letter",
         "type": "consumable",
-        "img": "images/items/kong_letters_ruins.png",
-        "codes": "letters_ruins",
+        "img": "images/items/kong_letters_3.png",
+        "codes": "letters_3",
         "max_quantity": 24
     },
     {
         "name": "Cave KONG Letter",
         "type": "consumable",
-        "img": "images/items/kong_letters_cave.png",
-        "codes": "letters_cave",
+        "img": "images/items/kong_letters_4.png",
+        "codes": "letters_4",
         "max_quantity": 20
     },
     {
         "name": "Forest KONG Letter",
         "type": "consumable",
-        "img": "images/items/kong_letters_forest.png",
-        "codes": "letters_forest",
+        "img": "images/items/kong_letters_5.png",
+        "codes": "letters_5",
         "max_quantity": 32
     },
     {
         "name": "Cliff KONG Letter",
         "type": "consumable",
-        "img": "images/items/kong_letters_cliff.png",
-        "codes": "letters_cliff",
+        "img": "images/items/kong_letters_6.png",
+        "codes": "letters_6",
         "max_quantity": 32
     },
     {
         "name": "Factory KONG Letter",
         "type": "consumable",
-        "img": "images/items/kong_letters_factory.png",
-        "codes": "letters_factory",
+        "img": "images/items/kong_letters_7.png",
+        "codes": "letters_7",
         "max_quantity": 28
     },
     {
         "name": "Volcano KONG Letter",
         "type": "consumable",
-        "img": "images/items/kong_letters_volcano.png",
-        "codes": "letters_volcano",
+        "img": "images/items/kong_letters_8.png",
+        "codes": "letters_8",
         "max_quantity": 28
     },
+    // MARK: Rare Orbs
     {
-        "name": "Rare Orb",
-        "type": "consumable",
-        "img": "images/items/item_rare_orb.png",
-        "codes": "rare_orb",
-        "max_quantity": 8
+        "name": "Rare Orb (Jungle)",
+        "type": "toggle",
+        "img": "images/items/item_rare_orb_1.png",
+        "codes": "rare_orb_1"
+    },
+    {
+        "name": "Rare Orb (Beach)",
+        "type": "toggle",
+        "img": "images/items/item_rare_orb_2.png",
+        "codes": "rare_orb_2"
+    },
+    {
+        "name": "Rare Orb (Ruins)",
+        "type": "toggle",
+        "img": "images/items/item_rare_orb_3.png",
+        "codes": "rare_orb_3"
+    },
+    {
+        "name": "Rare Orb (Cave)",
+        "type": "toggle",
+        "img": "images/items/item_rare_orb_4.png",
+        "codes": "rare_orb_4"
+    },
+    {
+        "name": "Rare Orb (Forest)",
+        "type": "toggle",
+        "img": "images/items/item_rare_orb_5.png",
+        "codes": "rare_orb_5"
+    },
+    {
+        "name": "Rare Orb (Cliff)",
+        "type": "toggle",
+        "img": "images/items/item_rare_orb_6.png",
+        "codes": "rare_orb_6"
+    },
+    {
+        "name": "Rare Orb (Factory)",
+        "type": "toggle",
+        "img": "images/items/item_rare_orb_7.png",
+        "codes": "rare_orb_7"
+    },
+    {
+        "name": "Rare Orb (Volcano)",
+        "type": "toggle",
+        "img": "images/items/item_rare_orb_8.png",
+        "codes": "rare_orb_8"
     },
     // MARK: Map Keys
     {
         "name": "Jungle Map Key",
         "type": "toggle",
         "img": "images/items/item_map_key.png",
-        "codes": "key_jungle"
+        "codes": "key_1"
     },
     {
         "name": "Beach Map Key",
         "type": "toggle",
         "img": "images/items/item_map_key.png",
-        "codes": "key_beach"
+        "codes": "key_2"
     },
     {
         "name": "Ruins Map Key",
         "type": "toggle",
         "img": "images/items/item_map_key.png",
-        "codes": "key_ruins"
+        "codes": "key_3"
     },
     {
         "name": "Cave Map Key",
         "type": "toggle",
         "img": "images/items/item_map_key.png",
-        "codes": "key_cave"
+        "codes": "key_4"
     },
     {
         "name": "Forest Map Key",
         "type": "toggle",
         "img": "images/items/item_map_key.png",
-        "codes": "key_forest"
+        "codes": "key_5"
     },
     {
         "name": "Cliff Map Key",
         "type": "toggle",
         "img": "images/items/item_map_key.png",
-        "codes": "key_cliff"
+        "codes": "key_6"
     },
     {
         "name": "Factory Map Key",
         "type": "toggle",
         "img": "images/items/item_map_key.png",
-        "codes": "key_factory"
+        "codes": "key_7"
     },
     {
         "name": "Volcano Map Key",
         "type": "toggle",
         "img": "images/items/item_map_key.png",
-        "codes": "key_volcano"
+        "codes": "key_8"
     },
     // MARK: Inventory
     {
         "name": "Banana Juice",
         "type": "static", // change to toggle once receiving items is implemented
-        "img": "images/items/item_banana_juice.png",
-        "disabled_img": "images/items/item_banana_juice_unchecked.png",
+        "img": "images/items/shop_banana_juice.png",
+        "disabled_img": "images/items/shop_banana_juice_uncollected.png",
         "codes": "banana_juice"
     },
     {
         "name": "Heart Boost",
         "type": "static", // change to toggle once receiving items is implemented
-        "img": "images/items/item_heart_boost.png",
-        "disabled_img": "images/items/item_heart_boost_unchecked.png",
+        "img": "images/items/shop_heart_boost.png",
+        "disabled_img": "images/items/shop_heart_boost_uncollected.png",
         "codes": "heart_boost"
     },
     {
         "name": "Squawks",
         "type": "static", // change to toggle once receiving items is implemented
-        "img": "images/items/item_squawks.png",
-        "disabled_img": "images/items/item_squawks_unchecked.png",
+        "img": "images/items/shop_squawks.png",
+        "disabled_img": "images/items/shop_squawks_uncollected.png",
         "codes": "squawks"
     },
+    // MARK: Filler
     {
         "name": "Balloons",
         "type": "consumable",
-        "img": "images/items/item_balloons.png",
-        "disabled_img": "images/items/item_balloons_unchecked.png",
-        "codes": "balloons",
+        "img": "images/items/filler_balloons.png",
+        "disabled_img": "images/items/filler_balloons_uncollected.png",
+        "codes": "balloon",
+        "max_quantity": 1000
+    },
+    {
+        "name": "Bananas",
+        "type": "consumable",
+        "img": "images/items/filler_banana.png",
+        "disabled_img": "images/items/filler_banana_uncollected.png",
+        "codes": "banana",
+        "max_quantity": 5000
+    },
+    {
+        "name": "Banana Coins",
+        "type": "consumable",
+        "img": "images/items/filler_coin.png",
+        "disabled_img": "images/items/filler_coin_uncollected.png",
+        "codes": "coin",
         "max_quantity": 1000
     }
 ]
