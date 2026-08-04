@@ -14,9 +14,6 @@ end
 print(string.format("Loaded variant: %s", variant))
 print("")
 
--- Utility Script for helper functions etc.
-ScriptHost:LoadScript("scripts/utils.lua")
-
 -- Items
 Tracker:AddItems("items/items.jsonc")
 Tracker:AddItems("items/settings_items.jsonc")
