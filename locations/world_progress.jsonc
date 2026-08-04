@@ -31,12 +31,12 @@
 			},
 			{
 				"name": "Accessible Jungle Time Attack Medals",
-                "visibility_rules": ["time_attack_enabled"],
+                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
 				"sections": [
 					{
 						"name": "Jungle Medals Accessible",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|1|5"]
 					}
@@ -108,12 +108,12 @@
 			},
 			{
 				"name": "Accessible Beach Time Attack Medals",
-                "visibility_rules": ["time_attack_enabled"],
+                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
 				"sections": [
 					{
 						"name": "Beach Medals Accessible",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|2|5"]
 					}
@@ -185,12 +185,12 @@
 			},
 			{
 				"name": "Accessible Ruins Time Attack Medals",
-                "visibility_rules": ["time_attack_enabled"],
+                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
 				"sections": [
 					{
 						"name": "Ruins Medals Accessible",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|3|5"]
 					}
@@ -262,12 +262,12 @@
 			},
 			{
 				"name": "Accessible Cave Time Attack Medals",
-                "visibility_rules": ["time_attack_enabled"],
+                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
 				"sections": [
 					{
 						"name": "Cave Medals Accessible",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|4|5"]
 					}
@@ -339,12 +339,12 @@
 			},
 			{
 				"name": "Accessible Forest Time Attack Medals",
-                "visibility_rules": ["time_attack_enabled"],
+                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
 				"sections": [
 					{
 						"name": "Forest Medals Accessible",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|5|5"]
 					}
@@ -416,12 +416,12 @@
 			},
 			{
 				"name": "Accessible Cliff Time Attack Medals",
-                "visibility_rules": ["time_attack_enabled"],
+                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
 				"sections": [
 					{
 						"name": "Cliff Medals Accessible",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|6|5"]
 					}
@@ -493,12 +493,12 @@
 			},
 			{
 				"name": "Accessible Factory Time Attack Medals",
-                "visibility_rules": ["time_attack_enabled"],
+                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
 				"sections": [
 					{
 						"name": "Factory Medals Accessible",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|7|5"]
 					}
@@ -570,12 +570,12 @@
 			},
 			{
 				"name": "Accessible Volcano Time Attack Medals",
-                "visibility_rules": ["time_attack_enabled"],
+                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
 				"sections": [
 					{
 						"name": "Volcano Medals Accessible",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|8|5"]
 					}
@@ -645,8 +645,8 @@
 				"sections": [
 					{
 						"name": "Golden Temple Medals Accessible",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|9|5"]
 					}

@@ -124,26 +124,34 @@
 					},
 					{
 						"name": "Time Attack: Bronze",
-						"chest_unopened_img": "images/locations/time_attack_bronze.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_bronze.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_bronze"],
 						"access_rules": ["ground_pound, arrow_barrel, skull-blast_barrel"]
 					},
 					{
 						"name": "Time Attack: Silver",
-						"chest_unopened_img": "images/locations/time_attack_silver.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_silver.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_silver"],
 						"access_rules": ["ground_pound, arrow_barrel, skull-blast_barrel"]
 					},
 					{
 						"name": "Time Attack: Gold",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_gold.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_gold"],
+						"access_rules": ["ground_pound, arrow_barrel, skull-blast_barrel"]
+					},
+					{
+						"name": "Time Attack: Shiny Gold",
+						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
+						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["ta_shiny_gold"],
 						"access_rules": ["ground_pound, arrow_barrel, skull-blast_barrel"]
 					}
 				],
@@ -266,26 +274,34 @@
 					},
 					{
 						"name": "Time Attack: Bronze",
-						"chest_unopened_img": "images/locations/time_attack_bronze.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_bronze.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_bronze"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Silver",
-						"chest_unopened_img": "images/locations/time_attack_silver.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_silver.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_silver"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Gold",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_gold.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_gold"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Shiny Gold",
+						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
+						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["ta_shiny_gold"],
 						"access_rules": [""]
 					}
 				],
@@ -394,26 +410,34 @@
 					},
 					{
 						"name": "Time Attack: Bronze",
-						"chest_unopened_img": "images/locations/time_attack_bronze.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_bronze.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_bronze"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Silver",
-						"chest_unopened_img": "images/locations/time_attack_silver.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_silver.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_silver"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Gold",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_gold.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_gold"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Shiny Gold",
+						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
+						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["ta_shiny_gold"],
 						"access_rules": [""]
 					}
 				],
@@ -523,26 +547,34 @@
 					},
 					{
 						"name": "Time Attack: Bronze",
-						"chest_unopened_img": "images/locations/time_attack_bronze.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_bronze.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_bronze"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Silver",
-						"chest_unopened_img": "images/locations/time_attack_silver.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_silver.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_silver"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Gold",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_gold.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_gold"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Shiny Gold",
+						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
+						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["ta_shiny_gold"],
 						"access_rules": [""]
 					}
 				],
@@ -652,26 +684,34 @@
 					},
 					{
 						"name": "Time Attack: Bronze",
-						"chest_unopened_img": "images/locations/time_attack_bronze.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_bronze.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_bronze"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Silver",
-						"chest_unopened_img": "images/locations/time_attack_silver.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_silver.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_silver"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Gold",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_gold.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_gold"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Shiny Gold",
+						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
+						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["ta_shiny_gold"],
 						"access_rules": [""]
 					}
 				],
@@ -780,26 +820,34 @@
 					},
 					{
 						"name": "Time Attack: Bronze",
-						"chest_unopened_img": "images/locations/time_attack_bronze.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_bronze.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_bronze"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Silver",
-						"chest_unopened_img": "images/locations/time_attack_silver.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_silver.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_silver"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Gold",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_gold.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_gold"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Shiny Gold",
+						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
+						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["ta_shiny_gold"],
 						"access_rules": [""]
 					}
 				],
@@ -874,26 +922,34 @@
 					},
 					{
 						"name": "Time Attack: Bronze",
-						"chest_unopened_img": "images/locations/time_attack_bronze.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_bronze.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_bronze"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Silver",
-						"chest_unopened_img": "images/locations/time_attack_silver.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_silver.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_silver"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Gold",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_gold.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_gold"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Shiny Gold",
+						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
+						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["ta_shiny_gold"],
 						"access_rules": [""]
 					}
 				],
@@ -928,26 +984,34 @@
 					},
 					{
 						"name": "Time Attack: Bronze",
-						"chest_unopened_img": "images/locations/time_attack_bronze.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_bronze.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_bronze"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Silver",
-						"chest_unopened_img": "images/locations/time_attack_silver.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_silver.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_silver"],
 						"access_rules": [""]
 					},
 					{
 						"name": "Time Attack: Gold",
-						"chest_unopened_img": "images/locations/time_attack_gold.png",
-						"chest_opened_img": "images/locations/time_attack_completed.png",
+						"chest_unopened_img": "images/locations/ta_gold.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["time_attack_enabled"],
+						"visibility_rules": ["ta_gold"],
+						"access_rules": [""]
+					},
+					{
+						"name": "Time Attack: Shiny Gold",
+						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
+						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
+						"item_count": 1,
+						"visibility_rules": ["ta_shiny_gold"],
 						"access_rules": [""]
 					}
 				],

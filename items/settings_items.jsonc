@@ -56,20 +56,38 @@
     {
         "name": "Time Attack Setting",
         "type": "progressive",
-        "loop": true,
+        "loop": false,
         "allow_disabled": false,
-		"initial_stage_idx": 0, // False
+		"initial_stage_idx": 0, // Disabled
         "stages": [
             {
                 "name": "Time Attack Disabled",
-                "img": "images/settings/setting_time_attack_disabled.png",
-                "codes": "time_attack_setting, time_attack_disabled",
+                "img": "images/settings/setting_ta_disabled.png",
+                "codes": "ta_setting, ta_disabled",
                 "inherit_codes": false
             },
             {
-                "name": "Time Attack Enabled",
-                "img": "images/settings/setting_time_attack_enabled.png",
-                "codes": "time_attack_setting, time_attack_enabled",
+                "name": "Time Attack Bronze",
+                "img": "images/settings/setting_ta_bronze.png",
+                "codes": "ta_setting, ta_bronze",
+                "inherit_codes": false
+            },
+            {
+                "name": "Time Attack Silver",
+                "img": "images/settings/setting_ta_silver.png",
+                "codes": "ta_setting, ta_silver",
+                "inherit_codes": false
+            },
+            {
+                "name": "Time Attack Gold",
+                "img": "images/settings/setting_ta_gold.png",
+                "codes": "ta_setting, ta_gold",
+                "inherit_codes": false
+            },
+            {
+                "name": "Time Attack Shiny Gold",
+                "img": "images/settings/setting_ta_shiny_gold.png",
+                "codes": "ta_setting, ta_shiny_gold",
                 "inherit_codes": false
             }
         ]
