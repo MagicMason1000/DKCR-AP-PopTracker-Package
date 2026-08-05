@@ -14,8 +14,8 @@
 					},
 					{
 						"name": "Jungle Puzzle Pieces Accessible",
-						"chest_unopened_img": "images/locations/collectible_puzzle_piece_set.png",
-						"chest_opened_img": "images/locations/collectible_puzzle_piece_set_collected.png",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|1|2"]
 					}
@@ -91,8 +91,8 @@
 					},
 					{
 						"name": "Beach Puzzle Pieces Accessible",
-						"chest_unopened_img": "images/locations/collectible_puzzle_piece_set.png",
-						"chest_opened_img": "images/locations/collectible_puzzle_piece_set_collected.png",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|2|2"]
 					}
@@ -168,8 +168,8 @@
 					},
 					{
 						"name": "Ruins Puzzle Pieces Accessible",
-						"chest_unopened_img": "images/locations/collectible_puzzle_piece_set.png",
-						"chest_opened_img": "images/locations/collectible_puzzle_piece_set_collected.png",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|3|2"]
 					}
@@ -245,8 +245,8 @@
 					},
 					{
 						"name": "Cave Puzzle Pieces Accessible",
-						"chest_unopened_img": "images/locations/collectible_puzzle_piece_set.png",
-						"chest_opened_img": "images/locations/collectible_puzzle_piece_set_collected.png",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|4|2"]
 					}
@@ -322,8 +322,8 @@
 					},
 					{
 						"name": "Forest Puzzle Pieces Accessible",
-						"chest_unopened_img": "images/locations/collectible_puzzle_piece_set.png",
-						"chest_opened_img": "images/locations/collectible_puzzle_piece_set_collected.png",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|5|2"]
 					}
@@ -399,8 +399,8 @@
 					},
 					{
 						"name": "Cliff Puzzle Pieces Accessible",
-						"chest_unopened_img": "images/locations/collectible_puzzle_piece_set.png",
-						"chest_opened_img": "images/locations/collectible_puzzle_piece_set_collected.png",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|6|2"]
 					}
@@ -476,8 +476,8 @@
 					},
 					{
 						"name": "Factory Puzzle Pieces Accessible",
-						"chest_unopened_img": "images/locations/collectible_puzzle_piece_set.png",
-						"chest_opened_img": "images/locations/collectible_puzzle_piece_set_collected.png",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|7|2"]
 					}
@@ -553,8 +553,8 @@
 					},
 					{
 						"name": "Volcano Puzzle Pieces Accessible",
-						"chest_unopened_img": "images/locations/collectible_puzzle_piece_set.png",
-						"chest_opened_img": "images/locations/collectible_puzzle_piece_set_collected.png",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|8|2"]
 					}
@@ -624,8 +624,8 @@
 				"sections": [
 					{
 						"name": "Golden Temple Puzzle Pieces Accessible",
-						"chest_unopened_img": "images/locations/collectible_puzzle_piece_set.png",
-						"chest_opened_img": "images/locations/collectible_puzzle_piece_set_collected.png",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|9|2"]
 					}
