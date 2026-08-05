@@ -291,7 +291,7 @@ end
 -- called when an item gets collected
 function onItem(index, item_id, item_name, player_number)
 	if ENABLE_DEBUG_LOG then
-		print(string.format("called onItem: %s, %s, %s, %s, %s", index, item_id, item_name, player_number, CUR_INDEX))
+		print(string.format("called onItem: %s, 0x%x, %s, %s, %s", index, item_id, item_name, player_number, CUR_INDEX))
 	end
 	if not AUTOTRACKER_ENABLE_ITEM_TRACKING then
 		return
@@ -349,7 +349,7 @@ end
 -- called when a location gets cleared
 function onLocation(location_id, location_name)
 	if ENABLE_DEBUG_LOG then
-		print(string.format("called onLocation: %s, %s", location_id, location_name))
+		print(string.format("called onLocation: 0x%x, %s", location_id, location_name))
 	end
 	if not AUTOTRACKER_ENABLE_LOCATION_TRACKING then
 		return

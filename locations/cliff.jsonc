@@ -1215,6 +1215,13 @@
 						"access_rules": ["skull_barrel"]
 					},
 					{
+						"name": "Cliff Rare Orb",
+						"chest_unopened_img": "images/items/item_rare_orb_6.png",
+						"chest_opened_img": "images/locations/rare_orb_collected.png",
+						"item_count": 1,
+						"access_rules": ["skull_barrel"]
+					},
+					{
 						"name": "Puzzle Piece Set",
 						"chest_unopened_img": "images/locations/collectible_pp_set_5.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_5_collected.png",
@@ -1369,6 +1376,73 @@
                         "map": "cliff",
                         "x": 427,
                         "y": 520
+                    }
+                ]
+            },
+            { // MARK: BUNDLES
+                "name": "Cliff Bundles",
+				"access_rules": ["$BossCheck|5"],
+                "sections": [
+					{
+						"name": "Collect All Cliff Puzzle Pieces",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
+						"item_count": 1
+					},
+					{
+						"name": "Collect All Cliff KONG Letters",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1
+					},
+					{
+						"name": "Complete All Cliff Levels",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1
+					},
+					{
+						"name": "Complete All Cliff Levels in Mirror Mode",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1
+					},
+					{
+						"name": "Collect All Cliff Bronze Medals",
+						"chest_unopened_img": "images/locations/ta_bronze.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
+						"visibility_rules": ["ta_bronze"],
+						"item_count": 1
+					},
+					{
+						"name": "Collect All Cliff Silver Medals",
+						"chest_unopened_img": "images/locations/ta_silver.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
+						"visibility_rules": ["ta_silver"],
+						"item_count": 1
+					},
+					{
+						"name": "Collect All Cliff Gold Medals",
+						"chest_unopened_img": "images/locations/ta_gold.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
+						"visibility_rules": ["ta_gold"],
+						"item_count": 1
+					},
+					{
+						"name": "Collect All Cliff Shiny Gold Medals",
+						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
+						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
+						"visibility_rules": ["ta_shiny_gold"],
+						"item_count": 1
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "cliff",
+                        "x": 75,
+                        "y": 75,
+						"size": 75,
+						"border_thickness": 8
                     }
                 ]
             }

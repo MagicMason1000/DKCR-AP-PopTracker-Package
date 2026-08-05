@@ -1049,38 +1049,6 @@
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
 						"access_rules": ["$ShardCheck, ground_pound, rocket_barrel"]
-					},
-					{
-						"name": "Time Attack: Bronze",
-						"chest_unopened_img": "images/locations/ta_bronze.png",
-						"chest_opened_img": "images/locations/ta_medal_completed.png",
-						"item_count": 1,
-						"visibility_rules": ["ta_bronze"],
-						"access_rules": [""]
-					},
-					{
-						"name": "Time Attack: Silver",
-						"chest_unopened_img": "images/locations/ta_silver.png",
-						"chest_opened_img": "images/locations/ta_medal_completed.png",
-						"item_count": 1,
-						"visibility_rules": ["ta_silver"],
-						"access_rules": [""]
-					},
-					{
-						"name": "Time Attack: Gold",
-						"chest_unopened_img": "images/locations/ta_gold.png",
-						"chest_opened_img": "images/locations/ta_medal_completed.png",
-						"item_count": 1,
-						"visibility_rules": ["ta_gold"],
-						"access_rules": [""]
-					},
-					{
-						"name": "Time Attack: Shiny Gold",
-						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
-						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
-						"item_count": 1,
-						"visibility_rules": ["ta_shiny_gold"],
-						"access_rules": [""]
 					}
                 ],
                 "map_locations": [
@@ -1134,6 +1102,13 @@
 						"name": "Complete Level",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["arrow_barrel, blast_barrel"]
+					},
+					{
+						"name": "Factory Rare Orb",
+						"chest_unopened_img": "images/items/item_rare_orb_7.png",
+						"chest_opened_img": "images/locations/rare_orb_collected.png",
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, blast_barrel"]
 					},
@@ -1288,6 +1263,73 @@
                         "map": "factory",
                         "x": 224,
                         "y": 473
+                    }
+                ]
+            },
+            { // MARK: BUNDLES
+                "name": "Factory Bundles",
+				"access_rules": ["$BossCheck|6"],
+                "sections": [
+					{
+						"name": "Collect All Factory Puzzle Pieces",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
+						"item_count": 1
+					},
+					{
+						"name": "Collect All Factory KONG Letters",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1
+					},
+					{
+						"name": "Complete All Factory Levels",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1
+					},
+					{
+						"name": "Complete All Factory Levels in Mirror Mode",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"item_count": 1
+					},
+					{
+						"name": "Collect All Factory Bronze Medals",
+						"chest_unopened_img": "images/locations/ta_bronze.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
+						"visibility_rules": ["ta_bronze"],
+						"item_count": 1
+					},
+					{
+						"name": "Collect All Factory Silver Medals",
+						"chest_unopened_img": "images/locations/ta_silver.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
+						"visibility_rules": ["ta_silver"],
+						"item_count": 1
+					},
+					{
+						"name": "Collect All Factory Gold Medals",
+						"chest_unopened_img": "images/locations/ta_gold.png",
+						"chest_opened_img": "images/locations/ta_medal_completed.png",
+						"visibility_rules": ["ta_gold"],
+						"item_count": 1
+					},
+					{
+						"name": "Collect All Factory Shiny Gold Medals",
+						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
+						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
+						"visibility_rules": ["ta_shiny_gold"],
+						"item_count": 1
+					}
+                ],
+                "map_locations": [
+                    {
+                        "map": "factory",
+                        "x": 75,
+                        "y": 75,
+						"size": 75,
+						"border_thickness": 8
                     }
                 ]
             }
