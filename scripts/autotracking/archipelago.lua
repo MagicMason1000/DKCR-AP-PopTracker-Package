@@ -101,6 +101,8 @@ end
 
 -- MARK: SLOTDATA
 function apply_slot_data(slot_data)
+	local abled = {"Disabled", "Enabled"}
+
 	-- Puzzle Piece Boss Requirement settings
 	local ppReqs = {
 		slot_data["jungle_boss_access"],
@@ -117,10 +119,10 @@ function apply_slot_data(slot_data)
 		if ppReqObj then
 			ppReqObj.AcquiredCount = ppReqs[world]
 			if ENABLE_DEBUG_LOG then
-				print(string.format("apply_slot_data: bossReq%s set to %s.", world, ppReqs[world]))
+				print(string.format("apply_slot_data: set boss requirement for World %s to %s Puzzle Pieces", world, ppReqs[world]))
 			end
 		elseif ENABLE_DEBUG_LOG then
-			print(string.format("apply_slot_data: could not find object for code %s", ppReqObj))
+			print(string.format("WARNING: apply_slot_data on ppReqObj could not find object for code %s", ppReqObj))
 		end
 	end
 
@@ -140,36 +142,72 @@ function apply_slot_data(slot_data)
 		if kReqObj then
 			kReqObj.AcquiredCount = kReqs[world]
 			if ENABLE_DEBUG_LOG then
-				print(string.format("apply_slot_data: kReq%s set to %s.", world, kReqs[world]))
+				print(string.format("apply_slot_data: set K Level requirement for World %s to %s KONG Letters", world, kReqs[world]))
 			end
 		elseif ENABLE_DEBUG_LOG then
-			print(string.format("apply_slot_data: could not find object for code %s", kReqObj))
+			print(string.format("WARNING: apply_slot_data on kReqObj could not find object for code %s", kReqObj))
 		end
 	end
 
-	-- Mirror Mode Enabled
-	Tracker:FindObjectForCode("mirror_mode_setting").CurrentStage = slot_data["mirror_mode"]
-	if ENABLE_DEBUG_LOG then
-		print(string.format("apply_slot_data: Mirror Mode setting set to %s.", slot_data["mirror_mode"]))
+	-- Time Attack Enabled setting
+	local taObj = Tracker:FindObjectForCode("ta_setting")
+	if taObj then
+		taObj.CurrentStage = slot_data["time_trial_medal"]
+		if ENABLE_DEBUG_LOG then
+			local medals = {"None", "Bronze", "Silver", "Gold", "Shiny Gold"}
+			print(string.format("apply_slot_data: Time Attack setting set to %s (%s)", slot_data["time_trial_medal"], medals[1 + slot_data["time_trial_medal"]]))
+		end
+	elseif ENABLE_DEBUG_LOG then
+		print(string.format("WARNING: apply_slot_data on taObj could not find object for code %s", taObj))
 	end
-	-- Mirror Mode Shard Amount
-	if (slot_data["mirror_mode_shards"] == 0) then
-		Tracker:FindObjectForCode("mirror_shards_setting").AcquiredCount = 1
-	else
-		Tracker:FindObjectForCode("mirror_shards_setting").AcquiredCount = slot_data["mirror_mode_shards"]
+
+	-- Mirror Mode Enabled setting
+	local mmObj = Tracker:FindObjectForCode("mirror_mode_setting")
+	if mmObj then
+		mmObj.CurrentStage = slot_data["mirror_mode"]
+		if ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: Mirror Mode enabled setting set to %s (%s)", slot_data["mirror_mode"], abled[1 + slot_data["mirror_mode"]]))
+		end
+	elseif ENABLE_DEBUG_LOG then
+		print(string.format("WARNING: apply_slot_data on mmObj could not find object for code %s", mmObj))
 	end
-	if ENABLE_DEBUG_LOG then
-		print(string.format("apply_slot_data: Mirror Shard setting set to %s.", slot_data["mirror_mode_shards"]))
+
+	-- Mirror Mode Shard Amount setting
+	local mmShardObj = Tracker:FindObjectForCode("mirror_shards_setting")
+	if mmShardObj then
+		if (slot_data["mirror_mode_shards"] == 0) then
+			mmShardObj.AcquiredCount = 1
+		else
+			mmShardObj.AcquiredCount = slot_data["mirror_mode_shards"]
+		end
+		if ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: Mirror Mode unlock amount setting set to %s Mirror Shards", slot_data["mirror_mode_shards"]))
+		end
+	elseif ENABLE_DEBUG_LOG then
+		print(string.format("WARNING: apply_slot_data on mmShardObj could not find object for code %s", mmShardObj))
 	end
-	-- Golden Temple Enabled
-	Tracker:FindObjectForCode("golden_temple_setting").CurrentStage = slot_data["golden_temple"]
-	if ENABLE_DEBUG_LOG then
-		print(string.format("apply_slot_data: Golden Temple setting set to %s.", slot_data["golden_temple"]))
+	
+
+	-- Golden Temple Enabled setting
+	local gtObj = Tracker:FindObjectForCode("golden_temple_setting")
+	if gtObj then
+		gtObj.CurrentStage = slot_data["golden_temple"]
+		if ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: Golden Temple enabled setting set to %s (%s)", slot_data["golden_temple"], abled[1 + slot_data["golden_temple"]]))
+		end
+	elseif ENABLE_DEBUG_LOG then
+		print(string.format("WARNING: apply_slot_data on gtObj could not find object for code %s", gtObj))
 	end
-	-- Rare Orbs Requirement
-	Tracker:FindObjectForCode("orbs_setting").CurrentStage = slot_data["rare_orbs"]
-	if ENABLE_DEBUG_LOG then
-		print(string.format("apply_slot_data: Orb Requirement setting set to %s.", slot_data["rare_orbs"]))
+
+	-- Rare Orbs Requirement setting
+	local orbReqObj = Tracker:FindObjectForCode("orbs_setting")
+	if orbReqObj then
+		orbReqObj.CurrentStage = slot_data["rare_orbs"]
+		if ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: Golden Temple Orb Requirement set to %s Rare Orbs", slot_data["rare_orbs"]))
+		end
+	elseif ENABLE_DEBUG_LOG then
+		print(string.format("WARNING: apply_slot_data on orbReqObj could not find object for code %s", orbReqObj))
 	end
 end
 
