@@ -6,7 +6,7 @@ ITEM_MAPPING = {
 	[0x0030] = { { "banana", nil, 10 } },
 	[0x0031] = { { "banana", nil, 25 } },
 	[0x0032] = { { "coin" } },
-	[0x0033] = { { "heart" } },
+	--[0x0033] = { { "heart" } },
 
 	[0x1000] = { { "letters_2" } },
 	[0x1001] = { { "letters_4" } },
@@ -37,18 +37,18 @@ ITEM_MAPPING = {
 	[0x4024] = { { "rare_orb_7" } },
 	[0x4025] = { { "rare_orb_8" } },
 	
-	[0x5001] = { { "run" } },
+	--[0x5001] = { { "run" } },
 	[0x5002] = { { "roll" } },
 	[0x5003] = { { "grab" } },
 	[0x5004] = { { "blow" } },
 	[0x5005] = { { "ground_pound" } },
 	
 	[0x6001] = { { "mirror_shard" } },
-	[0x6002] = { { "mirror_mode" } },
+	--[0x6002] = { { "mirror_mode" } },
 	[0x6003] = { { "rocket_barrel" } },
 	[0x6004] = { { "mine_cart" } },
 	[0x6005] = { { "rambi" } },
-	[0x6006] = { { "kong_barrel" } },
+	--[0x6006] = { { "kong_barrel" } },
 	
-	[0x7001] = { { "factory_button" } }
+	--[0x7001] = { { "factory_button" } }
 }
