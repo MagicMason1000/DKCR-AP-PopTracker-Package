@@ -117,7 +117,7 @@ function apply_slot_data(slot_data)
 		if ppReqObj then
 			ppReqObj.AcquiredCount = ppReqs[world]
 			if ENABLE_DEBUG_LOG then
-				print(string.format("apply_slot_data: bossReq%s set to %s.", world, ppReqObj.AcquiredCount + ppReqs[world]))
+				print(string.format("apply_slot_data: bossReq%s set to %s.", world, ppReqs[world]))
 			end
 		elseif ENABLE_DEBUG_LOG then
 			print(string.format("apply_slot_data: could not find object for code %s", ppReqObj))
@@ -140,7 +140,7 @@ function apply_slot_data(slot_data)
 		if kReqObj then
 			kReqObj.AcquiredCount = kReqs[world]
 			if ENABLE_DEBUG_LOG then
-				print(string.format("apply_slot_data: kReq%s set to %s.", world, kReqObj.AcquiredCount + kReqs[world]))
+				print(string.format("apply_slot_data: kReq%s set to %s.", world, kReqs[world]))
 			end
 		elseif ENABLE_DEBUG_LOG then
 			print(string.format("apply_slot_data: could not find object for code %s", kReqObj))
