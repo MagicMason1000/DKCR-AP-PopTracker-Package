@@ -101,7 +101,8 @@ end
 
 -- MARK: SLOTDATA
 function apply_slot_data(slot_data)
-	local requirements = {
+	-- Puzzle Piece Boss Requirement settings
+	local ppReqs = {
 		slot_data["jungle_boss_access"],
 		slot_data["beach_boss_access"],
 		slot_data["ruins_boss_access"],
@@ -112,16 +113,52 @@ function apply_slot_data(slot_data)
 		slot_data["volcano_boss_access"],
 	}
 	for world = 1, 8 do
-		local reqObj = Tracker:FindObjectForCode("bossreq" .. tostring(world))
-		if reqObj then
-			reqObj.AcquiredCount = requirements[world]
+		local ppReqObj = Tracker:FindObjectForCode("bossReq" .. tostring(world))
+		if ppReqObj then
+			ppReqObj.AcquiredCount = ppReqs[world]
 			if ENABLE_DEBUG_LOG then
-				print(string.format("DEBUG: bossreq%s set to %s.", world, reqObj.AcquiredCount + requirements[world]))
+				print(string.format("DEBUG: bossReq%s set to %s.", world, ppReqObj.AcquiredCount + ppReqs[world]))
 			end
 		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
-			print(string.format("apply_slot_data: could not find object for code %s", reqObj))
+			print(string.format("apply_slot_data: could not find object for code %s", ppReqObj))
 		end
 	end
+
+	-- K Level Letter Requirement settings
+	local kReqs = {
+		slot_data["jungle_k_level_access"],
+		slot_data["beach_k_level_access"],
+		slot_data["ruins_k_level_access"],
+		slot_data["cave_k_level_access"],
+		slot_data["forest_k_level_access"],
+		slot_data["cliff_k_level_access"],
+		slot_data["factory_k_level_access"],
+		slot_data["volcano_k_level_access"],
+	}
+	for world = 1, 8 do
+		local kReqObj = Tracker:FindObjectForCode("kreq" .. tostring(world))
+		if kReqObj then
+			kReqObj.AcquiredCount = kReqs[world]
+			if ENABLE_DEBUG_LOG then
+				print(string.format("DEBUG: kReq%s set to %s.", world, kReqObj.AcquiredCount + kReqs[world]))
+			end
+		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
+			print(string.format("apply_slot_data: could not find object for code %s", kReqObj))
+		end
+	end
+
+	-- Mirror Mode Enabled
+	Tracker:FindObjectForCode("mirror_mode_setting").CurrentStage = slot_data["mirror_mode"]
+	-- Mirror Mode Shard Amount
+	if (slot_data["mirror_mode_shards"] == 0) then
+		Tracker:FindObjectForCode("mirror_shards_setting").AcquiredCount = 1
+	else
+		Tracker:FindObjectForCode("mirror_shards_setting").AcquiredCount = slot_data["mirror_mode_shards"]
+	end
+	-- Golden Temple Enabled
+	Tracker:FindObjectForCode("golden_temple_setting").CurrentStage = slot_data["golden_temple"]
+	-- Rare Orbs Requirement
+	Tracker:FindObjectForCode("orbs_setting").CurrentStage = slot_data["rare_orbs"]
 end
 
 -- called right after an AP slot is connected

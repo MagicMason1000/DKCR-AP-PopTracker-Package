@@ -3,6 +3,11 @@ AUTOTRACKER_ENABLE_ITEM_TRACKING = true
 AUTOTRACKER_ENABLE_LOCATION_TRACKING = true and not IS_ITEMS_ONLY
 AUTOTRACKER_ENABLE_DEBUG_LOGGING = true and ENABLE_DEBUG_LOG
 AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP = true and AUTOTRACKER_ENABLE_DEBUG_LOGGING
+ENABLE_WORLDCHECK_LOG = false
+ENABLE_LETTERCHECK_LOG = false
+ENABLE_BOSSCHECK_LOG = false
+ENABLE_SHARDCHECK_LOG = false
+ENABLE_ORBCHECK_LOG = true
 -------------------------------------------------------
 print("")
 print("Active Auto-Tracker Configuration")
@@ -131,7 +136,7 @@ function WorldCheck(world, checkType)
     local count = 0
     local levelAmount = WORLD_LEVEL_AMOUNT[world]
 
-    if ENABLE_DEBUG_LOG then
+    if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
         print("")
         print(string.format("DEBUG: Called WorldCheck. WORLD = %s, checkType = %s", world, checkType))
     end
@@ -147,7 +152,7 @@ function WorldCheck(world, checkType)
                 if (access == 7) then
                     completionCountdown = completionCountdown - 1
                 end
-                if ENABLE_DETAILED_DEBUG_LOG then
+                if ENABLE_DETAILED_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
                     print(string.format("DEBUG: %s - AccLvl = %s, Count = %s, comCntdwn = %s", LEVELS[lvlCount] .. ":" .. kongCount, access, count, completionCountdown))
                 end
             end
@@ -155,18 +160,18 @@ function WorldCheck(world, checkType)
 
         if (completionCountdown == 0) then
             -- code goes here to set the Accessible section to Cleared. Maybe use AccessibilityLevel to set it to state 7?
-            if ENABLE_DEBUG_LOG then
+            if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
                 print(string.format("DEBUG [SUCCESS+]: WorldCheck complete. Every KONG Letter in World %s is collected.", world))
             end
             return true
         end
         if (count ~= 0) then
-            if ENABLE_DEBUG_LOG then
+            if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
                 print(string.format("DEBUG [SUCCESS]: WorldCheck complete. KONG Letters are available to collect in World %s.", world))
             end
             return true
         else
-            if ENABLE_DEBUG_LOG then
+            if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
                 print(string.format("DEBUG [FAIL]: WorldCheck complete. KONG Letters are NOT available to collect in World %s.", world))
             end
             return false
@@ -189,22 +194,22 @@ function WorldCheck(world, checkType)
             if (access == 6) then
                 count = count + 1
             end
-            if ENABLE_DETAILED_DEBUG_LOG then
+            if ENABLE_DETAILED_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
                 print(string.format("DEBUG: %s - AccLevel = %s, Count = %s", LEVELS[lvlCount], access, count))
             end
         end
 
         if (count ~= 0) then
-            if ENABLE_DEBUG_LOG and checkType == 3 then
+            if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG and checkType == 3 then
                 print(string.format("DEBUG [SUCCESS]: WorldCheck complete. Level Completion checks are available in World %s.", world))
-            elseif ENABLE_DEBUG_LOG and checkType == 4 then
+            elseif ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG and checkType == 4 then
                 print(string.format("DEBUG [SUCCESS]: WorldCheck complete. Mirror Mode checks are available in World %s.", world))
             end
             return true
         else
-            if ENABLE_DEBUG_LOG and checkType == 3 then
+            if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG and checkType == 3 then
                 print(string.format("DEBUG [FAIL]: WorldCheck complete. Level Completion checks are NOT available in World %s.", world))
-            elseif ENABLE_DEBUG_LOG and checkType == 4 then
+            elseif ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG and checkType == 4 then
                 print(string.format("DEBUG [SUCCESS]: WorldCheck complete. Mirror Mode checks are NOT available in World %s.", world))
             end
             return false
@@ -215,7 +220,7 @@ function WorldCheck(world, checkType)
         return false
     end
 
-    if ENABLE_DEBUG_LOG then
+    if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
         print(string.format("WARNING: WorldCheck reached end of function without a proper checkType value. checkType value was %s", checkType))
     end
     return false
@@ -223,7 +228,7 @@ end
 
 -- MARK: BossCheck
 function BossCheck(world)
-    if ENABLE_DEBUG_LOG then
+    if ENABLE_DEBUG_LOG and ENABLE_BOSSCHECK_LOG then
         print("")
         print(string.format("DEBUG: Called BossCheck. World = %s", world))
     end
@@ -242,27 +247,27 @@ function BossCheck(world)
     }
     for i = 1, (world + 1) do
         if (pp < bossReqs[i]) then
-            if ENABLE_DEBUG_LOG then
+            if ENABLE_DEBUG_LOG and ENABLE_BOSSCHECK_LOG then
                 print(string.format("DEBUG: BossCheck for World %s FAILED on World %s.", world, i))
                 print(string.format("DEBUG [FAIL]: BossCheck finished. Boss requirement NOT satisfied for world %s.", world))
             end
             return false
         elseif (pp >= bossReqs[i]) then
-            if ENABLE_DETAILED_DEBUG_LOG then
+            if ENABLE_DETAILED_DEBUG_LOG and ENABLE_BOSSCHECK_LOG then
                 print(string.format("DEBUG: BossCheck for World %s SUCCEEDED on World %s.", world, i))
             end
             if i == world then
-                if ENABLE_DEBUG_LOG then
+                if ENABLE_DEBUG_LOG and ENABLE_BOSSCHECK_LOG then
                     print(string.format("DEBUG [SUCCESS]: BossCheck finished. Boss requirement satisfied for world %s.", world))
                 end
                 return true
             end
-        elseif ENABLE_DEBUG_LOG then
+        elseif ENABLE_DEBUG_LOG and ENABLE_BOSSCHECK_LOG then
             print(string.format("DEBUG: BossCheck reached end of loop. World was %s, i was %s, bossReqs[i] was %s.", world, i, bossReqs[i]))
         end
     end
 
-    if ENABLE_DEBUG_LOG then
+    if ENABLE_DEBUG_LOG and ENABLE_BOSSCHECK_LOG then
         print(string.format("WARNING: BossCheck reached end of function without a proper return. World was %s, pp was %s.", world, pp))
     end
     return false
@@ -270,29 +275,104 @@ end
 
 -- MARK: LetterCheck
 function LetterCheck(world)
-    if ENABLE_DEBUG_LOG then
+    if ENABLE_DEBUG_LOG and ENABLE_LETTERCHECK_LOG then
         print("")
         print(string.format("DEBUG: Called LetterCheck. World = %s", world))
     end
     
     world = tonumber(world)
-    local kReqs = { 24, 28, 24, 20, 32, 32, 28, 28 }
+    local kReqs = {
+        Tracker:FindObjectForCode("kReq1").AcquiredCount,
+        Tracker:FindObjectForCode("kReq2").AcquiredCount,
+        Tracker:FindObjectForCode("kReq3").AcquiredCount,
+        Tracker:FindObjectForCode("kReq4").AcquiredCount,
+        Tracker:FindObjectForCode("kReq5").AcquiredCount,
+        Tracker:FindObjectForCode("kReq6").AcquiredCount,
+        Tracker:FindObjectForCode("kReq7").AcquiredCount,
+        Tracker:FindObjectForCode("kReq8").AcquiredCount
+    }
     local letters = Tracker:FindObjectForCode("letters_" .. world).AcquiredCount
     if (letters < kReqs[world]) then
-        if ENABLE_DEBUG_LOG then
+        if ENABLE_DEBUG_LOG and ENABLE_LETTERCHECK_LOG then
             print(string.format("DEBUG [FAIL]: LetterCheck finished. Letter requirement NOT satisfied for world %s.", world))
         end
         return false
     end
     if (letters >= kReqs[world]) then
-        if ENABLE_DEBUG_LOG then
+        if ENABLE_DEBUG_LOG and ENABLE_LETTERCHECK_LOG then
             print(string.format("DEBUG [SUCCESS]: LetterCheck finished. Letter requirement satisfied for world %s.", world))
         end
         return true
     end
     
-    if ENABLE_DEBUG_LOG then
+    if ENABLE_DEBUG_LOG and ENABLE_LETTERCHECK_LOG then
         print(string.format("WARNING: LetterCheck reached end of function without a proper return. World was %s, letters was %s.", world, letters))
     end
     return false
+end
+
+-- MARK: ShardCheck
+function ShardCheck()
+    local shardCount = Tracker:FindObjectForCode("mirror_shard").AcquiredCount
+    local shardReq = Tracker:FindObjectForCode("mirror_shards_setting").AcquiredCount
+    if (shardCount < shardReq) then
+        return false
+    elseif (shardCount >= shardReq) then
+        return true
+    else
+        print("ERROR: ShardCheck had an invalid comparison.")
+    end
+    if ENABLE_DEBUG_LOG and ENABLE_SHARDCHECK_LOG then
+        print(string.format("WARNING: ShardCheck reached end of function without a proper return. shardCount was %s, shardReq was %s.", shardCount, shardReq))
+    end
+end
+
+-- MARK: OrbCheck
+function OrbCheck()
+    if ENABLE_DEBUG_LOG and ENABLE_ORBCHECK_LOG then
+        print("")
+        print(string.format("DEBUG: OrbCheck called."))
+    end
+
+    local orbReq = Tracker:FindObjectForCode("orbs_setting").CurrentStage
+    local codes = {
+        Tracker:FindObjectForCode("rare_orb_1").Active,
+        Tracker:FindObjectForCode("rare_orb_2").Active,
+        Tracker:FindObjectForCode("rare_orb_3").Active,
+        Tracker:FindObjectForCode("rare_orb_4").Active,
+        Tracker:FindObjectForCode("rare_orb_5").Active,
+        Tracker:FindObjectForCode("rare_orb_6").Active,
+        Tracker:FindObjectForCode("rare_orb_7").Active,
+        Tracker:FindObjectForCode("rare_orb_8").Active
+    }
+    local count = 0
+
+    for i = 1, 8 do
+        if codes[i] then
+            count = count + 1
+        end
+        print(string.format("i: %s", i))
+        print(string.format("Tracker: %s", codes[i]))
+        print(string.format("Count: %s", count))
+        print("")
+    end
+
+    if (count < orbReq) then
+        if ENABLE_DEBUG_LOG and ENABLE_ORBCHECK_LOG then
+            print(string.format("DEBUG [FAIL]: OrbCheck failed!"))
+        end
+        return false
+    elseif (count >= orbReq) then
+        if ENABLE_DEBUG_LOG and ENABLE_ORBCHECK_LOG then
+            print(string.format("DEBUG [SUCCESS]: OrbCheck succeeded!"))
+        end
+        return true
+    else
+        if ENABLE_DEBUG_LOG and ENABLE_ORBCHECK_LOG then
+            print(string.format("WARNING: OrbCheck had an invalid comparison. Count was %s, orbReq was %s.", count, orbReq))
+        end
+    end
+    if ENABLE_DEBUG_LOG and ENABLE_ORBCHECK_LOG then
+        print(string.format("WARNING: OrbCheck reached end of function without a proper return. orbReq was %s.", orbReq))
+    end
 end

@@ -17,9 +17,10 @@
                     [
                         "shopsanity_setting",
                         "mirror_mode_setting",
-                        "ta_setting"
+                        "mirror_shards_setting"
                     ],
                     [
+                        "ta_setting",
                         "golden_temple_setting",
                         "orbs_setting"
                     ]
@@ -27,7 +28,7 @@
             },
             {
                 "type": "item",
-                "item": "bossreq_header",
+                "item": "bossReq_header",
                 "max_width": 275
             },
             {
@@ -37,16 +38,41 @@
                 "item_size": "96,96",
                 "rows": [
                     [
-                        "bossreq1",
-                        "bossreq2",
-                        "bossreq3",
-                        "bossreq4"
+                        "bossReq1",
+                        "bossReq2",
+                        "bossReq3",
+                        "bossReq4"
                     ],
                     [
-                        "bossreq5",
-                        "bossreq6",
-                        "bossreq7",
-                        "bossreq8"
+                        "bossReq5",
+                        "bossReq6",
+                        "bossReq7",
+                        "bossReq8"
+                    ]
+                ]
+            },
+            {
+                "type": "item",
+                "item": "kReq_header",
+                "max_width": 275
+            },
+            {
+                "type": "itemgrid",
+                "item_margin": "4,4",
+                "h_alignment": "left",
+                "item_size": "96,96",
+                "rows": [
+                    [
+                        "kReq1",
+                        "kReq2",
+                        "kReq3",
+                        "kReq4"
+                    ],
+                    [
+                        "kReq5",
+                        "kReq6",
+                        "kReq7",
+                        "kReq8"
                     ]
                 ]
             }

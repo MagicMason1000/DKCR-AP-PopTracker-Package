@@ -112,7 +112,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["ground_pound, grab, skull_barrel, skull-blast_barrel"]
+						"access_rules": ["$ShardCheck, ground_pound, grab, skull_barrel, skull-blast_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -263,7 +263,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["ground_pound, arrow_barrel, blast_barrel, grab, skull_barrel, skull-blast_barrel"]
+						"access_rules": ["$ShardCheck, ground_pound, arrow_barrel, blast_barrel, grab, skull_barrel, skull-blast_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -414,7 +414,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["arrow_barrel, blast_barrel, roll, grab"]
+						"access_rules": ["$ShardCheck, arrow_barrel, blast_barrel, roll, grab"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -459,7 +459,7 @@
             },
             { // MARK: 3-4
                 "name": "3-4 Damp Dungeon",
-				"access_rules": ["$BossCheck|2, key_ruins"],
+				"access_rules": ["$BossCheck|2, key_3"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -582,7 +582,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["arrow_barrel, grab"]
+						"access_rules": ["$ShardCheck, arrow_barrel, grab"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -733,7 +733,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["grab, ground_pound, arrow_barrel, blow"]
+						"access_rules": ["$ShardCheck, grab, ground_pound, arrow_barrel, blow"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -870,7 +870,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["rambi, ground_pound", "rambi, roll"]
+						"access_rules": ["$ShardCheck, rambi, ground_pound", "$ShardCheck, rambi, roll"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -970,7 +970,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["duck"]
+						"access_rules": ["$ShardCheck, duck"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -1032,7 +1032,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["grab"]
+						"access_rules": ["$ShardCheck, grab"]
 					},
 					{
 						"name": "Time Attack: Bronze",

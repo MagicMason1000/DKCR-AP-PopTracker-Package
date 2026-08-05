@@ -5,7 +5,7 @@
             {
                 "name": "9-1 Golden Temple",
                 "visibility_rules": ["golden_temple_enabled"],
-                "access_rules": ["$BossCheck|8"], // ORBS HERE
+                "access_rules": ["$BossCheck|8, $OrbCheck"],
                 "sections": [
                     {
 						"name": "Puzzle Piece 1",
@@ -69,7 +69,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["skull_barrel, arrow_barrel"]
+						"access_rules": ["$ShardCheck, skull_barrel, arrow_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",

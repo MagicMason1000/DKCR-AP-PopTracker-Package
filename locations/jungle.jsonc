@@ -120,7 +120,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["ground_pound, arrow_barrel, skull-blast_barrel"]
+						"access_rules": ["$ShardCheck, ground_pound, arrow_barrel, skull-blast_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -270,7 +270,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["grab, arrow_barrel"]
+						"access_rules": ["$ShardCheck, grab, arrow_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -406,7 +406,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["arrow_barrel, blast_barrel, skull_barrel"]
+						"access_rules": ["$ShardCheck, arrow_barrel, blast_barrel, skull_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -451,7 +451,7 @@
 			},
 			{ // MARK: 1-4
 				"name": "1-4 Sunset Shore",
-                "access_rules": ["key_jungle"],
+                "access_rules": ["key_1"],
 				"sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -543,7 +543,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": [""]
+						"access_rules": ["$ShardCheck"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -680,7 +680,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["blast_barrel"]
+						"access_rules": ["$ShardCheck, blast_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -816,7 +816,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["ground_pound, arrow_barrel, mine_cart"]
+						"access_rules": ["$ShardCheck, ground_pound, arrow_barrel, mine_cart"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -918,7 +918,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["blast_barrel"]
+						"access_rules": ["$ShardCheck, blast_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -980,7 +980,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": [""]
+						"access_rules": ["$ShardCheck"]
 					},
 					{
 						"name": "Time Attack: Bronze",

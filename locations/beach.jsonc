@@ -95,7 +95,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["ground_pound", "roll"]
+						"access_rules": ["$ShardCheck, ground_pound", "$ShardCheck, roll"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -243,7 +243,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["ground_pound, grab, skull_barrel"]
+						"access_rules": ["$ShardCheck, ground_pound, grab, skull_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -380,7 +380,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["arrow_barrel, rocket_barrel"]
+						"access_rules": ["$ShardCheck, arrow_barrel, rocket_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -527,7 +527,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["ground_pound"]
+						"access_rules": ["$ShardCheck, ground_pound"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -661,7 +661,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["grab, arrow_barrel"]
+						"access_rules": ["$ShardCheck, grab, arrow_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -706,7 +706,7 @@
             },
             { // MARK: 2-6
                 "name": "2-6 Blowhole Bound",
-				"access_rules": ["$BossCheck|1, key_beach"],
+				"access_rules": ["$BossCheck|1, key_2"],
                 "sections": [
 					{
 						"name": "KONG Letter K",
@@ -797,7 +797,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["ground_pound, skull-blast_barrel"]
+						"access_rules": ["$ShardCheck, ground_pound, skull-blast_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -932,7 +932,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["ground_pound, grab"]
+						"access_rules": ["$ShardCheck, ground_pound, grab"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -1033,7 +1033,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["grab"]
+						"access_rules": ["$ShardCheck, grab"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -1095,7 +1095,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["ground_pound, roll"]
+						"access_rules": ["$ShardCheck, ground_pound, roll"]
 					},
 					{
 						"name": "Time Attack: Bronze",

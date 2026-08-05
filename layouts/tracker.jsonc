@@ -51,11 +51,21 @@
                                 }
                             },
                             {
-                                "title": "???",
+                                "title": "Misc.",
                                 "content": {
                                     "background": "#0c0c0c",
                                     "type": "array",
                                     "content": [
+                                        {
+                                            "type": "group",
+                                            "header": "Rare Orbs and Mirror Shards",
+                                            "margin": "0,0,3,0",
+                                            "content": {
+                                                "type": "layout",
+                                                "v_alignment": "center",
+                                                "key": "rare_orbs"
+                                            }
+                                        },
                                         {
                                             "type": "group",
                                             "header": "Shop Items",
@@ -64,16 +74,6 @@
                                                 "type": "layout",
                                                 "v_alignment": "center",
                                                 "key": "shop_items"
-                                            }
-                                        },
-                                        {
-                                            "type": "group",
-                                            "header": "Rare Orbs",
-                                            "margin": "0,0,3,0",
-                                            "content": {
-                                                "type": "layout",
-                                                "v_alignment": "center",
-                                                "key": "rare_orbs"
                                             }
                                         },
                                         {

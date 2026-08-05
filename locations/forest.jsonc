@@ -110,7 +110,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["arrow_barrel, blast_barrel, grab"]
+						"access_rules": ["$ShardCheck, arrow_barrel, blast_barrel, grab"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -247,7 +247,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["grab"]
+						"access_rules": ["$ShardCheck, grab"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -398,7 +398,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["skull_barrel, arrow_barrel", "skull_barrel, roll"]
+						"access_rules": ["$ShardCheck, skull_barrel, arrow_barrel", "$ShardCheck, skull_barrel, roll"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -549,7 +549,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["blow, ground_pound, grab", "blow, ground_pound, roll", "blow, ground_pound, diddy", "blow, ground_pound, skull_barrel", "blow, ground_pound, grab"]
+						"access_rules": ["$ShardCheck, blow, ground_pound, grab", "$ShardCheck, blow, ground_pound, roll", "$ShardCheck, blow, ground_pound, diddy", "$ShardCheck, blow, ground_pound, skull_barrel", "$ShardCheck, blow, ground_pound, grab"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -700,7 +700,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["arrow_barrel, skull_barrel, skull-blast_barrel"]
+						"access_rules": ["$ShardCheck, arrow_barrel, skull_barrel, skull-blast_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -745,7 +745,7 @@
             },
             { // MARK: 5-6
                 "name": "5-6 Springy Spores",
-				"access_rules": ["$BossCheck|4, key_forest"],
+				"access_rules": ["$BossCheck|4, key_5"],
                 "sections": [
 					{
 						"name": "KONG Letter K",
@@ -851,7 +851,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["grab, roll"]
+						"access_rules": ["$ShardCheck, grab, roll"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -896,7 +896,7 @@
             },
             { // MARK: 5-7
                 "name": "5-7 Wigglevine Wonders",
-				"access_rules": ["$BossCheck|4, key_forest"],
+				"access_rules": ["$BossCheck|4, key_5"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -1002,7 +1002,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["grab"]
+						"access_rules": ["$ShardCheck, grab"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -1139,7 +1139,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["roll, ground_pound, grab, blast_barrel, skull_barrel"]
+						"access_rules": ["$ShardCheck, roll, ground_pound, grab, blast_barrel, skull_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -1241,7 +1241,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["skull_barrel, skull-blast_barrel, arrow_barrel"]
+						"access_rules": ["$ShardCheck, skull_barrel, skull-blast_barrel, arrow_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -1303,7 +1303,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["grab, ground_pound"]
+						"access_rules": ["$ShardCheck, grab, ground_pound"]
 					},
 					{
 						"name": "Time Attack: Bronze",

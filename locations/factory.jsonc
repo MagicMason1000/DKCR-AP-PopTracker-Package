@@ -110,7 +110,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["arrow_barrel, ground_pound"]
+						"access_rules": ["$ShardCheck, arrow_barrel, ground_pound"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -247,7 +247,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["duck", "roll"]
+						"access_rules": ["$ShardCheck, duck", "$ShardCheck, roll"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -292,7 +292,7 @@
             },
             { // MARK: 7-3
                 "name": "7-3 Handy Hazards",
-				"access_rules": ["$BossCheck|6, key_factory"],
+				"access_rules": ["$BossCheck|6, key_7"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -398,7 +398,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["arrow_barrel, blast_barrel"]
+						"access_rules": ["$ShardCheck, arrow_barrel, blast_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -549,7 +549,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["rocket_barrel"]
+						"access_rules": ["$ShardCheck, rocket_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -714,7 +714,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["arrow_barrel, grab", "arrow_barrel, roll"]
+						"access_rules": ["$ShardCheck, arrow_barrel, grab", "$ShardCheck, arrow_barrel, roll"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -851,7 +851,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["grab, diddy"]
+						"access_rules": ["$ShardCheck, grab, diddy"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -988,7 +988,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["ground_pound, arrow_barrel"]
+						"access_rules": ["$ShardCheck, ground_pound, arrow_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -1048,7 +1048,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["ground_pound, rocket_barrel"]
+						"access_rules": ["$ShardCheck, ground_pound, rocket_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -1093,7 +1093,7 @@
             },
             { // MARK: 7-K
                 "name": "7-K Treacherous Track",
-				"access_rules": ["$BossCheck|6, $LetterCheck|7"],
+				"access_rules": ["$BossCheck|6, $LetterCheck|7, key_7"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -1150,7 +1150,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["arrow_barrel, blast_barrel"]
+						"access_rules": ["$ShardCheck, arrow_barrel, blast_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -1210,7 +1210,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["grab, ground_pound"]
+						"access_rules": ["$ShardCheck, grab, ground_pound"]
 					},
 					{
 						"name": "Time Attack: Bronze",

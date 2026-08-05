@@ -8,8 +8,35 @@
     {
         "name": "Boss Requirement Header",
         "type": "static",
-        "img": "images/settings/static_bossreq_header.png",
-        "codes": "bossreq_header"
+        "img": "images/settings/static_bossReq_header.png",
+        "codes": "bossReq_header"
+    },
+    {
+        "name": "K Requirement Header",
+        "type": "static",
+        "img": "images/settings/static_kReq_header.png",
+        "codes": "kReq_header"
+    },
+    {
+        "name": "Shopsanity Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 1, // True
+        "stages": [
+            {
+                "name": "Shopsanity Disabled",
+                "img": "images/settings/setting_shopsanity_disabled.png",
+                "codes": "shopsanity_setting, shopsanity_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Shopsanity Enabled",
+                "img": "images/settings/setting_shopsanity_enabled.png",
+                "codes": "shopsanity_setting, shopsanity_enabled",
+                "inherit_codes": false
+            }
+        ]
     },
     {
         "name": "Mirror Mode Setting",
@@ -33,25 +60,11 @@
         ]
     },
     {
-        "name": "Mirror Mode Setting",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-		"initial_stage_idx": 0, // False
-        "stages": [
-            {
-                "name": "Shopsanity Disabled",
-                "img": "images/settings/setting_shopsanity_disabled.png",
-                "codes": "shopsanity_setting, shopsanity_disabled",
-                "inherit_codes": false
-            },
-            {
-                "name": "Shopsanity Enabled",
-                "img": "images/settings/setting_shopsanity_enabled.png",
-                "codes": "shopsanity_setting, shopsanity_enabled",
-                "inherit_codes": false
-            }
-        ]
+        "name": "Mirror Shard Amount",
+        "type": "consumable",
+        "img": "images/settings/setting_mirror_shards.png",
+        "codes": "mirror_shards_setting",
+        "max_quantity": 25
     },
     {
         "name": "Time Attack Setting",
@@ -122,56 +135,56 @@
         "stages": [
             {
                 "name": "0 Rare Orbs Required",
-                "img": "images/settings/setting_orbs_0.png",
-                "codes": "orbs_setting, orbs_0",
+                "img": "images/settings/setting_orbs0.png",
+                "codes": "orbs_setting, orbs0",
                 "inherit_codes": false
             },
             {
                 "name": "1 Rare Orb Required",
-                "img": "images/settings/setting_orbs_1.png",
-                "codes": "orbs_setting, orbs_1",
+                "img": "images/settings/setting_orbs1.png",
+                "codes": "orbs_setting, orbs1",
                 "inherit_codes": false
             },
             {
                 "name": "2 Rare Orbs Required",
-                "img": "images/settings/setting_orbs_2.png",
-                "codes": "orbs_setting, orbs_2",
+                "img": "images/settings/setting_orbs2.png",
+                "codes": "orbs_setting, orbs2",
                 "inherit_codes": false
             },
             {
                 "name": "3 Rare Orb Required",
-                "img": "images/settings/setting_orbs_3.png",
-                "codes": "orbs_setting, orbs_3",
+                "img": "images/settings/setting_orbs3.png",
+                "codes": "orbs_setting, orbs3",
                 "inherit_codes": false
             },
             {
                 "name": "4 Rare Orbs Required",
-                "img": "images/settings/setting_orbs_4.png",
-                "codes": "orbs_setting, orbs_4",
+                "img": "images/settings/setting_orbs4.png",
+                "codes": "orbs_setting, orbs4",
                 "inherit_codes": false
             },
             {
                 "name": "5 Rare Orbs Required",
-                "img": "images/settings/setting_orbs_5.png",
-                "codes": "orbs_setting, orbs_5",
+                "img": "images/settings/setting_orbs5.png",
+                "codes": "orbs_setting, orbs5",
                 "inherit_codes": false
             },
             {
                 "name": "6 Rare Orbs Required",
-                "img": "images/settings/setting_orbs_6.png",
-                "codes": "orbs_setting, orbs_6",
+                "img": "images/settings/setting_orbs6.png",
+                "codes": "orbs_setting, orbs6",
                 "inherit_codes": false
             },
             {
                 "name": "7 Rare Orbs Required",
-                "img": "images/settings/setting_orbs_7.png",
-                "codes": "orbs_setting, orbs_7",
+                "img": "images/settings/setting_orbs7.png",
+                "codes": "orbs_setting, orbs7",
                 "inherit_codes": false
             },
             {
                 "name": "8 Rare Orbs Required",
-                "img": "images/settings/setting_orbs_8.png",
-                "codes": "orbs_setting, orbs_8",
+                "img": "images/settings/setting_orbs8.png",
+                "codes": "orbs_setting, orbs8",
                 "inherit_codes": false
             }
         ]
@@ -180,57 +193,114 @@
     {
         "name": "Boss Puzzle Piece Requirement (W1)",
         "type": "consumable",
-        "img": "images/settings/setting_bossreq_w1.png",
-        "codes": "bossreq1",
+        "img": "images/settings/setting_bossReq1.png",
+        "codes": "bossReq1",
         "max_quantity": 371
     },
     {
         "name": "Boss Puzzle Piece Requirement (W2)",
         "type": "consumable",
-        "img": "images/settings/setting_bossreq_w2.png",
-        "codes": "bossreq2",
+        "img": "images/settings/setting_bossReq2.png",
+        "codes": "bossReq2",
         "max_quantity": 371
     },
     {
         "name": "Boss Puzzle Piece Requirement (W3)",
         "type": "consumable",
-        "img": "images/settings/setting_bossreq_w3.png",
-        "codes": "bossreq3",
+        "img": "images/settings/setting_bossReq3.png",
+        "codes": "bossReq3",
         "max_quantity": 371
     },
     {
         "name": "Boss Puzzle Piece Requirement (W4)",
         "type": "consumable",
-        "img": "images/settings/setting_bossreq_w4.png",
-        "codes": "bossreq4",
+        "img": "images/settings/setting_bossReq4.png",
+        "codes": "bossReq4",
         "max_quantity": 371
     },
     {
         "name": "Boss Puzzle Piece Requirement (W5)",
         "type": "consumable",
-        "img": "images/settings/setting_bossreq_w5.png",
-        "codes": "bossreq5",
+        "img": "images/settings/setting_bossReq5.png",
+        "codes": "bossReq5",
         "max_quantity": 371
     },
     {
         "name": "Boss Puzzle Piece Requirement (W6)",
         "type": "consumable",
-        "img": "images/settings/setting_bossreq_w6.png",
-        "codes": "bossreq6",
+        "img": "images/settings/setting_bossReq6.png",
+        "codes": "bossReq6",
         "max_quantity": 371
     },
     {
         "name": "Boss Puzzle Piece Requirement (W7)",
         "type": "consumable",
-        "img": "images/settings/setting_bossreq_w7.png",
-        "codes": "bossreq7",
+        "img": "images/settings/setting_bossReq7.png",
+        "codes": "bossReq7",
         "max_quantity": 371
     },
     {
         "name": "Boss Puzzle Piece Requirement (W8)",
         "type": "consumable",
-        "img": "images/settings/setting_bossreq_w8.png",
-        "codes": "bossreq8",
+        "img": "images/settings/setting_bossReq8.png",
+        "codes": "bossReq8",
+        "max_quantity": 371
+    },
+    // MARK: K Reqs
+    {
+        "name": "K-Level Letter Requirement (W1)",
+        "type": "consumable",
+        "img": "images/settings/setting_kReq1.png",
+        "codes": "kReq1",
+        "max_quantity": 371
+    },
+    {
+        "name": "K-Level Letter Requirement (W2)",
+        "type": "consumable",
+        "img": "images/settings/setting_kReq2.png",
+        "codes": "kReq2",
+        "max_quantity": 371
+    },
+    {
+        "name": "K-Level Letter Requirement (W3)",
+        "type": "consumable",
+        "img": "images/settings/setting_kReq3.png",
+        "codes": "kReq3",
+        "max_quantity": 371
+    },
+    {
+        "name": "K-Level Letter Requirement (W4)",
+        "type": "consumable",
+        "img": "images/settings/setting_kReq4.png",
+        "codes": "kReq4",
+        "max_quantity": 371
+    },
+    {
+        "name": "K-Level Letter Requirement (W5)",
+        "type": "consumable",
+        "img": "images/settings/setting_kReq5.png",
+        "codes": "kReq5",
+        "max_quantity": 371
+    },
+    {
+        "name": "K-Level Letter Requirement (W6)",
+        "type": "consumable",
+        "img": "images/settings/setting_kReq6.png",
+        "codes": "kReq6",
+        "max_quantity": 371
+    },
+    {
+        "name": "K-Level Letter Requirement (W7)",
+        "type": "consumable",
+        "img": "images/settings/setting_kReq7.png",
+        "codes": "kReq7",
+        "max_quantity": 371
+    },
+    {
+        "name": "K-Level Letter Requirement (W8)",
+        "type": "consumable",
+        "img": "images/settings/setting_kReq8.png",
+        "codes": "kReq8",
         "max_quantity": 371
     }
 ]

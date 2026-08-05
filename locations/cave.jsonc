@@ -96,7 +96,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["ground_pound, mine_cart, blast_barrel, skull_barrel"]
+						"access_rules": ["$ShardCheck, ground_pound, mine_cart, blast_barrel, skull_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -230,7 +230,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["grab, arrow_barrel, mine_cart"]
+						"access_rules": ["$ShardCheck, grab, arrow_barrel, mine_cart"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -367,7 +367,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["duck"]
+						"access_rules": ["$ShardCheck, duck"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -412,7 +412,7 @@
             },
             { // MARK: 4-4
                 "name": "4-4 Mole Patrol",
-				"access_rules": ["$BossCheck|3, key_cave"],
+				"access_rules": ["$BossCheck|3, key_4"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -503,7 +503,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["rocket_barrel"]
+						"access_rules": ["$ShardCheck, rocket_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -638,7 +638,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["rocket_barrel"]
+						"access_rules": ["$ShardCheck, rocket_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -738,7 +738,7 @@
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["arrow_barrel"]
+						"access_rules": ["$ShardCheck, arrow_barrel"]
 					},
 					{
 						"name": "Time Attack: Bronze",
@@ -798,7 +798,8 @@
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_complete.png",
 						"item_count": 1,
-						"visibility_rules": ["mirror_mode_enabled"]
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["$ShardCheck"]
 					},
 					{
 						"name": "Time Attack: Bronze",

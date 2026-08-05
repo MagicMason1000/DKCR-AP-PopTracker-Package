@@ -1,44 +1,54 @@
-WORLD_OFFEST = 0x1000
-ITEM_OFFSET = 0x2000
 ITEM_MAPPING = {
-	[ITEM_OFFSET + 0x01] = { { "puzzle_piece" } },
-	[WORLD_OFFEST + 0x00] = { { "letters_beach" } },
-	[WORLD_OFFEST + 0x01] = { { "letters_cave" } },
-	[WORLD_OFFEST + 0x02] = { { "letters_cliff" } },
-	[WORLD_OFFEST + 0x03] = { { "letters_factory" } },
-	[WORLD_OFFEST + 0x04] = { { "letters_forest" } },
-	[WORLD_OFFEST + 0x05] = { { "letters_jungle" } },
-	[WORLD_OFFEST + 0x06] = { { "letters_ruins" } },
-	[WORLD_OFFEST + 0x07] = { { "letters_volcano" } },
-	
-	--[[
+	[0x0026] = { { "balloon" } },
+	[0x0027] = { { "balloon", nil, 3 } },
+	[0x0028] = { { "balloon", nil, 7 } },
+	[0x0029] = { { "banana" } },
+	[0x0030] = { { "banana", nil, 10 } },
+	[0x0031] = { { "banana", nil, 25 } },
+	[0x0032] = { { "coin" } },
+	[0x0033] = { { "heart" } },
 
-	[WORLD_OFFEST + 0x??] = { { "key_2" } },
-	[WORLD_OFFEST + 0x??] = { { "key_4" } },
-	[WORLD_OFFEST + 0x??] = { { "key_6" } },
-	[WORLD_OFFEST + 0x??] = { { "key_7" } },
-	[WORLD_OFFEST + 0x??] = { { "key_5" } },
-	[WORLD_OFFEST + 0x??] = { { "key_1" } },
-	[WORLD_OFFEST + 0x??] = { { "key_3" } },
-	[WORLD_OFFEST + 0x??] = { { "key_8" } },
+	[0x1000] = { { "letters_2" } },
+	[0x1001] = { { "letters_4" } },
+	[0x1002] = { { "letters_6" } },
+	[0x1003] = { { "letters_7" } },
+	[0x1004] = { { "letters_5" } },
+	[0x1005] = { { "letters_1" } },
+	[0x1006] = { { "letters_3" } },
+	[0x1007] = { { "letters_8" } },
 	
-	[WORLD_OFFEST + 0x??] = { { "rare_orb_1" } },
-	[WORLD_OFFEST + 0x??] = { { "rare_orb_2" } },
-	[WORLD_OFFEST + 0x??] = { { "rare_orb_3" } },
-	[WORLD_OFFEST + 0x??] = { { "rare_orb_4" } },
-	[WORLD_OFFEST + 0x??] = { { "rare_orb_5" } },
-	[WORLD_OFFEST + 0x??] = { { "rare_orb_6" } },
-	[WORLD_OFFEST + 0x??] = { { "rare_orb_7" } },
-	[WORLD_OFFEST + 0x??] = { { "rare_orb_8" } },
-	
-	[26] = { { "balloon" } },
-	[27] = { { "balloon", nil, 3 } },
-	[28] = { { "balloon", nil, 7 } },
+	[0x2001] = { { "puzzle_piece" } },
 
-	[] = { { "banana" } },
-	[] = { { "banana", nil, 10 } },
-	[] = { { "banana", nil, 25 } },
-	[] = { { "coin" } }
+	[0x3007] = { { "key_2" } },
+	[0x3005] = { { "key_4" } },
+	[0x3003] = { { "key_6" } },
+	[0x3002] = { { "key_7" } },
+	[0x3004] = { { "key_5" } },
+	[0x3008] = { { "key_1" } },
+	[0x3006] = { { "key_3" } },
+	[0x3001] = { { "key_8" } },
 	
-	]]
+	[0x4018] = { { "rare_orb_1" } },
+	[0x4019] = { { "rare_orb_2" } },
+	[0x4020] = { { "rare_orb_3" } },
+	[0x4021] = { { "rare_orb_4" } },
+	[0x4022] = { { "rare_orb_5" } },
+	[0x4023] = { { "rare_orb_6" } },
+	[0x4024] = { { "rare_orb_7" } },
+	[0x4025] = { { "rare_orb_8" } },
+	
+	[0x5001] = { { "run" } },
+	[0x5002] = { { "roll" } },
+	[0x5003] = { { "grab" } },
+	[0x5004] = { { "blow" } },
+	[0x5005] = { { "ground_pound" } },
+	
+	[0x6001] = { { "mirror_shard" } },
+	[0x6002] = { { "mirror_mode" } },
+	[0x6003] = { { "rocket_barrel" } },
+	[0x6004] = { { "mine_cart" } },
+	[0x6005] = { { "rambi" } },
+	[0x6006] = { { "kong_barrel" } },
+	
+	[0x7001] = { { "factory_button" } }
 }
