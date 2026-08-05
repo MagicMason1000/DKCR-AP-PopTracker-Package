@@ -64,7 +64,8 @@
         "type": "consumable",
         "img": "images/settings/setting_mirror_shards.png",
         "codes": "mirror_shards_setting",
-        "max_quantity": 25
+        "max_quantity": 25,
+        "initial_quantity": 1
     },
     {
         "name": "Time Attack Setting",
@@ -126,6 +127,7 @@
             }
         ]
     },
+    // MARK: Orb Reqs
     {
         "name": "Rare Orbs Required",
         "type": "progressive",

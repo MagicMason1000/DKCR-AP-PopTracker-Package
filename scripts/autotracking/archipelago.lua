@@ -26,7 +26,7 @@ GLOBAL_ITEMS = {}
 -- returns nil when not connected to AP
 function getHintDataStorageKey()
 	if AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or Archipelago.PlayerNumber == nil or Archipelago.PlayerNumber == -1 then
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		if ENABLE_DEBUG_LOG then
 			print("Tried to call getHintDataStorageKey while not connect to AP server")
 		end
 		return nil
@@ -39,7 +39,7 @@ function resetItem(item_code, item_type)
 	local obj = Tracker:FindObjectForCode(item_code)
 	if obj then
 		item_type = item_type or obj.Type
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		if ENABLE_DEBUG_LOG then
 			print(string.format("resetItem: resetting item %s of type %s", item_code, item_type))
 		end
 		if item_type == "toggle" or item_type == "toggle_badged" then
@@ -51,16 +51,16 @@ function resetItem(item_code, item_type)
 			obj.AcquiredCount = 0
 		elseif item_type == "custom" then
 			-- your code for your custom lua items goes here
-		elseif item_type == "static" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		elseif item_type == "static" and ENABLE_DEBUG_LOG then
 			print(string.format("resetItem: tried to reset static item %s", item_code))
-		elseif item_type == "composite_toggle" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		elseif item_type == "composite_toggle" and ENABLE_DEBUG_LOG then
 			print(string.format(
 				"resetItem: tried to reset composite_toggle item %s but composite_toggle cannot be accessed via lua." ..
 				"Please use the respective left/right toggle item codes instead.", item_code))
-		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		elseif ENABLE_DEBUG_LOG then
 			print(string.format("resetItem: unknown item type %s for code %s", item_type, item_code))
 		end
-	elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+	elseif ENABLE_DEBUG_LOG then
 		print(string.format("resetItem: could not find item object for code %s", item_code))
 	end
 end
@@ -70,7 +70,7 @@ function incrementItem(item_code, item_type, multiplier)
 	local obj = Tracker:FindObjectForCode(item_code)
 	if obj then
 		item_type = item_type or obj.Type
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		if ENABLE_DEBUG_LOG then
 			print(string.format("incrementItem: code: %s, type %s", item_code, item_type))
 		end
 		if item_type == "toggle" or item_type == "toggle_badged" then
@@ -85,16 +85,16 @@ function incrementItem(item_code, item_type, multiplier)
 			obj.AcquiredCount = obj.AcquiredCount + obj.Increment * multiplier
 		elseif item_type == "custom" then
 			-- your code for your custom lua items goes here
-		elseif item_type == "static" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		elseif item_type == "static" and ENABLE_DEBUG_LOG then
 			print(string.format("incrementItem: tried to increment static item %s", item_code))
-		elseif item_type == "composite_toggle" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		elseif item_type == "composite_toggle" and ENABLE_DEBUG_LOG then
 			print(string.format(
 				"incrementItem: tried to increment composite_toggle item %s but composite_toggle cannot be access via lua." ..
 				"Please use the respective left/right toggle item codes instead.", item_code))
-		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		elseif ENABLE_DEBUG_LOG then
 			print(string.format("incrementItem: unknown item type %s for code %s", item_type, item_code))
 		end
-	elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+	elseif ENABLE_DEBUG_LOG then
 		print(string.format("incrementItem: could not find object for code %s", item_code))
 	end
 end
@@ -110,16 +110,16 @@ function apply_slot_data(slot_data)
 		slot_data["forest_boss_access"],
 		slot_data["cliff_boss_access"],
 		slot_data["factory_boss_access"],
-		slot_data["volcano_boss_access"],
+		slot_data["volcano_boss_access"]
 	}
 	for world = 1, 8 do
 		local ppReqObj = Tracker:FindObjectForCode("bossReq" .. tostring(world))
 		if ppReqObj then
 			ppReqObj.AcquiredCount = ppReqs[world]
 			if ENABLE_DEBUG_LOG then
-				print(string.format("DEBUG: bossReq%s set to %s.", world, ppReqObj.AcquiredCount + ppReqs[world]))
+				print(string.format("apply_slot_data: bossReq%s set to %s.", world, ppReqObj.AcquiredCount + ppReqs[world]))
 			end
-		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
+		elseif ENABLE_DEBUG_LOG then
 			print(string.format("apply_slot_data: could not find object for code %s", ppReqObj))
 		end
 	end
@@ -133,39 +133,51 @@ function apply_slot_data(slot_data)
 		slot_data["forest_k_level_access"],
 		slot_data["cliff_k_level_access"],
 		slot_data["factory_k_level_access"],
-		slot_data["volcano_k_level_access"],
+		slot_data["volcano_k_level_access"]
 	}
 	for world = 1, 8 do
 		local kReqObj = Tracker:FindObjectForCode("kreq" .. tostring(world))
 		if kReqObj then
 			kReqObj.AcquiredCount = kReqs[world]
 			if ENABLE_DEBUG_LOG then
-				print(string.format("DEBUG: kReq%s set to %s.", world, kReqObj.AcquiredCount + kReqs[world]))
+				print(string.format("apply_slot_data: kReq%s set to %s.", world, kReqObj.AcquiredCount + kReqs[world]))
 			end
-		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
+		elseif ENABLE_DEBUG_LOG then
 			print(string.format("apply_slot_data: could not find object for code %s", kReqObj))
 		end
 	end
 
 	-- Mirror Mode Enabled
 	Tracker:FindObjectForCode("mirror_mode_setting").CurrentStage = slot_data["mirror_mode"]
+	if ENABLE_DEBUG_LOG then
+		print(string.format("apply_slot_data: Mirror Mode setting set to %s.", slot_data["mirror_mode"]))
+	end
 	-- Mirror Mode Shard Amount
 	if (slot_data["mirror_mode_shards"] == 0) then
 		Tracker:FindObjectForCode("mirror_shards_setting").AcquiredCount = 1
 	else
 		Tracker:FindObjectForCode("mirror_shards_setting").AcquiredCount = slot_data["mirror_mode_shards"]
 	end
+	if ENABLE_DEBUG_LOG then
+		print(string.format("apply_slot_data: Mirror Shard setting set to %s.", slot_data["mirror_mode_shards"]))
+	end
 	-- Golden Temple Enabled
 	Tracker:FindObjectForCode("golden_temple_setting").CurrentStage = slot_data["golden_temple"]
+	if ENABLE_DEBUG_LOG then
+		print(string.format("apply_slot_data: Golden Temple setting set to %s.", slot_data["golden_temple"]))
+	end
 	-- Rare Orbs Requirement
 	Tracker:FindObjectForCode("orbs_setting").CurrentStage = slot_data["rare_orbs"]
+	if ENABLE_DEBUG_LOG then
+		print(string.format("apply_slot_data: Orb Requirement setting set to %s.", slot_data["rare_orbs"]))
+	end
 end
 
 -- called right after an AP slot is connected
 function onClear(slot_data)
 	-- use bulk update to pause logic updates until we are done resetting all items/locations
 	Tracker.BulkUpdate = true
-	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+	if ENABLE_DEBUG_LOG then
 		print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
 	end
 	CUR_INDEX = -1
@@ -175,7 +187,7 @@ function onClear(slot_data)
 			if location_table then
 				local location_code = location_table[1]
 				if location_code then
-					if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+					if ENABLE_DEBUG_LOG then
 						print(string.format("onClear: clearing location %s", location_code))
 					end
 					if location_code:sub(1, 1) == "@" then
@@ -185,7 +197,7 @@ function onClear(slot_data)
 							if obj.Highlight then
 								obj.Highlight = Highlight.None
 							end
-						elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+						elseif ENABLE_DEBUG_LOG then
 							print(string.format("onClear: could not find location object for code %s", location_code))
 						end
 					else
@@ -193,10 +205,10 @@ function onClear(slot_data)
 						local item_type = location_table[2]
 						resetItem(location_code, item_type)
 					end
-				elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+				elseif ENABLE_DEBUG_LOG then
 					print(string.format("onClear: skipping location_table with no location_code"))
 				end
-			elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			elseif ENABLE_DEBUG_LOG then
 				print(string.format("onClear: skipping empty location_table"))
 			end
 		end
@@ -209,10 +221,10 @@ function onClear(slot_data)
 				local item_type = item_table[2]
 				if item_code then
 					resetItem(item_code, item_type)
-				elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+				elseif ENABLE_DEBUG_LOG then
 					print(string.format("onClear: skipping item_table with no item_code"))
 				end
-			elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			elseif ENABLE_DEBUG_LOG then
 				print(string.format("onClear: skipping empty item_table"))
 			end
 		end
@@ -240,7 +252,7 @@ end
 
 -- called when an item gets collected
 function onItem(index, item_id, item_name, player_number)
-	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+	if ENABLE_DEBUG_LOG then
 		print(string.format("called onItem: %s, %s, %s, %s, %s", index, item_id, item_name, player_number, CUR_INDEX))
 	end
 	if not AUTOTRACKER_ENABLE_ITEM_TRACKING then
@@ -253,7 +265,7 @@ function onItem(index, item_id, item_name, player_number)
 	CUR_INDEX = index
 	local mapping_entry = ITEM_MAPPING[item_id]
 	if not mapping_entry then
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		if ENABLE_DEBUG_LOG then
 			print(string.format("onItem: could not find item mapping for id %s", item_id))
 		end
 		return
@@ -279,14 +291,14 @@ function onItem(index, item_id, item_name, player_number)
 						GLOBAL_ITEMS[item_code] = 1
 					end
 				end
-			elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			elseif ENABLE_DEBUG_LOG then
 				print(string.format("onClear: skipping item_table with no item_code"))
 			end
-		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		elseif ENABLE_DEBUG_LOG then
 			print(string.format("onClear: skipping empty item_table"))
 		end
 	end
-	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+	if ENABLE_DEBUG_LOG then
 		print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
 		print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
 	end
@@ -298,7 +310,7 @@ end
 
 -- called when a location gets cleared
 function onLocation(location_id, location_name)
-	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+	if ENABLE_DEBUG_LOG then
 		print(string.format("called onLocation: %s, %s", location_id, location_name))
 	end
 	if not AUTOTRACKER_ENABLE_LOCATION_TRACKING then
@@ -306,7 +318,7 @@ function onLocation(location_id, location_name)
 	end
 	local mapping_entry = LOCATION_MAPPING[location_id]
 	if not mapping_entry then
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		if ENABLE_DEBUG_LOG then
 			print(string.format("onLocation: could not find location mapping for id %s", location_id))
 		end
 		return
@@ -324,13 +336,13 @@ function onLocation(location_id, location_name)
 						local item_type = location_table[2]
 						incrementItem(location_code, item_type)
 					end
-				elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+				elseif ENABLE_DEBUG_LOG then
 					print(string.format("onLocation: could not find object for code %s", location_code))
 				end
-			elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			elseif ENABLE_DEBUG_LOG then
 				print(string.format("onLocation: skipping location_table with no location_code"))
 			end
-		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		elseif ENABLE_DEBUG_LOG then
 			print(string.format("onLocation: skipping empty location_table"))
 		end
 	end
@@ -338,7 +350,7 @@ end
 
 -- called when a locations is scouted
 function onScout(location_id, location_name, item_id, item_name, item_player)
-	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+	if ENABLE_DEBUG_LOG then
 		print(string.format("called onScout: %s, %s, %s, %s, %s", location_id, location_name, item_id, item_name,
 			item_player))
 	end
@@ -347,7 +359,7 @@ end
 
 -- called when a bounce message is received
 function onBounce(json)
-	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+	if ENABLE_DEBUG_LOG then
 		print(string.format("called onBounce: %s", dump_table(json)))
 	end
 	-- your code goes here
@@ -401,7 +413,7 @@ function updateHint(hint, sections_to_update)
 		highlight_code = HINT_STATUS_MAPPING[hint_status]
 	end
 	if not highlight_code then
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		if ENABLE_DEBUG_LOG then
 			print(string.format("updateHint: unknown hint status %s for hint on location id %s", hint.status,
 				hint.location))
 		end
@@ -417,7 +429,7 @@ function updateHint(hint, sections_to_update)
 	-- get the location mapping for the location id
 	local mapping_entry = LOCATION_MAPPING[hint.location]
 	if not mapping_entry then
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		if ENABLE_DEBUG_LOG then
 			print(string.format("updateHint: could not find location mapping for id %s", hint.location))
 		end
 		return
