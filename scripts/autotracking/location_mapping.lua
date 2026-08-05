@@ -16,6 +16,7 @@ LOCATION_MAPPING = {
 	[BASE1 + 0xc24] = { { "@Jungle/Time Attack: Bronze" } },
 	[BASE1 + 0xc25] = { { "@Jungle/Time Attack: Silver" } },
 	[BASE1 + 0xc26] = { { "@Jungle/Time Attack: Gold" } },
+	[BASE1 + 0xc27] = { { "@Jungle/Time Attack: Shiny Gold" } },
 
 	[BASE1 + 0x201] = { { "@Jungle/1-1 Jungle Hijinxs/Puzzle Piece 1" } },
 	[BASE1 + 0x202] = { { "@Jungle/1-1 Jungle Hijinxs/Puzzle Piece 2" } },
@@ -37,6 +38,7 @@ LOCATION_MAPPING = {
 	[BASE1 + 0x224] = { { "@Jungle/1-1 Jungle Hijinxs/Time Attack: Bronze" } },
 	[BASE1 + 0x225] = { { "@Jungle/1-1 Jungle Hijinxs/Time Attack: Silver" } },
 	[BASE1 + 0x226] = { { "@Jungle/1-1 Jungle Hijinxs/Time Attack: Gold" } },
+	[BASE1 + 0x227] = { { "@Jungle/1-1 Jungle Hijinxs/Time Attack: Shiny Gold" } },
 
 	[BASE1 + 0x301] = { { "@Jungle/1-2 King of Cling/Puzzle Piece 1" } },
 	[BASE1 + 0x302] = { { "@Jungle/1-2 King of Cling/Puzzle Piece 2" } },
@@ -56,6 +58,7 @@ LOCATION_MAPPING = {
 	[BASE1 + 0x324] = { { "@Jungle/1-2 King of Cling/Time Attack: Bronze" } },
 	[BASE1 + 0x325] = { { "@Jungle/1-2 King of Cling/Time Attack: Silver" } },
 	[BASE1 + 0x326] = { { "@Jungle/1-2 King of Cling/Time Attack: Gold" } },
+	[BASE1 + 0x327] = { { "@Jungle/1-2 King of Cling/Time Attack: Shiny Gold" } },
 
 	[BASE1 + 0x401] = { { "@Jungle/1-3 Tree Top Bop/Puzzle Piece 1" } },
 	[BASE1 + 0x402] = { { "@Jungle/1-3 Tree Top Bop/Puzzle Piece 2" } },
@@ -73,6 +76,7 @@ LOCATION_MAPPING = {
 	[BASE1 + 0x424] = { { "@Jungle/1-3 Tree Top Bop/Time Attack: Bronze" } },
 	[BASE1 + 0x425] = { { "@Jungle/1-3 Tree Top Bop/Time Attack: Silver" } },
 	[BASE1 + 0x426] = { { "@Jungle/1-3 Tree Top Bop/Time Attack: Gold" } },
+	[BASE1 + 0x427] = { { "@Jungle/1-3 Tree Top Bop/Time Attack: Shiny Gold" } },
 
 	[BASE1 + 0x501] = { { "@Jungle/1-4 Sunset Shore/Puzzle Piece 1" } },
 	[BASE1 + 0x502] = { { "@Jungle/1-4 Sunset Shore/Puzzle Piece 2" } },
@@ -90,6 +94,7 @@ LOCATION_MAPPING = {
 	[BASE1 + 0x524] = { { "@Jungle/1-4 Sunset Shore/Time Attack: Bronze" } },
 	[BASE1 + 0x525] = { { "@Jungle/1-4 Sunset Shore/Time Attack: Silver" } },
 	[BASE1 + 0x526] = { { "@Jungle/1-4 Sunset Shore/Time Attack: Gold" } },
+	[BASE1 + 0x527] = { { "@Jungle/1-4 Sunset Shore/Time Attack: Shiny Gold" } },
 
 	[BASE1 + 0x601] = { { "@Jungle/1-5 Canopy Cannons/Puzzle Piece 1" } },
 	[BASE1 + 0x602] = { { "@Jungle/1-5 Canopy Cannons/Puzzle Piece 2" } },
@@ -107,6 +112,7 @@ LOCATION_MAPPING = {
 	[BASE1 + 0x624] = { { "@Jungle/1-5 Canopy Cannons/Time Attack: Bronze" } },
 	[BASE1 + 0x625] = { { "@Jungle/1-5 Canopy Cannons/Time Attack: Silver" } },
 	[BASE1 + 0x626] = { { "@Jungle/1-5 Canopy Cannons/Time Attack: Gold" } },
+	[BASE1 + 0x627] = { { "@Jungle/1-5 Canopy Cannons/Time Attack: Shiny Gold" } },
 
 	[BASE1 + 0x701] = { { "@Jungle/1-6 Crazy Cart/Puzzle Piece 1" } },
 	[BASE1 + 0x702] = { { "@Jungle/1-6 Crazy Cart/Puzzle Piece 2" } },
@@ -124,12 +130,14 @@ LOCATION_MAPPING = {
 	[BASE1 + 0x724] = { { "@Jungle/1-6 Crazy Cart/Time Attack: Bronze" } },
 	[BASE1 + 0x725] = { { "@Jungle/1-6 Crazy Cart/Time Attack: Silver" } },
 	[BASE1 + 0x726] = { { "@Jungle/1-6 Crazy Cart/Time Attack: Gold" } },
+	[BASE1 + 0x727] = { { "@Jungle/1-6 Crazy Cart/Time Attack: Shiny Gold" } },
 
 	[BASE1 + 0x121] = { { "@Jungle/1-B Mugly's Mound/Boss Clear" } },
 	[BASE1 + 0x122] = { { "@Jungle/1-B Mugly's Mound/Beat in Mirror Mode" } },
 	[BASE1 + 0x124] = { { "@Jungle/1-B Mugly's Mound/Time Attack: Bronze" } },
 	[BASE1 + 0x125] = { { "@Jungle/1-B Mugly's Mound/Time Attack: Silver" } },
 	[BASE1 + 0x126] = { { "@Jungle/1-B Mugly's Mound/Time Attack: Gold" } },
+	[BASE1 + 0x127] = { { "@Jungle/1-B Mugly's Mound/Time Attack: Shiny Gold" } },
 
 	[BASE1 + 0x001] = { { "@Jungle/1-K Platform Panic/Puzzle Piece 1" } },
 	[BASE1 + 0x002] = { { "@Jungle/1-K Platform Panic/Puzzle Piece 2" } },
@@ -142,6 +150,12 @@ LOCATION_MAPPING = {
 	[BASE1 + 0x024] = { { "@Jungle/1-K Platform Panic/Time Attack: Bronze" } },
 	[BASE1 + 0x025] = { { "@Jungle/1-K Platform Panic/Time Attack: Silver" } },
 	[BASE1 + 0x026] = { { "@Jungle/1-K Platform Panic/Time Attack: Gold" } },
+	[BASE1 + 0x027] = { { "@Jungle/1-K Platform Panic/Time Attack: Shiny Gold" } },
+	
+	[BASE1 + 0xB41] = { { "@Jungle/1-S Cranky Kong's Shop/Jungle Map Key" } },
+	[BASE1 + 0xB42] = { { "@Jungle/1-S Cranky Kong's Shop/Jungle Shop Balloons x1" } },
+	[BASE1 + 0xB43] = { { "@Jungle/1-S Cranky Kong's Shop/Jungle Shop Balloons x3" } },
+	[BASE1 + 0xB44] = { { "@Jungle/1-S Cranky Kong's Shop/Jungle Shop Balloons x7" } },
 
 	-- MARK: Beach
 	[BASE2 + 0xc0b] = { { "@Beach/Puzzle Bundle" } },
@@ -151,6 +165,7 @@ LOCATION_MAPPING = {
 	[BASE2 + 0xc24] = { { "@Beach/Time Attack: Bronze" } },
 	[BASE2 + 0xc25] = { { "@Beach/Time Attack: Silver" } },
 	[BASE2 + 0xc26] = { { "@Beach/Time Attack: Gold" } },
+	[BASE2 + 0xc27] = { { "@Beach/Time Attack: Shiny Gold" } },
 
 	[BASE2 + 0x201] = { { "@Beach/2-1 Poppin' Planks/Puzzle Piece 1" } },
 	[BASE2 + 0x202] = { { "@Beach/2-1 Poppin' Planks/Puzzle Piece 2" } },
@@ -168,6 +183,7 @@ LOCATION_MAPPING = {
 	[BASE2 + 0x224] = { { "@Beach/2-1 Poppin' Planks/Time Attack: Bronze" } },
 	[BASE2 + 0x225] = { { "@Beach/2-1 Poppin' Planks/Time Attack: Silver" } },
 	[BASE2 + 0x226] = { { "@Beach/2-1 Poppin' Planks/Time Attack: Gold" } },
+	[BASE2 + 0x227] = { { "@Beach/2-1 Poppin' Planks/Time Attack: Shiny Gold" } },
 
 	[BASE2 + 0x301] = { { "@Beach/2-2 Sloppy Sands/Puzzle Piece 1" } },
 	[BASE2 + 0x302] = { { "@Beach/2-2 Sloppy Sands/Puzzle Piece 2" } },
@@ -187,6 +203,7 @@ LOCATION_MAPPING = {
 	[BASE2 + 0x324] = { { "@Beach/2-2 Sloppy Sands/Time Attack: Bronze" } },
 	[BASE2 + 0x325] = { { "@Beach/2-2 Sloppy Sands/Time Attack: Silver" } },
 	[BASE2 + 0x326] = { { "@Beach/2-2 Sloppy Sands/Time Attack: Gold" } },
+	[BASE2 + 0x327] = { { "@Beach/2-2 Sloppy Sands/Time Attack: Shiny Gold" } },
 
 	[BASE2 + 0x401] = { { "@Beach/2-3 Peaceful Pier/Puzzle Piece 1" } },
 	[BASE2 + 0x402] = { { "@Beach/2-3 Peaceful Pier/Puzzle Piece 2" } },
@@ -204,6 +221,7 @@ LOCATION_MAPPING = {
 	[BASE2 + 0x424] = { { "@Beach/2-3 Peaceful Pier/Time Attack: Bronze" } },
 	[BASE2 + 0x425] = { { "@Beach/2-3 Peaceful Pier/Time Attack: Silver" } },
 	[BASE2 + 0x426] = { { "@Beach/2-3 Peaceful Pier/Time Attack: Gold" } },
+	[BASE2 + 0x427] = { { "@Beach/2-3 Peaceful Pier/Time Attack: Shiny Gold" } },
 
 	[BASE2 + 0x501] = { { "@Beach/2-4 Cannon Cluster/Puzzle Piece 1" } },
 	[BASE2 + 0x502] = { { "@Beach/2-4 Cannon Cluster/Puzzle Piece 2" } },
@@ -223,6 +241,7 @@ LOCATION_MAPPING = {
 	[BASE2 + 0x524] = { { "@Beach/2-4 Cannon Cluster/Time Attack: Bronze" } },
 	[BASE2 + 0x525] = { { "@Beach/2-4 Cannon Cluster/Time Attack: Silver" } },
 	[BASE2 + 0x526] = { { "@Beach/2-4 Cannon Cluster/Time Attack: Gold" } },
+	[BASE2 + 0x527] = { { "@Beach/2-4 Cannon Cluster/Time Attack: Shiny Gold" } },
 
 	[BASE2 + 0x601] = { { "@Beach/2-5 Stormy Shore/Puzzle Piece 1" } },
 	[BASE2 + 0x602] = { { "@Beach/2-5 Stormy Shore/Puzzle Piece 2" } },
@@ -240,6 +259,7 @@ LOCATION_MAPPING = {
 	[BASE2 + 0x624] = { { "@Beach/2-5 Stormy Shore/Time Attack: Bronze" } },
 	[BASE2 + 0x625] = { { "@Beach/2-5 Stormy Shore/Time Attack: Silver" } },
 	[BASE2 + 0x626] = { { "@Beach/2-5 Stormy Shore/Time Attack: Gold" } },
+	[BASE2 + 0x627] = { { "@Beach/2-5 Stormy Shore/Time Attack: Shiny Gold" } },
 
 	[BASE2 + 0x701] = { { "@Beach/2-6 Blowhole Bound/Puzzle Piece 1" } },
 	[BASE2 + 0x702] = { { "@Beach/2-6 Blowhole Bound/Puzzle Piece 2" } },
@@ -257,6 +277,7 @@ LOCATION_MAPPING = {
 	[BASE2 + 0x724] = { { "@Beach/2-6 Blowhole Bound/Time Attack: Bronze" } },
 	[BASE2 + 0x725] = { { "@Beach/2-6 Blowhole Bound/Time Attack: Silver" } },
 	[BASE2 + 0x726] = { { "@Beach/2-6 Blowhole Bound/Time Attack: Gold" } },
+	[BASE2 + 0x727] = { { "@Beach/2-6 Blowhole Bound/Time Attack: Shiny Gold" } },
 
 	[BASE2 + 0x801] = { { "@Beach/2-7 Tidal Terror/Puzzle Piece 1" } },
 	[BASE2 + 0x802] = { { "@Beach/2-7 Tidal Terror/Puzzle Piece 2" } },
@@ -274,12 +295,14 @@ LOCATION_MAPPING = {
 	[BASE2 + 0x824] = { { "@Beach/2-7 Tidal Terror/Time Attack: Bronze" } },
 	[BASE2 + 0x825] = { { "@Beach/2-7 Tidal Terror/Time Attack: Silver" } },
 	[BASE2 + 0x826] = { { "@Beach/2-7 Tidal Terror/Time Attack: Gold" } },
+	[BASE2 + 0x827] = { { "@Beach/2-7 Tidal Terror/Time Attack: Shiny Gold" } },
 
 	[BASE2 + 0x121] = { { "@Beach/2-B Pinchin' Pirates/Boss Clear" } },
 	[BASE2 + 0x122] = { { "@Beach/2-B Pinchin' Pirates/Beat in Mirror Mode" } },
 	[BASE2 + 0x124] = { { "@Beach/2-B Pinchin' Pirates/Time Attack: Bronze" } },
 	[BASE2 + 0x125] = { { "@Beach/2-B Pinchin' Pirates/Time Attack: Silver" } },
 	[BASE2 + 0x126] = { { "@Beach/2-B Pinchin' Pirates/Time Attack: Gold" } },
+	[BASE2 + 0x127] = { { "@Beach/2-B Pinchin' Pirates/Time Attack: Shiny Gold" } },
 
 	[BASE2 + 0x1] = { { "@Beach/2-K Tumblin' Temple/Puzzle Piece 1" } },
 	[BASE2 + 0x2] = { { "@Beach/2-K Tumblin' Temple/Puzzle Piece 2" } },
@@ -292,6 +315,13 @@ LOCATION_MAPPING = {
 	[BASE2 + 0x24] = { { "@Beach/2-K Tumblin' Temple/Time Attack: Bronze" } },
 	[BASE2 + 0x25] = { { "@Beach/2-K Tumblin' Temple/Time Attack: Silver" } },
 	[BASE2 + 0x26] = { { "@Beach/2-K Tumblin' Temple/Time Attack: Gold" } },
+	[BASE2 + 0x27] = { { "@Beach/2-K Tumblin' Temple/Time Attack: Shiny Gold" } },
+	[BASE2 + 0x31] = { { "@Beach/2-K Tumblin' Temple/Beach Rare Orb" } },
+	
+	[BASE2 + 0xB41] = { { "@Beach/2-S Cranky Kong's Shop/Beach Map Key" } },
+	[BASE2 + 0xB42] = { { "@Beach/2-S Cranky Kong's Shop/Beach Shop Balloons x1" } },
+	[BASE2 + 0xB43] = { { "@Beach/2-S Cranky Kong's Shop/Beach Shop Balloons x3" } },
+	[BASE2 + 0xB44] = { { "@Beach/2-S Cranky Kong's Shop/Beach Shop Balloons x7" } },
 
 	-- MARK: Ruins
 	[BASE3 + 0xc0b] = { { "@Ruins/Puzzle Bundle" } },
@@ -301,6 +331,7 @@ LOCATION_MAPPING = {
 	[BASE3 + 0xc24] = { { "@Ruins/Time Attack: Bronze" } },
 	[BASE3 + 0xc25] = { { "@Ruins/Time Attack: Silver" } },
 	[BASE3 + 0xc26] = { { "@Ruins/Time Attack: Gold" } },
+	[BASE3 + 0xc27] = { { "@Ruins/Time Attack: Shiny Gold" } },
 
 	[BASE3 + 0x201] = { { "@Ruins/3-1 Wonky Waterway/Puzzle Piece 1" } },
 	[BASE3 + 0x202] = { { "@Ruins/3-1 Wonky Waterway/Puzzle Piece 2" } },
@@ -320,6 +351,7 @@ LOCATION_MAPPING = {
 	[BASE3 + 0x224] = { { "@Ruins/3-1 Wonky Waterway/Time Attack: Bronze" } },
 	[BASE3 + 0x225] = { { "@Ruins/3-1 Wonky Waterway/Time Attack: Silver" } },
 	[BASE3 + 0x226] = { { "@Ruins/3-1 Wonky Waterway/Time Attack: Gold" } },
+	[BASE3 + 0x227] = { { "@Ruins/3-1 Wonky Waterway/Time Attack: Shiny Gold" } },
 
 	[BASE3 + 0x301] = { { "@Ruins/3-2 Button Bash/Puzzle Piece 1" } },
 	[BASE3 + 0x302] = { { "@Ruins/3-2 Button Bash/Puzzle Piece 2" } },
@@ -339,6 +371,7 @@ LOCATION_MAPPING = {
 	[BASE3 + 0x324] = { { "@Ruins/3-2 Button Bash/Time Attack: Bronze" } },
 	[BASE3 + 0x325] = { { "@Ruins/3-2 Button Bash/Time Attack: Silver" } },
 	[BASE3 + 0x326] = { { "@Ruins/3-2 Button Bash/Time Attack: Gold" } },
+	[BASE3 + 0x327] = { { "@Ruins/3-2 Button Bash/Time Attack: Shiny Gold" } },
 
 	[BASE3 + 0x401] = { { "@Ruins/3-3 Mast Blast/Puzzle Piece 1" } },
 	[BASE3 + 0x402] = { { "@Ruins/3-3 Mast Blast/Puzzle Piece 2" } },
@@ -358,6 +391,7 @@ LOCATION_MAPPING = {
 	[BASE3 + 0x424] = { { "@Ruins/3-3 Mast Blast/Time Attack: Bronze" } },
 	[BASE3 + 0x425] = { { "@Ruins/3-3 Mast Blast/Time Attack: Silver" } },
 	[BASE3 + 0x426] = { { "@Ruins/3-3 Mast Blast/Time Attack: Gold" } },
+	[BASE3 + 0x427] = { { "@Ruins/3-3 Mast Blast/Time Attack: Shiny Gold" } },
 
 	[BASE3 + 0x501] = { { "@Ruins/3-4 Damp Dungeon/Puzzle Piece 1" } },
 	[BASE3 + 0x502] = { { "@Ruins/3-4 Damp Dungeon/Puzzle Piece 2" } },
@@ -379,6 +413,7 @@ LOCATION_MAPPING = {
 	[BASE3 + 0x524] = { { "@Ruins/3-4 Damp Dungeon/Time Attack: Bronze" } },
 	[BASE3 + 0x525] = { { "@Ruins/3-4 Damp Dungeon/Time Attack: Silver" } },
 	[BASE3 + 0x526] = { { "@Ruins/3-4 Damp Dungeon/Time Attack: Gold" } },
+	[BASE3 + 0x527] = { { "@Ruins/3-4 Damp Dungeon/Time Attack: Shiny Gold" } },
 
 	[BASE3 + 0x601] = { { "@Ruins/3-5 Itty Bitty Biters/Puzzle Piece 1" } },
 	[BASE3 + 0x602] = { { "@Ruins/3-5 Itty Bitty Biters/Puzzle Piece 2" } },
@@ -398,6 +433,7 @@ LOCATION_MAPPING = {
 	[BASE3 + 0x624] = { { "@Ruins/3-5 Itty Bitty Biters/Time Attack: Bronze" } },
 	[BASE3 + 0x625] = { { "@Ruins/3-5 Itty Bitty Biters/Time Attack: Silver" } },
 	[BASE3 + 0x626] = { { "@Ruins/3-5 Itty Bitty Biters/Time Attack: Gold" } },
+	[BASE3 + 0x627] = { { "@Ruins/3-5 Itty Bitty Biters/Time Attack: Shiny Gold" } },
 
 	[BASE3 + 0x701] = { { "@Ruins/3-6 Temple Topple/Puzzle Piece 1" } },
 	[BASE3 + 0x702] = { { "@Ruins/3-6 Temple Topple/Puzzle Piece 2" } },
@@ -415,12 +451,14 @@ LOCATION_MAPPING = {
 	[BASE3 + 0x724] = { { "@Ruins/3-6 Temple Topple/Time Attack: Bronze" } },
 	[BASE3 + 0x725] = { { "@Ruins/3-6 Temple Topple/Time Attack: Silver" } },
 	[BASE3 + 0x726] = { { "@Ruins/3-6 Temple Topple/Time Attack: Gold" } },
+	[BASE3 + 0x727] = { { "@Ruins/3-6 Temple Topple/Time Attack: Shiny Gold" } },
 
 	[BASE3 + 0x121] = { { "@Ruins/3-B Ruined Roost/Boss Clear" } },
 	[BASE3 + 0x122] = { { "@Ruins/3-B Ruined Roost/Beat in Mirror Mode" } },
 	[BASE3 + 0x124] = { { "@Ruins/3-B Ruined Roost/Time Attack: Bronze" } },
 	[BASE3 + 0x125] = { { "@Ruins/3-B Ruined Roost/Time Attack: Silver" } },
 	[BASE3 + 0x126] = { { "@Ruins/3-B Ruined Roost/Time Attack: Gold" } },
+	[BASE3 + 0x127] = { { "@Ruins/3-B Ruined Roost/Time Attack: Shiny Gold" } },
 
 	[BASE3 + 0x001] = { { "@Ruins/3-K Shifty Smashers/Puzzle Piece 1" } },
 	[BASE3 + 0x002] = { { "@Ruins/3-K Shifty Smashers/Puzzle Piece 2" } },
@@ -433,6 +471,12 @@ LOCATION_MAPPING = {
 	[BASE3 + 0x024] = { { "@Ruins/3-K Shifty Smashers/Time Attack: Bronze" } },
 	[BASE3 + 0x025] = { { "@Ruins/3-K Shifty Smashers/Time Attack: Silver" } },
 	[BASE3 + 0x026] = { { "@Ruins/3-K Shifty Smashers/Time Attack: Gold" } },
+	[BASE3 + 0x027] = { { "@Ruins/3-K Shifty Smashers/Time Attack: Shiny Gold" } },
+	
+	[BASE3 + 0xB41] = { { "@Ruins/3-S Cranky Kong's Shop/Ruins Map Key" } },
+	[BASE3 + 0xB42] = { { "@Ruins/3-S Cranky Kong's Shop/Ruins Shop Balloons x1" } },
+	[BASE3 + 0xB43] = { { "@Ruins/3-S Cranky Kong's Shop/Ruins Shop Balloons x3" } },
+	[BASE3 + 0xB44] = { { "@Ruins/3-S Cranky Kong's Shop/Ruins Shop Balloons x7" } },
 
 	-- MARK: Cave
 	[BASE4 + 0xc0b] = { { "@Cave/Puzzle Bundle" } },
@@ -442,6 +486,7 @@ LOCATION_MAPPING = {
 	[BASE4 + 0xc24] = { { "@Cave/Time Attack: Bronze" } },
 	[BASE4 + 0xc25] = { { "@Cave/Time Attack: Silver" } },
 	[BASE4 + 0xc26] = { { "@Cave/Time Attack: Gold" } },
+	[BASE4 + 0xc27] = { { "@Cave/Time Attack: Shiny Gold" } },
 
 	[BASE4 + 0x201] = { { "@Cave/4-1 Rickety Rails/Puzzle Piece 1" } },
 	[BASE4 + 0x202] = { { "@Cave/4-1 Rickety Rails/Puzzle Piece 2" } },
@@ -459,6 +504,7 @@ LOCATION_MAPPING = {
 	[BASE4 + 0x224] = { { "@Cave/4-1 Rickety Rails/Time Attack: Bronze" } },
 	[BASE4 + 0x225] = { { "@Cave/4-1 Rickety Rails/Time Attack: Silver" } },
 	[BASE4 + 0x226] = { { "@Cave/4-1 Rickety Rails/Time Attack: Gold" } },
+	[BASE4 + 0x227] = { { "@Cave/4-1 Rickety Rails/Time Attack: Shiny Gold" } },
 
 	[BASE4 + 0x301] = { { "@Cave/4-2 Grip & Trip/Puzzle Piece 1" } },
 	[BASE4 + 0x302] = { { "@Cave/4-2 Grip & Trip/Puzzle Piece 2" } },
@@ -476,6 +522,7 @@ LOCATION_MAPPING = {
 	[BASE4 + 0x324] = { { "@Cave/4-2 Grip & Trip/Time Attack: Bronze" } },
 	[BASE4 + 0x325] = { { "@Cave/4-2 Grip & Trip/Time Attack: Silver" } },
 	[BASE4 + 0x326] = { { "@Cave/4-2 Grip & Trip/Time Attack: Gold" } },
+	[BASE4 + 0x327] = { { "@Cave/4-2 Grip & Trip/Time Attack: Shiny Gold" } },
 
 	[BASE4 + 0x401] = { { "@Cave/4-3 Bombs Away/Puzzle Piece 1" } },
 	[BASE4 + 0x402] = { { "@Cave/4-3 Bombs Away/Puzzle Piece 2" } },
@@ -493,6 +540,7 @@ LOCATION_MAPPING = {
 	[BASE4 + 0x424] = { { "@Cave/4-3 Bombs Away/Time Attack: Bronze" } },
 	[BASE4 + 0x425] = { { "@Cave/4-3 Bombs Away/Time Attack: Silver" } },
 	[BASE4 + 0x426] = { { "@Cave/4-3 Bombs Away/Time Attack: Gold" } },
+	[BASE4 + 0x427] = { { "@Cave/4-3 Bombs Away/Time Attack: Shiny Gold" } },
 
 	[BASE4 + 0x501] = { { "@Cave/4-4 Mole Patrol/Puzzle Piece 1" } },
 	[BASE4 + 0x502] = { { "@Cave/4-4 Mole Patrol/Puzzle Piece 2" } },
@@ -510,6 +558,7 @@ LOCATION_MAPPING = {
 	[BASE4 + 0x524] = { { "@Cave/4-4 Mole Patrol/Time Attack: Bronze" } },
 	[BASE4 + 0x525] = { { "@Cave/4-4 Mole Patrol/Time Attack: Silver" } },
 	[BASE4 + 0x526] = { { "@Cave/4-4 Mole Patrol/Time Attack: Gold" } },
+	[BASE4 + 0x527] = { { "@Cave/4-4 Mole Patrol/Time Attack: Shiny Gold" } },
 
 	[BASE4 + 0x601] = { { "@Cave/4-5 Crowded Cavern/Puzzle Piece 1" } },
 	[BASE4 + 0x602] = { { "@Cave/4-5 Crowded Cavern/Puzzle Piece 2" } },
@@ -527,12 +576,14 @@ LOCATION_MAPPING = {
 	[BASE4 + 0x624] = { { "@Cave/4-5 Crowded Cavern/Time Attack: Bronze" } },
 	[BASE4 + 0x625] = { { "@Cave/4-5 Crowded Cavern/Time Attack: Silver" } },
 	[BASE4 + 0x626] = { { "@Cave/4-5 Crowded Cavern/Time Attack: Gold" } },
+	[BASE4 + 0x627] = { { "@Cave/4-5 Crowded Cavern/Time Attack: Shiny Gold" } },
 
 	[BASE4 + 0x121] = { { "@Cave/4-B The Mole Train/Boss Clear" } },
 	[BASE4 + 0x122] = { { "@Cave/4-B The Mole Train/Beat in Mirror Mode" } },
 	[BASE4 + 0x124] = { { "@Cave/4-B The Mole Train/Time Attack: Bronze" } },
 	[BASE4 + 0x125] = { { "@Cave/4-B The Mole Train/Time Attack: Silver" } },
 	[BASE4 + 0x126] = { { "@Cave/4-B The Mole Train/Time Attack: Gold" } },
+	[BASE4 + 0x127] = { { "@Cave/4-B The Mole Train/Time Attack: Shiny Gold" } },
 
 	[BASE4 + 0x001] = { { "@Cave/4-K Jagged Jewels/Puzzle Piece 1" } },
 	[BASE4 + 0x002] = { { "@Cave/4-K Jagged Jewels/Puzzle Piece 2" } },
@@ -545,6 +596,12 @@ LOCATION_MAPPING = {
 	[BASE4 + 0x024] = { { "@Cave/4-K Jagged Jewels/Time Attack: Bronze" } },
 	[BASE4 + 0x025] = { { "@Cave/4-K Jagged Jewels/Time Attack: Silver" } },
 	[BASE4 + 0x026] = { { "@Cave/4-K Jagged Jewels/Time Attack: Gold" } },
+	[BASE4 + 0x027] = { { "@Cave/4-K Jagged Jewels/Time Attack: Shiny Gold" } },
+	
+	[BASE4 + 0xB41] = { { "@Cave/4-S Cranky Kong's Shop/Cave Map Key" } },
+	[BASE4 + 0xB42] = { { "@Cave/4-S Cranky Kong's Shop/Cave Shop Balloons x1" } },
+	[BASE4 + 0xB43] = { { "@Cave/4-S Cranky Kong's Shop/Cave Shop Balloons x3" } },
+	[BASE4 + 0xB44] = { { "@Cave/4-S Cranky Kong's Shop/Cave Shop Balloons x7" } },
 
 	-- MARK: Forest
 	[BASE5 + 0xc0b] = { { "@Forest/Puzzle Bundle" } },
@@ -554,6 +611,7 @@ LOCATION_MAPPING = {
 	[BASE5 + 0xc24] = { { "@Forest/Time Attack: Bronze" } },
 	[BASE5 + 0xc25] = { { "@Forest/Time Attack: Silver" } },
 	[BASE5 + 0xc26] = { { "@Forest/Time Attack: Gold" } },
+	[BASE5 + 0xc27] = { { "@Forest/Time Attack: Shiny Gold" } },
 
 	[BASE5 + 0x201] = { { "@Forest/5-1 Vine Valley/Puzzle Piece 1" } },
 	[BASE5 + 0x202] = { { "@Forest/5-1 Vine Valley/Puzzle Piece 2" } },
@@ -573,6 +631,7 @@ LOCATION_MAPPING = {
 	[BASE5 + 0x224] = { { "@Forest/5-1 Vine Valley/Time Attack: Bronze" } },
 	[BASE5 + 0x225] = { { "@Forest/5-1 Vine Valley/Time Attack: Silver" } },
 	[BASE5 + 0x226] = { { "@Forest/5-1 Vine Valley/Time Attack: Gold" } },
+	[BASE5 + 0x227] = { { "@Forest/5-1 Vine Valley/Time Attack: Shiny Gold" } },
 
 	[BASE5 + 0x301] = { { "@Forest/5-2 Clingy Swingy/Puzzle Piece 1" } },
 	[BASE5 + 0x302] = { { "@Forest/5-2 Clingy Swingy/Puzzle Piece 2" } },
@@ -590,6 +649,7 @@ LOCATION_MAPPING = {
 	[BASE5 + 0x324] = { { "@Forest/5-2 Clingy Swingy/Time Attack: Bronze" } },
 	[BASE5 + 0x325] = { { "@Forest/5-2 Clingy Swingy/Time Attack: Silver" } },
 	[BASE5 + 0x326] = { { "@Forest/5-2 Clingy Swingy/Time Attack: Gold" } },
+	[BASE5 + 0x327] = { { "@Forest/5-2 Clingy Swingy/Time Attack: Shiny Gold" } },
 
 	[BASE5 + 0x401] = { { "@Forest/5-3 Flutter Flyaway/Puzzle Piece 1" } },
 	[BASE5 + 0x402] = { { "@Forest/5-3 Flutter Flyaway/Puzzle Piece 2" } },
@@ -609,6 +669,7 @@ LOCATION_MAPPING = {
 	[BASE5 + 0x424] = { { "@Forest/5-3 Flutter Flyaway/Time Attack: Bronze" } },
 	[BASE5 + 0x425] = { { "@Forest/5-3 Flutter Flyaway/Time Attack: Silver" } },
 	[BASE5 + 0x426] = { { "@Forest/5-3 Flutter Flyaway/Time Attack: Gold" } },
+	[BASE5 + 0x427] = { { "@Forest/5-3 Flutter Flyaway/Time Attack: Shiny Gold" } },
 
 	[BASE5 + 0x501] = { { "@Forest/5-4 Tippin' Totems/Puzzle Piece 1" } },
 	[BASE5 + 0x502] = { { "@Forest/5-4 Tippin' Totems/Puzzle Piece 2" } },
@@ -628,6 +689,7 @@ LOCATION_MAPPING = {
 	[BASE5 + 0x524] = { { "@Forest/5-4 Tippin' Totems/Time Attack: Bronze" } },
 	[BASE5 + 0x525] = { { "@Forest/5-4 Tippin' Totems/Time Attack: Silver" } },
 	[BASE5 + 0x526] = { { "@Forest/5-4 Tippin' Totems/Time Attack: Gold" } },
+	[BASE5 + 0x527] = { { "@Forest/5-4 Tippin' Totems/Time Attack: Shiny Gold" } },
 
 	[BASE5 + 0x601] = { { "@Forest/5-5 Longshot Launch/Puzzle Piece 1" } },
 	[BASE5 + 0x602] = { { "@Forest/5-5 Longshot Launch/Puzzle Piece 2" } },
@@ -647,6 +709,7 @@ LOCATION_MAPPING = {
 	[BASE5 + 0x624] = { { "@Forest/5-5 Longshot Launch/Time Attack: Bronze" } },
 	[BASE5 + 0x625] = { { "@Forest/5-5 Longshot Launch/Time Attack: Silver" } },
 	[BASE5 + 0x626] = { { "@Forest/5-5 Longshot Launch/Time Attack: Gold" } },
+	[BASE5 + 0x627] = { { "@Forest/5-5 Longshot Launch/Time Attack: Shiny Gold" } },
 
 	[BASE5 + 0x701] = { { "@Forest/5-6 Springy Spores/Puzzle Piece 1" } },
 	[BASE5 + 0x702] = { { "@Forest/5-6 Springy Spores/Puzzle Piece 2" } },
@@ -666,6 +729,7 @@ LOCATION_MAPPING = {
 	[BASE5 + 0x724] = { { "@Forest/5-6 Springy Spores/Time Attack: Bronze" } },
 	[BASE5 + 0x725] = { { "@Forest/5-6 Springy Spores/Time Attack: Silver" } },
 	[BASE5 + 0x726] = { { "@Forest/5-6 Springy Spores/Time Attack: Gold" } },
+	[BASE5 + 0x727] = { { "@Forest/5-6 Springy Spores/Time Attack: Shiny Gold" } },
 
 	[BASE5 + 0x801] = { { "@Forest/5-7 Wigglevine Wonders/Puzzle Piece 1" } },
 	[BASE5 + 0x802] = { { "@Forest/5-7 Wigglevine Wonders/Puzzle Piece 2" } },
@@ -685,6 +749,7 @@ LOCATION_MAPPING = {
 	[BASE5 + 0x824] = { { "@Forest/5-7 Wigglevine Wonders/Time Attack: Bronze" } },
 	[BASE5 + 0x825] = { { "@Forest/5-7 Wigglevine Wonders/Time Attack: Silver" } },
 	[BASE5 + 0x826] = { { "@Forest/5-7 Wigglevine Wonders/Time Attack: Gold" } },
+	[BASE5 + 0x827] = { { "@Forest/5-7 Wigglevine Wonders/Time Attack: Shiny Gold" } },
 
 	[BASE5 + 0x901] = { { "@Forest/5-8 Muncher Marathon/Puzzle Piece 1" } },
 	[BASE5 + 0x902] = { { "@Forest/5-8 Muncher Marathon/Puzzle Piece 2" } },
@@ -702,12 +767,14 @@ LOCATION_MAPPING = {
 	[BASE5 + 0x924] = { { "@Forest/5-8 Muncher Marathon/Time Attack: Bronze" } },
 	[BASE5 + 0x925] = { { "@Forest/5-8 Muncher Marathon/Time Attack: Silver" } },
 	[BASE5 + 0x926] = { { "@Forest/5-8 Muncher Marathon/Time Attack: Gold" } },
+	[BASE5 + 0x927] = { { "@Forest/5-8 Muncher Marathon/Time Attack: Shiny Gold" } },
 
 	[BASE5 + 0x121] = { { "@Forest/5-B Mangoruby Run/Boss Clear" } },
 	[BASE5 + 0x122] = { { "@Forest/5-B Mangoruby Run/Beat in Mirror Mode" } },
 	[BASE5 + 0x124] = { { "@Forest/5-B Mangoruby Run/Time Attack: Bronze" } },
 	[BASE5 + 0x125] = { { "@Forest/5-B Mangoruby Run/Time Attack: Silver" } },
 	[BASE5 + 0x126] = { { "@Forest/5-B Mangoruby Run/Time Attack: Gold" } },
+	[BASE5 + 0x127] = { { "@Forest/5-B Mangoruby Run/Time Attack: Shiny Gold" } },
 
 	[BASE5 + 0x001] = { { "@Forest/5-K Blast & Bounce/Puzzle Piece 1" } },
 	[BASE5 + 0x002] = { { "@Forest/5-K Blast & Bounce/Puzzle Piece 2" } },
@@ -720,6 +787,12 @@ LOCATION_MAPPING = {
 	[BASE5 + 0x024] = { { "@Forest/5-K Blast & Bounce/Time Attack: Bronze" } },
 	[BASE5 + 0x025] = { { "@Forest/5-K Blast & Bounce/Time Attack: Silver" } },
 	[BASE5 + 0x026] = { { "@Forest/5-K Blast & Bounce/Time Attack: Gold" } },
+	[BASE5 + 0x027] = { { "@Forest/5-K Blast & Bounce/Time Attack: Shiny Gold" } },
+	
+	[BASE5 + 0xB41] = { { "@Forest/5-S Cranky Kong's Shop/Forest Map Key" } },
+	[BASE5 + 0xB42] = { { "@Forest/5-S Cranky Kong's Shop/Forest Shop Balloons x1" } },
+	[BASE5 + 0xB43] = { { "@Forest/5-S Cranky Kong's Shop/Forest Shop Balloons x3" } },
+	[BASE5 + 0xB44] = { { "@Forest/5-S Cranky Kong's Shop/Forest Shop Balloons x7" } },
 
 	-- MARK: Cliff
 	[BASE6 + 0xc0b] = { { "@Cliff/Puzzle Bundle" } },
@@ -729,6 +802,7 @@ LOCATION_MAPPING = {
 	[BASE6 + 0xc24] = { { "@Cliff/Time Attack: Bronze" } },
 	[BASE6 + 0xc25] = { { "@Cliff/Time Attack: Silver" } },
 	[BASE6 + 0xc26] = { { "@Cliff/Time Attack: Gold" } },
+	[BASE6 + 0xc27] = { { "@Cliff/Time Attack: Shiny Gold" } },
 
 	[BASE6 + 0x201] = { { "@Cliff/6-1 Sticky Situation/Puzzle Piece 1" } },
 	[BASE6 + 0x202] = { { "@Cliff/6-1 Sticky Situation/Puzzle Piece 2" } },
@@ -750,6 +824,7 @@ LOCATION_MAPPING = {
 	[BASE6 + 0x224] = { { "@Cliff/6-1 Sticky Situation/Time Attack: Bronze" } },
 	[BASE6 + 0x225] = { { "@Cliff/6-1 Sticky Situation/Time Attack: Silver" } },
 	[BASE6 + 0x226] = { { "@Cliff/6-1 Sticky Situation/Time Attack: Gold" } },
+	[BASE6 + 0x227] = { { "@Cliff/6-1 Sticky Situation/Time Attack: Shiny Gold" } },
 
 	[BASE6 + 0x301] = { { "@Cliff/6-2 Prehistoric Path/Puzzle Piece 1" } },
 	[BASE6 + 0x302] = { { "@Cliff/6-2 Prehistoric Path/Puzzle Piece 2" } },
@@ -767,6 +842,7 @@ LOCATION_MAPPING = {
 	[BASE6 + 0x324] = { { "@Cliff/6-2 Prehistoric Path/Time Attack: Bronze" } },
 	[BASE6 + 0x325] = { { "@Cliff/6-2 Prehistoric Path/Time Attack: Silver" } },
 	[BASE6 + 0x326] = { { "@Cliff/6-2 Prehistoric Path/Time Attack: Gold" } },
+	[BASE6 + 0x327] = { { "@Cliff/6-2 Prehistoric Path/Time Attack: Shiny Gold" } },
 
 	[BASE6 + 0x401] = { { "@Cliff/6-3 Weighty Way/Puzzle Piece 1" } },
 	[BASE6 + 0x402] = { { "@Cliff/6-3 Weighty Way/Puzzle Piece 2" } },
@@ -784,6 +860,7 @@ LOCATION_MAPPING = {
 	[BASE6 + 0x424] = { { "@Cliff/6-3 Weighty Way/Time Attack: Bronze" } },
 	[BASE6 + 0x425] = { { "@Cliff/6-3 Weighty Way/Time Attack: Silver" } },
 	[BASE6 + 0x426] = { { "@Cliff/6-3 Weighty Way/Time Attack: Gold" } },
+	[BASE6 + 0x427] = { { "@Cliff/6-3 Weighty Way/Time Attack: Shiny Gold" } },
 
 	[BASE6 + 0x501] = { { "@Cliff/6-4 Boulder Roller/Puzzle Piece 1" } },
 	[BASE6 + 0x502] = { { "@Cliff/6-4 Boulder Roller/Puzzle Piece 2" } },
@@ -803,6 +880,7 @@ LOCATION_MAPPING = {
 	[BASE6 + 0x524] = { { "@Cliff/6-4 Boulder Roller/Time Attack: Bronze" } },
 	[BASE6 + 0x525] = { { "@Cliff/6-4 Boulder Roller/Time Attack: Silver" } },
 	[BASE6 + 0x526] = { { "@Cliff/6-4 Boulder Roller/Time Attack: Gold" } },
+	[BASE6 + 0x527] = { { "@Cliff/6-4 Boulder Roller/Time Attack: Shiny Gold" } },
 
 	[BASE6 + 0x601] = { { "@Cliff/6-5 Precarious Plateau/Puzzle Piece 1" } },
 	[BASE6 + 0x602] = { { "@Cliff/6-5 Precarious Plateau/Puzzle Piece 2" } },
@@ -820,6 +898,7 @@ LOCATION_MAPPING = {
 	[BASE6 + 0x624] = { { "@Cliff/6-5 Precarious Plateau/Time Attack: Bronze" } },
 	[BASE6 + 0x625] = { { "@Cliff/6-5 Precarious Plateau/Time Attack: Silver" } },
 	[BASE6 + 0x626] = { { "@Cliff/6-5 Precarious Plateau/Time Attack: Gold" } },
+	[BASE6 + 0x627] = { { "@Cliff/6-5 Precarious Plateau/Time Attack: Shiny Gold" } },
 
 	[BASE6 + 0x701] = { { "@Cliff/6-6 Crumble Canyon/Puzzle Piece 1" } },
 	[BASE6 + 0x702] = { { "@Cliff/6-6 Crumble Canyon/Puzzle Piece 2" } },
@@ -841,6 +920,7 @@ LOCATION_MAPPING = {
 	[BASE6 + 0x724] = { { "@Cliff/6-6 Crumble Canyon/Time Attack: Bronze" } },
 	[BASE6 + 0x725] = { { "@Cliff/6-6 Crumble Canyon/Time Attack: Silver" } },
 	[BASE6 + 0x726] = { { "@Cliff/6-6 Crumble Canyon/Time Attack: Gold" } },
+	[BASE6 + 0x727] = { { "@Cliff/6-6 Crumble Canyon/Time Attack: Shiny Gold" } },
 
 	[BASE6 + 0x801] = { { "@Cliff/6-7 Tippy Shippy/Puzzle Piece 1" } },
 	[BASE6 + 0x802] = { { "@Cliff/6-7 Tippy Shippy/Puzzle Piece 2" } },
@@ -858,6 +938,7 @@ LOCATION_MAPPING = {
 	[BASE6 + 0x824] = { { "@Cliff/6-7 Tippy Shippy/Time Attack: Bronze" } },
 	[BASE6 + 0x825] = { { "@Cliff/6-7 Tippy Shippy/Time Attack: Silver" } },
 	[BASE6 + 0x826] = { { "@Cliff/6-7 Tippy Shippy/Time Attack: Gold" } },
+	[BASE6 + 0x827] = { { "@Cliff/6-7 Tippy Shippy/Time Attack: Shiny Gold" } },
 
 	[BASE6 + 0x901] = { { "@Cliff/6-8 Clifftop Climb/Puzzle Piece 1" } },
 	[BASE6 + 0x902] = { { "@Cliff/6-8 Clifftop Climb/Puzzle Piece 2" } },
@@ -875,12 +956,14 @@ LOCATION_MAPPING = {
 	[BASE6 + 0x924] = { { "@Cliff/6-8 Clifftop Climb/Time Attack: Bronze" } },
 	[BASE6 + 0x925] = { { "@Cliff/6-8 Clifftop Climb/Time Attack: Silver" } },
 	[BASE6 + 0x926] = { { "@Cliff/6-8 Clifftop Climb/Time Attack: Gold" } },
+	[BASE6 + 0x927] = { { "@Cliff/6-8 Clifftop Climb/Time Attack: Shiny Gold" } },
 
 	[BASE6 + 0x121] = { { "@Cliff/6-B Thugly's Highrise/Boss Clear" } },
 	[BASE6 + 0x122] = { { "@Cliff/6-B Thugly's Highrise/Beat in Mirror Mode" } },
 	[BASE6 + 0x124] = { { "@Cliff/6-B Thugly's Highrise/Time Attack: Bronze" } },
 	[BASE6 + 0x125] = { { "@Cliff/6-B Thugly's Highrise/Time Attack: Silver" } },
 	[BASE6 + 0x126] = { { "@Cliff/6-B Thugly's Highrise/Time Attack: Gold" } },
+	[BASE6 + 0x127] = { { "@Cliff/6-B Thugly's Highrise/Time Attack: Shiny Gold" } },
 
 	[BASE6 + 0x001] = { { "@Cliff/6-K Perilous Passage/Puzzle Piece 1" } },
 	[BASE6 + 0x002] = { { "@Cliff/6-K Perilous Passage/Puzzle Piece 2" } },
@@ -893,6 +976,12 @@ LOCATION_MAPPING = {
 	[BASE6 + 0x024] = { { "@Cliff/6-K Perilous Passage/Time Attack: Bronze" } },
 	[BASE6 + 0x025] = { { "@Cliff/6-K Perilous Passage/Time Attack: Silver" } },
 	[BASE6 + 0x026] = { { "@Cliff/6-K Perilous Passage/Time Attack: Gold" } },
+	[BASE6 + 0x027] = { { "@Cliff/6-K Perilous Passage/Time Attack: Shiny Gold" } },
+	
+	[BASE6 + 0xB41] = { { "@Cliff/6-S Cranky Kong's Shop/Cliff Map Key" } },
+	[BASE6 + 0xB42] = { { "@Cliff/6-S Cranky Kong's Shop/Cliff Shop Balloons x1" } },
+	[BASE6 + 0xB43] = { { "@Cliff/6-S Cranky Kong's Shop/Cliff Shop Balloons x3" } },
+	[BASE6 + 0xB44] = { { "@Cliff/6-S Cranky Kong's Shop/Cliff Shop Balloons x7" } },
 
 	-- MARK: Factory
 	[BASE7 + 0xc0b] = { { "@Factory/Puzzle Bundle" } },
@@ -902,6 +991,7 @@ LOCATION_MAPPING = {
 	[BASE7 + 0xc24] = { { "@Factory/Time Attack: Bronze" } },
 	[BASE7 + 0xc25] = { { "@Factory/Time Attack: Silver" } },
 	[BASE7 + 0xc26] = { { "@Factory/Time Attack: Gold" } },
+	[BASE7 + 0xc27] = { { "@Factory/Time Attack: Shiny Gold" } },
 
 	[BASE7 + 0x201] = { { "@Factory/7-1 Foggy Fumes/Puzzle Piece 1" } },
 	[BASE7 + 0x202] = { { "@Factory/7-1 Foggy Fumes/Puzzle Piece 2" } },
@@ -921,6 +1011,7 @@ LOCATION_MAPPING = {
 	[BASE7 + 0x224] = { { "@Factory/7-1 Foggy Fumes/Time Attack: Bronze" } },
 	[BASE7 + 0x225] = { { "@Factory/7-1 Foggy Fumes/Time Attack: Silver" } },
 	[BASE7 + 0x226] = { { "@Factory/7-1 Foggy Fumes/Time Attack: Gold" } },
+	[BASE7 + 0x227] = { { "@Factory/7-1 Foggy Fumes/Time Attack: Shiny Gold" } },
 
 	[BASE7 + 0x301] = { { "@Factory/7-2 Slammin' Steel/Puzzle Piece 1" } },
 	[BASE7 + 0x302] = { { "@Factory/7-2 Slammin' Steel/Puzzle Piece 2" } },
@@ -938,6 +1029,7 @@ LOCATION_MAPPING = {
 	[BASE7 + 0x324] = { { "@Factory/7-2 Slammin' Steel/Time Attack: Bronze" } },
 	[BASE7 + 0x325] = { { "@Factory/7-2 Slammin' Steel/Time Attack: Silver" } },
 	[BASE7 + 0x326] = { { "@Factory/7-2 Slammin' Steel/Time Attack: Gold" } },
+	[BASE7 + 0x327] = { { "@Factory/7-2 Slammin' Steel/Time Attack: Shiny Gold" } },
 
 	[BASE7 + 0x401] = { { "@Factory/7-3 Handy Hazards/Puzzle Piece 1" } },
 	[BASE7 + 0x402] = { { "@Factory/7-3 Handy Hazards/Puzzle Piece 2" } },
@@ -957,6 +1049,7 @@ LOCATION_MAPPING = {
 	[BASE7 + 0x424] = { { "@Factory/7-3 Handy Hazards/Time Attack: Bronze" } },
 	[BASE7 + 0x425] = { { "@Factory/7-3 Handy Hazards/Time Attack: Silver" } },
 	[BASE7 + 0x426] = { { "@Factory/7-3 Handy Hazards/Time Attack: Gold" } },
+	[BASE7 + 0x427] = { { "@Factory/7-3 Handy Hazards/Time Attack: Shiny Gold" } },
 
 	[BASE7 + 0x501] = { { "@Factory/7-4 Gear Getaway/Puzzle Piece 1" } },
 	[BASE7 + 0x502] = { { "@Factory/7-4 Gear Getaway/Puzzle Piece 2" } },
@@ -976,6 +1069,7 @@ LOCATION_MAPPING = {
 	[BASE7 + 0x524] = { { "@Factory/7-4 Gear Getaway/Time Attack: Bronze" } },
 	[BASE7 + 0x525] = { { "@Factory/7-4 Gear Getaway/Time Attack: Silver" } },
 	[BASE7 + 0x526] = { { "@Factory/7-4 Gear Getaway/Time Attack: Gold" } },
+	[BASE7 + 0x527] = { { "@Factory/7-4 Gear Getaway/Time Attack: Shiny Gold" } },
 
 	[BASE7 + 0x601] = { { "@Factory/7-5 Cog Jog/Puzzle Piece 1" } },
 	[BASE7 + 0x602] = { { "@Factory/7-5 Cog Jog/Puzzle Piece 2" } },
@@ -997,6 +1091,7 @@ LOCATION_MAPPING = {
 	[BASE7 + 0x624] = { { "@Factory/7-5 Cog Jog/Time Attack: Bronze" } },
 	[BASE7 + 0x625] = { { "@Factory/7-5 Cog Jog/Time Attack: Silver" } },
 	[BASE7 + 0x626] = { { "@Factory/7-5 Cog Jog/Time Attack: Gold" } },
+	[BASE7 + 0x627] = { { "@Factory/7-5 Cog Jog/Time Attack: Shiny Gold" } },
 
 	[BASE7 + 0x701] = { { "@Factory/7-6 Switcheroo/Puzzle Piece 1" } },
 	[BASE7 + 0x702] = { { "@Factory/7-6 Switcheroo/Puzzle Piece 2" } },
@@ -1014,6 +1109,7 @@ LOCATION_MAPPING = {
 	[BASE7 + 0x724] = { { "@Factory/7-6 Switcheroo/Time Attack: Bronze" } },
 	[BASE7 + 0x725] = { { "@Factory/7-6 Switcheroo/Time Attack: Silver" } },
 	[BASE7 + 0x726] = { { "@Factory/7-6 Switcheroo/Time Attack: Gold" } },
+	[BASE7 + 0x727] = { { "@Factory/7-6 Switcheroo/Time Attack: Shiny Gold" } },
 
 	[BASE7 + 0x801] = { { "@Factory/7-7 Music Madness/Puzzle Piece 1" } },
 	[BASE7 + 0x802] = { { "@Factory/7-7 Music Madness/Puzzle Piece 2" } },
@@ -1031,6 +1127,7 @@ LOCATION_MAPPING = {
 	[BASE7 + 0x824] = { { "@Factory/7-7 Music Madness/Time Attack: Bronze" } },
 	[BASE7 + 0x825] = { { "@Factory/7-7 Music Madness/Time Attack: Silver" } },
 	[BASE7 + 0x826] = { { "@Factory/7-7 Music Madness/Time Attack: Gold" } },
+	[BASE7 + 0x827] = { { "@Factory/7-7 Music Madness/Time Attack: Shiny Gold" } },
 
 	[BASE7 + 0xa21] = { { "@Factory/7-R Lift-off Launch/Complete Level" } },
 
@@ -1050,6 +1147,12 @@ LOCATION_MAPPING = {
 	[BASE7 + 0x024] = { { "@Factory/7-K Treacherous Track/Time Attack: Bronze" } },
 	[BASE7 + 0x025] = { { "@Factory/7-K Treacherous Track/Time Attack: Silver" } },
 	[BASE7 + 0x026] = { { "@Factory/7-K Treacherous Track/Time Attack: Gold" } },
+	[BASE7 + 0x0267] = { { "@Factory/7-K Treacherous Track/Time Attack: Shiny Gold" } },
+	
+	[BASE7 + 0xB41] = { { "@Factory/7-S Cranky Kong's Shop/Factory Map Key" } },
+	[BASE7 + 0xB42] = { { "@Factory/7-S Cranky Kong's Shop/Factory Shop Balloons x1" } },
+	[BASE7 + 0xB43] = { { "@Factory/7-S Cranky Kong's Shop/Factory Shop Balloons x3" } },
+	[BASE7 + 0xB44] = { { "@Factory/7-S Cranky Kong's Shop/Factory Shop Balloons x7" } },
 
 	-- MARK: Volcano
 	[BASE8 + 0xc0b] = { { "@Volcano/Puzzle Bundle" } },
@@ -1059,6 +1162,7 @@ LOCATION_MAPPING = {
 	[BASE8 + 0xc24] = { { "@Volcano/Time Attack: Bronze" } },
 	[BASE8 + 0xc25] = { { "@Volcano/Time Attack: Silver" } },
 	[BASE8 + 0xc26] = { { "@Volcano/Time Attack: Gold" } },
+	[BASE8 + 0xc27] = { { "@Volcano/Time Attack: Shiny Gold" } },
 
 	[BASE8 + 0x201] = { { "@Volcano/8-1 Furious Fire/Puzzle Piece 1" } },
 	[BASE8 + 0x202] = { { "@Volcano/8-1 Furious Fire/Puzzle Piece 2" } },
@@ -1076,6 +1180,7 @@ LOCATION_MAPPING = {
 	[BASE8 + 0x224] = { { "@Volcano/8-1 Furious Fire/Time Attack: Bronze" } },
 	[BASE8 + 0x225] = { { "@Volcano/8-1 Furious Fire/Time Attack: Silver" } },
 	[BASE8 + 0x226] = { { "@Volcano/8-1 Furious Fire/Time Attack: Gold" } },
+	[BASE8 + 0x227] = { { "@Volcano/8-1 Furious Fire/Time Attack: Shiny Gold" } },
 
 	[BASE8 + 0x301] = { { "@Volcano/8-2 Hot Rocket/Puzzle Piece 1" } },
 	[BASE8 + 0x302] = { { "@Volcano/8-2 Hot Rocket/Puzzle Piece 2" } },
@@ -1093,6 +1198,7 @@ LOCATION_MAPPING = {
 	[BASE8 + 0x324] = { { "@Volcano/8-2 Hot Rocket/Time Attack: Bronze" } },
 	[BASE8 + 0x325] = { { "@Volcano/8-2 Hot Rocket/Time Attack: Silver" } },
 	[BASE8 + 0x326] = { { "@Volcano/8-2 Hot Rocket/Time Attack: Gold" } },
+	[BASE8 + 0x327] = { { "@Volcano/8-2 Hot Rocket/Time Attack: Shiny Gold" } },
 
 	[BASE8 + 0x401] = { { "@Volcano/8-3 Roasting Rails/Puzzle Piece 1" } },
 	[BASE8 + 0x402] = { { "@Volcano/8-3 Roasting Rails/Puzzle Piece 2" } },
@@ -1110,6 +1216,7 @@ LOCATION_MAPPING = {
 	[BASE8 + 0x424] = { { "@Volcano/8-3 Roasting Rails/Time Attack: Bronze" } },
 	[BASE8 + 0x425] = { { "@Volcano/8-3 Roasting Rails/Time Attack: Silver" } },
 	[BASE8 + 0x426] = { { "@Volcano/8-3 Roasting Rails/Time Attack: Gold" } },
+	[BASE8 + 0x427] = { { "@Volcano/8-3 Roasting Rails/Time Attack: Shiny Gold" } },
 
 	[BASE8 + 0x501] = { { "@Volcano/8-4 Smokey Peak/Puzzle Piece 1" } },
 	[BASE8 + 0x502] = { { "@Volcano/8-4 Smokey Peak/Puzzle Piece 2" } },
@@ -1127,6 +1234,7 @@ LOCATION_MAPPING = {
 	[BASE8 + 0x524] = { { "@Volcano/8-4 Smokey Peak/Time Attack: Bronze" } },
 	[BASE8 + 0x525] = { { "@Volcano/8-4 Smokey Peak/Time Attack: Silver" } },
 	[BASE8 + 0x526] = { { "@Volcano/8-4 Smokey Peak/Time Attack: Gold" } },
+	[BASE8 + 0x527] = { { "@Volcano/8-4 Smokey Peak/Time Attack: Shiny Gold" } },
 
 	[BASE8 + 0x601] = { { "@Volcano/8-5 Bobbing Basalt/Puzzle Piece 1" } },
 	[BASE8 + 0x602] = { { "@Volcano/8-5 Bobbing Basalt/Puzzle Piece 2" } },
@@ -1146,6 +1254,7 @@ LOCATION_MAPPING = {
 	[BASE8 + 0x624] = { { "@Volcano/8-5 Bobbing Basalt/Time Attack: Bronze" } },
 	[BASE8 + 0x625] = { { "@Volcano/8-5 Bobbing Basalt/Time Attack: Silver" } },
 	[BASE8 + 0x626] = { { "@Volcano/8-5 Bobbing Basalt/Time Attack: Gold" } },
+	[BASE8 + 0x627] = { { "@Volcano/8-5 Bobbing Basalt/Time Attack: Shiny Gold" } },
 
 	[BASE8 + 0x701] = { { "@Volcano/8-6 Moving Melters/Puzzle Piece 1" } },
 	[BASE8 + 0x702] = { { "@Volcano/8-6 Moving Melters/Puzzle Piece 2" } },
@@ -1163,6 +1272,7 @@ LOCATION_MAPPING = {
 	[BASE8 + 0x724] = { { "@Volcano/8-6 Moving Melters/Time Attack: Bronze" } },
 	[BASE8 + 0x725] = { { "@Volcano/8-6 Moving Melters/Time Attack: Silver" } },
 	[BASE8 + 0x726] = { { "@Volcano/8-6 Moving Melters/Time Attack: Gold" } },
+	[BASE8 + 0x727] = { { "@Volcano/8-6 Moving Melters/Time Attack: Shiny Gold" } },
 
 	[BASE8 + 0x801] = { { "@Volcano/8-7 Red Red Rising/Puzzle Piece 1" } },
 	[BASE8 + 0x802] = { { "@Volcano/8-7 Red Red Rising/Puzzle Piece 2" } },
@@ -1180,12 +1290,14 @@ LOCATION_MAPPING = {
 	[BASE8 + 0x824] = { { "@Volcano/8-7 Red Red Rising/Time Attack: Bronze" } },
 	[BASE8 + 0x825] = { { "@Volcano/8-7 Red Red Rising/Time Attack: Silver" } },
 	[BASE8 + 0x826] = { { "@Volcano/8-7 Red Red Rising/Time Attack: Gold" } },
+	[BASE8 + 0x827] = { { "@Volcano/8-7 Red Red Rising/Time Attack: Shiny Gold" } },
 
 	[BASE8 + 0x121] = { { "@Volcano/8-B Tiki Tong Terror/Boss Clear" } },
 	[BASE8 + 0x122] = { { "@Volcano/8-B Tiki Tong Terror/Beat in Mirror Mode" } },
 	[BASE8 + 0x124] = { { "@Volcano/8-B Tiki Tong Terror/Time Attack: Bronze" } },
 	[BASE8 + 0x125] = { { "@Volcano/8-B Tiki Tong Terror/Time Attack: Silver" } },
 	[BASE8 + 0x126] = { { "@Volcano/8-B Tiki Tong Terror/Time Attack: Gold" } },
+	[BASE8 + 0x127] = { { "@Volcano/8-B Tiki Tong Terror/Time Attack: Shiny Gold" } },
 
 	[BASE8 + 0x001] = { { "@Volcano/8-K Five Monkey Trial/Puzzle Piece 1" } },
 	[BASE8 + 0x002] = { { "@Volcano/8-K Five Monkey Trial/Puzzle Piece 2" } },
@@ -1198,6 +1310,12 @@ LOCATION_MAPPING = {
 	[BASE8 + 0x024] = { { "@Volcano/8-K Five Monkey Trial/Time Attack: Bronze" } },
 	[BASE8 + 0x025] = { { "@Volcano/8-K Five Monkey Trial/Time Attack: Silver" } },
 	[BASE8 + 0x026] = { { "@Volcano/8-K Five Monkey Trial/Time Attack: Gold" } },
+	[BASE8 + 0x027] = { { "@Volcano/8-K Five Monkey Trial/Time Attack: Shiny Gold" } },
+	
+	[BASE8 + 0xB41] = { { "@Volcano/8-S Cranky Kong's Shop/Volcano Map Key" } },
+	[BASE8 + 0xB42] = { { "@Volcano/8-S Cranky Kong's Shop/Volcano Shop Balloons x1" } },
+	[BASE8 + 0xB43] = { { "@Volcano/8-S Cranky Kong's Shop/Volcano Shop Balloons x3" } },
+	[BASE8 + 0xB44] = { { "@Volcano/8-S Cranky Kong's Shop/Volcano Shop Balloons x7" } },
 
 	-- MARK: Golden Temple
 	[BASE9 + 0x001] = { { "@Golden Temple/9-1 Golden Temple/Puzzle Piece 1" } },
@@ -1211,5 +1329,6 @@ LOCATION_MAPPING = {
 	[BASE9 + 0x022] = { { "@Golden Temple/9-1 Golden Temple/Beat in Mirror Mode" } },
 	[BASE9 + 0x024] = { { "@Golden Temple/9-1 Golden Temple/Time Attack: Bronze" } },
 	[BASE9 + 0x025] = { { "@Golden Temple/9-1 Golden Temple/Time Attack: Silver" } },
-	[BASE9 + 0x026] = { { "@Golden Temple/9-1 Golden Temple/Time Attack: Gold" } }
+	[BASE9 + 0x026] = { { "@Golden Temple/9-1 Golden Temple/Time Attack: Gold" } },
+	[BASE9 + 0x027] = { { "@Golden Temple/9-1 Golden Temple/Time Attack: Shiny Gold" } }
 }

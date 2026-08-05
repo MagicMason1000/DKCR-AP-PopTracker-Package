@@ -1147,8 +1147,26 @@
                 "sections": [
 					{
 						"name": "Beach Map Key",
-						"chest_unopened_img": "images/locations/item_map_key.png",
-						"chest_opened_img": "images/locations/item_map_key_purchased.png",
+						"chest_unopened_img": "images/locations/shop_map_key.png",
+						"chest_opened_img": "images/locations/shop_map_key_purchased.png",
+						"item_count": 1
+					},
+					{
+						"name": "Beach Shop Balloons x1",
+						"chest_unopened_img": "images/locations/shop_balloons_x1.png",
+						"chest_opened_img": "images/locations/shop_balloons_x1_purchased.png",
+						"item_count": 1
+					},
+					{
+						"name": "Beach Shop Balloons x3",
+						"chest_unopened_img": "images/locations/shop_balloons_x3.png",
+						"chest_opened_img": "images/locations/shop_balloons_x3_purchased.png",
+						"item_count": 1
+					},
+					{
+						"name": "Beach Shop Balloons x7",
+						"chest_unopened_img": "images/locations/shop_balloons_x7.png",
+						"chest_opened_img": "images/locations/shop_balloons_x7_purchased.png",
 						"item_count": 1
 					}
                 ],
