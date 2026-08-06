@@ -152,10 +152,13 @@ function apply_slot_data(slot_data)
 	-- Time Attack Enabled setting
 	local taObj = Tracker:FindObjectForCode("ta_setting")
 	if taObj then
-		taObj.CurrentStage = slot_data["time_trial_medal"]
-		if ENABLE_DEBUG_LOG then
-			local medals = {"None", "Bronze", "Silver", "Gold", "Shiny Gold"}
-			print(string.format("apply_slot_data: Time Attack setting set to %s (%s)", slot_data["time_trial_medal"], medals[1 + slot_data["time_trial_medal"]]))
+		for i = 1, #slot_data["time_attack_medal"] do
+			if (slot_data["time_attack_medal"][i] == "Bronze") then
+			elseif (slot_data["time_attack_medal"][i] == "Silver") then
+			elseif (slot_data["time_attack_medal"][i] == "Gold") then
+			elseif (slot_data["time_attack_medal"][i] == "Shiny Gold") then
+			else
+			end
 		end
 	elseif ENABLE_DEBUG_LOG then
 		print(string.format("WARNING: apply_slot_data on taObj could not find object for code %s", taObj))
