@@ -1,4 +1,5 @@
 [
+    // MARK: Headers
     {
         "name": "Settings Header",
         "type": "static",
@@ -17,6 +18,13 @@
         "img": "images/settings/static_kReq_header.png",
         "codes": "kReq_header"
     },
+    {
+        "name": "Key Header",
+        "type": "static",
+        "img": "images/settings/static_key_header.png",
+        "codes": "key_header"
+    },
+    // MARK: Misc.
     {
         "name": "Shopsanity Setting",
         "type": "progressive",
@@ -336,14 +344,14 @@
         "stages": [
             {
                 "name": "7-R Required Disabled",
-                "img": "images/settings/setting_7rReq_disabled.png",
-                "codes": "7rReq_setting, 7rReq_disabled",
+                "img": "images/settings/setting_lolReq_disabled.png",
+                "codes": "lolReq_setting, lolReq_disabled",
                 "inherit_codes": false
             },
             {
                 "name": "7-R Required Enabled",
-                "img": "images/settings/setting_7rReq_enabled.png",
-                "codes": "7rReq_setting, 7rReq_enabled",
+                "img": "images/settings/setting_lolReq_enabled.png",
+                "codes": "lolReq_setting, lolReq_enabled",
                 "inherit_codes": false
             }
         ]
@@ -354,5 +362,174 @@
         "img": "images/settings/setting_factory_button.png",
         "codes": "factory_button_setting",
         "max_quantity": 15
+    },
+    // MARK: Map Keys
+    {
+        "name": "Jungle Key Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Randomized Jungle Key Disabled",
+                "img": "images/settings/setting_key_disabled.png",
+                "codes": "key1_setting, key1_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomized Jungle Key Enabled",
+                "img": "images/settings/setting_key_enabled.png",
+                "codes": "key1_setting, key1_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Beach Key Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Randomized Beach Key Disabled",
+                "img": "images/settings/setting_key_disabled.png",
+                "codes": "key2_setting, key2_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomized Beach Key Enabled",
+                "img": "images/settings/setting_key_enabled.png",
+                "codes": "key2_setting, key2_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Ruins Key Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Randomized Ruins Key Disabled",
+                "img": "images/settings/setting_key_disabled.png",
+                "codes": "key3_setting, key3_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomized Ruins Key Enabled",
+                "img": "images/settings/setting_key_enabled.png",
+                "codes": "key3_setting, key3_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Cave Key Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Randomized Cave Key Disabled",
+                "img": "images/settings/setting_key_disabled.png",
+                "codes": "key4_setting, key4_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomized Cave Key Enabled",
+                "img": "images/settings/setting_key_enabled.png",
+                "codes": "key4_setting, key4_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Forest Key Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Randomized Forest Key Disabled",
+                "img": "images/settings/setting_key_disabled.png",
+                "codes": "key5_setting, key5_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomized Forest Key Enabled",
+                "img": "images/settings/setting_key_enabled.png",
+                "codes": "key5_setting, key5_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Cliff Key Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Randomized Cliff Key Disabled",
+                "img": "images/settings/setting_key_disabled.png",
+                "codes": "key6_setting, key6_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomized Cliff Key Enabled",
+                "img": "images/settings/setting_key_enabled.png",
+                "codes": "key6_setting, key6_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Factory Key Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Randomized Factory Key Disabled",
+                "img": "images/settings/setting_key_disabled.png",
+                "codes": "key7_setting, key7_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomized Factory Key Enabled",
+                "img": "images/settings/setting_key_enabled.png",
+                "codes": "key7_setting, key7_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Volcano Key Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Randomized Volcano Key Disabled",
+                "img": "images/settings/setting_key_disabled.png",
+                "codes": "key8_setting, key8_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Randomized Volcano Key Enabled",
+                "img": "images/settings/setting_key_enabled.png",
+                "codes": "key8_setting, key8_enabled",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

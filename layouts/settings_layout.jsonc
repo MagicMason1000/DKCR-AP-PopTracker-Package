@@ -100,6 +100,32 @@
                                 "smog_clear_setting",
                                 "lolReq_setting",
                                 "factory_button_setting"
+                            ],
+                            []
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "item": "key_header",
+                        "max_width": 275
+                    },
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "4,4",
+                        "h_alignment": "left",
+                        "item_size": "80,80",
+                        "rows": [
+                            [
+                                "key1_setting",
+                                "key2_setting",
+                                "key3_setting",
+                                "key4_setting"
+                            ],
+                            [
+                                "key5_setting",
+                                "key6_setting",
+                                "key7_setting",
+                                "key8_setting"
                             ]
                         ]
                     }

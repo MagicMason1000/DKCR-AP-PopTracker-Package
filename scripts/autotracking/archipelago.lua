@@ -149,6 +149,29 @@ function apply_slot_data(slot_data)
 		end
 	end
 
+	-- Map Key settings
+	local keys = {
+		slot_data["sunset_shore_key"],
+		slot_data["blowhole_bound_key"],
+		slot_data["damp_dungeon_key"],
+		slot_data["mole_patrol_key"],
+		slot_data["springy_spores_key"],
+		slot_data["precarious_plateau_key"],
+		slot_data["handy_hazards_key"],
+		slot_data["smokey_peak_key"]
+	}
+	for world = 1, 8 do
+		local keyObj = Tracker:FindObjectForCode("key" .. world .. "_setting")
+		if keyObj then
+			keyObj.CurrentStage = keys[world]
+			if ENABLE_DEBUG_LOG then
+				print(string.format("apply_slot_data: set Randomized Map Key option for World %s to %s (%s)", world, keys[world], abled[1 + keys[world]]))
+			end
+		elseif ENABLE_DEBUG_LOG then
+			print(string.format("WARNING: apply_slot_data on keyObj could not find object for code %s", keyObj))
+		end
+	end
+
 	-- Time Attack Enabled setting
 	local taObj = Tracker:FindObjectForCode("ta_setting")
 	if taObj then
