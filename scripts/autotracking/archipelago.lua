@@ -225,7 +225,7 @@ function apply_slot_data(slot_data)
 	end
 
 	-- 7-R Required setting
-	local lolObj = Tracker:FindObjectForCode("7rReq_setting")
+	local lolObj = Tracker:FindObjectForCode("lolReq_setting")
 	if lolObj then
 		lolObj.CurrentStage = slot_data["lift_off_launch"]
 		if ENABLE_DEBUG_LOG then

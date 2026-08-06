@@ -6,6 +6,8 @@ ENABLE_LETTERCHECK_LOG = false
 ENABLE_BOSSCHECK_LOG = false
 ENABLE_SHARDCHECK_LOG = false
 ENABLE_ORBCHECK_LOG = false
+ENABLE_SMOGCHECK_LOG = false
+ENABLE_LOLCHECK_LOG = false
 -------------------------------------------------------
 print("")
 print("Active Auto-Tracker Configuration")
@@ -243,7 +245,7 @@ function WorldCheck(world, checkType)
         return false
     end
 
-    if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
+    if ENABLE_DEBUG_LOG then
         print(string.format("WARNING: WorldCheck reached end of function without a proper checkType value. checkType was %s", checkType))
     end
     return false
@@ -285,12 +287,12 @@ function BossCheck(world)
                 end
                 return true
             end
-        elseif ENABLE_DEBUG_LOG and ENABLE_BOSSCHECK_LOG then
+        elseif ENABLE_DEBUG_LOG then
             print(string.format("WARNING: BossCheck reached end of loop. World was %s, i was %s, bossReqs[i] was %s.", world, i, bossReqs[i]))
         end
     end
 
-    if ENABLE_DEBUG_LOG and ENABLE_BOSSCHECK_LOG then
+    if ENABLE_DEBUG_LOG then
         print(string.format("WARNING: BossCheck reached end of function without a proper return. World was %s, pp was %s.", world, pp))
     end
     return false
@@ -328,7 +330,7 @@ function LetterCheck(world)
         return true
     end
     
-    if ENABLE_DEBUG_LOG and ENABLE_LETTERCHECK_LOG then
+    if ENABLE_DEBUG_LOG then
         print(string.format("WARNING: LetterCheck reached end of function without a proper return. World was %s, letters was %s.", world, letters))
     end
     return false
@@ -361,12 +363,12 @@ function ShardCheck()
             print(string.format("ShardCheck [SUCCESS]: Mirror Mode checks are in logic.", shardCount, shardReq))
         end
         return true
-    elseif ENABLE_DEBUG_LOG and ENABLE_SHARDCHECK_LOG then
+    elseif ENABLE_DEBUG_LOG then
         print(string.format("WARNING: ShardCheck had an invalid comparison. shardCount was %s, shardReq was %s.", shardCount, shardReq))
         return false
     end
 
-    if ENABLE_DEBUG_LOG and ENABLE_SHARDCHECK_LOG then
+    if ENABLE_DEBUG_LOG then
         print(string.format("WARNING: ShardCheck reached end of function without a proper return. shardCount was %s, shardReq was %s.", shardCount, shardReq))
     end
     return false
@@ -375,7 +377,7 @@ end
 -- MARK: OrbCheck
 function OrbCheck()
     if ENABLE_DEBUG_LOG and ENABLE_ORBCHECK_LOG then
-        print("")
+        print()
         print("OrbCheck: Called.")
     end
 
@@ -414,13 +416,99 @@ function OrbCheck()
             print("OrbCheck [SUCCESS]: The Golden Temple is in logic.")
         end
         return true
-    elseif ENABLE_DEBUG_LOG and ENABLE_ORBCHECK_LOG then
+    elseif ENABLE_DEBUG_LOG then
         print(string.format("WARNING: OrbCheck had an invalid comparison. Count was %s, orbReq was %s.", count, orbReq))
         return false
     end
 
-    if ENABLE_DEBUG_LOG and ENABLE_ORBCHECK_LOG then
+    if ENABLE_DEBUG_LOG then
         print(string.format("WARNING: OrbCheck reached end of function without a proper return. orbReq was %s.", orbReq))
+    end
+    return false
+end
+
+-- MARK: SmogCheck
+function SmogCheck(smogLog)
+    if ENABLE_DEBUG_LOG and ENABLE_SMOGCHECK_LOG then
+        print()
+        print(string.format("SmogCheck: Called for %s.", smogLog))
+    end
+
+    if ((Tracker:FindObjectForCode("smog_clear_setting")).CurrentStage == 0) then
+        if ENABLE_DEBUG_LOG and ENABLE_SMOGCHECK_LOG then
+            print("SmogCheck: Ending early as the Smog Clear option is not enabled.")
+        end
+        return true
+    end
+
+    local ffClear = Tracker:FindObjectForCode("@Factory/7-1 Foggy Fumes/Complete Level")
+    if ffClear then
+        if (ffClear.AccessibilityLevel == 0) then
+            if ENABLE_DEBUG_LOG and ENABLE_SMOGCHECK_LOG then
+                print(string.format("SmogCheck [FAIL]: 7-1 Complete Level is NOT in logic, so all future levels are NOT in logic."))
+            end
+            return false
+        elseif (ffClear.AccessibilityLevel == 6) then
+            if ENABLE_DEBUG_LOG and ENABLE_SMOGCHECK_LOG then
+                print(string.format("SmogCheck [SUCCESS]: 7-1 Complete Level is in logic, so all future levels are in logic."))
+            end
+            return true
+        else
+            if ENABLE_DEBUG_LOG then
+                print(string.format("WARNING: SmogCheck had an invalid comparison where ffClear = %s", ffClear))
+            end
+            return false
+        end
+    elseif ENABLE_DEBUG_LOG then
+        print(string.format("WARNING: SmogCheck for ffClear could not find object %s", ffClear))
+        return false
+    end
+
+    if ENABLE_DEBUG_LOG then
+        print(string.format("WARNING: SmogCheck reached end of function without a proper return. ffClear was %s", ffClear))
+    end
+    return false
+end
+
+-- MARK: LolLCheck
+function LolCheck(lolLog)
+    if ENABLE_DEBUG_LOG and ENABLE_LOLCHECK_LOG then
+        print()
+        print(string.format("LoLCheck: Called for %s.", lolLog))
+    end
+
+    if ((Tracker:FindObjectForCode("lolReq_setting")).CurrentStage == 0) then
+        if ENABLE_DEBUG_LOG and ENABLE_LOLCHECK_LOG then
+            print("LolCheck: Ending early as the 7-R Required option is not enabled.")
+        end
+        return true
+    end
+
+    local lolClear = Tracker:FindObjectForCode("@Factory/7-R Lift-off Launch/Complete Level")
+    if lolClear then
+        if (lolClear.AccessibilityLevel == 0) then
+            if ENABLE_DEBUG_LOG and ENABLE_LOLCHECK_LOG then
+                print(string.format("LolCheck [FAIL]: 7-R Complete Level is NOT in logic, so all future levels are NOT in logic."))
+            end
+            return false
+        elseif (lolClear.AccessibilityLevel == 6) then
+            if ENABLE_DEBUG_LOG and ENABLE_LOLCHECK_LOG then
+                print(string.format("LolCheck [SUCCESS]: 7-R Complete Level is in logic, so all future levels are in logic."))
+            end
+            return true
+        else
+            if ENABLE_DEBUG_LOG then
+                print(string.format("WARNING: LolCheck had an invalid comparison where lolClear = %s", lolClear))
+            end
+            return false
+        end
+    elseif ENABLE_DEBUG_LOG then
+        print(string.format("WARNING: LolCheck for lolClear could not find object %s", lolClear))
+        return false
+    end
+
+    if ENABLE_DEBUG_LOG then
+        print(string.format("WARNING: LolCheck reached end of function without a proper return. lolClear was %s", lolClear))
     end
     return false
 end

@@ -155,7 +155,7 @@
             },
             { // MARK: 7-2
                 "name": "7-2 Slammin' Steel",
-				"access_rules": ["$BossCheck|6"],
+				"access_rules": ["$BossCheck|6, $SmogCheck|7-2"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -292,7 +292,7 @@
             },
             { // MARK: 7-3
                 "name": "7-3 Handy Hazards",
-				"access_rules": ["$BossCheck|6, key_7"],
+				"access_rules": ["$BossCheck|6, $SmogCheck|7-3, key_7"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -443,7 +443,7 @@
             },
             { // MARK: 7-4
                 "name": "7-4 Gear Getaway",
-				"access_rules": ["$BossCheck|6"],
+				"access_rules": ["$BossCheck|6, $SmogCheck|7-4"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -594,7 +594,7 @@
             },
             { // MARK: 7-5
                 "name": "7-5 Cog Jog",
-				"access_rules": ["$BossCheck|6"],
+				"access_rules": ["$BossCheck|6, $SmogCheck|7-5"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -759,7 +759,7 @@
             },
             { // MARK: 7-6
                 "name": "7-6 Switcheroo",
-				"access_rules": ["$BossCheck|6"],
+				"access_rules": ["$BossCheck|6, $SmogCheck|7-6"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -896,7 +896,7 @@
             },
             { // MARK: 7-7
                 "name": "7-7 Music Madness",
-				"access_rules": ["$BossCheck|6"],
+				"access_rules": ["$BossCheck|6, $SmogCheck|7-7"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -1033,7 +1033,7 @@
             },
             { // MARK: 7-R
                 "name": "7-R Lift-off Launch",
-				"access_rules": ["$BossCheck|6"],
+				"access_rules": ["$BossCheck|6, $SmogCheck|7-R"],
                 "sections": [
 					{
 						"name": "Complete Level",
@@ -1061,7 +1061,7 @@
             },
             { // MARK: 7-K
                 "name": "7-K Treacherous Track",
-				"access_rules": ["$BossCheck|6, $LetterCheck|7, key_7"],
+				"access_rules": ["$BossCheck|6, $SmogCheck|7-K, $LetterCheck|7, key_7"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
@@ -1170,7 +1170,7 @@
             },
             { // MARK: 7-B
                 "name": "7-B Feather Fiend",
-				"access_rules": ["$BossCheck|7"],
+				"access_rules": ["$BossCheck|7, $SmogCheck|7-B, $LolCheck|7-B"],
                 "sections": [
 					{
 						"name": "Boss Clear",
@@ -1231,7 +1231,7 @@
             { // MARK: 7-S
                 "name": "7-S Cranky Kong's Shop",
 				"visibility_rules": ["shopsanity_enabled"],
-				"access_rules": ["$BossCheck|6"],
+				"access_rules": ["$BossCheck|6, $SmogCheck|7-S"],
                 "sections": [
 					{
 						"name": "Factory Map Key",
@@ -1268,7 +1268,7 @@
             },
             { // MARK: BUNDLES
                 "name": "Factory Bundles",
-				"access_rules": ["$BossCheck|6"],
+				"access_rules": ["$BossCheck|6, $SmogCheck|Factory Bundles"],
                 "sections": [
 					{
 						"name": "Collect All Factory Puzzle Pieces",
