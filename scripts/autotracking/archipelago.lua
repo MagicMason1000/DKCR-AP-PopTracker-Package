@@ -212,6 +212,39 @@ function apply_slot_data(slot_data)
 	elseif ENABLE_DEBUG_LOG then
 		print(string.format("WARNING: apply_slot_data on orbReqObj could not find object for code %s", orbReqObj))
 	end
+
+	-- Smog Clear required setting
+	local smogObj = Tracker:FindObjectForCode("smog_clear_setting")
+	if smogObj then
+		smogObj.CurrentStage = slot_data["smog_clear"]
+		if ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: Smog Clear required setting set to %s (%s)", slot_data["smog_clear"], abled[1 + slot_data["smog_clear"]]))
+		end
+	elseif ENABLE_DEBUG_LOG then
+		print(string.format("WARNING: apply_slot_data on smogObj could not find object for code %s", smogObj))
+	end
+
+	-- 7-R Required setting
+	local lolObj = Tracker:FindObjectForCode("7rReq_setting")
+	if lolObj then
+		lolObj.CurrentStage = slot_data["lift_off_launch"]
+		if ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: 7-R Required setting set to %s (%s)", slot_data["lift_off_launch"], abled[1 + slot_data["lift_off_launch"]]))
+		end
+	elseif ENABLE_DEBUG_LOG then
+		print(string.format("WARNING: apply_slot_data on lolObj could not find object for code %s", lolObj))
+	end
+	
+	-- Factory Button Amount setting
+	local buttonObj = Tracker:FindObjectForCode("factory_button_setting")
+	if buttonObj then
+		buttonObj.AcquiredCount = slot_data["factory_buttons"]
+		if ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: 7-R Unlock amount setting set to %s Factory Buttons", slot_data["factory_buttons"]))
+		end
+	elseif ENABLE_DEBUG_LOG then
+		print(string.format("WARNING: apply_slot_data on buttonObj could not find object for code %s", buttonObj))
+	end
 end
 
 -- called right after an AP slot is connected

@@ -304,5 +304,55 @@
         "img": "images/settings/setting_kReq8.png",
         "codes": "kReq8",
         "max_quantity": 371
+    },
+    // MARK: Factory
+    {
+        "name": "Factory Smog Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Smog Clear Disabled",
+                "img": "images/settings/setting_smog_clear_disabled.png",
+                "codes": "smog_clear_setting, smog_clear_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Smog Clear Enabled",
+                "img": "images/settings/setting_smog_clear_enabled.png",
+                "codes": "smog_clear_setting, smog_clear_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "7-R Required Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "7-R Required Disabled",
+                "img": "images/settings/setting_7rReq_disabled.png",
+                "codes": "7rReq_setting, 7rReq_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "7-R Required Enabled",
+                "img": "images/settings/setting_7rReq_enabled.png",
+                "codes": "7rReq_setting, 7rReq_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Required Factory Buttons Setting",
+        "type": "consumable",
+        "img": "images/settings/setting_factory_button.png",
+        "codes": "factory_button_setting",
+        "max_quantity": 15
     }
 ]
