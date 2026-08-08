@@ -90,13 +90,6 @@
     },
     // MARK: Collectibles
     {
-        "name": "Mirror Shard",
-        "type": "consumable",
-        "img": "images/locations/mirror_mode.png",
-        "codes": "mirror_shard",
-        "max_quantity": 25
-    },
-    {
         "name": "Puzzle Piece",
         "type": "consumable",
         "img": "images/items/item_puzzle_piece.png",
@@ -159,6 +152,20 @@
         "img": "images/items/kong_letters_8.png",
         "codes": "letters_8",
         "max_quantity": 28
+    },
+    {
+        "name": "Mirror Shard",
+        "type": "consumable",
+        "img": "images/locations/mirror_mode.png",
+        "codes": "mirror_shard",
+        "max_quantity": 25
+    },
+    {
+        "name": "Factory Button",
+        "type": "consumable",
+        "img": "images/items/item_factory_button.png",
+        "codes": "factory_button",
+        "max_quantity": 15
     },
     // MARK: Rare Orbs
     {

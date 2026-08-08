@@ -1,13 +1,14 @@
 -- Configuration --------------------------------------
 AUTOTRACKER_ENABLE_ITEM_TRACKING = true
 AUTOTRACKER_ENABLE_LOCATION_TRACKING = true and not IS_ITEMS_ONLY
-ENABLE_WORLDCHECK_LOG = false
-ENABLE_LETTERCHECK_LOG = false
-ENABLE_BOSSCHECK_LOG = false
-ENABLE_SHARDCHECK_LOG = false
-ENABLE_ORBCHECK_LOG = false
-ENABLE_SMOGCHECK_LOG = false
-ENABLE_LOLCHECK_LOG = false
+ENABLE_WORLDCHECK_LOG  = ENABLE_DEBUG_LOG and false
+ENABLE_LETTERCHECK_LOG = ENABLE_DEBUG_LOG and false
+ENABLE_BOSSCHECK_LOG   = ENABLE_DEBUG_LOG and false
+ENABLE_SHARDCHECK_LOG  = ENABLE_DEBUG_LOG and false
+ENABLE_ORBCHECK_LOG    = ENABLE_DEBUG_LOG and false
+ENABLE_SMOGCHECK_LOG   = ENABLE_DEBUG_LOG and false
+ENABLE_BUTTONCHECK_LOG = ENABLE_DEBUG_LOG and true
+ENABLE_LOLCHECK_LOG    = ENABLE_DEBUG_LOG and false
 -------------------------------------------------------
 print("")
 print("Active Auto-Tracker Configuration")
@@ -21,6 +22,9 @@ if ENABLE_DEBUG_LOG then
     print(string.format("Enable BossCheck Logging:\t%s", ENABLE_BOSSCHECK_LOG))
     print(string.format("Enable ShardCheck Logging:\t%s", ENABLE_SHARDCHECK_LOG))
     print(string.format("Enable OrbCheck Logging:\t%s", ENABLE_ORBCHECK_LOG))
+    print(string.format("Enable SmogCheck Logging:\t%s", ENABLE_SMOGCHECK_LOG))
+    print(string.format("Enable ButtonCheck Logging:\t%s", ENABLE_BUTTONCHECK_LOG))
+    print(string.format("Enable LolCheck Logging:\t%s", ENABLE_LOLCHECK_LOG))
 end
 print("---------------------------------------------------------------------")
 print("")
@@ -135,7 +139,7 @@ PUZZLES = {
 -- checkType 5 = Time Attack Medals
 
 function WorldCheck(world, checkType)
-    if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
+    if ENABLE_WORLDCHECK_LOG then
         print("")
         print(string.format("WorldCheck: Called with world = %s, checkType = %s", world, checkType))
     end
@@ -146,7 +150,7 @@ function WorldCheck(world, checkType)
     local levelAmount = WORLD_LEVEL_AMOUNT[world]
 
     if (world == 9 and Tracker:FindObjectForCode("golden_temple_setting").CurrentStage == 0) then
-        if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
+        if ENABLE_WORLDCHECK_LOG then
             print("WorldCheck: Ending early as the Golden Temple is not enabled.")
         end
     return false
@@ -171,18 +175,18 @@ function WorldCheck(world, checkType)
 
         if (completionCountdown == 0) then
             -- code goes here to set the Accessible section to Cleared. Maybe use AccessibilityLevel to set it to state 7?
-            if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
+            if ENABLE_WORLDCHECK_LOG then
                 print(string.format("WorldCheck [SUCCESS+]: WorldCheck complete. Every KONG Letter in World %s is collected.", world))
             end
             return true
         end
         if (count ~= 0) then
-            if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
+            if ENABLE_WORLDCHECK_LOG then
                 print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. KONG Letters are available to collect in World %s.", world))
             end
             return true
         else
-            if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
+            if ENABLE_WORLDCHECK_LOG then
                 print(string.format("WorldCheck [FAIL]: WorldCheck complete. KONG Letters are NOT available to collect in World %s.", world))
             end
             return false
@@ -195,7 +199,7 @@ function WorldCheck(world, checkType)
 
     if (checkType == 3 or checkType == 4) then -- LEVEL/MIRROR COMPLETIONS
         if (checkType == 4 and Tracker:FindObjectForCode("mirror_mode_setting").CurrentStage == 0) then
-            if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
+            if ENABLE_WORLDCHECK_LOG then
                 print("WorldCheck: Ending early as Mirror Mode is not enabled.")
             end
             return false
@@ -218,16 +222,16 @@ function WorldCheck(world, checkType)
         end
 
         if (count ~= 0) then
-            if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG and checkType == 3 then
+            if ENABLE_WORLDCHECK_LOG and checkType == 3 then
                 print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Level Completion checks are available in World %s.", world))
-            elseif ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG and checkType == 4 then
+            elseif ENABLE_WORLDCHECK_LOG and checkType == 4 then
                 print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Mirror Mode checks are available in World %s.", world))
             end
             return true
         else
-            if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG and checkType == 3 then
+            if ENABLE_WORLDCHECK_LOG and checkType == 3 then
                 print(string.format("WorldCheck [FAIL]: WorldCheck complete. Level Completion checks are NOT available in World %s.", world))
-            elseif ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG and checkType == 4 then
+            elseif ENABLE_WORLDCHECK_LOG and checkType == 4 then
                 print(string.format("WorldCheck [FAIL]: WorldCheck complete. Mirror Mode checks are NOT available in World %s.", world))
             end
             return false
@@ -236,7 +240,7 @@ function WorldCheck(world, checkType)
 
     if (checkType == 5) then -- TIME ATTACK MEDALS (WIP)
         if (Tracker:FindObjectForCode("ta_setting").CurrentStage == 0) then
-            if ENABLE_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
+            if ENABLE_WORLDCHECK_LOG then
                 print("WorldCheck: Ending early as Time Attack is not enabled.")
             end
             return false
@@ -253,7 +257,7 @@ end
 
 -- MARK: BossCheck
 function BossCheck(world)
-    if ENABLE_DEBUG_LOG and ENABLE_BOSSCHECK_LOG then
+    if ENABLE_BOSSCHECK_LOG then
         print("")
         print(string.format("BossCheck: Called with world = %s", world))
     end
@@ -272,7 +276,7 @@ function BossCheck(world)
     }
     for i = 1, (world + 1) do
         if (pp < bossReqs[i]) then
-            if ENABLE_DEBUG_LOG and ENABLE_BOSSCHECK_LOG then
+            if ENABLE_BOSSCHECK_LOG then
                 print(string.format("BossCheck: World %s FAILED on World %s.", world, i))
                 print(string.format("BossCheck [FAIL]: Boss requirement NOT satisfied for world %s.", world))
             end
@@ -282,7 +286,7 @@ function BossCheck(world)
                 print(string.format("BossCheck: World %s SUCCEEDED on World %s.", world, i))
             end
             if i == world then
-                if ENABLE_DEBUG_LOG and ENABLE_BOSSCHECK_LOG then
+                if ENABLE_BOSSCHECK_LOG then
                     print(string.format("BossCheck [SUCCESS]: Boss requirement satisfied for world %s.", world))
                 end
                 return true
@@ -300,7 +304,7 @@ end
 
 -- MARK: LetterCheck
 function LetterCheck(world)
-    if ENABLE_DEBUG_LOG and ENABLE_LETTERCHECK_LOG then
+    if ENABLE_LETTERCHECK_LOG then
         print("")
         print(string.format("LetterCheck: Called with world = %s", world))
     end
@@ -318,13 +322,13 @@ function LetterCheck(world)
     }
     local letters = Tracker:FindObjectForCode("letters_" .. world).AcquiredCount
     if (letters < kReqs[world]) then
-        if ENABLE_DEBUG_LOG and ENABLE_LETTERCHECK_LOG then
+        if ENABLE_LETTERCHECK_LOG then
             print(string.format("LetterCheck [FAIL]: Letter requirement NOT satisfied for world %s.", world))
         end
         return false
     end
     if (letters >= kReqs[world]) then
-        if ENABLE_DEBUG_LOG and ENABLE_LETTERCHECK_LOG then
+        if ENABLE_LETTERCHECK_LOG then
             print(string.format("LetterCheck [SUCCESS]: Letter requirement satisfied for world %s.", world))
         end
         return true
@@ -338,13 +342,13 @@ end
 
 -- MARK: ShardCheck
 function ShardCheck()
-    if ENABLE_DEBUG_LOG and ENABLE_SHARDCHECK_LOG then
+    if ENABLE_SHARDCHECK_LOG then
         print("")
         print("ShardCheck: Called.")
     end
 
     if ((Tracker:FindObjectForCode("mirror_mode_setting")).CurrentStage == 0) then
-        if ENABLE_DEBUG_LOG and ENABLE_SHARDCHECK_LOG then
+        if ENABLE_SHARDCHECK_LOG then
             print("ShardCheck: Ending early as Mirror Mode is not enabled.")
         end
         return false
@@ -354,12 +358,12 @@ function ShardCheck()
     local shardReq = Tracker:FindObjectForCode("mirror_shards_setting").AcquiredCount
 
     if (shardCount < shardReq) then
-        if ENABLE_DEBUG_LOG and ENABLE_SHARDCHECK_LOG then
+        if ENABLE_SHARDCHECK_LOG then
             print(string.format("ShardCheck [FAIL]: Not enough Mirror Shards. Mirror Mode checks are NOT in logic.", shardCount, shardReq))
         end
         return false
     elseif (shardCount >= shardReq) then
-        if ENABLE_DEBUG_LOG and ENABLE_SHARDCHECK_LOG then
+        if ENABLE_SHARDCHECK_LOG then
             print(string.format("ShardCheck [SUCCESS]: Mirror Mode checks are in logic.", shardCount, shardReq))
         end
         return true
@@ -376,13 +380,13 @@ end
 
 -- MARK: OrbCheck
 function OrbCheck()
-    if ENABLE_DEBUG_LOG and ENABLE_ORBCHECK_LOG then
+    if ENABLE_ORBCHECK_LOG then
         print()
         print("OrbCheck: Called.")
     end
 
     if ((Tracker:FindObjectForCode("golden_temple_setting")).CurrentStage == 0) then
-        if ENABLE_DEBUG_LOG and ENABLE_ORBCHECK_LOG then
+        if ENABLE_ORBCHECK_LOG then
             print("OrbCheck: Ending early as the Golden Temple is not enabled.")
         end
         return false
@@ -407,12 +411,12 @@ function OrbCheck()
     end
 
     if (count < orbReq) then
-        if ENABLE_DEBUG_LOG and ENABLE_ORBCHECK_LOG then
+        if ENABLE_ORBCHECK_LOG then
             print("OrbCheck [FAIL]: Not enough Rare Orbs. The Golden Temple is NOT in logic.")
         end
         return false
     elseif (count >= orbReq) then
-        if ENABLE_DEBUG_LOG and ENABLE_ORBCHECK_LOG then
+        if ENABLE_ORBCHECK_LOG then
             print("OrbCheck [SUCCESS]: The Golden Temple is in logic.")
         end
         return true
@@ -429,13 +433,13 @@ end
 
 -- MARK: SmogCheck
 function SmogCheck(smogLog)
-    if ENABLE_DEBUG_LOG and ENABLE_SMOGCHECK_LOG then
+    if ENABLE_SMOGCHECK_LOG then
         print()
         print(string.format("SmogCheck: Called for %s.", smogLog))
     end
 
     if ((Tracker:FindObjectForCode("smog_clear_setting")).CurrentStage == 0) then
-        if ENABLE_DEBUG_LOG and ENABLE_SMOGCHECK_LOG then
+        if ENABLE_SMOGCHECK_LOG then
             print("SmogCheck: Ending early as the Smog Clear option is not enabled.")
         end
         return true
@@ -444,12 +448,12 @@ function SmogCheck(smogLog)
     local ffClear = Tracker:FindObjectForCode("@Factory/7-1 Foggy Fumes/Complete Level")
     if ffClear then
         if (ffClear.AccessibilityLevel == 0) then
-            if ENABLE_DEBUG_LOG and ENABLE_SMOGCHECK_LOG then
+            if ENABLE_SMOGCHECK_LOG then
                 print(string.format("SmogCheck [FAIL]: 7-1 Complete Level is NOT in logic, so all future levels are NOT in logic."))
             end
             return false
         elseif (ffClear.AccessibilityLevel == 6) then
-            if ENABLE_DEBUG_LOG and ENABLE_SMOGCHECK_LOG then
+            if ENABLE_SMOGCHECK_LOG then
                 print(string.format("SmogCheck [SUCCESS]: 7-1 Complete Level is in logic, so all future levels are in logic."))
             end
             return true
@@ -460,7 +464,7 @@ function SmogCheck(smogLog)
             return false
         end
     elseif ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: SmogCheck for ffClear could not find object %s", ffClear))
+        print(string.format("WARNING: SmogCheck could not find object. ffClear = %s", ffClear))
         return false
     end
 
@@ -470,15 +474,57 @@ function SmogCheck(smogLog)
     return false
 end
 
--- MARK: LolLCheck
+-- MARK: ButtonCheck
+function ButtonCheck(buttonLog)
+    if ENABLE_BUTTONCHECK_LOG then
+        print()
+        print(string.format("ButtonCheck: Called for %s.", buttonLog))
+    end
+
+    local buttonReq = Tracker:FindObjectForCode("factory_button_setting")
+    local buttonAmount = Tracker:FindObjectForCode("factory_button")
+    if (buttonReq and buttonAmount) then
+        if (buttonReq.AcquiredCount == 0) then
+            if ENABLE_BUTTONCHECK_LOG then
+                print("ButtonCheck: Ending early as the Required Factory Button option is not enabled.")
+            end
+            return true
+        end
+
+        if (buttonReq.AcquiredCount > buttonAmount.AcquiredCount) then
+            if ENABLE_BUTTONCHECK_LOG then
+                print("ButtonCheck [FAIL]: Not enough Factory Buttons to access 7-R.")
+            end
+            return false
+        elseif (buttonReq.AcquiredCount <= buttonAmount.AcquiredCount) then
+            if ENABLE_BUTTONCHECK_LOG then
+                print("ButtonCheck [SUCCESS]: Factory Buttons collected. 7-R is in logic.")
+            end
+            return true
+        elseif ENABLE_DEBUG_LOG then
+            print(string.format("WARNING: ButtonCheck had an invalid comparison. buttonReq was %s, buttonAmount was %s", buttonReq, buttonAmount))
+            return false
+        end
+    elseif ENABLE_DEBUG_LOG then
+        print(string.format("WARNING: ButtonCheck could not find object. buttonReq = %s, buttonAmount = %s", buttonReq, buttonAmount))
+        return false
+    end
+    
+    if ENABLE_DEBUG_LOG then
+        print(string.format("WARNING: ButtonCheck reached end of function without a proper return. buttonReq was %s", buttonReq))
+    end
+    return false
+end
+
+-- MARK: LolCheck
 function LolCheck(lolLog)
-    if ENABLE_DEBUG_LOG and ENABLE_LOLCHECK_LOG then
+    if ENABLE_LOLCHECK_LOG then
         print()
         print(string.format("LoLCheck: Called for %s.", lolLog))
     end
 
     if ((Tracker:FindObjectForCode("lolReq_setting")).CurrentStage == 0) then
-        if ENABLE_DEBUG_LOG and ENABLE_LOLCHECK_LOG then
+        if ENABLE_LOLCHECK_LOG then
             print("LolCheck: Ending early as the 7-R Required option is not enabled.")
         end
         return true
@@ -487,12 +533,12 @@ function LolCheck(lolLog)
     local lolClear = Tracker:FindObjectForCode("@Factory/7-R Lift-off Launch/Complete Level")
     if lolClear then
         if (lolClear.AccessibilityLevel == 0) then
-            if ENABLE_DEBUG_LOG and ENABLE_LOLCHECK_LOG then
+            if ENABLE_LOLCHECK_LOG then
                 print(string.format("LolCheck [FAIL]: 7-R Complete Level is NOT in logic, so all future levels are NOT in logic."))
             end
             return false
         elseif (lolClear.AccessibilityLevel == 6) then
-            if ENABLE_DEBUG_LOG and ENABLE_LOLCHECK_LOG then
+            if ENABLE_LOLCHECK_LOG then
                 print(string.format("LolCheck [SUCCESS]: 7-R Complete Level is in logic, so all future levels are in logic."))
             end
             return true
@@ -503,7 +549,7 @@ function LolCheck(lolLog)
             return false
         end
     elseif ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: LolCheck for lolClear could not find object %s", lolClear))
+        print(string.format("WARNING: LolCheck could not find object. lolClear = %s", lolClear))
         return false
     end
 
