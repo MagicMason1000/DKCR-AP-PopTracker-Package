@@ -1378,7 +1378,7 @@
                         "y": 520
                     }
                 ]
-            },
+            }/*,
             { // MARK: BUNDLES
                 "name": "Cliff Bundles",
 				"access_rules": ["$BossCheck|5"],
@@ -1445,7 +1445,7 @@
 						"border_thickness": 8
                     }
                 ]
-            }
+            }*/
         ]
     }
 ]

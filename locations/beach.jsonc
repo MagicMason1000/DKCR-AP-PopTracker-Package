@@ -1184,7 +1184,7 @@
                         "y": 263
                     }
                 ]
-            },
+            }/*,
             { // MARK: BUNDLES
                 "name": "Beach Bundles",
 				"visibility_rules": ["shopsanity_enabled"],
@@ -1252,7 +1252,7 @@
 						"border_thickness": 8
                     }
                 ]
-            }
+            }*/
         ]
     }
 ]

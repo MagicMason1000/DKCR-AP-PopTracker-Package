@@ -1265,7 +1265,7 @@
                         "y": 473
                     }
                 ]
-            },
+            }/*,
             { // MARK: BUNDLES
                 "name": "Factory Bundles",
 				"access_rules": ["$BossCheck|6, $SmogCheck|Factory Bundles"],
@@ -1332,7 +1332,7 @@
 						"border_thickness": 8
                     }
                 ]
-            }
+            }*/
         ]
     }
 ]

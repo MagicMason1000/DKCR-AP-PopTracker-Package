@@ -888,7 +888,7 @@
                         "y": 381
                     }
                 ]
-            },
+            }/*,
             { // MARK: BUNDLES
                 "name": "Cave Bundles",
 				"access_rules": ["$BossCheck|3"],
@@ -955,7 +955,7 @@
 						"border_thickness": 8
                     }
                 ]
-            }
+            }*/
         ]
     }
 ]

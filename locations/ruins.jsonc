@@ -1121,7 +1121,7 @@
                         "y": 550
                     }
                 ]
-            },
+            }/*,
             { // MARK: BUNDLES
                 "name": "Ruins Bundles",
 				"access_rules": ["$BossCheck|2"],
@@ -1188,7 +1188,7 @@
 						"border_thickness": 8
                     }
                 ]
-            }
+            }*/
         ]
     }
 ]
