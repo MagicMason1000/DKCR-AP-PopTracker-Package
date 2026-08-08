@@ -1,6 +1,12 @@
 {
 	"versions": [
 		{
+			"package_version": "0.3.0",
+			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.3.0/dkcr_ap_tracker_v0.3.0.zip",
+			"sha256": "fd0d2bc8db5ca700679ebcf2cacd1226d64c777baa921ca2ed8f6a083bbe388a",
+			"changelog": ["Major settings and logic updates to match v0.1.0-beta of the AP World"]
+		},
+		{
 			"package_version": "0.2.3",
 			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.2.3/dkcr_ap_tracker_v0.2.3.zip",
 			"sha256": "95285b7d0ff99493da57a0a79817a24da64bd53b4def5ae72fb5ff6d475dffe7",
