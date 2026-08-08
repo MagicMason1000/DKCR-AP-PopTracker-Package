@@ -31,7 +31,7 @@
 			},
 			{
 				"name": "Accessible Jungle Time Attack Medals",
-                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
 						"name": "Jungle Medals Accessible",
@@ -108,7 +108,7 @@
 			},
 			{
 				"name": "Accessible Beach Time Attack Medals",
-                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
 						"name": "Beach Medals Accessible",
@@ -185,7 +185,7 @@
 			},
 			{
 				"name": "Accessible Ruins Time Attack Medals",
-                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
 						"name": "Ruins Medals Accessible",
@@ -262,7 +262,7 @@
 			},
 			{
 				"name": "Accessible Cave Time Attack Medals",
-                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
 						"name": "Cave Medals Accessible",
@@ -339,7 +339,7 @@
 			},
 			{
 				"name": "Accessible Forest Time Attack Medals",
-                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
 						"name": "Forest Medals Accessible",
@@ -416,7 +416,7 @@
 			},
 			{
 				"name": "Accessible Cliff Time Attack Medals",
-                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
 						"name": "Cliff Medals Accessible",
@@ -493,7 +493,7 @@
 			},
 			{
 				"name": "Accessible Factory Time Attack Medals",
-                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
 						"name": "Factory Medals Accessible",
@@ -570,7 +570,7 @@
 			},
 			{
 				"name": "Accessible Volcano Time Attack Medals",
-                "visibility_rules": ["ta_bronze", "ta_silver", "ta_gold", "ta_shiny_gold"],
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
 						"name": "Volcano Medals Accessible",

@@ -7,7 +7,7 @@ ENABLE_BOSSCHECK_LOG   = ENABLE_DEBUG_LOG and false
 ENABLE_SHARDCHECK_LOG  = ENABLE_DEBUG_LOG and false
 ENABLE_ORBCHECK_LOG    = ENABLE_DEBUG_LOG and false
 ENABLE_SMOGCHECK_LOG   = ENABLE_DEBUG_LOG and false
-ENABLE_BUTTONCHECK_LOG = ENABLE_DEBUG_LOG and true
+ENABLE_BUTTONCHECK_LOG = ENABLE_DEBUG_LOG and false
 ENABLE_LOLCHECK_LOG    = ENABLE_DEBUG_LOG and false
 -------------------------------------------------------
 print("")
@@ -239,13 +239,6 @@ function WorldCheck(world, checkType)
     end
 
     if (checkType == 5) then -- TIME ATTACK MEDALS (WIP)
-        if (Tracker:FindObjectForCode("ta_setting").CurrentStage == 0) then
-            if ENABLE_WORLDCHECK_LOG then
-                print("WorldCheck: Ending early as Time Attack is not enabled.")
-            end
-            return false
-        end
-
         return false
     end
 

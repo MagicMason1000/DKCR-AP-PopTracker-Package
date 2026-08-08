@@ -173,18 +173,23 @@ function apply_slot_data(slot_data)
 	end
 
 	-- Time Attack Enabled setting
-	local taObj = Tracker:FindObjectForCode("ta_setting")
-	if taObj then
-		for i = 1, #slot_data["time_attack_medal"] do
-			if (slot_data["time_attack_medal"][i] == "Bronze") then
-			elseif (slot_data["time_attack_medal"][i] == "Silver") then
-			elseif (slot_data["time_attack_medal"][i] == "Gold") then
-			elseif (slot_data["time_attack_medal"][i] == "Shiny Gold") then
-			else
-			end
+	local taBronzeObj = Tracker:FindObjectForCode("ta_bronze_setting")
+	local taSilverObj = Tracker:FindObjectForCode("ta_silver_setting")
+	local taGoldObj = Tracker:FindObjectForCode("ta_gold_setting")
+	local taShinyGoldObj = Tracker:FindObjectForCode("ta_shiny_gold_setting")
+	if (taBronzeObj and taSilverObj and taGoldObj and taShinyGoldObj) then
+		taBronzeObj.CurrentStage = slot_data["time_attack_resolved"]["Bronze"]
+		taSilverObj.CurrentStage = slot_data["time_attack_resolved"]["Silver"]
+		taGoldObj.CurrentStage = slot_data["time_attack_resolved"]["Gold"]
+		taShinyGoldObj.CurrentStage = slot_data["time_attack_resolved"]["Shiny Gold"]
+		if ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: set Time Attack Bronze Medal setting to %s (%s)", slot_data["time_attack_resolved"]["Bronze"], abled[1 + slot_data["time_attack_resolved"]["Bronze"]]))
+			print(string.format("apply_slot_data: set Time Attack Silver Medal setting to %s (%s)", slot_data["time_attack_resolved"]["Silver"], abled[1 + slot_data["time_attack_resolved"]["Silver"]]))
+			print(string.format("apply_slot_data: set Time Attack Gold Medal setting to %s (%s)", slot_data["time_attack_resolved"]["Gold"], abled[1 + slot_data["time_attack_resolved"]["Gold"]]))
+			print(string.format("apply_slot_data: set Time Attack Shiny Gold Medal setting to %s (%s)", slot_data["time_attack_resolved"]["Shiny Gold"], abled[1 + slot_data["time_attack_resolved"]["Shiny Gold"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("WARNING: apply_slot_data on taObj could not find object for code %s", taObj))
+		print(string.format("WARNING: apply_slot_data could not find object. taBronzeObj = %s, taSilverObj = %s, taGoldObj = %s, taShinyGoldObj = %s", taBronzeObj, taSilverObj, taGoldObj, taShinyGoldObj))
 	end
 
 	-- Mirror Mode Enabled setting

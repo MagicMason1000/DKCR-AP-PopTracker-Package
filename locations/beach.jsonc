@@ -102,7 +102,7 @@
 						"chest_unopened_img": "images/locations/ta_bronze.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_bronze"],
+						"visibility_rules": ["ta_bronze_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -110,7 +110,7 @@
 						"chest_unopened_img": "images/locations/ta_silver.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_silver"],
+						"visibility_rules": ["ta_silver_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -118,7 +118,7 @@
 						"chest_unopened_img": "images/locations/ta_gold.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_gold"],
+						"visibility_rules": ["ta_gold_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -126,7 +126,7 @@
 						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
 						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_shiny_gold"],
+						"visibility_rules": ["ta_shiny_gold_enabled"],
 						"access_rules": [""]
 					}
                 ],
@@ -250,7 +250,7 @@
 						"chest_unopened_img": "images/locations/ta_bronze.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_bronze"],
+						"visibility_rules": ["ta_bronze_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -258,7 +258,7 @@
 						"chest_unopened_img": "images/locations/ta_silver.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_silver"],
+						"visibility_rules": ["ta_silver_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -266,7 +266,7 @@
 						"chest_unopened_img": "images/locations/ta_gold.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_gold"],
+						"visibility_rules": ["ta_gold_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -274,7 +274,7 @@
 						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
 						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_shiny_gold"],
+						"visibility_rules": ["ta_shiny_gold_enabled"],
 						"access_rules": [""]
 					}
                 ],
@@ -387,7 +387,7 @@
 						"chest_unopened_img": "images/locations/ta_bronze.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_bronze"],
+						"visibility_rules": ["ta_bronze_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -395,7 +395,7 @@
 						"chest_unopened_img": "images/locations/ta_silver.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_silver"],
+						"visibility_rules": ["ta_silver_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -403,7 +403,7 @@
 						"chest_unopened_img": "images/locations/ta_gold.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_gold"],
+						"visibility_rules": ["ta_gold_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -411,7 +411,7 @@
 						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
 						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_shiny_gold"],
+						"visibility_rules": ["ta_shiny_gold_enabled"],
 						"access_rules": [""]
 					}
                 ],
@@ -534,7 +534,7 @@
 						"chest_unopened_img": "images/locations/ta_bronze.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_bronze"],
+						"visibility_rules": ["ta_bronze_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -542,7 +542,7 @@
 						"chest_unopened_img": "images/locations/ta_silver.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_silver"],
+						"visibility_rules": ["ta_silver_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -550,7 +550,7 @@
 						"chest_unopened_img": "images/locations/ta_gold.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_gold"],
+						"visibility_rules": ["ta_gold_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -558,7 +558,7 @@
 						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
 						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_shiny_gold"],
+						"visibility_rules": ["ta_shiny_gold_enabled"],
 						"access_rules": [""]
 					}
                 ],
@@ -668,7 +668,7 @@
 						"chest_unopened_img": "images/locations/ta_bronze.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_bronze"],
+						"visibility_rules": ["ta_bronze_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -676,7 +676,7 @@
 						"chest_unopened_img": "images/locations/ta_silver.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_silver"],
+						"visibility_rules": ["ta_silver_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -684,7 +684,7 @@
 						"chest_unopened_img": "images/locations/ta_gold.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_gold"],
+						"visibility_rules": ["ta_gold_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -692,7 +692,7 @@
 						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
 						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_shiny_gold"],
+						"visibility_rules": ["ta_shiny_gold_enabled"],
 						"access_rules": [""]
 					}
                 ],
@@ -804,7 +804,7 @@
 						"chest_unopened_img": "images/locations/ta_bronze.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_bronze"],
+						"visibility_rules": ["ta_bronze_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -812,7 +812,7 @@
 						"chest_unopened_img": "images/locations/ta_silver.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_silver"],
+						"visibility_rules": ["ta_silver_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -820,7 +820,7 @@
 						"chest_unopened_img": "images/locations/ta_gold.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_gold"],
+						"visibility_rules": ["ta_gold_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -828,7 +828,7 @@
 						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
 						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_shiny_gold"],
+						"visibility_rules": ["ta_shiny_gold_enabled"],
 						"access_rules": [""]
 					}
                 ],
@@ -939,7 +939,7 @@
 						"chest_unopened_img": "images/locations/ta_bronze.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_bronze"],
+						"visibility_rules": ["ta_bronze_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -947,7 +947,7 @@
 						"chest_unopened_img": "images/locations/ta_silver.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_silver"],
+						"visibility_rules": ["ta_silver_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -955,7 +955,7 @@
 						"chest_unopened_img": "images/locations/ta_gold.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_gold"],
+						"visibility_rules": ["ta_gold_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -963,7 +963,7 @@
 						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
 						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_shiny_gold"],
+						"visibility_rules": ["ta_shiny_gold_enabled"],
 						"access_rules": [""]
 					}
                 ],
@@ -1047,7 +1047,7 @@
 						"chest_unopened_img": "images/locations/ta_bronze.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_bronze"],
+						"visibility_rules": ["ta_bronze_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -1055,7 +1055,7 @@
 						"chest_unopened_img": "images/locations/ta_silver.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_silver"],
+						"visibility_rules": ["ta_silver_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -1063,7 +1063,7 @@
 						"chest_unopened_img": "images/locations/ta_gold.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_gold"],
+						"visibility_rules": ["ta_gold_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -1071,7 +1071,7 @@
 						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
 						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_shiny_gold"],
+						"visibility_rules": ["ta_shiny_gold_enabled"],
 						"access_rules": [""]
 					}
                 ],
@@ -1109,7 +1109,7 @@
 						"chest_unopened_img": "images/locations/ta_bronze.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_bronze"],
+						"visibility_rules": ["ta_bronze_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -1117,7 +1117,7 @@
 						"chest_unopened_img": "images/locations/ta_silver.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_silver"],
+						"visibility_rules": ["ta_silver_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -1125,7 +1125,7 @@
 						"chest_unopened_img": "images/locations/ta_gold.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_gold"],
+						"visibility_rules": ["ta_gold_enabled"],
 						"access_rules": [""]
 					},
 					{
@@ -1133,7 +1133,7 @@
 						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
 						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
 						"item_count": 1,
-						"visibility_rules": ["ta_shiny_gold"],
+						"visibility_rules": ["ta_shiny_gold_enabled"],
 						"access_rules": [""]
 					}
                 ],
@@ -1218,28 +1218,28 @@
 						"name": "Collect All Beach Bronze Medals",
 						"chest_unopened_img": "images/locations/ta_bronze.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
-						"visibility_rules": ["ta_bronze"],
+						"visibility_rules": ["ta_bronze_enabled"],
 						"item_count": 1
 					},
 					{
 						"name": "Collect All Beach Silver Medals",
 						"chest_unopened_img": "images/locations/ta_silver.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
-						"visibility_rules": ["ta_silver"],
+						"visibility_rules": ["ta_silver_enabled"],
 						"item_count": 1
 					},
 					{
 						"name": "Collect All Beach Gold Medals",
 						"chest_unopened_img": "images/locations/ta_gold.png",
 						"chest_opened_img": "images/locations/ta_medal_completed.png",
-						"visibility_rules": ["ta_gold"],
+						"visibility_rules": ["ta_gold_enabled"],
 						"item_count": 1
 					},
 					{
 						"name": "Collect All Beach Shiny Gold Medals",
 						"chest_unopened_img": "images/locations/ta_shiny_gold.png",
 						"chest_opened_img": "images/locations/ta_shiny_gold_completed.png",
-						"visibility_rules": ["ta_shiny_gold"],
+						"visibility_rules": ["ta_shiny_gold_enabled"],
 						"item_count": 1
 					}
                 ],

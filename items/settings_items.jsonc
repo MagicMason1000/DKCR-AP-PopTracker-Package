@@ -24,6 +24,12 @@
         "img": "images/settings/static_key_header.png",
         "codes": "key_header"
     },
+    {
+        "name": "Time Attack Header",
+        "type": "static",
+        "img": "images/settings/static_ta_header.png",
+        "codes": "ta_header"
+    },
     // MARK: Misc.
     {
         "name": "Shopsanity Setting",
@@ -74,45 +80,6 @@
         "codes": "mirror_shards_setting",
         "max_quantity": 25,
         "initial_quantity": 1
-    },
-    {
-        "name": "Time Attack Setting",
-        "type": "progressive",
-        "loop": false,
-        "allow_disabled": false,
-		"initial_stage_idx": 0, // Disabled
-        "stages": [
-            {
-                "name": "Time Attack Disabled",
-                "img": "images/settings/setting_ta_disabled.png",
-                "codes": "ta_setting, ta_disabled",
-                "inherit_codes": false
-            },
-            {
-                "name": "Time Attack Bronze",
-                "img": "images/settings/setting_ta_bronze.png",
-                "codes": "ta_setting, ta_bronze",
-                "inherit_codes": false
-            },
-            {
-                "name": "Time Attack Silver",
-                "img": "images/settings/setting_ta_silver.png",
-                "codes": "ta_setting, ta_silver",
-                "inherit_codes": false
-            },
-            {
-                "name": "Time Attack Gold",
-                "img": "images/settings/setting_ta_gold.png",
-                "codes": "ta_setting, ta_gold",
-                "inherit_codes": false
-            },
-            {
-                "name": "Time Attack Shiny Gold",
-                "img": "images/settings/setting_ta_shiny_gold.png",
-                "codes": "ta_setting, ta_shiny_gold",
-                "inherit_codes": false
-            }
-        ]
     },
     {
         "name": "Randomize Golden Temple",
@@ -528,6 +495,91 @@
                 "name": "Randomized Volcano Key Enabled",
                 "img": "images/settings/setting_key_enabled.png",
                 "codes": "key8_setting, key8_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    // MARK: Time Attack
+    {
+        "name": "Time Attack: Bronze Medals",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Time Attack: Bronze Medals Disabled",
+                "img": "images/settings/setting_ta_bronze_disabled.png",
+                "codes": "ta_bronze_setting, ta_bronze_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Time Attack: Bronze Medals Enabled",
+                "img": "images/settings/setting_ta_bronze_enabled.png",
+                "codes": "ta_bronze_setting, ta_bronze_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Time Attack: Silver Medals",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Time Attack: Silver Medals Disabled",
+                "img": "images/settings/setting_ta_silver_disabled.png",
+                "codes": "ta_silver_setting, ta_silver_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Time Attack: Silver Medals Enabled",
+                "img": "images/settings/setting_ta_silver_enabled.png",
+                "codes": "ta_silver_setting, ta_silver_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Time Attack: Gold Medals",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Time Attack: Gold Medals Disabled",
+                "img": "images/settings/setting_ta_gold_disabled.png",
+                "codes": "ta_gold_setting, ta_gold_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Time Attack: Gold Medals Enabled",
+                "img": "images/settings/setting_ta_gold_enabled.png",
+                "codes": "ta_gold_setting, ta_gold_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Time Attack: Shiny Gold Medals",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Time Attack: Shiny Gold Medals Disabled",
+                "img": "images/settings/setting_ta_shiny_gold_disabled.png",
+                "codes": "ta_shiny_gold_setting, ta_shiny_gold_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Time Attack: Shiny Gold Medals Enabled",
+                "img": "images/settings/setting_ta_shiny_gold_enabled.png",
+                "codes": "ta_shiny_gold_setting, ta_shiny_gold_enabled",
                 "inherit_codes": false
             }
         ]

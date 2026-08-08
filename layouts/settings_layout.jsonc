@@ -19,13 +19,8 @@
                         "item_size": "96,96",
                         "rows": [
                             [
-                                "shopsanity_setting",
                                 "mirror_mode_setting",
                                 "mirror_shards_setting"
-                            ],
-                            [
-                                "golden_temple_setting",
-                                "orbs_setting"
                             ]
                         ]
                     },
@@ -86,11 +81,6 @@
                 "orientation": "vertical",
                 "content": [
                     {
-                        "type": "item",
-                        "item": "settings_header",
-                        "max_width": 275
-                    },
-                    {
                         "type": "itemgrid",
                         "item_margin": "4,4",
                         "h_alignment": "left",
@@ -100,8 +90,7 @@
                                 "smog_clear_setting",
                                 "lolReq_setting",
                                 "factory_button_setting"
-                            ],
-                            []
+                            ]
                         ]
                     },
                     {
@@ -126,6 +115,26 @@
                                 "key6_setting",
                                 "key7_setting",
                                 "key8_setting"
+                            ],
+                            []
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "item": "ta_header",
+                        "max_width": 275
+                    },
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "4,4",
+                        "h_alignment": "left",
+                        "item_size": "80,80",
+                        "rows": [
+                            [
+                                "ta_bronze_setting",
+                                "ta_silver_setting",
+                                "ta_gold_setting",
+                                "ta_shiny_gold_setting"
                             ]
                         ]
                     }
