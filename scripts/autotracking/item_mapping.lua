@@ -6,7 +6,7 @@ ITEM_MAPPING = {
 	[0x0030] = { { "banana", nil, 10 } },
 	[0x0031] = { { "banana", nil, 25 } },
 	[0x0032] = { { "coin" } },
-	--[0x0033] = { { "heart" } },
+	[0x0033] = { { "heart" } },
 
 	[0x1000] = { { "letters_2" } },
 	[0x1001] = { { "letters_4" } },

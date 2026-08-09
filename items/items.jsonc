@@ -311,5 +311,13 @@
         "disabled_img": "images/items/filler_coin_uncollected.png",
         "codes": "coin",
         "max_quantity": 1000
+    },
+    {
+        "name": "Recovery Heart",
+        "type": "consumable",
+        "img": "images/items/filler_heart.png",
+        "disabled_img": "images/items/filler_heart_uncollected.png",
+        "codes": "heart",
+        "max_quantity": 100
     }
 ]
