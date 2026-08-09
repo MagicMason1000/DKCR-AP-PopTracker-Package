@@ -445,7 +445,7 @@ function SmogCheck(smogLog)
                 print(string.format("SmogCheck [FAIL]: 7-1 Complete Level is NOT in logic, so all future levels are NOT in logic."))
             end
             return false
-        elseif (ffClear.AccessibilityLevel == 6) then
+        elseif (ffClear.AccessibilityLevel == 6 or ffClear.AccessibilityLevel == 7) then
             if ENABLE_SMOGCHECK_LOG then
                 print(string.format("SmogCheck [SUCCESS]: 7-1 Complete Level is in logic, so all future levels are in logic."))
             end
@@ -530,7 +530,7 @@ function LolCheck(lolLog)
                 print(string.format("LolCheck [FAIL]: 7-R Complete Level is NOT in logic, so all future levels are NOT in logic."))
             end
             return false
-        elseif (lolClear.AccessibilityLevel == 6) then
+        elseif (lolClear.AccessibilityLevel == 6 or lolClear.AccessibilityLevel == 7) then
             if ENABLE_LOLCHECK_LOG then
                 print(string.format("LolCheck [SUCCESS]: 7-R Complete Level is in logic, so all future levels are in logic."))
             end
