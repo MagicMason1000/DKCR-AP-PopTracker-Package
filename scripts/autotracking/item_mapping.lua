@@ -44,7 +44,7 @@ ITEM_MAPPING = {
 	[0x5005] = { { "ground_pound" } },
 	
 	[0x6001] = { { "mirror_shard" } },
-	--[0x6002] = { { "mirror_mode" } },
+	[0x6002] = { { "mirror_shard" } },
 	[0x6003] = { { "rocket_barrel" } },
 	[0x6004] = { { "mine_cart" } },
 	[0x6005] = { { "rambi" } },
