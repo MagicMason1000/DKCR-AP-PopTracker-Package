@@ -52,7 +52,7 @@
             ]
         ]
     },
-    "rare_orbs": {
+    "unlockables": {
         "background": "#1F1F1F",
         "type": "itemgrid",
         "item_margin": "10, 10",

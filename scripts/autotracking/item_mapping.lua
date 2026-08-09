@@ -50,5 +50,5 @@ ITEM_MAPPING = {
 	[0x6005] = { { "rambi" } },
 	--[0x6006] = { { "kong_barrel" } },
 	
-	--[0x7001] = { { "factory_button" } }
+	[0x7026] = { { "factory_button" } }
 }
