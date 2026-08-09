@@ -1158,7 +1158,7 @@
 						"chest_unopened_img": "images/locations/shop_map_key.png",
 						"chest_opened_img": "images/locations/shop_map_key_purchased.png",
 						"item_count": 1
-					},
+					}/*,
 					{
 						"name": "Volcano Shop Balloons x1",
 						"chest_unopened_img": "images/locations/shop_balloons_x1.png",
@@ -1176,7 +1176,7 @@
 						"chest_unopened_img": "images/locations/shop_balloons_x7.png",
 						"chest_opened_img": "images/locations/shop_balloons_x7_purchased.png",
 						"item_count": 1
-					}
+					}*/
                 ],
                 "map_locations": [
                     {
