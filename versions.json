@@ -1,6 +1,12 @@
 {
 	"versions": [
 		{
+			"package_version": "0.3.1",
+			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.3.1/dkcr_ap_tracker_v0.3.1.zip",
+			"sha256": "803d1e6032e8a4b833583af48b552ae3a6d88ca3aa7534163d122488bb20f8b7",
+			"changelog": ["Bug fixes, temporarily hid Shop Balloon checks, addded Recovery Hearts"]
+		},
+		{
 			"package_version": "0.3.0",
 			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.3.0/dkcr_ap_tracker_v0.3.0.zip",
 			"sha256": "fd0d2bc8db5ca700679ebcf2cacd1226d64c777baa921ca2ed8f6a083bbe388a",
