@@ -594,7 +594,7 @@
             },
             { // MARK: 6-5
                 "name": "6-5 Precarious Plateau",
-				"access_rules": ["$BossCheck|5, key_cliff"],
+				"access_rules": ["$BossCheck|5, key_6"],
                 "sections": [
 					{
 						"name": "Puzzle Piece 1",
