@@ -6,14 +6,14 @@
 				"name": "Accessible Jungle Collectibles",
 				"sections": [
 					{
-						"name": "Jungle KONG Letters Accessible",
+						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|1|1"]
 					},
 					{
-						"name": "Jungle Puzzle Pieces Accessible",
+						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
@@ -34,7 +34,7 @@
                 "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
-						"name": "Jungle Medals Accessible",
+						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
@@ -54,14 +54,14 @@
 				"name": "Accessible Jungle Level Completions",
 				"sections": [
 					{
-						"name": "Jungle Levels Completions Available",
+						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|1|3"]
 					},
 					{
-						"name": "Jungle Mirror Mode Completions Available",
+						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
@@ -83,14 +83,14 @@
 				"name": "Accessible Beach Collectibles",
 				"sections": [
 					{
-						"name": "Beach KONG Letters Accessible",
+						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|2|1"]
 					},
 					{
-						"name": "Beach Puzzle Pieces Accessible",
+						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
@@ -111,7 +111,7 @@
                 "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
-						"name": "Beach Medals Accessible",
+						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
@@ -131,14 +131,14 @@
 				"name": "Accessible Beach Level Completions",
 				"sections": [
 					{
-						"name": "Beach Levels Completions Available",
+						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|2|3"]
 					},
 					{
-						"name": "Beach Mirror Mode Completions Available",
+						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
@@ -160,14 +160,14 @@
 				"name": "Accessible Ruins Collectibles",
 				"sections": [
 					{
-						"name": "Ruins KONG Letters Accessible",
+						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|3|1"]
 					},
 					{
-						"name": "Ruins Puzzle Pieces Accessible",
+						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
@@ -188,7 +188,7 @@
                 "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
-						"name": "Ruins Medals Accessible",
+						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
@@ -208,14 +208,14 @@
 				"name": "Accessible Ruins Level Completions",
 				"sections": [
 					{
-						"name": "Ruins Levels Completions Available",
+						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|3|3"]
 					},
 					{
-						"name": "Ruins Mirror Mode Completions Available",
+						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
@@ -237,14 +237,14 @@
 				"name": "Accessible Cave Collectibles",
 				"sections": [
 					{
-						"name": "Cave KONG Letters Accessible",
+						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|4|1"]
 					},
 					{
-						"name": "Cave Puzzle Pieces Accessible",
+						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
@@ -265,7 +265,7 @@
                 "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
-						"name": "Cave Medals Accessible",
+						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
@@ -285,14 +285,14 @@
 				"name": "Accessible Cave Level Completions",
 				"sections": [
 					{
-						"name": "Cave Levels Completions Available",
+						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|4|3"]
 					},
 					{
-						"name": "Cave Mirror Mode Completions Available",
+						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
@@ -314,14 +314,14 @@
 				"name": "Accessible Forest Collectibles",
 				"sections": [
 					{
-						"name": "Forest KONG Letters Accessible",
+						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|5|1"]
 					},
 					{
-						"name": "Forest Puzzle Pieces Accessible",
+						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
@@ -342,7 +342,7 @@
                 "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
-						"name": "Forest Medals Accessible",
+						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
@@ -362,14 +362,14 @@
 				"name": "Accessible Forest Level Completions",
 				"sections": [
 					{
-						"name": "Forest Levels Completions Available",
+						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|5|3"]
 					},
 					{
-						"name": "Forest Mirror Mode Completions Available",
+						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
@@ -391,14 +391,14 @@
 				"name": "Accessible Cliff Collectibles",
 				"sections": [
 					{
-						"name": "Cliff KONG Letters Accessible",
+						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|6|1"]
 					},
 					{
-						"name": "Cliff Puzzle Pieces Accessible",
+						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
@@ -419,7 +419,7 @@
                 "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
-						"name": "Cliff Medals Accessible",
+						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
@@ -439,14 +439,14 @@
 				"name": "Accessible Cliff Level Completions",
 				"sections": [
 					{
-						"name": "Cliff Levels Completions Available",
+						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|6|3"]
 					},
 					{
-						"name": "Cliff Mirror Mode Completions Available",
+						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
@@ -468,14 +468,14 @@
 				"name": "Accessible Factory Collectibles",
 				"sections": [
 					{
-						"name": "Factory KONG Letters Accessible",
+						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|7|1"]
 					},
 					{
-						"name": "Factory Puzzle Pieces Accessible",
+						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
@@ -496,7 +496,7 @@
                 "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
-						"name": "Factory Medals Accessible",
+						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
@@ -516,14 +516,14 @@
 				"name": "Accessible Factory Level Completions",
 				"sections": [
 					{
-						"name": "Factory Levels Completions Available",
+						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|7|3"]
 					},
 					{
-						"name": "Factory Mirror Mode Completions Available",
+						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
@@ -545,14 +545,14 @@
 				"name": "Accessible Volcano Collectibles",
 				"sections": [
 					{
-						"name": "Volcano KONG Letters Accessible",
+						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|8|1"]
 					},
 					{
-						"name": "Volcano Puzzle Pieces Accessible",
+						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
@@ -573,7 +573,7 @@
                 "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
 				"sections": [
 					{
-						"name": "Volcano Medals Accessible",
+						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
@@ -593,14 +593,14 @@
 				"name": "Accessible Volcano Level Completions",
 				"sections": [
 					{
-						"name": "Volcano Levels Completions Available",
+						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|8|3"]
 					},
 					{
-						"name": "Volcano Mirror Mode Completions Available",
+						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
@@ -623,7 +623,7 @@
                 "visibility_rules": ["golden_temple_enabled"],
 				"sections": [
 					{
-						"name": "Golden Temple Puzzle Pieces Accessible",
+						"name": "Temple Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
@@ -644,7 +644,7 @@
                 "visibility_rules": ["golden_temple_enabled, time_attack_enabled"],
 				"sections": [
 					{
-						"name": "Golden Temple Medals Accessible",
+						"name": "Temple Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
@@ -665,14 +665,14 @@
                 "visibility_rules": ["golden_temple_enabled"],
 				"sections": [
 					{
-						"name": "Golden Temple Completion Available",
+						"name": "Temple Completion Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|9|3"]
 					},
 					{
-						"name": "Golden Temple Mirror Mode Completion Available",
+						"name": "Temple Mirror Mode Completion Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,

@@ -35,8 +35,7 @@ print("")
 -- loads the AP autotracking code
 ScriptHost:LoadScript("scripts/autotracking/archipelago.lua")
 
-WORLD_LEVEL_AMOUNT = { 7, 8, 7, 6, 9, 9, 9, 8 }
-WORLD_LEVEL_OFFSET = { 1, 8, 16, 23, 29, 38, 47, 55, 63, 64 }
+WORLDS = { "Jungle", "Beach", "Ruins", "Cave", "Forest", "Cliff", "Factory", "Volcano", "Golden Temple" }
 
 LEVELS = {
     "@Jungle/1-1 Jungle Hijinxs",
@@ -46,6 +45,7 @@ LEVELS = {
     "@Jungle/1-5 Canopy Cannons",
     "@Jungle/1-6 Crazy Cart",
     "@Jungle/1-K Platform Panic",
+    "@Jungle/1-B Mugly's Mound",
 
     "@Beach/2-1 Poppin' Planks",
     "@Beach/2-2 Sloppy Sands",
@@ -55,6 +55,7 @@ LEVELS = {
     "@Beach/2-6 Blowhole Bound",
     "@Beach/2-7 Tidal Terror",
     "@Beach/2-K Tumblin' Temple",
+    "@Beach/2-B Pinchin' Pirates",
 
     "@Ruins/3-1 Wonky Waterway",
     "@Ruins/3-2 Button Bash",
@@ -63,6 +64,7 @@ LEVELS = {
     "@Ruins/3-5 Itty Bitty Biters",
     "@Ruins/3-6 Temple Topple",
     "@Ruins/3-K Shifty Smashers",
+    "@Ruins/3-B Ruined Roost",
 
     "@Cave/4-1 Rickety Rails",
     "@Cave/4-2 Grip & Trip",
@@ -70,6 +72,7 @@ LEVELS = {
     "@Cave/4-4 Mole Patrol",
     "@Cave/4-5 Crowded Cavern",
     "@Cave/4-K Jagged Jewels",
+    "@Cave/4-B The Mole Train",
 
     "@Forest/5-1 Vine Valley",
     "@Forest/5-2 Clingy Swingy",
@@ -80,6 +83,7 @@ LEVELS = {
     "@Forest/5-7 Wigglevine Wonders",
     "@Forest/5-8 Muncher Marathon",
     "@Forest/5-K Blast & Bounce",
+    "@Forest/5-B Mangoruby Run",
 
     "@Cliff/6-1 Sticky Situation",
     "@Cliff/6-2 Prehistoric Path",
@@ -90,6 +94,7 @@ LEVELS = {
     "@Cliff/6-7 Tippy Shippy",
     "@Cliff/6-8 Clifftop Climb",
     "@Cliff/6-K Perilous Passage",
+    "@Cliff/6-B Thugly's Highrise",
 
     "@Factory/7-1 Foggy Fumes",
     "@Factory/7-2 Slammin' Steel",
@@ -99,6 +104,7 @@ LEVELS = {
     "@Factory/7-6 Switcheroo",
     "@Factory/7-7 Music Madness",
     "@Factory/7-K Treacherous Track",
+    "@Factory/7-B Feather Fiend",
 
     "@Volcano/8-1 Furious Fire",
     "@Volcano/8-2 Hot Rocket",
@@ -108,6 +114,7 @@ LEVELS = {
     "@Volcano/8-6 Moving Melters",
     "@Volcano/8-7 Red Red Rising",
     "@Volcano/8-K Five Monkey Trial",
+    "@Volcano/8-B Tiki Tong Terror",
 
     "@Golden Temple/9-1 Golden Temple"
 }
@@ -131,6 +138,13 @@ PUZZLES = {
     "/Puzzle Piece 9",
 }
 
+MEDALS = {
+    "/Time Attack: Bronze",
+    "/Time Attack: Silver",
+    "/Time Attack: Gold",
+    "/Time Attack: Shiny Gold"
+}
+
 -- MARK: WorldCheck
 -- checkType 1 = KONG Letters
 -- checkType 2 = Puzzle Pieces
@@ -139,56 +153,64 @@ PUZZLES = {
 -- checkType 5 = Time Attack Medals
 
 function WorldCheck(world, checkType)
-    if ENABLE_WORLDCHECK_LOG then
-        print("")
-        print(string.format("WorldCheck: Called with world = %s, checkType = %s", world, checkType))
-    end
-
     world = tonumber(world)
     checkType = tonumber(checkType)
-    local count = 0
-    local levelAmount = WORLD_LEVEL_AMOUNT[world]
+
+    if ENABLE_WORLDCHECK_LOG then
+        print()
+        print(string.format("WorldCheck: Called with world = %s, checkType = %s", world, checkType))
+    end
 
     if (world == 9 and Tracker:FindObjectForCode("golden_temple_setting").CurrentStage == 0) then
         if ENABLE_WORLDCHECK_LOG then
             print("WorldCheck: Ending early as the Golden Temple is not enabled.")
         end
-    return false
+        return false
     end
 
+    local totalLevelsPerWorld = { 8, 9, 8, 7, 10, 10, 9, 9, 1 }
+    local numberedLevelsPerWorld = { 1, 9, 18, 26, 33, 43, 53, 62, 71, 72 } -- Total levels with each index indicating a new world. Used to index LEVELS properly.
+
     if (checkType == 1) then -- KONG LETTERS
-        local completionCountdown = ((WORLD_LEVEL_AMOUNT[world] - 1) * 4)
-        for lvlCount = (WORLD_LEVEL_OFFSET[world]), (WORLD_LEVEL_OFFSET[world + 1] - 2) do
-            for kongCount = 1, 4 do
-                local access = Tracker:FindObjectForCode(LEVELS[lvlCount] .. LETTERS[kongCount]).AccessibilityLevel
+        local access
+        local accessibleLetters = false
+        local countdown = ((totalLevelsPerWorld[world] - 2) * 4)
+        --[[
+        accessibleLetters gets set to true when an accessible KONG Letter is found. If it stays false, there are no accessible Letters in the world.
+        countdown starts at the total Letters in the world and subtracts one for each completed check. If it equals 0 by the end, then every Letter in the world is collected.
+        ]]
+        for level = numberedLevelsPerWorld[world], (numberedLevelsPerWorld[world + 1] - 3) do -- Loops through all (minus K and B) levels in the world
+            for letter = 1, 4 do
+                access = Tracker:FindObjectForCode(LEVELS[level] .. LETTERS[letter]).AccessibilityLevel
+                -- Check if the location is Accessible (6) or Cleared (7)
                 if (access == 6) then
-                    count = count + 1
+                    accessibleLetters = true
+                elseif (access == 7) then
+                    countdown = countdown - 1
                 end
-                if (access == 7) then
-                    completionCountdown = completionCountdown - 1
-                end
-                if ENABLE_DETAILED_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
-                    print(string.format("WorldCheck: %s - AccLvl = %s, Count = %s, comCntdwn = %s", LEVELS[lvlCount] .. ":" .. kongCount, access, count, completionCountdown))
+                if ENABLE_WORLDCHECK_LOG and ENABLE_DETAILED_DEBUG_LOG then
+                    print(string.format("WorldCheck: %s has access = %s, accessibleLetters = %s, countdown = %s", (LEVELS[level] .. ":" .. letter), access, accessibleLetters, countdown))
                 end
             end
         end
 
-        if (completionCountdown == 0) then
-            -- code goes here to set the Accessible section to Cleared. Maybe use AccessibilityLevel to set it to state 7?
+        if (countdown == 0) then
             if ENABLE_WORLDCHECK_LOG then
                 print(string.format("WorldCheck [SUCCESS+]: WorldCheck complete. Every KONG Letter in World %s is collected.", world))
             end
+            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Collectibles/KONG Letters Accessible").AvailableChestCount = 0
             return true
-        end
-        if (count ~= 0) then
+        elseif accessibleLetters then
             if ENABLE_WORLDCHECK_LOG then
-                print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. KONG Letters are available to collect in World %s.", world))
+                print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. KONG Letters are available in World %s.", world))
             end
+            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Collectibles/KONG Letters Accessible").AvailableChestCount = 1
             return true
         else
             if ENABLE_WORLDCHECK_LOG then
-                print(string.format("WorldCheck [FAIL]: WorldCheck complete. KONG Letters are NOT available to collect in World %s.", world))
+                print(string.format("WorldCheck [FAIL]: WorldCheck complete. KONG Letters are NOT available in World %s.", world))
             end
+            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Collectibles/KONG Letters Accessible").AvailableChestCount = 1
             return false
         end
     end
@@ -205,41 +227,153 @@ function WorldCheck(world, checkType)
             return false
         end
     
-        for lvlCount = (WORLD_LEVEL_OFFSET[world]), (WORLD_LEVEL_OFFSET[world + 1] - 1) do
+        local accessibleGoals = false
+        local countdown = totalLevelsPerWorld[world]
+        if (world == 7) then
+            countdown = countdown + 1
+        end
+        for lvlCount = (numberedLevelsPerWorld[world]), (numberedLevelsPerWorld[world + 1] - 1) do
             local access
-            if (checkType == 3) then
+            if (checkType == 3 and not (lvlCount == (numberedLevelsPerWorld[world + 1] - 1))) then
                 access = Tracker:FindObjectForCode(LEVELS[lvlCount] .. "/Complete Level").AccessibilityLevel
-            end
-            if (checkType == 4) then
+            elseif (checkType == 3 and (lvlCount == (numberedLevelsPerWorld[world + 1] - 1))) then
+                access = Tracker:FindObjectForCode(LEVELS[lvlCount] .. "/Boss Clear").AccessibilityLevel
+            elseif (checkType == 4) then
                 access = Tracker:FindObjectForCode(LEVELS[lvlCount] .. "/Beat in Mirror Mode").AccessibilityLevel
             end
+
             if (access == 6) then
-                count = count + 1
+                accessibleGoals = true
+            elseif (access == 7) then
+                countdown = countdown - 1
             end
-            if ENABLE_DETAILED_DEBUG_LOG and ENABLE_WORLDCHECK_LOG then
-                print(string.format("WorldCheck: %s - AccLevel = %s, Count = %s", LEVELS[lvlCount], access, count))
+            if ENABLE_WORLDCHECK_LOG and ENABLE_DETAILED_DEBUG_LOG then
+                print(string.format("WorldCheck: %s - AccLevel = %s, accessibleGoals = %s, countdown = %s", LEVELS[lvlCount], access, accessibleGoals, countdown))
             end
         end
 
-        if (count ~= 0) then
-            if ENABLE_WORLDCHECK_LOG and checkType == 3 then
-                print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Level Completion checks are available in World %s.", world))
-            elseif ENABLE_WORLDCHECK_LOG and checkType == 4 then
-                print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Mirror Mode checks are available in World %s.", world))
+        if (world == 7) then -- specific handle for 7-R since it's a weird one that would make the other checks difficult
+            if (checkType == 3) then
+                if (Tracker:FindObjectForCode("@Factory/7-R Lift-off Launch/Complete Level").AccessibilityLevel == 6) then
+                    accessibleGoals = true
+                elseif (Tracker:FindObjectForCode("@Factory/7-R Lift-off Launch/Complete Level").AccessibilityLevel == 7) then
+                    countdown = countdown - 1
+                end
+            elseif (checkType == 4) then
+                if (Tracker:FindObjectForCode("@Factory/7-R Lift-off Launch/Beat in Mirror Mode").AccessibilityLevel == 6) then
+                    accessibleGoals = true
+                elseif (Tracker:FindObjectForCode("@Factory/7-R Lift-off Launch/Beat in Mirror Mode").AccessibilityLevel == 7) then
+                    countdown = countdown - 1
+                end
+            end
+        end
+
+        if (countdown == 0) then
+            if checkType == 3 then
+                if ENABLE_WORLDCHECK_LOG then
+                    print(string.format("WorldCheck [SUCCESS+]: WorldCheck complete. All levels are completed in World %s.", world))
+                end
+                Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Level Completions/Level Completions Available").AvailableChestCount = 0
+            elseif checkType == 4 then
+                if ENABLE_WORLDCHECK_LOG then
+                    print(string.format("WorldCheck [SUCCESS+]: WorldCheck complete. All Mirror Mode checks are completed in World %s.", world))
+                end
+                Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Level Completions/Mirror Mode Completions Available").AvailableChestCount = 0
+            end
+            return true
+        elseif accessibleGoals then
+            if checkType == 3 then
+                if ENABLE_WORLDCHECK_LOG then
+                    print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Level Completion checks are available in World %s.", world))
+                end
+                Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Level Completions/Level Completions Available").AvailableChestCount = 1
+            elseif checkType == 4 then
+                if ENABLE_WORLDCHECK_LOG then
+                    print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Mirror Mode checks are available in World %s.", world))
+                end
+                Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Level Completions/Mirror Mode Completions Available").AvailableChestCount = 1
             end
             return true
         else
-            if ENABLE_WORLDCHECK_LOG and checkType == 3 then
-                print(string.format("WorldCheck [FAIL]: WorldCheck complete. Level Completion checks are NOT available in World %s.", world))
-            elseif ENABLE_WORLDCHECK_LOG and checkType == 4 then
-                print(string.format("WorldCheck [FAIL]: WorldCheck complete. Mirror Mode checks are NOT available in World %s.", world))
+            if checkType == 3 then
+                if ENABLE_WORLDCHECK_LOG then
+                    print(string.format("WorldCheck [FAIL]: WorldCheck complete. Level Completion checks are NOT available in World %s.", world))
+                end
+                Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Level Completions/Level Completions Available").AvailableChestCount = 1
+            elseif checkType == 4 then
+                if ENABLE_WORLDCHECK_LOG then
+                    print(string.format("WorldCheck [FAIL]: WorldCheck complete. Mirror Mode checks are NOT available in World %s.", world))
+                end
+                Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Level Completions/Mirror Mode Completions Available").AvailableChestCount = 1
             end
             return false
         end
     end
 
-    if (checkType == 5) then -- TIME ATTACK MEDALS (WIP)
-        return false
+    if (checkType == 5) then
+        local randomizedMedals = 0
+        local medalCodes = {}
+        if (Tracker:FindObjectForCode("ta_bronze_setting").CurrentStage == 1) then
+            randomizedMedals = randomizedMedals + 1
+            medalCodes[randomizedMedals] = "/Time Attack: Bronze"
+        end
+        if (Tracker:FindObjectForCode("ta_silver_setting").CurrentStage == 1) then
+            randomizedMedals = randomizedMedals + 1
+            medalCodes[randomizedMedals] = "/Time Attack: Silver"
+        end
+        if (Tracker:FindObjectForCode("ta_gold_setting").CurrentStage == 1) then
+            randomizedMedals = randomizedMedals + 1
+            medalCodes[randomizedMedals] = "/Time Attack: Gold"
+        end
+        if (Tracker:FindObjectForCode("ta_shiny_gold_setting").CurrentStage == 1) then
+            randomizedMedals = randomizedMedals + 1
+            medalCodes[randomizedMedals] = "/Time Attack: Shiny Gold"
+        end
+
+        if (randomizedMedals == 0) then
+            if ENABLE_WORLDCHECK_LOG then
+                print("WorldCheck: Ending early as no Time Attack settings are enabled.")
+            end
+            return false
+        end
+
+        local access
+        local accessibleMedals = false
+        local countdown = ((totalLevelsPerWorld[world]) * randomizedMedals)
+        for level = numberedLevelsPerWorld[world], (numberedLevelsPerWorld[world + 1] - 1) do -- Loops through all levels in the world
+            for medal = 1, randomizedMedals do
+                access = Tracker:FindObjectForCode(LEVELS[level] .. medalCodes[medal]).AccessibilityLevel
+                -- Check if the location is Accessible (6) or Cleared (7)
+                if (access == 6) then
+                    accessibleMedals = true
+                elseif (access == 7) then
+                    countdown = countdown - 1
+                end
+                if ENABLE_WORLDCHECK_LOG and ENABLE_DETAILED_DEBUG_LOG then
+                    print(string.format("WorldCheck: %s has access = %s, accessibleMedals = %s, countdown = %s", (LEVELS[level] .. ":" .. medal), access, accessibleMedals, countdown))
+                end
+            end
+        end
+
+        if (countdown == 0) then
+            if ENABLE_WORLDCHECK_LOG then
+                print(string.format("WorldCheck [SUCCESS+]: WorldCheck complete. Every Time Attack medal in World %s is collected.", world))
+            end
+            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Time Attack Medals/Medals Accessible").AvailableChestCount = 0
+            return true
+        elseif accessibleMedals then
+            if ENABLE_WORLDCHECK_LOG then
+                print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Time Attack medals are available in World %s.", world))
+            end
+            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Time Attack Medals/Medals Accessible").AvailableChestCount = 1
+            return true
+        else
+            if ENABLE_WORLDCHECK_LOG then
+                print(string.format("WorldCheck [FAIL]: WorldCheck complete. Time Attack medals are NOT available in World %s.", world))
+            end
+            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Time Attack Medals/Medals Accessible").AvailableChestCount = 1
+            return false
+        end
     end
 
     if ENABLE_DEBUG_LOG then
