@@ -1,6 +1,12 @@
 {
 	"versions": [
 		{
+			"package_version": "0.3.2",
+			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.3.2/dkcr_ap_tracker_v0.3.2.zip",
+			"sha256": "8dbbefede86d94752a78233f4bf9a898cdbec63f76949da37b51a7b59a36bdb5",
+			"changelog": ["World Progress bar is now fully functional, fixed logic issues with 6-5"]
+		},
+		{
 			"package_version": "0.3.1",
 			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.3.1/dkcr_ap_tracker_v0.3.1.zip",
 			"sha256": "803d1e6032e8a4b833583af48b552ae3a6d88ca3aa7534163d122488bb20f8b7",
