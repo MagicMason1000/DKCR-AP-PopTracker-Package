@@ -1,7 +1,7 @@
 -- Configuration --------------------------------------
 AUTOTRACKER_ENABLE_ITEM_TRACKING = true
 AUTOTRACKER_ENABLE_LOCATION_TRACKING = true and not IS_ITEMS_ONLY
-ENABLE_WORLDCHECK_LOG  = ENABLE_DEBUG_LOG and false
+ENABLE_WORLDCHECK_LOG  = ENABLE_DEBUG_LOG and true
 ENABLE_LETTERCHECK_LOG = ENABLE_DEBUG_LOG and false
 ENABLE_BOSSCHECK_LOG   = ENABLE_DEBUG_LOG and false
 ENABLE_SHARDCHECK_LOG  = ENABLE_DEBUG_LOG and false
@@ -38,85 +38,85 @@ ScriptHost:LoadScript("scripts/autotracking/archipelago.lua")
 WORLDS = { "Jungle", "Beach", "Ruins", "Cave", "Forest", "Cliff", "Factory", "Volcano", "Golden Temple" }
 
 LEVELS = {
-    "@Jungle/1-1 Jungle Hijinxs",
-    "@Jungle/1-2 King of Cling",
-    "@Jungle/1-3 Tree Top Bop",
-    "@Jungle/1-4 Sunset Shore",
-    "@Jungle/1-5 Canopy Cannons",
-    "@Jungle/1-6 Crazy Cart",
-    "@Jungle/1-K Platform Panic",
-    "@Jungle/1-B Mugly's Mound",
+    { code = "@Jungle/1-1 Jungle Hijinxs", value = 9 },
+    { code = "@Jungle/1-2 King of Cling", value = 7 },
+    { code = "@Jungle/1-3 Tree Top Bop", value = 5 },
+    { code = "@Jungle/1-4 Sunset Shore", value = 5 },
+    { code = "@Jungle/1-5 Canopy Cannons", value = 5 },
+    { code = "@Jungle/1-6 Crazy Cart", value = 5 },
+    { code = "@Jungle/1-K Platform Panic", value = 5 },
+    { code = "@Jungle/1-B Mugly's Mound", value = 0 },
 
-    "@Beach/2-1 Poppin' Planks",
-    "@Beach/2-2 Sloppy Sands",
-    "@Beach/2-3 Peaceful Pier",
-    "@Beach/2-4 Cannon Cluster",
-    "@Beach/2-5 Stormy Shore",
-    "@Beach/2-6 Blowhole Bound",
-    "@Beach/2-7 Tidal Terror",
-    "@Beach/2-K Tumblin' Temple",
-    "@Beach/2-B Pinchin' Pirates",
+    { code = "@Beach/2-1 Poppin' Planks", value = 5 },
+    { code = "@Beach/2-2 Sloppy Sands", value = 7 },
+    { code = "@Beach/2-3 Peaceful Pier", value = 5 },
+    { code = "@Beach/2-4 Cannon Cluster", value = 7 },
+    { code = "@Beach/2-5 Stormy Shore", value = 5 },
+    { code = "@Beach/2-6 Blowhole Bound", value = 5 },
+    { code = "@Beach/2-7 Tidal Terror", value = 5 },
+    { code = "@Beach/2-K Tumblin' Temple", value = 5 },
+    { code = "@Beach/2-B Pinchin' Pirates", value = 0 },
 
-    "@Ruins/3-1 Wonky Waterway",
-    "@Ruins/3-2 Button Bash",
-    "@Ruins/3-3 Mast Blast",
-    "@Ruins/3-4 Damp Dungeon",
-    "@Ruins/3-5 Itty Bitty Biters",
-    "@Ruins/3-6 Temple Topple",
-    "@Ruins/3-K Shifty Smashers",
-    "@Ruins/3-B Ruined Roost",
+    { code = "@Ruins/3-1 Wonky Waterway", value = 7 },
+    { code = "@Ruins/3-2 Button Bash", value = 7 },
+    { code = "@Ruins/3-3 Mast Blast", value = 7 },
+    { code = "@Ruins/3-4 Damp Dungeon", value = 9 },
+    { code = "@Ruins/3-5 Itty Bitty Biters", value = 7 },
+    { code = "@Ruins/3-6 Temple Topple", value = 5 },
+    { code = "@Ruins/3-K Shifty Smashers", value = 5 },
+    { code = "@Ruins/3-B Ruined Roost", value = 0 },
 
-    "@Cave/4-1 Rickety Rails",
-    "@Cave/4-2 Grip & Trip",
-    "@Cave/4-3 Bombs Away",
-    "@Cave/4-4 Mole Patrol",
-    "@Cave/4-5 Crowded Cavern",
-    "@Cave/4-K Jagged Jewels",
-    "@Cave/4-B The Mole Train",
+    { code = "@Cave/4-1 Rickety Rails", value = 5 },
+    { code = "@Cave/4-2 Grip & Trip", value = 5 },
+    { code = "@Cave/4-3 Bombs Away", value = 5 },
+    { code = "@Cave/4-4 Mole Patrol", value = 5 },
+    { code = "@Cave/4-5 Crowded Cavern", value = 5 },
+    { code = "@Cave/4-K Jagged Jewels", value = 5 },
+    { code = "@Cave/4-B The Mole Train", value = 0 },
 
-    "@Forest/5-1 Vine Valley",
-    "@Forest/5-2 Clingy Swingy",
-    "@Forest/5-3 Flutter Flyaway",
-    "@Forest/5-4 Tippin' Totems",
-    "@Forest/5-5 Longshot Launch",
-    "@Forest/5-6 Springy Spores",
-    "@Forest/5-7 Wigglevine Wonders",
-    "@Forest/5-8 Muncher Marathon",
-    "@Forest/5-K Blast & Bounce",
-    "@Forest/5-B Mangoruby Run",
+    { code = "@Forest/5-1 Vine Valley", value = 7 },
+    { code = "@Forest/5-2 Clingy Swingy", value = 5 },
+    { code = "@Forest/5-3 Flutter Flyaway", value = 7 },
+    { code = "@Forest/5-4 Tippin' Totems", value = 7 },
+    { code = "@Forest/5-5 Longshot Launch", value = 7 },
+    { code = "@Forest/5-6 Springy Spores", value = 7 },
+    { code = "@Forest/5-7 Wigglevine Wonders", value = 7 },
+    { code = "@Forest/5-8 Muncher Marathon", value = 5 },
+    { code = "@Forest/5-K Blast & Bounce", value = 5 },
+    { code = "@Forest/5-B Mangoruby Run", value = 0 },
 
-    "@Cliff/6-1 Sticky Situation",
-    "@Cliff/6-2 Prehistoric Path",
-    "@Cliff/6-3 Weighty Way",
-    "@Cliff/6-4 Boulder Roller",
-    "@Cliff/6-5 Precarious Plateau",
-    "@Cliff/6-6 Crumble Canyon",
-    "@Cliff/6-7 Tippy Shippy",
-    "@Cliff/6-8 Clifftop Climb",
-    "@Cliff/6-K Perilous Passage",
-    "@Cliff/6-B Thugly's Highrise",
+    { code = "@Cliff/6-1 Sticky Situation", value = 9 },
+    { code = "@Cliff/6-2 Prehistoric Path", value = 5 },
+    { code = "@Cliff/6-3 Weighty Way", value = 5 },
+    { code = "@Cliff/6-4 Boulder Roller", value = 7 },
+    { code = "@Cliff/6-5 Precarious Plateau", value = 5 },
+    { code = "@Cliff/6-6 Crumble Canyon", value = 9 },
+    { code = "@Cliff/6-7 Tippy Shippy", value = 5 },
+    { code = "@Cliff/6-8 Clifftop Climb", value = 5 },
+    { code = "@Cliff/6-K Perilous Passage", value = 5 },
+    { code = "@Cliff/6-B Thugly's Highrise", value = 0 },
 
-    "@Factory/7-1 Foggy Fumes",
-    "@Factory/7-2 Slammin' Steel",
-    "@Factory/7-3 Handy Hazards",
-    "@Factory/7-4 Gear Getaway",
-    "@Factory/7-5 Cog Jog",
-    "@Factory/7-6 Switcheroo",
-    "@Factory/7-7 Music Madness",
-    "@Factory/7-K Treacherous Track",
-    "@Factory/7-B Feather Fiend",
+    { code = "@Factory/7-1 Foggy Fumes", value = 7 },
+    { code = "@Factory/7-2 Slammin' Steel", value = 5 },
+    { code = "@Factory/7-3 Handy Hazards", value = 7 },
+    { code = "@Factory/7-4 Gear Getaway", value = 7 },
+    { code = "@Factory/7-5 Cog Jog", value = 9 },
+    { code = "@Factory/7-6 Switcheroo", value = 5 },
+    { code = "@Factory/7-7 Music Madness", value = 5 },
+    { code = "@Factory/7-K Treacherous Track", value = 5 },
+    { code = "@Factory/7-B Feather Fiend", value = 0 },
 
-    "@Volcano/8-1 Furious Fire",
-    "@Volcano/8-2 Hot Rocket",
-    "@Volcano/8-3 Roasting Rails",
-    "@Volcano/8-4 Smokey Peak",
-    "@Volcano/8-5 Bobbing Basalt",
-    "@Volcano/8-6 Moving Melters",
-    "@Volcano/8-7 Red Red Rising",
-    "@Volcano/8-K Five Monkey Trial",
-    "@Volcano/8-B Tiki Tong Terror",
+    { code = "@Volcano/8-1 Furious Fire", value = 5 },
+    { code = "@Volcano/8-2 Hot Rocket", value = 5 },
+    { code = "@Volcano/8-3 Roasting Rails", value = 5 },
+    { code = "@Volcano/8-4 Smokey Peak", value = 5 },
+    { code = "@Volcano/8-5 Bobbing Basalt", value = 7 },
+    { code = "@Volcano/8-6 Moving Melters", value = 5 },
+    { code = "@Volcano/8-7 Red Red Rising", value = 5 },
+    { code = "@Volcano/8-K Five Monkey Trial", value = 5 },
+    { code = "@Volcano/8-B Tiki Tong Terror", value = 0 },
 
-    "@Golden Temple/9-1 Golden Temple"
+    { code = "@Golden Temple/9-1 Golden Temple", value = 1 }
 }
 
 LETTERS = {
@@ -181,7 +181,7 @@ function WorldCheck(world, checkType)
         ]]
         for level = numberedLevelsPerWorld[world], (numberedLevelsPerWorld[world + 1] - 3) do -- Loops through all (minus K and B) levels in the world
             for letter = 1, 4 do
-                access = Tracker:FindObjectForCode(LEVELS[level] .. LETTERS[letter]).AccessibilityLevel
+                access = Tracker:FindObjectForCode(LEVELS[level].code .. LETTERS[letter]).AccessibilityLevel
                 -- Check if the location is Accessible (6) or Cleared (7)
                 if (access == 6) then
                     accessibleLetters = true
@@ -189,7 +189,7 @@ function WorldCheck(world, checkType)
                     countdown = countdown - 1
                 end
                 if ENABLE_WORLDCHECK_LOG and ENABLE_DETAILED_DEBUG_LOG then
-                    print(string.format("WorldCheck: %s has access = %s, accessibleLetters = %s, countdown = %s", (LEVELS[level] .. ":" .. letter), access, accessibleLetters, countdown))
+                    print(string.format("WorldCheck: %s has access = %s, accessibleLetters = %s, countdown = %s", (LEVELS[level].code .. ":" .. letter), access, accessibleLetters, countdown))
                 end
             end
         end
@@ -215,7 +215,42 @@ function WorldCheck(world, checkType)
         end
     end
 
-    if (checkType == 2) then -- PUZZLE PIECES (WIP)
+    if (checkType == 2) then -- PUZZLE PIECES
+        local totalPP = { 41, 44, 47, 30, 57, 55, 50, 42, 5 }
+        local accessiblePP = false
+        local countdown = totalPP[world]
+        local access
+
+        for level = numberedLevelsPerWorld[world], (numberedLevelsPerWorld[world + 1] - 2) do
+            for pp = 1, LEVELS[level].value do
+                access = Tracker:FindObjectForCode(LEVELS[level].code .. "/Puzzle Piece " .. pp).AccessibilityLevel
+                if (access == 6) then
+                    accessiblePP = true
+                elseif (access == 7) then
+                    countdown = countdown - 1
+                end
+            end
+        end
+
+        if (countdown == 0) then
+            if ENABLE_WORLDCHECK_LOG then
+                print(string.format("WorldCheck [SUCCESS+]: WorldCheck complete. Every Puzzle Piece in World %s is collected.", world))
+            end
+            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Collectibles/Puzzle Pieces Accessible").AvailableChestCount = 0
+            return true
+        elseif accessiblePP then
+            if ENABLE_WORLDCHECK_LOG then
+                print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Puzzle Pieces are available in World %s.", world))
+            end
+            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Collectibles/Puzzle Pieces Accessible").AvailableChestCount = 1
+            return true
+        else
+            if ENABLE_WORLDCHECK_LOG then
+                print(string.format("WorldCheck [FAIL]: WorldCheck complete. Puzzle Pieces are NOT available in World %s.", world))
+            end
+            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Collectibles/Puzzle Pieces Accessible").AvailableChestCount = 1
+            return false
+        end
         return false
     end
 
@@ -235,11 +270,11 @@ function WorldCheck(world, checkType)
         for lvlCount = (numberedLevelsPerWorld[world]), (numberedLevelsPerWorld[world + 1] - 1) do
             local access
             if (checkType == 3 and not (lvlCount == (numberedLevelsPerWorld[world + 1] - 1))) then
-                access = Tracker:FindObjectForCode(LEVELS[lvlCount] .. "/Complete Level").AccessibilityLevel
+                access = Tracker:FindObjectForCode(LEVELS[lvlCount].code .. "/Complete Level").AccessibilityLevel
             elseif (checkType == 3 and (lvlCount == (numberedLevelsPerWorld[world + 1] - 1))) then
-                access = Tracker:FindObjectForCode(LEVELS[lvlCount] .. "/Boss Clear").AccessibilityLevel
+                access = Tracker:FindObjectForCode(LEVELS[lvlCount].code .. "/Boss Clear").AccessibilityLevel
             elseif (checkType == 4) then
-                access = Tracker:FindObjectForCode(LEVELS[lvlCount] .. "/Beat in Mirror Mode").AccessibilityLevel
+                access = Tracker:FindObjectForCode(LEVELS[lvlCount].code .. "/Beat in Mirror Mode").AccessibilityLevel
             end
 
             if (access == 6) then
@@ -248,7 +283,7 @@ function WorldCheck(world, checkType)
                 countdown = countdown - 1
             end
             if ENABLE_WORLDCHECK_LOG and ENABLE_DETAILED_DEBUG_LOG then
-                print(string.format("WorldCheck: %s - AccLevel = %s, accessibleGoals = %s, countdown = %s", LEVELS[lvlCount], access, accessibleGoals, countdown))
+                print(string.format("WorldCheck: %s - AccLevel = %s, accessibleGoals = %s, countdown = %s", LEVELS[lvlCount].code, access, accessibleGoals, countdown))
             end
         end
 
@@ -310,7 +345,7 @@ function WorldCheck(world, checkType)
         end
     end
 
-    if (checkType == 5) then
+    if (checkType == 5) then -- TIME ATTACK MEDALS
         local randomizedMedals = 0
         local medalCodes = {}
         if (Tracker:FindObjectForCode("ta_bronze_setting").CurrentStage == 1) then
@@ -342,7 +377,7 @@ function WorldCheck(world, checkType)
         local countdown = ((totalLevelsPerWorld[world]) * randomizedMedals)
         for level = numberedLevelsPerWorld[world], (numberedLevelsPerWorld[world + 1] - 1) do -- Loops through all levels in the world
             for medal = 1, randomizedMedals do
-                access = Tracker:FindObjectForCode(LEVELS[level] .. medalCodes[medal]).AccessibilityLevel
+                access = Tracker:FindObjectForCode(LEVELS[level].code .. medalCodes[medal]).AccessibilityLevel
                 -- Check if the location is Accessible (6) or Cleared (7)
                 if (access == 6) then
                     accessibleMedals = true
@@ -350,7 +385,7 @@ function WorldCheck(world, checkType)
                     countdown = countdown - 1
                 end
                 if ENABLE_WORLDCHECK_LOG and ENABLE_DETAILED_DEBUG_LOG then
-                    print(string.format("WorldCheck: %s has access = %s, accessibleMedals = %s, countdown = %s", (LEVELS[level] .. ":" .. medal), access, accessibleMedals, countdown))
+                    print(string.format("WorldCheck: %s has access = %s, accessibleMedals = %s, countdown = %s", (LEVELS[level].code .. ":" .. medal), access, accessibleMedals, countdown))
                 end
             end
         end
