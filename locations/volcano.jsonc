@@ -93,7 +93,7 @@
 					{
 						"name": "Beat in Mirror Mode",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
-						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
 						"access_rules": ["$ShardCheck, ground_pound"]
@@ -230,7 +230,7 @@
 					{
 						"name": "Beat in Mirror Mode",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
-						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
 						"access_rules": ["$ShardCheck, rocket_barrel"]
@@ -367,7 +367,7 @@
 					{
 						"name": "Beat in Mirror Mode",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
-						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
 						"access_rules": ["$ShardCheck, arrow_barrel, blast_barrel, mine_cart, grab"]
@@ -504,7 +504,7 @@
 					{
 						"name": "Beat in Mirror Mode",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
-						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
 						"access_rules": ["$ShardCheck, ground_pound, rambi, roll"]
@@ -655,7 +655,7 @@
 					{
 						"name": "Beat in Mirror Mode",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
-						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
 						"access_rules": ["$ShardCheck, arrow_barrel, ground_pound"]
@@ -792,7 +792,7 @@
 					{
 						"name": "Beat in Mirror Mode",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
-						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
 						"access_rules": ["$ShardCheck, arrow_barrel"]
@@ -929,7 +929,7 @@
 					{
 						"name": "Beat in Mirror Mode",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
-						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
 						"access_rules": ["$ShardCheck, arrow_barrel"]
@@ -1038,7 +1038,7 @@
 					{
 						"name": "Beat in Mirror Mode",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
-						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
 						"access_rules": ["$ShardCheck, arrow_barrel, ground_pound"]
@@ -1100,7 +1100,7 @@
 					{
 						"name": "Beat in Mirror Mode",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
-						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,
 						"visibility_rules": ["mirror_mode_enabled"],
 						"access_rules": ["$ShardCheck, rocket_barrel"]
@@ -1211,7 +1211,7 @@
 					{
 						"name": "Complete All Volcano Levels in Mirror Mode",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
-						"chest_opened_img": "images/locations/mirror_mode_complete.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1
 					},
 					{
