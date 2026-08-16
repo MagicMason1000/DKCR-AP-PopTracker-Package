@@ -153,7 +153,7 @@ LOCATION_MAPPING = {
 	[BASE1 + 0x027] = { { "@Jungle/1-K Platform Panic/Time Attack: Shiny Gold" } },
 	[BASE1 + 0x031] = { { "@Jungle/1-K Platform Panic/Jungle Rare Orb" } },
 	
-	--[BASE1 + 0xB41] = { { "@Jungle/1-S Cranky Kong's Shop/Jungle Map Key" } },
+	[BASE1 + 0xB41] = { { "@Jungle/1-S Cranky Kong's Shop/Jungle Map Key" } },
 	--[BASE1 + 0xB42] = { { "@Jungle/1-S Cranky Kong's Shop/Jungle Shop Balloons x1" } },
 	--[BASE1 + 0xB43] = { { "@Jungle/1-S Cranky Kong's Shop/Jungle Shop Balloons x3" } },
 	--[BASE1 + 0xB44] = { { "@Jungle/1-S Cranky Kong's Shop/Jungle Shop Balloons x7" } },
@@ -319,7 +319,7 @@ LOCATION_MAPPING = {
 	[BASE2 + 0x027] = { { "@Beach/2-K Tumblin' Temple/Time Attack: Shiny Gold" } },
 	[BASE2 + 0x031] = { { "@Beach/2-K Tumblin' Temple/Beach Rare Orb" } },
 	
-	--[BASE2 + 0xB41] = { { "@Beach/2-S Cranky Kong's Shop/Beach Map Key" } },
+	[BASE2 + 0xB41] = { { "@Beach/2-S Cranky Kong's Shop/Beach Map Key" } },
 	--[BASE2 + 0xB42] = { { "@Beach/2-S Cranky Kong's Shop/Beach Shop Balloons x1" } },
 	--[BASE2 + 0xB43] = { { "@Beach/2-S Cranky Kong's Shop/Beach Shop Balloons x3" } },
 	--[BASE2 + 0xB44] = { { "@Beach/2-S Cranky Kong's Shop/Beach Shop Balloons x7" } },
@@ -475,7 +475,7 @@ LOCATION_MAPPING = {
 	[BASE3 + 0x027] = { { "@Ruins/3-K Shifty Smashers/Time Attack: Shiny Gold" } },
 	[BASE3 + 0x031] = { { "@Ruins/3-K Shifty Smashers/Ruins Rare Orb" } },
 	
-	--[BASE3 + 0xB41] = { { "@Ruins/3-S Cranky Kong's Shop/Ruins Map Key" } },
+	[BASE3 + 0xB41] = { { "@Ruins/3-S Cranky Kong's Shop/Ruins Map Key" } },
 	--[BASE3 + 0xB42] = { { "@Ruins/3-S Cranky Kong's Shop/Ruins Shop Balloons x1" } },
 	--[BASE3 + 0xB43] = { { "@Ruins/3-S Cranky Kong's Shop/Ruins Shop Balloons x3" } },
 	--[BASE3 + 0xB44] = { { "@Ruins/3-S Cranky Kong's Shop/Ruins Shop Balloons x7" } },
@@ -601,7 +601,7 @@ LOCATION_MAPPING = {
 	[BASE4 + 0x027] = { { "@Cave/4-K Jagged Jewels/Time Attack: Shiny Gold" } },
 	[BASE4 + 0x031] = { { "@Cave/4-K Jagged Jewels/Cave Rare Orb" } },
 	
-	--[BASE4 + 0xB41] = { { "@Cave/4-S Cranky Kong's Shop/Cave Map Key" } },
+	[BASE4 + 0xB41] = { { "@Cave/4-S Cranky Kong's Shop/Cave Map Key" } },
 	--[BASE4 + 0xB42] = { { "@Cave/4-S Cranky Kong's Shop/Cave Shop Balloons x1" } },
 	--[BASE4 + 0xB43] = { { "@Cave/4-S Cranky Kong's Shop/Cave Shop Balloons x3" } },
 	--[BASE4 + 0xB44] = { { "@Cave/4-S Cranky Kong's Shop/Cave Shop Balloons x7" } },
@@ -793,7 +793,7 @@ LOCATION_MAPPING = {
 	[BASE5 + 0x027] = { { "@Forest/5-K Blast & Bounce/Time Attack: Shiny Gold" } },
 	[BASE5 + 0x031] = { { "@Forest/5-K Blast & Bounce/Forest Rare Orb" } },
 	
-	--[BASE5 + 0xB41] = { { "@Forest/5-S Cranky Kong's Shop/Forest Map Key" } },
+	[BASE5 + 0xB41] = { { "@Forest/5-S Cranky Kong's Shop/Forest Map Key" } },
 	--[BASE5 + 0xB42] = { { "@Forest/5-S Cranky Kong's Shop/Forest Shop Balloons x1" } },
 	--[BASE5 + 0xB43] = { { "@Forest/5-S Cranky Kong's Shop/Forest Shop Balloons x3" } },
 	--[BASE5 + 0xB44] = { { "@Forest/5-S Cranky Kong's Shop/Forest Shop Balloons x7" } },
@@ -983,7 +983,7 @@ LOCATION_MAPPING = {
 	[BASE6 + 0x027] = { { "@Cliff/6-K Perilous Passage/Time Attack: Shiny Gold" } },
 	[BASE6 + 0x031] = { { "@Cliff/6-K Perilous Passage/Cliff Rare Orb" } },
 	
-	--[BASE6 + 0xB41] = { { "@Cliff/6-S Cranky Kong's Shop/Cliff Map Key" } },
+	[BASE6 + 0xB41] = { { "@Cliff/6-S Cranky Kong's Shop/Cliff Map Key" } },
 	--[BASE6 + 0xB42] = { { "@Cliff/6-S Cranky Kong's Shop/Cliff Shop Balloons x1" } },
 	--[BASE6 + 0xB43] = { { "@Cliff/6-S Cranky Kong's Shop/Cliff Shop Balloons x3" } },
 	--[BASE6 + 0xB44] = { { "@Cliff/6-S Cranky Kong's Shop/Cliff Shop Balloons x7" } },
@@ -1157,7 +1157,7 @@ LOCATION_MAPPING = {
 	[BASE7 + 0x027] = { { "@Factory/7-K Treacherous Track/Time Attack: Shiny Gold" } },
 	[BASE7 + 0x031] = { { "@Factory/7-K Treacherous Track/Factory Rare Orb" } },
 	
-	--[BASE7 + 0xB41] = { { "@Factory/7-S Cranky Kong's Shop/Factory Map Key" } },
+	[BASE7 + 0xB41] = { { "@Factory/7-S Cranky Kong's Shop/Factory Map Key" } },
 	--[BASE7 + 0xB42] = { { "@Factory/7-S Cranky Kong's Shop/Factory Shop Balloons x1" } },
 	--[BASE7 + 0xB43] = { { "@Factory/7-S Cranky Kong's Shop/Factory Shop Balloons x3" } },
 	--[BASE7 + 0xB44] = { { "@Factory/7-S Cranky Kong's Shop/Factory Shop Balloons x7" } },
@@ -1321,7 +1321,7 @@ LOCATION_MAPPING = {
 	[BASE8 + 0x027] = { { "@Volcano/8-K Five Monkey Trial/Time Attack: Shiny Gold" } },
 	[BASE8 + 0x031] = { { "@Volcano/8-K Five Monkey Trial/Volcano Rare Orb" } },
 	
-	--[BASE8 + 0xB41] = { { "@Volcano/8-S Cranky Kong's Shop/Volcano Map Key" } },
+	[BASE8 + 0xB41] = { { "@Volcano/8-S Cranky Kong's Shop/Volcano Map Key" } },
 	--[BASE8 + 0xB42] = { { "@Volcano/8-S Cranky Kong's Shop/Volcano Shop Balloons x1" } },
 	--[BASE8 + 0xB43] = { { "@Volcano/8-S Cranky Kong's Shop/Volcano Shop Balloons x3" } },
 	--[BASE8 + 0xB44] = { { "@Volcano/8-S Cranky Kong's Shop/Volcano Shop Balloons x7" } },
