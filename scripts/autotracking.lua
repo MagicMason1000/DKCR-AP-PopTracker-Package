@@ -288,18 +288,10 @@ function WorldCheck(world, checkType)
         end
 
         if (world == 7) then -- specific handle for 7-R since it's a weird one that would make the other checks difficult
-            if (checkType == 3) then
                 if (Tracker:FindObjectForCode("@Factory/7-R Lift-off Launch/Complete Level").AccessibilityLevel == 6) then
                     accessibleGoals = true
                 elseif (Tracker:FindObjectForCode("@Factory/7-R Lift-off Launch/Complete Level").AccessibilityLevel == 7) then
                     countdown = countdown - 1
-                end
-            elseif (checkType == 4) then
-                if (Tracker:FindObjectForCode("@Factory/7-R Lift-off Launch/Beat in Mirror Mode").AccessibilityLevel == 6) then
-                    accessibleGoals = true
-                elseif (Tracker:FindObjectForCode("@Factory/7-R Lift-off Launch/Beat in Mirror Mode").AccessibilityLevel == 7) then
-                    countdown = countdown - 1
-                end
             end
         end
 

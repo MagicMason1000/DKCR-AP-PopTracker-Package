@@ -1041,14 +1041,6 @@
 						"chest_opened_img": "images/locations/level_goal_completed.png",
 						"item_count": 1,
 						"access_rules": ["ground_pound, rocket_barrel"]
-					},
-					{
-						"name": "Beat in Mirror Mode",
-						"chest_unopened_img": "images/locations/mirror_mode.png",
-						"chest_opened_img": "images/locations/mirror_mode_completed.png",
-						"item_count": 1,
-						"visibility_rules": ["mirror_mode_enabled"],
-						"access_rules": ["$ShardCheck, ground_pound, rocket_barrel"]
 					}
                 ],
                 "map_locations": [
