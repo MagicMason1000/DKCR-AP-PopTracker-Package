@@ -115,7 +115,7 @@ function apply_slot_data(slot_data)
 		slot_data["volcano_boss_access"]
 	}
 	for world = 1, 8 do
-		local ppReqObj = Tracker:FindObjectForCode("bossReq" .. tostring(world))
+		local ppReqObj = Tracker:FindObjectForCode("bossReq" .. world)
 		if ppReqObj then
 			ppReqObj.AcquiredCount = ppReqs[world]
 			if ENABLE_DEBUG_LOG then
@@ -138,7 +138,7 @@ function apply_slot_data(slot_data)
 		slot_data["volcano_k_level_access"]
 	}
 	for world = 1, 8 do
-		local kReqObj = Tracker:FindObjectForCode("kreq" .. tostring(world))
+		local kReqObj = Tracker:FindObjectForCode("kreq" .. world)
 		if kReqObj then
 			kReqObj.AcquiredCount = kReqs[world]
 			if ENABLE_DEBUG_LOG then
