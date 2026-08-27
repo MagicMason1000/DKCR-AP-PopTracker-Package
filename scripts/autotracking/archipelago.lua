@@ -264,14 +264,17 @@ function apply_slot_data(slot_data)
 	end
 	
 	-- Factory Button Amount setting
-	local buttonObj = Tracker:FindObjectForCode("factory_button_setting")
-	if buttonObj then
-		buttonObj.AcquiredCount = slot_data["factory_buttons"]
+	local buttonSettObj = Tracker:FindObjectForCode("factory_button_setting")
+	local buttonItemObj = Tracker:FindObjectForCode("factory_button")
+	if buttonSettObj and buttonItemObj then
+		buttonSettObj.AcquiredCount = slot_data["factory_buttons"]
+		buttonItemObj.MaxCount = slot_data["factory_buttons"]
 		if ENABLE_DEBUG_LOG then
 			print(string.format("apply_slot_data: 7-R Unlock amount setting set to %s Factory Buttons", slot_data["factory_buttons"]))
+			print(string.format("apply_slot_data: Factory Button max item amount set to %s", slot_data["factory_buttons"]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("WARNING: apply_slot_data on buttonObj could not find object for code %s", buttonObj))
+		print(string.format("WARNING: apply_slot_data could not find object for buttonSetObj = %s or buttonItemObj = %s", buttonSettObj, buttonItemObj))
 	end
 end
 
