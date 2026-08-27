@@ -9,6 +9,10 @@ ENABLE_ORBCHECK_LOG    = ENABLE_DEBUG_LOG and false
 ENABLE_SMOGCHECK_LOG   = ENABLE_DEBUG_LOG and false
 ENABLE_BUTTONCHECK_LOG = ENABLE_DEBUG_LOG and false
 ENABLE_LOLCHECK_LOG    = ENABLE_DEBUG_LOG and false
+ENABLE_LETTERSTATUS_LOG = ENABLE_DEBUG_LOG and false
+ENABLE_PUZZLESTATUS_LOG = ENABLE_DEBUG_LOG and false
+ENABLE_ITEMSTATUS_LOG   = ENABLE_DEBUG_LOG and false
+
 -------------------------------------------------------
 print("")
 print("Active Auto-Tracker Configuration")
@@ -16,7 +20,8 @@ print("---------------------------------------------------------------------")
 print(string.format("Enable Item Tracking:\t\t%s", AUTOTRACKER_ENABLE_ITEM_TRACKING))
 print(string.format("Enable Location Tracking:\t%s", AUTOTRACKER_ENABLE_LOCATION_TRACKING))
 if ENABLE_DEBUG_LOG then
-    print("\nDEBUG LOGGING ENABLED")
+    print("\nDEBUG LOGGING ENABLED\n")
+    print("Logic Functions:")
     print(string.format("Enable WorldCheck Logging:\t%s", ENABLE_WORLDCHECK_LOG))
     print(string.format("Enable LetterCheck Logging:\t%s", ENABLE_LETTERCHECK_LOG))
     print(string.format("Enable BossCheck Logging:\t%s", ENABLE_BOSSCHECK_LOG))
@@ -25,6 +30,10 @@ if ENABLE_DEBUG_LOG then
     print(string.format("Enable SmogCheck Logging:\t%s", ENABLE_SMOGCHECK_LOG))
     print(string.format("Enable ButtonCheck Logging:\t%s", ENABLE_BUTTONCHECK_LOG))
     print(string.format("Enable LolCheck Logging:\t%s", ENABLE_LOLCHECK_LOG))
+    print("\nWatch Functions:")
+    print(string.format("Enable SetLetterStatus Logging:\t%s", ENABLE_LETTERSTATUS_LOG))
+    print(string.format("Enable SetPuzzleStatus Logging:\t%s", ENABLE_PUZZLESTATUS_LOG))
+    print(string.format("Enable SetItemStatus Logging:\t%s", ENABLE_ITEMSTATUS_LOG))
 end
 print("---------------------------------------------------------------------")
 print("")

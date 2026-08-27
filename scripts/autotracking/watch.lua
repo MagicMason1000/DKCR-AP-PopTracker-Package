@@ -1,7 +1,7 @@
--- Watch scripts for changing various settings outside of what PopTracker normally watches. Loaded by autotracking.lua.
-ENABLE_LETTERSTATUS_LOG = ENABLE_DEBUG_LOG and false
-ENABLE_PUZZLESTATUS_LOG = ENABLE_DEBUG_LOG and false
-ENABLE_ITEMSTATUS_LOG   = ENABLE_DEBUG_LOG and false
+-- Watch scripts for changing various settings outside of what PopTracker normally watches.
+-- Currently I use this to dyanmically adjust the text color and max amount of consumables
+-- you can have of certain items including Letters, Puzzles, Mirror Shards, and Factory Buttons.
+-- Loaded by autotracking.lua.
 
 for world = 1, 8 do
     -- For all 8 worlds, creates a watch which triggers any time the KONG Letter requirement settings are changed.
