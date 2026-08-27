@@ -172,56 +172,64 @@
         "type": "consumable",
         "img": "images/settings/setting_bossReq1.png",
         "codes": "bossReq1",
-        "max_quantity": 371
+        "max_quantity": 371,
+        "initial_quantity": 20
     },
     {
         "name": "Boss Puzzle Piece Requirement (W2)",
         "type": "consumable",
         "img": "images/settings/setting_bossReq2.png",
         "codes": "bossReq2",
-        "max_quantity": 371
+        "max_quantity": 371,
+        "initial_quantity": 50
     },
     {
         "name": "Boss Puzzle Piece Requirement (W3)",
         "type": "consumable",
         "img": "images/settings/setting_bossReq3.png",
         "codes": "bossReq3",
-        "max_quantity": 371
+        "max_quantity": 371,
+        "initial_quantity": 80
     },
     {
         "name": "Boss Puzzle Piece Requirement (W4)",
         "type": "consumable",
         "img": "images/settings/setting_bossReq4.png",
         "codes": "bossReq4",
-        "max_quantity": 371
+        "max_quantity": 371,
+        "initial_quantity": 110
     },
     {
         "name": "Boss Puzzle Piece Requirement (W5)",
         "type": "consumable",
         "img": "images/settings/setting_bossReq5.png",
         "codes": "bossReq5",
-        "max_quantity": 371
+        "max_quantity": 371,
+        "initial_quantity": 150
     },
     {
         "name": "Boss Puzzle Piece Requirement (W6)",
         "type": "consumable",
         "img": "images/settings/setting_bossReq6.png",
         "codes": "bossReq6",
-        "max_quantity": 371
+        "max_quantity": 371,
+        "initial_quantity": 200
     },
     {
         "name": "Boss Puzzle Piece Requirement (W7)",
         "type": "consumable",
         "img": "images/settings/setting_bossReq7.png",
         "codes": "bossReq7",
-        "max_quantity": 371
+        "max_quantity": 371,
+        "initial_quantity": 260
     },
     {
         "name": "Boss Puzzle Piece Requirement (W8)",
         "type": "consumable",
         "img": "images/settings/setting_bossReq8.png",
         "codes": "bossReq8",
-        "max_quantity": 371
+        "max_quantity": 371,
+        "initial_quantity": 320
     },
     // MARK: K Reqs
     {
