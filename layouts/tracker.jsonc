@@ -21,7 +21,7 @@
                     {
                         "type": "tabbed",
                         "tabs": [
-                            {
+                            /*{
                                 "title": "Abilities/Vehicles",
                                 "content": {
                                     "background": "#0c0c0c",
@@ -49,7 +49,7 @@
                                         }
                                     ]
                                 }
-                            },
+                            },*/
                             {
                                 "title": "Misc.",
                                 "content": {
