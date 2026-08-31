@@ -65,7 +65,7 @@
                                                 "v_alignment": "center",
                                                 "key": "unlockables"
                                             }
-                                        },
+                                        },/*
                                         {
                                             "type": "group",
                                             "header": "Shop Items",
@@ -75,7 +75,7 @@
                                                 "v_alignment": "center",
                                                 "key": "shop_items"
                                             }
-                                        },
+                                        },*/
                                         {
                                             "type": "group",
                                             "header": "Filler",
