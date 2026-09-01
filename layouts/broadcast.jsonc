@@ -1,27 +1,70 @@
 {
     "tracker_broadcast": {
         "type": "array",
-        "orientation": "vertical",
+        "orientation": "horizontal",
         "margin": "0,0",
         "content": [
             {
-                "type": "group",
-                "header": "Abilities",
-                "content": [
-                    {
-                        "type": "layout",
-                        "key": "abilities"
-                    }
+                "type": "itemgrid",
+                "item_margin": "3, 3",
+                "item_size": 4,
+                "h_alignment": "center",
+                "rows": [
+                    [
+                        "letters_1",
+                        "key_1",
+                        "letters_2",
+                        "key_2"
+                    ],
+                    [
+                        "letters_3",
+                        "key_3",
+                        "letters_4",
+                        "key_4"
+                    ],
+                    [
+                        "letters_7",
+                        "key_5",
+                        "letters_6",
+                        "key_6"
+                    ],
+                    [
+                        "letters_7",
+                        "key_7",
+                        "letters_8",
+                        "key_8"
+                    ]
                 ]
             },
             {
-                "type": "group",
-                "header": "Vehicles",
-                "content": [
-                    {
-                        "type": "layout",
-                        "key": "vehicles"
-                    }
+                "type": "itemgrid",
+                "item_margin": "3, 3",
+                "item_size": 4,
+                "h_alignment": "center",
+                "rows": [
+                    [
+                        "banana",
+                        "coin",
+                        "balloon",
+                        "heart"
+                    ],
+                    [
+                        "rare_orb_1",
+                        "rare_orb_2",
+                        "rare_orb_3",
+                        "rare_orb_4"
+                    ],
+                    [
+                        "rare_orb_5",
+                        "rare_orb_6",
+                        "rare_orb_7",
+                        "rare_orb_8"
+                    ],
+                    [
+                        "mirror_shard",
+                        "factory_button",
+                        "puzzle_piece"
+                    ]
                 ]
             }
         ]
