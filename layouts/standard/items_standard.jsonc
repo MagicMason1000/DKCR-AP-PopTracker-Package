@@ -1,5 +1,5 @@
 {
-    "abilities": {
+    "letters_keys": {
         "background": "#1F1F1F",
         "type": "itemgrid",
         "item_margin": "10, 10",
@@ -7,34 +7,28 @@
         "h_alignment": "center",
         "rows": [
             [
-                "grab",
-                "diddy",
-                "duck"
+                "letters_1",
+                "key_1",
+                "letters_2",
+                "key_2"
             ],
             [
-                "blow",
-                "ground_pound",
-                "roll"
-            ]
-        ]
-    },
-    "vehicles": {
-        "background": "#1F1F1F",
-        "type": "itemgrid",
-        "item_margin": "10, 10",
-        "item_size": 4,
-        "h_alignment": "center",
-        "rows": [
-            [
-                "arrow_barrel",
-                "blast_barrel",
-                "skull_barrel",
-                "skull-blast_barrel"
+                "letters_3",
+                "key_3",
+                "letters_4",
+                "key_4"
             ],
             [
-                "mine_cart",
-                "rocket_barrel",
-                "rambi"
+                "letters_5",
+                "key_5",
+                "letters_6",
+                "key_6"
+            ],
+            [
+                "letters_7",
+                "key_7",
+                "letters_8",
+                "key_8"
             ]
         ]
     },
@@ -73,7 +67,8 @@
             ],
             [
                 "mirror_shard",
-                "factory_button"
+                "factory_button",
+                "puzzle_piece"
             ]
         ]
     },
@@ -92,7 +87,7 @@
             ]
         ]
     },
-    "letters_and_keys": {
+    "abilities": {
         "background": "#1F1F1F",
         "type": "itemgrid",
         "item_margin": "10, 10",
@@ -100,31 +95,34 @@
         "h_alignment": "center",
         "rows": [
             [
-                "letters_1",
-                "key_1",
-                "letters_2",
-                "key_2"
+                "grab",
+                "diddy",
+                "duck"
             ],
             [
-                "letters_3",
-                "key_3",
-                "letters_4",
-                "key_4"
+                "blow",
+                "ground_pound",
+                "roll"
+            ]
+        ]
+    },
+    "vehicles": {
+        "background": "#1F1F1F",
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "item_size": 4,
+        "h_alignment": "center",
+        "rows": [
+            [
+                "arrow_barrel",
+                "blast_barrel",
+                "skull_barrel",
+                "skull-blast_barrel"
             ],
             [
-                "letters_5",
-                "key_5",
-                "letters_6",
-                "key_6"
-            ],
-            [
-                "letters_7",
-                "key_7",
-                "letters_8",
-                "key_8"
-            ],
-            [
-                "puzzle_piece"
+                "mine_cart",
+                "rocket_barrel",
+                "rambi"
             ]
         ]
     }

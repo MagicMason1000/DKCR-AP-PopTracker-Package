@@ -1,0 +1,61 @@
+{
+    "tracker_default": {
+        "type": "array",
+        "orientation": "vertical",
+        "background": "#0c0c0c",
+        "content": [
+            {
+                "type": "dock",
+                "content": [
+                    {
+                        "type": "text",
+                        "dock": "top",
+                        "h_alignment": "center",
+                        "text": "World Progress"
+                    },   
+                    {
+                        "type": "map",
+                        "dock": "bottom",
+                        "maps": ["world_progress_compact"]
+                    }
+                ]
+            },
+            {
+                "type": "dock",
+                "content": [
+                    {
+                        "type": "text",
+                        "dock": "top",
+                        "h_alignment": "center",
+                        "text": "Item Tracker"
+                    },
+                    {
+                        "type": "array",
+                        "dock": "bottom",
+                        "orientation": "horizontal",
+                        "h_alignment": "center",
+                        "content": [
+                            {
+                                "type": "layout",
+                                "key": "items_compact_left"
+                            },
+                            {
+                                "type": "layout",
+                                "key": "items_compact_right"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "h_alignment": "center",
+                "text": "\nLocation Tracker"
+            },
+			{
+				"type": "layout",
+				"key": "world_map_tabs"
+			}
+        ]
+    }
+}

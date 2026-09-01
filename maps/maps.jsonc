@@ -6,6 +6,12 @@
         "img": "images/maps/map_world_progress.png"
     },
     {
+        "name": "world_progress_compact",
+        "location_size": 65,
+        "location_border_thickness": 9,
+        "img": "images/maps/map_world_progress_compact.png"
+    },
+    {
         "name": "jungle",
         "location_size": 20,
         "location_border_thickness": 3,

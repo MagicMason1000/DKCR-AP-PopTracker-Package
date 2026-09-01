@@ -1,0 +1,231 @@
+{
+    "tracker_default": {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+            {
+                "type": "group",
+                "header": "KONG Letters and Map Keys",
+                "content": {
+                    "type": "itemgrid",
+                    "background": "#1F1F1F",
+                    "item_margin": "10, 10",
+                    "item_size": 5,
+                    "h_alignment": "center",
+                    "rows": [
+                        [
+                            "letters_1",
+                            "key_1",
+                            "letters_2",
+                            "key_2"
+                        ],
+                        [
+                            "letters_3",
+                            "key_3",
+                            "letters_4",
+                            "key_4"
+                        ],
+                        [
+                            "letters_5",
+                            "key_5",
+                            "letters_6",
+                            "key_6"
+                        ],
+                        [
+                            "letters_7",
+                            "key_7",
+                            "letters_8",
+                            "key_8"
+                        ]
+                    ]
+                }
+            },
+            {
+                "type": "group",
+                "header": "Rare Orbs",
+                "content": {
+                    "type": "itemgrid",
+                    "background": "#1F1F1F",
+                    "item_margin": "10, 10",
+                    "item_size": 5,
+                    "h_alignment": "center",
+                    "rows": [
+                        [
+                            "rare_orb_1",
+                            "rare_orb_2",
+                            "rare_orb_3",
+                            "rare_orb_4"
+                        ],
+                        [
+                            "rare_orb_5",
+                            "rare_orb_6",
+                            "rare_orb_7",
+                            "rare_orb_8"
+                        ]
+                    ]
+                }
+            },
+            {
+                "background": "#0c0c0c",
+                "type": "array",
+                "content": [
+                    {
+                        "type": "group",
+                        "header": "Unlockables",
+                        "content": {
+                            "background": "#1F1F1F",
+                            "type": "itemgrid",
+                            "item_margin": "10, 10",
+                            "item_size": 5,
+                            "h_alignment": "center",
+                            "rows": [
+                                [
+                                    "mirror_shard",
+                                    "factory_button",
+                                    "puzzle_piece"
+                                ]
+                            ]
+                        }
+                    },
+                    {
+                        "type": "group",
+                        "header": "Filler",
+                        "content": {
+                            "background": "#1F1F1F",
+                            "type": "itemgrid",
+                            "item_margin": "10, 10",
+                            "item_size": 5,
+                            "h_alignment": "center",
+                            "rows": [
+                                [
+                                    "banana",
+                                    "coin",
+                                    "balloon",
+                                    "heart"
+                                ]
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "tracker_horizontal": {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "content": [
+                    {
+                        "type": "group",
+                        "header": "KONG Letters and Map Keys",
+                        "content": {
+                            "type": "itemgrid",
+                            "background": "#1F1F1F",
+                            "item_margin": "10, 10",
+                            "item_size": 5,
+                            "h_alignment": "center",
+                            "rows": [
+                                [
+                                    "letters_1",
+                                    "key_1",
+                                    "letters_2",
+                                    "key_2"
+                                ],
+                                [
+                                    "letters_3",
+                                    "key_3",
+                                    "letters_4",
+                                    "key_4"
+                                ],
+                                [
+                                    "letters_5",
+                                    "key_5",
+                                    "letters_6",
+                                    "key_6"
+                                ],
+                                [
+                                    "letters_7",
+                                    "key_7",
+                                    "letters_8",
+                                    "key_8"
+                                ]
+                            ]
+                        }
+                    },
+                    {
+                        "type": "dock",
+                        "content": [
+                            {
+                                "type": "group",
+                                "dock": "top",
+                                "header": "Unlockables",
+                                "content": {
+                                    "background": "#1F1F1F",
+                                    "type": "itemgrid",
+                                    "item_margin": "10, 10",
+                                    "item_size": 5,
+                                    "h_alignment": "center",
+                                    "rows": [
+                                        [
+                                            "mirror_shard",
+                                            "factory_button",
+                                            "puzzle_piece"
+                                        ]
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "group",
+                                "header": "Rare Orbs",
+                                "content": {
+                                    "type": "itemgrid",
+                                    "background": "#1F1F1F",
+                                    "item_margin": "10, 10",
+                                    "item_size": 5,
+                                    "h_alignment": "center",
+                                    "rows": [
+                                        [
+                                            "rare_orb_1",
+                                            "rare_orb_2",
+                                            "rare_orb_3",
+                                            "rare_orb_4"
+                                        ],
+                                        [
+                                            "rare_orb_5",
+                                            "rare_orb_6",
+                                            "rare_orb_7",
+                                            "rare_orb_8"
+                                        ]
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "group",
+                "dock": "bottom",
+                "header": "Filler",
+                "content": {
+                    "background": "#1F1F1F",
+                    "type": "itemgrid",
+                    "item_margin": "10, 10",
+                    "item_size": 5,
+                    "h_alignment": "center",
+                    "rows": [
+                        [
+                            "banana",
+                            "coin",
+                            "balloon",
+                            "heart"
+                        ]
+                    ]
+                }
+            }
+        ]
+    }
+}

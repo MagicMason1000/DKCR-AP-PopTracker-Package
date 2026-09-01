@@ -1,0 +1,73 @@
+{
+    "tracker_default": {
+        "background": "#0c0c0c",
+        "type": "dock",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "dock": "left",
+                "content": [
+                    {
+                        "type": "group",
+                        "header": "Letters and Map Keys",
+                        "margin": "0,0,3,0",
+                        "content": {
+                            "type": "layout",
+                            "v_alignment": "center",
+                            "key": "letters_keys"
+                        }
+                    },
+                    {
+                        "background": "#0c0c0c",
+                        "type": "array",
+                        "content": [
+                            {
+                                "type": "group",
+                                "header": "Unlockables",
+                                "margin": "0,0,3,0",
+                                "content": {
+                                    "type": "layout",
+                                    "v_alignment": "center",
+                                    "key": "unlockables"
+                                }
+                            },
+                            {
+                                "type": "group",
+                                "header": "Filler",
+                                "margin": "0,0,3,0",
+                                "content": {
+                                    "type": "layout",
+                                    "v_alignment": "center",
+                                    "key": "filler"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "content": [
+                    {
+                        "type": "dock",
+                        "content": [
+                            {
+                                "type": "map",
+                                "dock": "top",
+                                "maps": [
+                                    "world_progress"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "layout",
+                        "key": "world_map_tabs"
+                    }
+                ]
+            }
+        ]
+    }
+}

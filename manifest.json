@@ -7,8 +7,20 @@
   "author": "MagicMason1000",
   "versions_url": "https://raw.githubusercontent.com/MagicMason1000/DKCR-AP-PopTracker-Package/versions/versions.json",
   "variants": {
-    "standard": {
-      "display_name": "Map Tracker",
+    "1": {
+      "display_name": "Full Tracker",
+      "flags": [
+        "ap"
+      ]
+    },
+    "2": {
+      "display_name": "Compact Tracker",
+      "flags": [
+        "ap"
+      ]
+    },
+    "3": {
+      "display_name": "Items Only",
       "flags": [
         "ap"
       ]

@@ -1,0 +1,694 @@
+[
+	{
+		"name": "World Progress Compact",
+		"children": [ // MARK: Jungle
+			{
+				"name": "Accessible Jungle Collectibles",
+				"sections": [
+					{
+						"name": "KONG Letters Accessible",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|1|1"]
+					},
+					{
+						"name": "Puzzle Pieces Accessible",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|1|2"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 72,
+						"y": 340
+					}
+				]
+			},
+			{
+				"name": "Accessible Jungle Time Attack Medals",
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
+				"sections": [
+					{
+						"name": "Medals Accessible",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|1|5"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 186,
+						"y": 340
+					}
+				]
+			},
+			{
+				"name": "Accessible Jungle Level Completions",
+				"sections": [
+					{
+						"name": "Level Completions Available",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|1|3"]
+					},
+					{
+						"name": "Mirror Mode Completions Available",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|1|4"],
+						"visibility_rules": ["mirror_mode_enabled"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 299,
+						"y": 340
+					}
+				]
+			},
+			// MARK: Beach
+			{
+				"name": "Accessible Beach Collectibles",
+				"sections": [
+					{
+						"name": "KONG Letters Accessible",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|2|1"]
+					},
+					{
+						"name": "Puzzle Pieces Accessible",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|2|2"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 481,
+						"y": 340
+					}
+				]
+			},
+			{
+				"name": "Accessible Beach Time Attack Medals",
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
+				"sections": [
+					{
+						"name": "Medals Accessible",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|2|5"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 595,
+						"y": 340
+					}
+				]
+			},
+			{
+				"name": "Accessible Beach Level Completions",
+				"sections": [
+					{
+						"name": "Level Completions Available",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|2|3"]
+					},
+					{
+						"name": "Mirror Mode Completions Available",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|2|4"],
+						"visibility_rules": ["mirror_mode_enabled"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 708,
+						"y": 340
+					}
+				]
+			},
+			// MARK: Ruins
+			{
+				"name": "Accessible Ruins Collectibles",
+				"sections": [
+					{
+						"name": "KONG Letters Accessible",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|3|1"]
+					},
+					{
+						"name": "Puzzle Pieces Accessible",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|3|2"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 890,
+						"y": 340
+					}
+				]
+			},
+			{
+				"name": "Accessible Ruins Time Attack Medals",
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
+				"sections": [
+					{
+						"name": "Medals Accessible",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|3|5"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 1004,
+						"y": 340
+					}
+				]
+			},
+			{
+				"name": "Accessible Ruins Level Completions",
+				"sections": [
+					{
+						"name": "Level Completions Available",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|3|3"]
+					},
+					{
+						"name": "Mirror Mode Completions Available",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|3|4"],
+						"visibility_rules": ["mirror_mode_enabled"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 1117,
+						"y": 340
+					}
+				]
+			},
+			// MARK: Cave
+			{
+				"name": "Accessible Cave Collectibles",
+				"sections": [
+					{
+						"name": "KONG Letters Accessible",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|4|1"]
+					},
+					{
+						"name": "Puzzle Pieces Accessible",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|4|2"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 1299,
+						"y": 340
+					}
+				]
+			},
+			{
+				"name": "Accessible Cave Time Attack Medals",
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
+				"sections": [
+					{
+						"name": "Medals Accessible",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|4|5"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 1413,
+						"y": 340
+					}
+				]
+			},
+			{
+				"name": "Accessible Cave Level Completions",
+				"sections": [
+					{
+						"name": "Level Completions Available",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|4|3"]
+					},
+					{
+						"name": "Mirror Mode Completions Available",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|4|4"],
+						"visibility_rules": ["mirror_mode_enabled"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 1526,
+						"y": 340
+					}
+				]
+			},
+			// MARK: Forest
+			{
+				"name": "Accessible Forest Collectibles",
+				"sections": [
+					{
+						"name": "KONG Letters Accessible",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|5|1"]
+					},
+					{
+						"name": "Puzzle Pieces Accessible",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|5|2"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 72,
+						"y": 720
+					}
+				]
+			},
+			{
+				"name": "Accessible Forest Time Attack Medals",
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
+				"sections": [
+					{
+						"name": "Medals Accessible",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|5|5"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 186,
+						"y": 720
+					}
+				]
+			},
+			{
+				"name": "Accessible Forest Level Completions",
+				"sections": [
+					{
+						"name": "Level Completions Available",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|5|3"]
+					},
+					{
+						"name": "Mirror Mode Completions Available",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|5|4"],
+						"visibility_rules": ["mirror_mode_enabled"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 299,
+						"y": 720
+					}
+				]
+			},
+			// MARK: Cliff
+			{
+				"name": "Accessible Cliff Collectibles",
+				"sections": [
+					{
+						"name": "KONG Letters Accessible",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|6|1"]
+					},
+					{
+						"name": "Puzzle Pieces Accessible",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|6|2"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 481,
+						"y": 720
+					}
+				]
+			},
+			{
+				"name": "Accessible Cliff Time Attack Medals",
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
+				"sections": [
+					{
+						"name": "Medals Accessible",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|6|5"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 595,
+						"y": 720
+					}
+				]
+			},
+			{
+				"name": "Accessible Cliff Level Completions",
+				"sections": [
+					{
+						"name": "Level Completions Available",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|6|3"]
+					},
+					{
+						"name": "Mirror Mode Completions Available",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|6|4"],
+						"visibility_rules": ["mirror_mode_enabled"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 708,
+						"y": 720
+					}
+				]
+			},
+			// MARK: Factory
+			{
+				"name": "Accessible Factory Collectibles",
+				"sections": [
+					{
+						"name": "KONG Letters Accessible",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|7|1"]
+					},
+					{
+						"name": "Puzzle Pieces Accessible",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|7|2"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 890,
+						"y": 720
+					}
+				]
+			},
+			{
+				"name": "Accessible Factory Time Attack Medals",
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
+				"sections": [
+					{
+						"name": "Medals Accessible",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|7|5"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 1004,
+						"y": 720
+					}
+				]
+			},
+			{
+				"name": "Accessible Factory Level Completions",
+				"sections": [
+					{
+						"name": "Level Completions Available",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|7|3"]
+					},
+					{
+						"name": "Mirror Mode Completions Available",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|7|4"],
+						"visibility_rules": ["mirror_mode_enabled"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 1117,
+						"y": 720
+					}
+				]
+			},
+			// MARK: Volcano
+			{
+				"name": "Accessible Volcano Collectibles",
+				"sections": [
+					{
+						"name": "KONG Letters Accessible",
+						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
+						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|8|1"]
+					},
+					{
+						"name": "Puzzle Pieces Accessible",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|8|2"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 1299,
+						"y": 720
+					}
+				]
+			},
+			{
+				"name": "Accessible Volcano Time Attack Medals",
+                "visibility_rules": ["ta_bronze_enabled", "ta_silver_enabled", "ta_gold_enabled", "ta_shiny_gold_enabled"],
+				"sections": [
+					{
+						"name": "Medals Accessible",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|8|5"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 1413,
+						"y": 720
+					}
+				]
+			},
+			{
+				"name": "Accessible Volcano Level Completions",
+				"sections": [
+					{
+						"name": "Level Completions Available",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|8|3"]
+					},
+					{
+						"name": "Mirror Mode Completions Available",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|8|4"],
+						"visibility_rules": ["mirror_mode_enabled"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 1526,
+						"y": 720
+					}
+				]
+			},
+			// MARK: Golden Temple
+			{
+				"name": "Accessible Golden Temple Collectibles",
+                "visibility_rules": ["golden_temple_enabled"],
+				"sections": [
+					{
+						"name": "Temple Puzzle Pieces Accessible",
+						"chest_unopened_img": "images/locations/collectible_pp_set.png",
+						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|9|2"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 1708,
+						"y": 530
+					}
+				]
+			},
+			{
+				"name": "Accessible Golden Temple Time Attack Medals",
+                "visibility_rules": ["golden_temple_enabled, ta_bronze_enabled", "golden_temple_enabled, ta_silver_enabled", "golden_temple_enabled, ta_gold_enabled", "golden_temple_enabled, ta_shiny_gold_enabled"],
+				"sections": [
+					{
+						"name": "Temple Medals Accessible",
+						"chest_unopened_img": "images/locations/ta.png",
+						"chest_opened_img": "images/locations/ta_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|9|5"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 1822,
+						"y": 530
+					}
+				]
+			},
+			{
+				"name": "Accessible Golden Temple Level Completion",
+                "visibility_rules": ["golden_temple_enabled"],
+				"sections": [
+					{
+						"name": "Temple Completion Available",
+						"chest_unopened_img": "images/locations/level_goal.png",
+						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|9|3"]
+					},
+					{
+						"name": "Temple Mirror Mode Completion Available",
+						"chest_unopened_img": "images/locations/mirror_mode.png",
+						"chest_opened_img": "images/locations/mirror_mode_completed.png",
+						"item_count": 1,
+						"access_rules": ["$WorldCheck|9|4"],
+						"visibility_rules": ["mirror_mode_enabled"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "world_progress_compact",
+						"shape": "diamond",
+						"x": 1935,
+						"y": 530
+					}
+				]
+			}
+		]
+	}
+]
