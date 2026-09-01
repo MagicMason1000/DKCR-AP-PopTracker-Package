@@ -90,7 +90,7 @@
     },
     // MARK: Collectibles
     {
-        "name": "Puzzle Piece",
+        "name": "Puzzle Pieces",
         "type": "consumable",
         "img": "images/items/item_puzzle_piece.png",
         "disabled_img": "images/items/item_puzzle_piece_uncollected.png",
@@ -98,70 +98,70 @@
         "max_quantity": 366
     },
     {
-        "name": "Jungle KONG Letter",
+        "name": "Jungle KONG Letters",
         "type": "consumable",
         "img": "images/items/kong_letters_1.png",
         "codes": "letters_1",
         "max_quantity": 24
     },
     {
-        "name": "Beach KONG Letter",
+        "name": "Beach KONG Letters",
         "type": "consumable",
         "img": "images/items/kong_letters_2.png",
         "codes": "letters_2",
         "max_quantity": 28
     },
     {
-        "name": "Ruins KONG Letter",
+        "name": "Ruins KONG Letters",
         "type": "consumable",
         "img": "images/items/kong_letters_3.png",
         "codes": "letters_3",
         "max_quantity": 24
     },
     {
-        "name": "Cave KONG Letter",
+        "name": "Cave KONG Letters",
         "type": "consumable",
         "img": "images/items/kong_letters_4.png",
         "codes": "letters_4",
         "max_quantity": 20
     },
     {
-        "name": "Forest KONG Letter",
+        "name": "Forest KONG Letters",
         "type": "consumable",
         "img": "images/items/kong_letters_5.png",
         "codes": "letters_5",
         "max_quantity": 32
     },
     {
-        "name": "Cliff KONG Letter",
+        "name": "Cliff KONG Letters",
         "type": "consumable",
         "img": "images/items/kong_letters_6.png",
         "codes": "letters_6",
         "max_quantity": 32
     },
     {
-        "name": "Factory KONG Letter",
+        "name": "Factory KONG Letters",
         "type": "consumable",
         "img": "images/items/kong_letters_7.png",
         "codes": "letters_7",
         "max_quantity": 28
     },
     {
-        "name": "Volcano KONG Letter",
+        "name": "Volcano KONG Letters",
         "type": "consumable",
         "img": "images/items/kong_letters_8.png",
         "codes": "letters_8",
         "max_quantity": 28
     },
     {
-        "name": "Mirror Shard",
+        "name": "Mirror Shards",
         "type": "consumable",
         "img": "images/locations/mirror_mode.png",
         "codes": "mirror_shard",
         "max_quantity": 25
     },
     {
-        "name": "Factory Button",
+        "name": "Factory Buttons",
         "type": "consumable",
         "img": "images/items/item_factory_button.png",
         "codes": "factory_button",
@@ -313,7 +313,7 @@
         "max_quantity": 1000
     },
     {
-        "name": "Recovery Heart",
+        "name": "Recovery Hearts",
         "type": "consumable",
         "img": "images/items/filler_heart.png",
         "disabled_img": "images/items/filler_heart_uncollected.png",
