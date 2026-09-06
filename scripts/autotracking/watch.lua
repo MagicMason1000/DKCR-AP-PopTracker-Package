@@ -113,18 +113,20 @@ function SetItemStatus(itemType)
         print(string.format("\nSetItemStatus: Called for %s.", itemType))
     end
 
-    local itemReq, itemAmount
+    local itemReq, itemAmount, mirrorEnabled
     if (itemType == "Button") then
         itemReq = Tracker:FindObjectForCode("factory_button_setting")
         itemAmount = Tracker:FindObjectForCode("factory_button")
+        mirrorEnabled = true
     elseif (itemType == "Shard") then
         itemReq = Tracker:FindObjectForCode("mirror_shards_setting")
         itemAmount = Tracker:FindObjectForCode("mirror_shard")
+        mirrorEnabled = Tracker:FindObjectForCode("mirror_mode_setting")
     end
 
-    if itemReq and itemAmount then
+    if itemReq and itemAmount and mirrorEnabled then
 
-        if (itemType == "Shard" and itemReq.CurrentStage == 0) then
+        if (itemType == "Shard" and mirrorEnabled.CurrentStage == 0) then
             if ENABLE_ITEMSTATUS_LOG then
                 print(string.format("SetItemStatus: Mirror mode not enabled. Setting shards to 0 and ending early."))
             end
