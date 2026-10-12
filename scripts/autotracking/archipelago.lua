@@ -116,13 +116,13 @@ function apply_slot_data(slot_data)
 	}
 	for world = 1, 8 do
 		local ppReqObj = Tracker:FindObjectForCode("bossReq" .. world)
-		if ppReqObj then
+		if ppReqObj and ppReqs[world] then
 			ppReqObj.AcquiredCount = ppReqs[world]
 			if ENABLE_DEBUG_LOG then
 				print(string.format("apply_slot_data: set boss requirement for World %s to %s Puzzle Pieces", world, ppReqs[world]))
 			end
 		elseif ENABLE_DEBUG_LOG then
-			print(string.format("WARNING: apply_slot_data on ppReqObj could not find object for code %s", ppReqObj))
+			print(string.format("WARNING: apply_slot_data failed check nil for boss pp reqs.\n\tppReqObj = %s\n\tworld = %s\n\tppReqs[world] = %s", ppReqObj, world, ppReqs[world]))
 		end
 	end
 
@@ -139,13 +139,13 @@ function apply_slot_data(slot_data)
 	}
 	for world = 1, 8 do
 		local kReqObj = Tracker:FindObjectForCode("kreq" .. world)
-		if kReqObj then
+		if kReqObj and kReqs[world] then
 			kReqObj.AcquiredCount = kReqs[world]
 			if ENABLE_DEBUG_LOG then
 				print(string.format("apply_slot_data: set K Level requirement for World %s to %s KONG Letters", world, kReqs[world]))
 			end
 		elseif ENABLE_DEBUG_LOG then
-			print(string.format("WARNING: apply_slot_data on kReqObj could not find object for code %s", kReqObj))
+			print(string.format("WARNING: apply_slot_data failed check nil for K Level reqs.\n\tkReqObj = %s\n\tworld = %s\n\tkReqs[world] = %s", kReqObj, world, kReqs[world]))
 		end
 	end
 
@@ -162,13 +162,13 @@ function apply_slot_data(slot_data)
 	}
 	for world = 1, 8 do
 		local keyObj = Tracker:FindObjectForCode("key" .. world .. "_setting")
-		if keyObj then
+		if keyObj and keys[world] then
 			keyObj.CurrentStage = keys[world]
 			if ENABLE_DEBUG_LOG then
 				print(string.format("apply_slot_data: set Randomized Map Key option for World %s to %s (%s)", world, keys[world], abled[1 + keys[world]]))
 			end
 		elseif ENABLE_DEBUG_LOG then
-			print(string.format("WARNING: apply_slot_data on keyObj could not find object for code %s", keyObj))
+			print(string.format("WARNING: apply_slot_data failed check nil for Map Key settings.\n\tkeyObj = %s\n\tworld = %s\n\tkeys[world] = %s", keyObj, world, keys[world]))
 		end
 	end
 
@@ -194,18 +194,18 @@ function apply_slot_data(slot_data)
 
 	-- Mirror Mode Enabled setting
 	local mmObj = Tracker:FindObjectForCode("mirror_mode_setting")
-	if mmObj then
+	if mmObj and slot_data["mirror_mode"] then
 		mmObj.CurrentStage = slot_data["mirror_mode"]
 		if ENABLE_DEBUG_LOG then
 			print(string.format("apply_slot_data: Mirror Mode enabled setting set to %s (%s)", slot_data["mirror_mode"], abled[1 + slot_data["mirror_mode"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("WARNING: apply_slot_data on mmObj could not find object for code %s", mmObj))
+		print(string.format("WARNING: apply_slot_data failed check nil for Mirror Mode enabled setting.\n\tmmObj = %s\n\tslot_data[\"mirror_mode\"] = %s", mmObj, slot_data["mirror_mode"]))
 	end
 
 	-- Mirror Mode Shard Amount setting
 	local mmShardObj = Tracker:FindObjectForCode("mirror_shards_setting")
-	if mmShardObj then
+	if mmShardObj and slot_data["mirror_mode_shards"] then
 		if (slot_data["mirror_mode_shards"] == 0) then
 			mmShardObj.AcquiredCount = 1
 		else
@@ -215,58 +215,58 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: Mirror Mode unlock amount setting set to %s Mirror Shards", slot_data["mirror_mode_shards"]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("WARNING: apply_slot_data on mmShardObj could not find object for code %s", mmShardObj))
+		print(string.format("WARNING: apply_slot_data failed check nil for Mirror Shards setting.\n\tmmShardObj = %s\n\tslot_data[\"mirror_mode_shards\"] = %s", mmShardObj, slot_data["mirror_mode_shards"]))
 	end
 	
 
 	-- Golden Temple Enabled setting
 	local gtObj = Tracker:FindObjectForCode("golden_temple_setting")
-	if gtObj then
+	if gtObj and slot_data["golden_temple"] then
 		gtObj.CurrentStage = slot_data["golden_temple"]
 		if ENABLE_DEBUG_LOG then
 			print(string.format("apply_slot_data: Golden Temple enabled setting set to %s (%s)", slot_data["golden_temple"], abled[1 + slot_data["golden_temple"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("WARNING: apply_slot_data on gtObj could not find object for code %s", gtObj))
+		print(string.format("WARNING: apply_slot_data failed check nil for Golden Temple setting.\n\tgtObj = %s\n\tslot_data[\"golden_temple\"] = %s", gtObj, slot_data["golden_temple"]))
 	end
 
 	-- Rare Orbs Requirement setting
 	local orbReqObj = Tracker:FindObjectForCode("orbs_setting")
-	if orbReqObj then
+	if orbReqObj and slot_data["rare_orbs"] then
 		orbReqObj.CurrentStage = slot_data["rare_orbs"]
 		if ENABLE_DEBUG_LOG then
 			print(string.format("apply_slot_data: Golden Temple Orb Requirement set to %s Rare Orbs", slot_data["rare_orbs"]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("WARNING: apply_slot_data on orbReqObj could not find object for code %s", orbReqObj))
+		print(string.format("WARNING: apply_slot_data failed check nil on Rare Orb req setting.\n\torbReqObj = %s\n\tslot_data[\"rare_orbs\"] = %s", orbReqObj, slot_data["rare_orbs"]))
 	end
 
 	-- Smog Clear required setting
 	local smogObj = Tracker:FindObjectForCode("smog_clear_setting")
-	if smogObj then
+	if smogObj and slot_data["smog_clear"] then
 		smogObj.CurrentStage = slot_data["smog_clear"]
 		if ENABLE_DEBUG_LOG then
 			print(string.format("apply_slot_data: Smog Clear required setting set to %s (%s)", slot_data["smog_clear"], abled[1 + slot_data["smog_clear"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("WARNING: apply_slot_data on smogObj could not find object for code %s", smogObj))
+		print(string.format("WARNING: apply_slot_data failed check nil for Smog Clear setting.\n\tsmogObj = %s\n\tslot_data[\"smog_clear\"] = %s", smogObj, slot_data["smog_clear"]))
 	end
 
 	-- 7-R Required setting
 	local lolObj = Tracker:FindObjectForCode("lolReq_setting")
-	if lolObj then
+	if lolObj and slot_data["lift_off_launch"] then
 		lolObj.CurrentStage = slot_data["lift_off_launch"]
 		if ENABLE_DEBUG_LOG then
 			print(string.format("apply_slot_data: 7-R Required setting set to %s (%s)", slot_data["lift_off_launch"], abled[1 + slot_data["lift_off_launch"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("WARNING: apply_slot_data on lolObj could not find object for code %s", lolObj))
+		print(string.format("WARNING: apply_slot_data failed check nil for 7-R setting.\n\tlolObj = %s\n\tslot_data[\"lift_off_launch\"] = %s", lolObj, slot_data["lift_off_launch"]))
 	end
 	
 	-- Factory Button Amount setting
 	local buttonSettObj = Tracker:FindObjectForCode("factory_button_setting")
 	local buttonItemObj = Tracker:FindObjectForCode("factory_button")
-	if buttonSettObj and buttonItemObj then
+	if buttonSettObj and buttonItemObj and slot_data["factory_buttons"] then
 		buttonSettObj.AcquiredCount = slot_data["factory_buttons"]
 		buttonItemObj.MaxCount = slot_data["factory_buttons"]
 		if ENABLE_DEBUG_LOG then
@@ -274,7 +274,7 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: Factory Button max item amount set to %s", slot_data["factory_buttons"]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("WARNING: apply_slot_data could not find object for buttonSetObj = %s or buttonItemObj = %s", buttonSettObj, buttonItemObj))
+		print(string.format("WARNING: apply_slot_data failed check nil for Factory Button setting.\n\tbuttonSetObj = %s\n\tbuttonItemObj = %s\n\tslot_data[\"factory_buttons\"] = %s", buttonSettObj, buttonItemObj, slot_data["factory_buttons"]))
 	end
 end
 
