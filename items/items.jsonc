@@ -158,7 +158,7 @@
         "type": "consumable",
         "img": "images/locations/mirror_mode.png",
         "codes": "mirror_shard",
-        "max_quantity": 25
+        "max_quantity": 15
     },
     {
         "name": "Factory Buttons",
