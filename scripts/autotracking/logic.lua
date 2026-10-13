@@ -1,12 +1,16 @@
 -- A bunch of functions that are used for logic.
 
+--[[ MARK: WorldCheck
+checkType 1 = KONG Letters
+checkType 2 = Puzzle Pieces
+checkType 3 = Level Completions
+checkType 4 = Mirror Mode Completions
+checkType 5 = Time Attack Medals
 
--- MARK: WorldCheck
--- checkType 1 = KONG Letters
--- checkType 2 = Puzzle Pieces
--- checkType 3 = Level Completions
--- checkType 4 = Mirror Mode Completions
--- checkType 5 = Time Attack Medals
+This function is used for logic in the World Progress bar above the regular map tracker. It determines if any of the requested item is currently accessible
+across an entire world. If it finds any accessible items of that type, it lights up green on that world. This can give the player an easily overview of
+the entire game to see what they have available to do and reduce having to click through world tabs to see what's available.
+]]
 
 function WorldCheck(world, checkType)
     world = tonumber(world)
@@ -24,7 +28,7 @@ function WorldCheck(world, checkType)
         return false
     end
 
-    local totalLevelsPerWorld = { 8, 9, 8, 7, 10, 10, 9, 9, 1 }
+    local totalLevelsPerWorld = { 8, 9, 8, 7, 10, 10, 9, 9, 1 } -- The amount of levels in each world, including Boss and K levels, excluding 7-R.
     local numberedLevelsPerWorld = { 1, 9, 18, 26, 33, 43, 53, 62, 71, 72 } -- Total levels with each index indicating a new world. Used to index LEVELS properly.
 
     if (checkType == 1) then -- KONG Letters
