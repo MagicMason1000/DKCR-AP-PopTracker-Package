@@ -32,6 +32,12 @@ function WorldCheck(world, checkType)
     local numberedLevelsPerWorld = { 1, 9, 18, 26, 33, 43, 53, 62, 71, 72 } -- Total levels with each index indicating a new world. Used to index LEVELS properly.
 
     if (checkType == 1) then -- KONG Letters
+        if (world == 9) then -- end early if golden temple
+            if ENABLE_WORLDCHECK_LOG then
+                print("WorldCheck: Ending early as the Golden Temple does not have KONG Letters.")
+            end
+            return false
+        end
         local access
         local accessibleLetters = false
         local countdown = ((totalLevelsPerWorld[world] - 2) * 4)
@@ -81,7 +87,10 @@ function WorldCheck(world, checkType)
         local countdown = totalPP[world]
         local access
 
-        for level = numberedLevelsPerWorld[world], (numberedLevelsPerWorld[world + 1] - 2) do
+        local offset = 2
+        if world == 9 then offset = 1 end -- unless it's golden temple, get rid of the boss level
+
+        for level = numberedLevelsPerWorld[world], (numberedLevelsPerWorld[world + 1] - offset) do
             for pp = 1, LEVELS[level].value do
                 access = Tracker:FindObjectForCode(LEVELS[level].code .. "/Puzzle Piece " .. pp).AccessibilityLevel
                 if (access == 6) then
@@ -129,9 +138,11 @@ function WorldCheck(world, checkType)
         end
         for lvlCount = (numberedLevelsPerWorld[world]), (numberedLevelsPerWorld[world + 1] - 1) do
             local access
-            if (checkType == 3 and not (lvlCount == (numberedLevelsPerWorld[world + 1] - 1))) then
+            local offset = 1
+            if world == 9 then offset = 0 end -- special case for golden temple
+            if (checkType == 3 and not (lvlCount == (numberedLevelsPerWorld[world + 1] - offset))) then
                 access = Tracker:FindObjectForCode(LEVELS[lvlCount].code .. "/Complete Level").AccessibilityLevel
-            elseif (checkType == 3 and (lvlCount == (numberedLevelsPerWorld[world + 1] - 1))) then
+            elseif (checkType == 3 and (lvlCount == (numberedLevelsPerWorld[world + 1] - 1)) and not (world == 9)) then
                 access = Tracker:FindObjectForCode(LEVELS[lvlCount].code .. "/Boss Clear").AccessibilityLevel
             elseif (checkType == 4) then
                 access = Tracker:FindObjectForCode(LEVELS[lvlCount].code .. "/Beat in Mirror Mode").AccessibilityLevel
