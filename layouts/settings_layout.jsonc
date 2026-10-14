@@ -14,7 +14,7 @@
                 "tabs": [
                     {
                         "title": "GOAL",
-                        "icon": "images/settings/tabicon_gt.png",
+                        "icon": "images/settings/tabicons/tabicon_goals.png",
                         "content": [
                             {
                                 "type": "itemgrid",
@@ -32,7 +32,7 @@
                     },
                     {
                         "title": "PUZZLE PIECES",
-                        "icon": "images/settings/tabicon_pp.png",
+                        "icon": "images/settings/tabicons/tabicon_pps.png",
                         "content": [
                             {
                                 "type": "itemgrid",
@@ -61,7 +61,7 @@
                     },
                     {
                         "title": "KONG LETTERS",
-                        "icon": "images/settings/tabicon_kong.png",
+                        "icon": "images/settings/tabicons/tabicon_kongs.png",
                         "content": [
                             {
                                 "type": "itemgrid",
@@ -90,7 +90,7 @@
                     },
                     {
                         "title": "CLEAR TYPES",
-                        "icon": "images/settings/tabicon_clears.png",
+                        "icon": "images/settings/tabicons/tabicon_clears.png",
                         "content": [
                             {
                                 "type": "itemgrid",
@@ -117,7 +117,7 @@
                     },
                     {
                         "title": "MISC.",
-                        "icon": "images/settings/tabicon_clears.png",
+                        "icon": "images/settings/tabicons/tabicon_misc.png",
                         "content": [
                             {
                                 "type": "itemgrid",
