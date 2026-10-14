@@ -19,6 +19,8 @@ ScriptHost:AddWatchForCode("buttonItemWatch", "factory_button", function () SetI
 ScriptHost:AddWatchForCode("shardSettingWatch", "mirror_shards_setting", function () SetItemStatus("Shard") end)
 ScriptHost:AddWatchForCode("shardItemWatch", "mirror_shard", function () SetItemStatus("Shard") end)
 ScriptHost:AddWatchForCode("mirrorSettingWatch", "mirror_mode_setting", function () SetItemStatus("Shard") end)
+-- Watch Feathery Companion setting.
+ScriptHost:AddWatchForCode("fcSettingWatch", "fc_setting", function () SetSquawks() end)
 
 -- MARK: Letters
 function SetLetterStatus(settingCode, letterCode)
@@ -104,6 +106,23 @@ function SetPuzzleStatus()
 
     elseif ENABLE_DEBUG_LOG then
         print(string.format("\nWARNING: SetPuzzleStatus failed check nil for ppAmount = %s\n", ppAmount))
+    end
+end
+
+-- MARK: Squawks
+function SetSquawks()
+    local settingObj = Tracker:FindObjectForCode("fc_setting")
+    local squawksObj = Tracker:FindObjectForCode("squawks")
+    if settingObj and squawksObj then
+
+        if (settingObj.CurrentStage == 0) then
+            squawksObj.Active = true
+        else
+            squawksObj.Active = false
+        end
+
+    elseif ENABLE_DEBUG_LOG then
+        print(string.format("WARNING: SetSquawks failed check nil.\n\tsettingObj = %s\n\tsquawksObj = %s", settingObj, squawksObj))
     end
 end
 

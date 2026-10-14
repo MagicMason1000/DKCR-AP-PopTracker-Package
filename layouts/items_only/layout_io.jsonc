@@ -80,6 +80,7 @@
                             "h_alignment": "center",
                             "rows": [
                                 [
+                                    "squawks",
                                     "mirror_shard",
                                     "factory_button",
                                     "puzzle_piece"
@@ -170,6 +171,7 @@
                                     "h_alignment": "center",
                                     "rows": [
                                         [
+                                            "squawks",
                                             "mirror_shard",
                                             "factory_button",
                                             "puzzle_piece"

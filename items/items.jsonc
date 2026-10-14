@@ -282,7 +282,7 @@
     },
     {
         "name": "Squawks",
-        "type": "static", // change to toggle once receiving items is implemented
+        "type": "toggle",
         "img": "images/items/shop_squawks.png",
         "disabled_img": "images/items/shop_squawks_uncollected.png",
         "codes": "squawks"

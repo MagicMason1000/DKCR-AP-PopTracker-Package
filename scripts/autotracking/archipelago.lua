@@ -418,10 +418,6 @@ function onItem(index, item_id, item_name, player_number)
 		print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
 		print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
 	end
-	-- track local items via snes interface
-	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-		-- add snes interface functions for local item tracking here
-	end
 end
 
 -- called when a location gets cleared

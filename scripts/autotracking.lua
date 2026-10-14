@@ -46,7 +46,7 @@ ScriptHost:LoadScript("scripts/autotracking/archipelago.lua")
 ScriptHost:LoadScript("scripts/autotracking/logic.lua")
 ScriptHost:LoadScript("scripts/autotracking/watch.lua")
 
--- Runs all of the functions from watch.lua once when the pack loads. Otherwise they wont run until something updates, which can be confusing for the user.
+-- Runs all of the functions from watch.lua once when the pack loads. Otherwise, they wont run until something updates, which can be confusing for the user.
 SetLetterStatus("kReq1", "letters_1")
 SetLetterStatus("kReq2", "letters_2")
 SetLetterStatus("kReq3", "letters_3")
@@ -58,6 +58,7 @@ SetLetterStatus("kReq8", "letters_8")
 SetPuzzleStatus()
 SetItemStatus("Button")
 SetItemStatus("Shard")
+SetSquawks()
 
 -- Sets global values used by logic.lua.
 WORLDS = { "Jungle", "Beach", "Ruins", "Cave", "Forest", "Cliff", "Factory", "Volcano", "Golden Temple" }
