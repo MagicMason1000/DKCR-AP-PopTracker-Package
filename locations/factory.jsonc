@@ -10,6 +10,7 @@
 						"name": "Puzzle Piece 1",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -17,6 +18,7 @@
 						"name": "KONG Letter K",
 						"chest_unopened_img": "images/locations/collectible_letter_k.png",
 						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -24,6 +26,7 @@
 						"name": "Puzzle Piece 2",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -31,6 +34,7 @@
 						"name": "KONG Letter O",
 						"chest_unopened_img": "images/locations/collectible_letter_o.png",
 						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -38,6 +42,7 @@
 						"name": "Puzzle Piece 3",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, roll", "arrow_barrel, diddy"]
 					},
@@ -45,6 +50,7 @@
 						"name": "Puzzle Piece 4",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, blow"]
 					},
@@ -52,6 +58,7 @@
 						"name": "KONG Letter N",
 						"chest_unopened_img": "images/locations/collectible_letter_n.png",
 						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -59,6 +66,7 @@
 						"name": "Puzzle Piece 5",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -66,6 +74,7 @@
 						"name": "KONG Letter G",
 						"chest_unopened_img": "images/locations/collectible_letter_g.png",
 						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, roll", "arrow_barrel, diddy"]
 					},
@@ -73,6 +82,7 @@
 						"name": "Puzzle Piece 6",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, blow"]
 					},
@@ -80,6 +90,7 @@
 						"name": "Puzzle Piece 7",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -87,6 +98,7 @@
 						"name": "Complete Level",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"visibility_rules": ["normal_clears_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, ground_pound"]
 					},
@@ -94,6 +106,7 @@
 						"name": "KONG Letter Set",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -101,6 +114,7 @@
 						"name": "Puzzle Piece Set",
 						"chest_unopened_img": "images/locations/collectible_pp_set_7.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_7_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -161,6 +175,7 @@
 						"name": "Puzzle Piece 1",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["roll"]
 					},
@@ -168,6 +183,7 @@
 						"name": "KONG Letter K",
 						"chest_unopened_img": "images/locations/collectible_letter_k.png",
 						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -175,6 +191,7 @@
 						"name": "KONG Letter O",
 						"chest_unopened_img": "images/locations/collectible_letter_o.png",
 						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -182,6 +199,7 @@
 						"name": "Puzzle Piece 2",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["blow"]
 					},
@@ -189,6 +207,7 @@
 						"name": "Puzzle Piece 3",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -196,6 +215,7 @@
 						"name": "Puzzle Piece 4",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["ground_pound"]
 					},
@@ -203,6 +223,7 @@
 						"name": "KONG Letter N",
 						"chest_unopened_img": "images/locations/collectible_letter_n.png",
 						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -210,6 +231,7 @@
 						"name": "Puzzle Piece 5",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["duck", "roll"]
 					},
@@ -217,6 +239,7 @@
 						"name": "KONG Letter G",
 						"chest_unopened_img": "images/locations/collectible_letter_g.png",
 						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["duck", "roll"]
 					},
@@ -224,6 +247,7 @@
 						"name": "Complete Level",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"visibility_rules": ["normal_clears_enabled"],
 						"item_count": 1,
 						"access_rules": ["duck", "roll"]
 					},
@@ -231,6 +255,7 @@
 						"name": "KONG Letter Set",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -238,6 +263,7 @@
 						"name": "Puzzle Piece Set",
 						"chest_unopened_img": "images/locations/collectible_pp_set_5.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_5_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -298,6 +324,7 @@
 						"name": "Puzzle Piece 1",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -305,6 +332,7 @@
 						"name": "Puzzle Piece 2",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["skull_barrel"]
 					},
@@ -312,6 +340,7 @@
 						"name": "KONG Letter K",
 						"chest_unopened_img": "images/locations/collectible_letter_k.png",
 						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -319,6 +348,7 @@
 						"name": "Puzzle Piece 3",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -326,6 +356,7 @@
 						"name": "Puzzle Piece 4",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -333,6 +364,7 @@
 						"name": "KONG Letter O",
 						"chest_unopened_img": "images/locations/collectible_letter_o.png",
 						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -340,6 +372,7 @@
 						"name": "KONG Letter N",
 						"chest_unopened_img": "images/locations/collectible_letter_n.png",
 						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -347,6 +380,7 @@
 						"name": "Puzzle Piece 5",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -354,6 +388,7 @@
 						"name": "Puzzle Piece 6",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -361,6 +396,7 @@
 						"name": "Puzzle Piece 7",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -368,6 +404,7 @@
 						"name": "KONG Letter G",
 						"chest_unopened_img": "images/locations/collectible_letter_g.png",
 						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -375,6 +412,7 @@
 						"name": "Complete Level",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"visibility_rules": ["normal_clears_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, blast_barrel"]
 					},
@@ -382,6 +420,7 @@
 						"name": "KONG Letter Set",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -389,6 +428,7 @@
 						"name": "Puzzle Piece Set",
 						"chest_unopened_img": "images/locations/collectible_pp_set_7.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_7_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -449,6 +489,7 @@
 						"name": "Puzzle Piece 1",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["grab, diddy"]
 					},
@@ -456,6 +497,7 @@
 						"name": "Puzzle Piece 2",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -463,6 +505,7 @@
 						"name": "Puzzle Piece 3",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["blast_barrel"]
 					},
@@ -470,6 +513,7 @@
 						"name": "Puzzle Piece 4",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["rocket_barrel"]
 					},
@@ -477,6 +521,7 @@
 						"name": "KONG Letter K",
 						"chest_unopened_img": "images/locations/collectible_letter_k.png",
 						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["rocket_barrel"]
 					},
@@ -484,6 +529,7 @@
 						"name": "Puzzle Piece 5",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["rocket_barrel"]
 					},
@@ -491,6 +537,7 @@
 						"name": "KONG Letter O",
 						"chest_unopened_img": "images/locations/collectible_letter_o.png",
 						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["rocket_barrel"]
 					},
@@ -498,6 +545,7 @@
 						"name": "Puzzle Piece 6",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["rocket_barrel"]
 					},
@@ -505,6 +553,7 @@
 						"name": "Puzzle Piece 7",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["rocket_barrel"]
 					},
@@ -512,6 +561,7 @@
 						"name": "KONG Letter N",
 						"chest_unopened_img": "images/locations/collectible_letter_n.png",
 						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["rocket_barrel"]
 					},
@@ -519,6 +569,7 @@
 						"name": "KONG Letter G",
 						"chest_unopened_img": "images/locations/collectible_letter_g.png",
 						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["rocket_barrel"]
 					},
@@ -526,6 +577,7 @@
 						"name": "Complete Level",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"visibility_rules": ["normal_clears_enabled"],
 						"item_count": 1,
 						"access_rules": ["rocket_barrel"]
 					},
@@ -533,6 +585,7 @@
 						"name": "KONG Letter Set",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -540,6 +593,7 @@
 						"name": "Puzzle Piece Set",
 						"chest_unopened_img": "images/locations/collectible_pp_set_7.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_7_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -600,6 +654,7 @@
 						"name": "Puzzle Piece 1",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -607,6 +662,7 @@
 						"name": "KONG Letter K",
 						"chest_unopened_img": "images/locations/collectible_letter_k.png",
 						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel", "roll"]
 					},
@@ -614,6 +670,7 @@
 						"name": "Puzzle Piece 2",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, blast_barrel", "roll, blast_barrel"]
 					},
@@ -621,6 +678,7 @@
 						"name": "Puzzle Piece 3",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, blow", "roll, blow"]
 					},
@@ -628,6 +686,7 @@
 						"name": "KONG Letter O",
 						"chest_unopened_img": "images/locations/collectible_letter_o.png",
 						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel", "roll"]
 					},
@@ -635,6 +694,7 @@
 						"name": "Puzzle Piece 4",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel", "roll"]
 					},
@@ -642,6 +702,7 @@
 						"name": "Puzzle Piece 5",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel", "roll"]
 					},
@@ -649,6 +710,7 @@
 						"name": "Puzzle Piece 6",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel", "roll"]
 					},
@@ -656,6 +718,7 @@
 						"name": "Puzzle Piece 7",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, grab", "roll, grab"]
 					},
@@ -663,6 +726,7 @@
 						"name": "Puzzle Piece 8",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, roll", "arrow_barrel, diddy"]
 					},
@@ -670,6 +734,7 @@
 						"name": "KONG Letter N",
 						"chest_unopened_img": "images/locations/collectible_letter_n.png",
 						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -677,6 +742,7 @@
 						"name": "Puzzle Piece 9",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel"]
 					},
@@ -684,6 +750,7 @@
 						"name": "KONG Letter G",
 						"chest_unopened_img": "images/locations/collectible_letter_g.png",
 						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, grab", "arrow_barrel, roll"]
 					},
@@ -691,6 +758,7 @@
 						"name": "Complete Level",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"visibility_rules": ["normal_clears_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, grab", "arrow_barrel, roll"]
 					},
@@ -698,6 +766,7 @@
 						"name": "KONG Letter Set",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -705,6 +774,7 @@
 						"name": "Puzzle Piece Set",
 						"chest_unopened_img": "images/locations/collectible_pp_set_9.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_9_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -765,6 +835,7 @@
 						"name": "Puzzle Piece 1",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["skull_barrel, roll", "skull_barrel, diddy"]
 					},
@@ -772,6 +843,7 @@
 						"name": "KONG Letter K",
 						"chest_unopened_img": "images/locations/collectible_letter_k.png",
 						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["grab"]
 					},
@@ -779,6 +851,7 @@
 						"name": "KONG Letter O",
 						"chest_unopened_img": "images/locations/collectible_letter_o.png",
 						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["grab"]
 					},
@@ -786,6 +859,7 @@
 						"name": "Puzzle Piece 2",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["grab, roll"]
 					},
@@ -793,6 +867,7 @@
 						"name": "Puzzle Piece 3",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["grab, roll, skull_barrel, arrow_barrel"]
 					},
@@ -800,6 +875,7 @@
 						"name": "KONG Letter N",
 						"chest_unopened_img": "images/locations/collectible_letter_n.png",
 						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["grab"]
 					},
@@ -807,6 +883,7 @@
 						"name": "Puzzle Piece 4",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["grab, roll"]
 					},
@@ -814,6 +891,7 @@
 						"name": "KONG Letter G",
 						"chest_unopened_img": "images/locations/collectible_letter_g.png",
 						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["grab"]
 					},
@@ -821,6 +899,7 @@
 						"name": "Puzzle Piece 5",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["grab, roll, diddy"]
 					},
@@ -828,6 +907,7 @@
 						"name": "Complete Level",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"visibility_rules": ["normal_clears_enabled"],
 						"item_count": 1,
 						"access_rules": ["grab, diddy"]
 					},
@@ -835,6 +915,7 @@
 						"name": "KONG Letter Set",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -842,6 +923,7 @@
 						"name": "Puzzle Piece Set",
 						"chest_unopened_img": "images/locations/collectible_pp_set_5.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_5_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -902,6 +984,7 @@
 						"name": "Puzzle Piece 1",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["grab"]
 					},
@@ -909,6 +992,7 @@
 						"name": "KONG Letter K",
 						"chest_unopened_img": "images/locations/collectible_letter_k.png",
 						"chest_opened_img": "images/locations/collectible_letter_k_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -916,6 +1000,7 @@
 						"name": "Puzzle Piece 2",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["ground_pound, arrow_barrel, skull-blast_barrel, arrow_barrel"]
 					},
@@ -923,6 +1008,7 @@
 						"name": "Puzzle Piece 3",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["ground_pound, arrow_barrel"]
 					},
@@ -930,6 +1016,7 @@
 						"name": "KONG Letter O",
 						"chest_unopened_img": "images/locations/collectible_letter_o.png",
 						"chest_opened_img": "images/locations/collectible_letter_o_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["ground_pound, arrow_barrel"]
 					},
@@ -937,6 +1024,7 @@
 						"name": "Puzzle Piece 4",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["ground_pound, arrow_barrel"]
 					},
@@ -944,6 +1032,7 @@
 						"name": "KONG Letter N",
 						"chest_unopened_img": "images/locations/collectible_letter_n.png",
 						"chest_opened_img": "images/locations/collectible_letter_n_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["ground_pound, arrow_barrel"]
 					},
@@ -951,6 +1040,7 @@
 						"name": "Puzzle Piece 5",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["ground_pound, arrow_barrel"]
 					},
@@ -958,6 +1048,7 @@
 						"name": "KONG Letter G",
 						"chest_unopened_img": "images/locations/collectible_letter_g.png",
 						"chest_opened_img": "images/locations/collectible_letter_g_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": ["ground_pound, arrow_barrel"]
 					},
@@ -965,6 +1056,7 @@
 						"name": "Complete Level",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"visibility_rules": ["normal_clears_enabled"],
 						"item_count": 1,
 						"access_rules": ["ground_pound, arrow_barrel"]
 					},
@@ -972,6 +1064,7 @@
 						"name": "KONG Letter Set",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
+						"visibility_rules": ["kong_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -979,6 +1072,7 @@
 						"name": "Puzzle Piece Set",
 						"chest_unopened_img": "images/locations/collectible_pp_set_5.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_5_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -1039,6 +1133,7 @@
 						"name": "Complete Level",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"visibility_rules": ["normal_clears_enabled"],
 						"item_count": 1,
 						"access_rules": ["ground_pound, rocket_barrel"]
 					}
@@ -1059,6 +1154,7 @@
 						"name": "Puzzle Piece 1",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, blast_barrel"]
 					},
@@ -1066,6 +1162,7 @@
 						"name": "Puzzle Piece 2",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, blast_barrel"]
 					},
@@ -1073,6 +1170,7 @@
 						"name": "Puzzle Piece 3",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, blast_barrel"]
 					},
@@ -1080,6 +1178,7 @@
 						"name": "Puzzle Piece 4",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, blast_barrel"]
 					},
@@ -1087,6 +1186,7 @@
 						"name": "Puzzle Piece 5",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, blast_barrel"]
 					},
@@ -1094,6 +1194,7 @@
 						"name": "Complete Level",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"visibility_rules": ["golden_temple_enabled, normal_clears_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, blast_barrel"]
 					},
@@ -1101,6 +1202,7 @@
 						"name": "Factory Rare Orb",
 						"chest_unopened_img": "images/items/item_rare_orb_7.png",
 						"chest_opened_img": "images/locations/rare_orb_collected.png",
+						"visibility_rules": ["golden_temple_enabled"],
 						"item_count": 1,
 						"access_rules": ["arrow_barrel, blast_barrel"]
 					},
@@ -1108,6 +1210,7 @@
 						"name": "Puzzle Piece Set",
 						"chest_unopened_img": "images/locations/collectible_pp_set_5.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_5_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},
@@ -1229,6 +1332,7 @@
 						"name": "Factory Map Key",
 						"chest_unopened_img": "images/locations/shop_map_key.png",
 						"chest_opened_img": "images/locations/shop_map_key_purchased.png",
+						"visibility_rules": ["key7_enabled"],
 						"item_count": 1
 					}/*,
 					{

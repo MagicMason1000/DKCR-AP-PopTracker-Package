@@ -1,141 +1,150 @@
 {
     "settings_popup": {
         "type": "array",
-        "orientation": "horizontal",
+        "orientation": "vertical",
         "content": [
             {
-                "type": "array",
-                "orientation": "vertical",
-                "content": [
-                    {
-                        "type": "item",
-                        "item": "settings_header",
-                        "max_width": 275
-                    },
-                    {
-                        "type": "itemgrid",
-                        "item_margin": "4,4",
-                        "h_alignment": "left",
-                        "item_size": "96,96",
-                        "rows": [
-                            [
-                                "mirror_mode_setting",
-                                "mirror_shards_setting"
-                            ]
-                        ]
-                    },
-                    {
-                        "type": "item",
-                        "item": "bossReq_header",
-                        "max_width": 275
-                    },
-                    {
-                        "type": "itemgrid",
-                        "item_margin": "4,4",
-                        "h_alignment": "left",
-                        "item_size": "96,96",
-                        "rows": [
-                            [
-                                "bossReq1",
-                                "bossReq2",
-                                "bossReq3",
-                                "bossReq4"
-                            ],
-                            [
-                                "bossReq5",
-                                "bossReq6",
-                                "bossReq7",
-                                "bossReq8"
-                            ]
-                        ]
-                    },
-                    {
-                        "type": "item",
-                        "item": "kReq_header",
-                        "max_width": 275
-                    },
-                    {
-                        "type": "itemgrid",
-                        "item_margin": "4,4",
-                        "h_alignment": "left",
-                        "item_size": "96,96",
-                        "rows": [
-                            [
-                                "kReq1",
-                                "kReq2",
-                                "kReq3",
-                                "kReq4"
-                            ],
-                            [
-                                "kReq5",
-                                "kReq6",
-                                "kReq7",
-                                "kReq8"
-                            ]
-                        ]
-                    }
-                ]
+                "type": "item",
+                "item": "settings_header",
+                "item_h_alignment": "center",
+                "max_width": 300
             },
             {
-                "type": "array",
-                "orientation": "vertical",
-                "content": [
+                "type": "tabbed",
+                "tabs": [
                     {
-                        "type": "itemgrid",
-                        "item_margin": "4,4",
-                        "h_alignment": "left",
-                        "item_size": "96,96",
-                        "rows": [
-                            [
-                                "smog_clear_setting",
-                                "lolReq_setting",
-                                "factory_button_setting"
-                            ]
+                        "title": "GOAL",
+                        "icon": "images/settings/tabicon_gt.png",
+                        "content": [
+                            {
+                                "type": "itemgrid",
+                                "item_margin": "4,4",
+                                "h_alignment": "left",
+                                "item_size": "192,192",
+                                "rows": [
+                                    [
+                                        "golden_temple_setting",
+                                        "orbs_setting"
+                                    ]
+                                ]
+                            }
                         ]
                     },
                     {
-                        "type": "item",
-                        "item": "key_header",
-                        "max_width": 275
-                    },
-                    {
-                        "type": "itemgrid",
-                        "item_margin": "4,4",
-                        "h_alignment": "left",
-                        "item_size": "80,80",
-                        "rows": [
-                            [
-                                "key1_setting",
-                                "key2_setting",
-                                "key3_setting",
-                                "key4_setting"
-                            ],
-                            [
-                                "key5_setting",
-                                "key6_setting",
-                                "key7_setting",
-                                "key8_setting"
-                            ],
-                            []
+                        "title": "PUZZLE PIECES",
+                        "icon": "images/settings/tabicon_pp.png",
+                        "content": [
+                            {
+                                "type": "itemgrid",
+                                "item_margin": "4,4",
+                                "h_alignment": "center",
+                                "item_size": "96,96",
+                                "rows": [
+                                    [
+                                        "pp_setting"
+                                    ],
+                                    [
+                                        "bossReq1",
+                                        "bossReq2",
+                                        "bossReq3",
+                                        "bossReq4"
+                                    ],
+                                    [
+                                        "bossReq5",
+                                        "bossReq6",
+                                        "bossReq7",
+                                        "bossReq8"
+                                    ]
+                                ]
+                            }
                         ]
                     },
                     {
-                        "type": "item",
-                        "item": "ta_header",
-                        "max_width": 275
+                        "title": "KONG LETTERS",
+                        "icon": "images/settings/tabicon_kong.png",
+                        "content": [
+                            {
+                                "type": "itemgrid",
+                                "item_margin": "4,4",
+                                "h_alignment": "center",
+                                "item_size": "96,96",
+                                "rows": [
+                                    [
+                                        "kong_setting"
+                                    ],
+                                    [
+                                        "kReq1",
+                                        "kReq2",
+                                        "kReq3",
+                                        "kReq4"
+                                    ],
+                                    [
+                                        "kReq5",
+                                        "kReq6",
+                                        "kReq7",
+                                        "kReq8"
+                                    ]
+                                ]
+                            }
+                        ]
                     },
                     {
-                        "type": "itemgrid",
-                        "item_margin": "4,4",
-                        "h_alignment": "left",
-                        "item_size": "80,80",
-                        "rows": [
-                            [
-                                "ta_bronze_setting",
-                                "ta_silver_setting",
-                                "ta_gold_setting",
-                                "ta_shiny_gold_setting"
-                            ]
+                        "title": "CLEAR TYPES",
+                        "icon": "images/settings/tabicon_clears.png",
+                        "content": [
+                            {
+                                "type": "itemgrid",
+                                "item_margin": "4,4",
+                                "h_alignment": "left",
+                                "item_size": "96,96",
+                                "rows": [
+                                    [
+                                        "normal_clears_setting"
+                                    ],
+                                    [
+                                        "mirror_mode_setting",
+                                        "mirror_shards_setting"
+                                    ],
+                                    [
+                                        "ta_bronze_setting",
+                                        "ta_silver_setting",
+                                        "ta_gold_setting",
+                                        "ta_shiny_gold_setting"
+                                    ]
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "MISC.",
+                        "icon": "images/settings/tabicon_clears.png",
+                        "content": [
+                            {
+                                "type": "itemgrid",
+                                "item_margin": "4,4",
+                                "h_alignment": "center",
+                                "item_size": "96,96",
+                                "rows": [
+                                    [
+                                        "key1_setting",
+                                        "key2_setting",
+                                        "key3_setting",
+                                        "key4_setting"
+                                    ],
+                                    [
+                                        "key5_setting",
+                                        "key6_setting",
+                                        "key7_setting",
+                                        "key8_setting"
+                                    ],
+                                    [
+                                        "smog_clear_setting",
+                                        "lolReq_setting",
+                                        "factory_button_setting",
+                                        "fc_setting"
+                                    ]
+                                ]
+                            }
                         ]
                     }
                 ]

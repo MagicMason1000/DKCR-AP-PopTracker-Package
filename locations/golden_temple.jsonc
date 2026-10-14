@@ -11,6 +11,7 @@
 						"name": "Puzzle Piece 1",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
                         "access_rules": ["ground_pound"]
                     },
@@ -18,6 +19,7 @@
 						"name": "Puzzle Piece 2",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
                         "access_rules": [""]
                     },
@@ -25,6 +27,7 @@
 						"name": "Puzzle Piece 3",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
                         "access_rules": [""]
                     },
@@ -32,6 +35,7 @@
 						"name": "Puzzle Piece 4",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
                         "access_rules": [""]
                     },
@@ -39,6 +43,7 @@
 						"name": "Puzzle Piece 5",
 						"chest_unopened_img": "images/locations/collectible_puzzle_piece.png",
 						"chest_opened_img": "images/locations/collectible_puzzle_piece_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
                         "access_rules": [""]
                     },
@@ -46,6 +51,7 @@
 						"name": "Complete Level",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
+						"visibility_rules": ["normal_clears_enabled"],
 						"item_count": 1,
 						"access_rules": ["skull_barrel, arrow_barrel"]
 					},
@@ -53,6 +59,7 @@
 						"name": "Mirror Mode Unlock",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
+						"visibility_rules": ["normal_clears_enabled"],
 						"item_count": 1,
 						"access_rules": ["skull_barrel, arrow_barrel"]
 					},
@@ -60,6 +67,7 @@
 						"name": "Puzzle Piece Set",
 						"chest_unopened_img": "images/locations/collectible_pp_set_5.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_5_collected.png",
+						"visibility_rules": ["pp_enabled"],
 						"item_count": 1,
 						"access_rules": [""]
 					},

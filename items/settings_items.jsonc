@@ -30,24 +30,24 @@
         "img": "images/settings/static_ta_header.png",
         "codes": "ta_header"
     },
-    // MARK: Misc.
+    // MARK: Level Clears
     {
-        "name": "Shopsanity Setting",
+        "name": "Normal Clears Setting",
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
 		"initial_stage_idx": 1, // True
         "stages": [
             {
-                "name": "Shopsanity Disabled",
-                "img": "images/settings/setting_shopsanity_disabled.png",
-                "codes": "shopsanity_setting, shopsanity_disabled",
+                "name": "Normal Clears Disabled",
+                "img": "images/settings/setting_normal_clears_disabled.png",
+                "codes": "normal_clears_setting, normal_clears_disabled",
                 "inherit_codes": false
             },
             {
-                "name": "Shopsanity Enabled",
-                "img": "images/settings/setting_shopsanity_enabled.png",
-                "codes": "shopsanity_setting, shopsanity_enabled",
+                "name": "Normal Clears Enabled",
+                "img": "images/settings/setting_normal_clears_enabled.png",
+                "codes": "normal_clears_setting, normal_clears_enabled",
                 "inherit_codes": false
             }
         ]
@@ -98,6 +98,27 @@
                 "name": "Golden Temple Included",
                 "img": "images/settings/setting_golden_temple_enabled.png",
                 "codes": "golden_temple_setting, golden_temple_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Feathery Companion",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Feathery Companion Enabled",
+                "img": "images/settings/setting_fc_disabled.png",
+                "codes": "fc_setting, fc_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Feathery Companion Disabled",
+                "img": "images/settings/setting_fc_enabled.png",
+                "codes": "fc_setting, fc_enabled",
                 "inherit_codes": false
             }
         ]
@@ -168,6 +189,27 @@
     },
     // MARK: Boss Reqs
     {
+        "name": "Randomize Puzzle Pieces",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Puzzle Pieces Not Randomized",
+                "img": "images/settings/setting_pp_disabled.png",
+                "codes": "pp_setting, pp_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Puzzle Pieces Randomized",
+                "img": "images/settings/setting_pp_enabled.png",
+                "codes": "pp_setting, pp_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Boss Puzzle Piece Requirement (W1)",
         "type": "consumable",
         "img": "images/settings/setting_bossReq1.png",
@@ -233,6 +275,27 @@
     },
     // MARK: K Reqs
     {
+        "name": "Randomize KONG Letters",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "KONG Letters Not Randomized",
+                "img": "images/settings/setting_kong_disabled.png",
+                "codes": "kong_setting, kong_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "KONG Letters Randomized",
+                "img": "images/settings/setting_kong_enabled.png",
+                "codes": "kong_setting, kong_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "K-Level Letter Requirement (W1)",
         "type": "consumable",
         "img": "images/settings/setting_kReq1.png",
@@ -295,56 +358,6 @@
         "codes": "kReq8",
         "max_quantity": 28,
         "initial_quantity": 28
-    },
-    // MARK: Factory
-    {
-        "name": "Factory Smog Setting",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-		"initial_stage_idx": 0, // False
-        "stages": [
-            {
-                "name": "Smog Clear Disabled",
-                "img": "images/settings/setting_smog_clear_disabled.png",
-                "codes": "smog_clear_setting, smog_clear_disabled",
-                "inherit_codes": false
-            },
-            {
-                "name": "Smog Clear Enabled",
-                "img": "images/settings/setting_smog_clear_enabled.png",
-                "codes": "smog_clear_setting, smog_clear_enabled",
-                "inherit_codes": false
-            }
-        ]
-    },
-    {
-        "name": "7-R Required Setting",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-		"initial_stage_idx": 0, // False
-        "stages": [
-            {
-                "name": "7-R Required Disabled",
-                "img": "images/settings/setting_lolReq_disabled.png",
-                "codes": "lolReq_setting, lolReq_disabled",
-                "inherit_codes": false
-            },
-            {
-                "name": "7-R Required Enabled",
-                "img": "images/settings/setting_lolReq_enabled.png",
-                "codes": "lolReq_setting, lolReq_enabled",
-                "inherit_codes": false
-            }
-        ]
-    },
-    {
-        "name": "Required Factory Buttons Setting",
-        "type": "consumable",
-        "img": "images/settings/setting_factory_button.png",
-        "codes": "factory_button_setting",
-        "max_quantity": 15
     },
     // MARK: Map Keys
     {
@@ -596,6 +609,77 @@
                 "name": "Time Attack: Shiny Gold Medals Enabled",
                 "img": "images/settings/setting_ta_shiny_gold_enabled.png",
                 "codes": "ta_shiny_gold_setting, ta_shiny_gold_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    // MARK: Misc.
+    {
+        "name": "Factory Smog Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "Smog Clear Disabled",
+                "img": "images/settings/setting_smog_clear_disabled.png",
+                "codes": "smog_clear_setting, smog_clear_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Smog Clear Enabled",
+                "img": "images/settings/setting_smog_clear_enabled.png",
+                "codes": "smog_clear_setting, smog_clear_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "7-R Required Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "7-R Required Disabled",
+                "img": "images/settings/setting_lolReq_disabled.png",
+                "codes": "lolReq_setting, lolReq_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "7-R Required Enabled",
+                "img": "images/settings/setting_lolReq_enabled.png",
+                "codes": "lolReq_setting, lolReq_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Required Factory Buttons Setting",
+        "type": "consumable",
+        "img": "images/settings/setting_factory_button.png",
+        "codes": "factory_button_setting",
+        "max_quantity": 15
+    },
+    {
+        "name": "Shopsanity Setting",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 1, // True
+        "stages": [
+            {
+                "name": "Shopsanity Disabled",
+                "img": "images/settings/setting_shopsanity_disabled.png",
+                "codes": "shopsanity_setting, shopsanity_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "Shopsanity Enabled",
+                "img": "images/settings/setting_shopsanity_enabled.png",
+                "codes": "shopsanity_setting, shopsanity_enabled",
                 "inherit_codes": false
             }
         ]
