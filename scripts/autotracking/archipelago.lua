@@ -103,6 +103,17 @@ end
 function apply_slot_data(slot_data)
 	local abled = {"Disabled", "Enabled"}
 
+	-- Level Clear type settings
+	local clearNormalObj = Tracker:FindObjectForCode("normal_clears_setting")
+	if (clearNormalObj and slot_data["level_clear_type_resolved"]["Normal"]) then
+		clearNormalObj.CurrentStage = slot_data["level_clear_type_resolved"]["Normal"]
+		if ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: set Normal Clear setting to %s (%s)", slot_data["level_clear_type_resolved"]["Normal"], abled[1 + slot_data["level_clear_type_resolved"]["Normal"]]))
+		end
+	elseif ENABLE_DEBUG_LOG then
+		print(string.format("WARNING: apply_slot_data failed check nil.\n\tclearNormalObj = %s\n\tslot_data[\"level_clear_type_resolved\"][\"Normal\"] = %s", clearNormalObj, slot_data["level_clear_type_resolved"]["Normal"]))
+	end
+
 	-- Puzzle Piece Boss Requirement settings
 	local ppReqs = {
 		slot_data["jungle_boss_access"],
@@ -194,13 +205,13 @@ function apply_slot_data(slot_data)
 
 	-- Mirror Mode Enabled setting
 	local mmObj = Tracker:FindObjectForCode("mirror_mode_setting")
-	if mmObj and slot_data["mirror_mode"] then
-		mmObj.CurrentStage = slot_data["mirror_mode"]
+	if mmObj and slot_data["level_clear_type_resolved"]["Mirror Mode"] then
+		mmObj.CurrentStage = slot_data["level_clear_type_resolved"]["Mirror Mode"]
 		if ENABLE_DEBUG_LOG then
-			print(string.format("apply_slot_data: Mirror Mode enabled setting set to %s (%s)", slot_data["mirror_mode"], abled[1 + slot_data["mirror_mode"]]))
+			print(string.format("apply_slot_data: Mirror Mode enabled setting set to %s (%s)", slot_data["level_clear_type_resolved"]["Mirror Mode"], abled[1 + slot_data["level_clear_type_resolved"]["Mirror Mode"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("WARNING: apply_slot_data failed check nil for Mirror Mode enabled setting.\n\tmmObj = %s\n\tslot_data[\"mirror_mode\"] = %s", mmObj, slot_data["mirror_mode"]))
+		print(string.format("WARNING: apply_slot_data failed check nil for Mirror Mode enabled setting.\n\tmmObj = %s\n\tslot_data[\"level_clear_type_resolved\"][\"Mirror Mode\"] = %s", mmObj, slot_data["level_clear_type_resolved"]["Mirror Mode"]))
 	end
 
 	-- Mirror Mode Shard Amount setting
