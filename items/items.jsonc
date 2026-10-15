@@ -154,6 +154,13 @@
         "max_quantity": 28
     },
     {
+        "name": "Rare Orbs",
+        "type": "consumable",
+        "img": "images/items/item_rare_orb_1.png",
+        "codes": "rare_orb",
+        "max_quantity": 8
+    },
+    {
         "name": "Mirror Shards",
         "type": "consumable",
         "img": "images/locations/mirror_mode.png",
@@ -166,55 +173,6 @@
         "img": "images/items/item_factory_button.png",
         "codes": "factory_button",
         "max_quantity": 15
-    },
-    // MARK: Rare Orbs
-    {
-        "name": "Rare Orb (Jungle)",
-        "type": "toggle",
-        "img": "images/items/item_rare_orb_1.png",
-        "codes": "rare_orb_1"
-    },
-    {
-        "name": "Rare Orb (Beach)",
-        "type": "toggle",
-        "img": "images/items/item_rare_orb_2.png",
-        "codes": "rare_orb_2"
-    },
-    {
-        "name": "Rare Orb (Ruins)",
-        "type": "toggle",
-        "img": "images/items/item_rare_orb_3.png",
-        "codes": "rare_orb_3"
-    },
-    {
-        "name": "Rare Orb (Cave)",
-        "type": "toggle",
-        "img": "images/items/item_rare_orb_4.png",
-        "codes": "rare_orb_4"
-    },
-    {
-        "name": "Rare Orb (Forest)",
-        "type": "toggle",
-        "img": "images/items/item_rare_orb_5.png",
-        "codes": "rare_orb_5"
-    },
-    {
-        "name": "Rare Orb (Cliff)",
-        "type": "toggle",
-        "img": "images/items/item_rare_orb_6.png",
-        "codes": "rare_orb_6"
-    },
-    {
-        "name": "Rare Orb (Factory)",
-        "type": "toggle",
-        "img": "images/items/item_rare_orb_7.png",
-        "codes": "rare_orb_7"
-    },
-    {
-        "name": "Rare Orb (Volcano)",
-        "type": "toggle",
-        "img": "images/items/item_rare_orb_8.png",
-        "codes": "rare_orb_8"
     },
     // MARK: Map Keys
     {

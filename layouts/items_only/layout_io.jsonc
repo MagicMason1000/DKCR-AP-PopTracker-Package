@@ -41,31 +41,6 @@
                 }
             },
             {
-                "type": "group",
-                "header": "Rare Orbs",
-                "content": {
-                    "type": "itemgrid",
-                    "background": "#1F1F1F",
-                    "item_margin": "10, 10",
-                    "item_size": 5,
-                    "h_alignment": "center",
-                    "rows": [
-                        [
-                            "rare_orb_1",
-                            "rare_orb_2",
-                            "rare_orb_3",
-                            "rare_orb_4"
-                        ],
-                        [
-                            "rare_orb_5",
-                            "rare_orb_6",
-                            "rare_orb_7",
-                            "rare_orb_8"
-                        ]
-                    ]
-                }
-            },
-            {
                 "background": "#0c0c0c",
                 "type": "array",
                 "content": [
@@ -80,10 +55,13 @@
                             "h_alignment": "center",
                             "rows": [
                                 [
-                                    "squawks",
+                                    "rare_orb",
                                     "mirror_shard",
                                     "factory_button",
                                     "puzzle_piece"
+                                ],
+                                [
+                                    "squawks"
                                 ]
                             ]
                         }
@@ -168,38 +146,38 @@
                                     "type": "itemgrid",
                                     "item_margin": "10, 10",
                                     "item_size": 5,
+                                    "item_h_alignment": "center",
                                     "h_alignment": "center",
                                     "rows": [
                                         [
-                                            "squawks",
+                                            "rare_orb",
                                             "mirror_shard",
                                             "factory_button",
                                             "puzzle_piece"
+                                        ],
+                                        [
+                                            "squawks"
                                         ]
                                     ]
                                 }
                             },
                             {
                                 "type": "group",
-                                "header": "Rare Orbs",
+                                "dock": "bottom",
+                                "header": "Filler",
                                 "content": {
-                                    "type": "itemgrid",
                                     "background": "#1F1F1F",
+                                    "type": "itemgrid",
                                     "item_margin": "10, 10",
                                     "item_size": 5,
+                                    "item_h_alignment": "center",
                                     "h_alignment": "center",
                                     "rows": [
                                         [
-                                            "rare_orb_1",
-                                            "rare_orb_2",
-                                            "rare_orb_3",
-                                            "rare_orb_4"
-                                        ],
-                                        [
-                                            "rare_orb_5",
-                                            "rare_orb_6",
-                                            "rare_orb_7",
-                                            "rare_orb_8"
+                                            "banana",
+                                            "coin",
+                                            "balloon",
+                                            "heart"
                                         ]
                                     ]
                                 }
@@ -207,26 +185,6 @@
                         ]
                     }
                 ]
-            },
-            {
-                "type": "group",
-                "dock": "bottom",
-                "header": "Filler",
-                "content": {
-                    "background": "#1F1F1F",
-                    "type": "itemgrid",
-                    "item_margin": "10, 10",
-                    "item_size": 5,
-                    "h_alignment": "center",
-                    "rows": [
-                        [
-                            "banana",
-                            "coin",
-                            "balloon",
-                            "heart"
-                        ]
-                    ]
-                }
             }
         ]
     }

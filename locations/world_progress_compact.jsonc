@@ -623,7 +623,7 @@
                 "visibility_rules": ["golden_temple_enabled"],
 				"sections": [
 					{
-						"name": "Temple Puzzle Pieces Accessible",
+						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
 						"item_count": 1,
@@ -644,7 +644,7 @@
                 "visibility_rules": ["golden_temple_enabled, ta_bronze_enabled", "golden_temple_enabled, ta_silver_enabled", "golden_temple_enabled, ta_gold_enabled", "golden_temple_enabled, ta_shiny_gold_enabled"],
 				"sections": [
 					{
-						"name": "Temple Medals Accessible",
+						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
 						"item_count": 1,
@@ -665,14 +665,14 @@
                 "visibility_rules": ["golden_temple_enabled"],
 				"sections": [
 					{
-						"name": "Temple Completion Available",
+						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
 						"item_count": 1,
 						"access_rules": ["$WorldCheck|9|3"]
 					},
 					{
-						"name": "Temple Mirror Mode Completion Available",
+						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"item_count": 1,

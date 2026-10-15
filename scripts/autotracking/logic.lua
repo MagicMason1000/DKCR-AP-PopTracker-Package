@@ -15,6 +15,13 @@ the entire game to see what they have available to do and reduce having to click
 function WorldCheck(world, checkType)
     world = tonumber(world)
     checkType = tonumber(checkType)
+    
+    local variant
+    if Tracker.ActiveVariantUID == "1" then -- Standard
+        variant = "@World Progress"
+    elseif Tracker.ActiveVariantUID == "2" then -- Compact
+        variant = "@World Progress Compact"
+    end
 
     if ENABLE_WORLDCHECK_LOG then
         print()
@@ -64,19 +71,19 @@ function WorldCheck(world, checkType)
             if ENABLE_WORLDCHECK_LOG then
                 print(string.format("WorldCheck [SUCCESS+]: WorldCheck complete. Every KONG Letter in World %s is collected.", world))
             end
-            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Collectibles/KONG Letters Accessible").AvailableChestCount = 0
+            Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Collectibles/KONG Letters Accessible").AvailableChestCount = 0
             return true
         elseif accessibleLetters then
             if ENABLE_WORLDCHECK_LOG then
                 print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. KONG Letters are available in World %s.", world))
             end
-            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Collectibles/KONG Letters Accessible").AvailableChestCount = 1
+            Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Collectibles/KONG Letters Accessible").AvailableChestCount = 1
             return true
         else
             if ENABLE_WORLDCHECK_LOG then
                 print(string.format("WorldCheck [FAIL]: WorldCheck complete. KONG Letters are NOT available in World %s.", world))
             end
-            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Collectibles/KONG Letters Accessible").AvailableChestCount = 1
+            Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Collectibles/KONG Letters Accessible").AvailableChestCount = 1
             return false
         end
     end
@@ -105,19 +112,19 @@ function WorldCheck(world, checkType)
             if ENABLE_WORLDCHECK_LOG then
                 print(string.format("WorldCheck [SUCCESS+]: WorldCheck complete. Every Puzzle Piece in World %s is collected.", world))
             end
-            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Collectibles/Puzzle Pieces Accessible").AvailableChestCount = 0
+            Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Collectibles/Puzzle Pieces Accessible").AvailableChestCount = 0
             return true
         elseif accessiblePP then
             if ENABLE_WORLDCHECK_LOG then
                 print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Puzzle Pieces are available in World %s.", world))
             end
-            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Collectibles/Puzzle Pieces Accessible").AvailableChestCount = 1
+            Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Collectibles/Puzzle Pieces Accessible").AvailableChestCount = 1
             return true
         else
             if ENABLE_WORLDCHECK_LOG then
                 print(string.format("WorldCheck [FAIL]: WorldCheck complete. Puzzle Pieces are NOT available in World %s.", world))
             end
-            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Collectibles/Puzzle Pieces Accessible").AvailableChestCount = 1
+            Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Collectibles/Puzzle Pieces Accessible").AvailableChestCount = 1
             return false
         end
         return false
@@ -171,12 +178,12 @@ function WorldCheck(world, checkType)
                 if ENABLE_WORLDCHECK_LOG then
                     print(string.format("WorldCheck [SUCCESS+]: WorldCheck complete. All levels are completed in World %s.", world))
                 end
-                Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Level Completions/Level Completions Available").AvailableChestCount = 0
+                Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Level Completions/Level Completions Available").AvailableChestCount = 0
             elseif checkType == 4 then
                 if ENABLE_WORLDCHECK_LOG then
                     print(string.format("WorldCheck [SUCCESS+]: WorldCheck complete. All Mirror Mode checks are completed in World %s.", world))
                 end
-                Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Level Completions/Mirror Mode Completions Available").AvailableChestCount = 0
+                Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Level Completions/Mirror Mode Completions Available").AvailableChestCount = 0
             end
             return true
         elseif accessibleGoals then
@@ -184,12 +191,12 @@ function WorldCheck(world, checkType)
                 if ENABLE_WORLDCHECK_LOG then
                     print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Level Completion checks are available in World %s.", world))
                 end
-                Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Level Completions/Level Completions Available").AvailableChestCount = 1
+                Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Level Completions/Level Completions Available").AvailableChestCount = 1
             elseif checkType == 4 then
                 if ENABLE_WORLDCHECK_LOG then
                     print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Mirror Mode checks are available in World %s.", world))
                 end
-                Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Level Completions/Mirror Mode Completions Available").AvailableChestCount = 1
+                Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Level Completions/Mirror Mode Completions Available").AvailableChestCount = 1
             end
             return true
         else
@@ -197,12 +204,12 @@ function WorldCheck(world, checkType)
                 if ENABLE_WORLDCHECK_LOG then
                     print(string.format("WorldCheck [FAIL]: WorldCheck complete. Level Completion checks are NOT available in World %s.", world))
                 end
-                Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Level Completions/Level Completions Available").AvailableChestCount = 1
+                Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Level Completions/Level Completions Available").AvailableChestCount = 1
             elseif checkType == 4 then
                 if ENABLE_WORLDCHECK_LOG then
                     print(string.format("WorldCheck [FAIL]: WorldCheck complete. Mirror Mode checks are NOT available in World %s.", world))
                 end
-                Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Level Completions/Mirror Mode Completions Available").AvailableChestCount = 1
+                Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Level Completions/Mirror Mode Completions Available").AvailableChestCount = 1
             end
             return false
         end
@@ -257,19 +264,19 @@ function WorldCheck(world, checkType)
             if ENABLE_WORLDCHECK_LOG then
                 print(string.format("WorldCheck [SUCCESS+]: WorldCheck complete. Every Time Attack medal in World %s is collected.", world))
             end
-            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Time Attack Medals/Medals Accessible").AvailableChestCount = 0
+            Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Time Attack Medals/Medals Accessible").AvailableChestCount = 0
             return true
         elseif accessibleMedals then
             if ENABLE_WORLDCHECK_LOG then
                 print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Time Attack medals are available in World %s.", world))
             end
-            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Time Attack Medals/Medals Accessible").AvailableChestCount = 1
+            Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Time Attack Medals/Medals Accessible").AvailableChestCount = 1
             return true
         else
             if ENABLE_WORLDCHECK_LOG then
                 print(string.format("WorldCheck [FAIL]: WorldCheck complete. Time Attack medals are NOT available in World %s.", world))
             end
-            Tracker:FindObjectForCode("@World Progress/Accessible " .. WORLDS[world] .. " Time Attack Medals/Medals Accessible").AvailableChestCount = 1
+            Tracker:FindObjectForCode(variant .. "/Accessible " .. WORLDS[world] .. " Time Attack Medals/Medals Accessible").AvailableChestCount = 1
             return false
         end
     end

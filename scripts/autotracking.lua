@@ -58,6 +58,7 @@ SetLetterStatus("kReq8", "letters_8")
 SetPuzzleStatus()
 SetItemStatus("Button")
 SetItemStatus("Shard")
+SetItemStatus("Orb")
 SetSquawks()
 
 -- Sets global values used by logic.lua.

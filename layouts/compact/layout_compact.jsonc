@@ -33,15 +33,10 @@
                         "type": "array",
                         "dock": "bottom",
                         "orientation": "horizontal",
-                        "h_alignment": "center",
                         "content": [
                             {
                                 "type": "layout",
-                                "key": "items_compact_left"
-                            },
-                            {
-                                "type": "layout",
-                                "key": "items_compact_right"
+                                "key": "items_compact"
                             }
                         ]
                     }

@@ -21,6 +21,9 @@ ScriptHost:AddWatchForCode("shardItemWatch", "mirror_shard", function () SetItem
 ScriptHost:AddWatchForCode("mirrorSettingWatch", "mirror_mode_setting", function () SetItemStatus("Shard") end)
 -- Watch Feathery Companion setting.
 ScriptHost:AddWatchForCode("fcSettingWatch", "fc_setting", function () SetSquawks() end)
+-- Watch Rare Orb item and setting.
+ScriptHost:AddWatchForCode("orbItemWatch", "rare_orb", function () SetItemStatus("Orb") end)
+ScriptHost:AddWatchForCode("orbSettingWatch", "orbs_setting", function () SetItemStatus("Orb") end)
 
 -- MARK: Letters
 function SetLetterStatus(settingCode, letterCode)
@@ -132,6 +135,7 @@ function SetItemStatus(itemType)
         print(string.format("\nSetItemStatus: Called for %s.", itemType))
     end
 
+
     local itemReq, itemAmount, mirrorEnabled
     if (itemType == "Button") then
         itemReq = Tracker:FindObjectForCode("factory_button_setting")
@@ -141,13 +145,18 @@ function SetItemStatus(itemType)
         itemReq = Tracker:FindObjectForCode("mirror_shards_setting")
         itemAmount = Tracker:FindObjectForCode("mirror_shard")
         mirrorEnabled = Tracker:FindObjectForCode("mirror_mode_setting")
+    elseif (itemType == "Orb") then
+        itemReq = Tracker:FindObjectForCode("orbs_setting")
+        itemAmount = Tracker:FindObjectForCode("rare_orb")
+        mirrorEnabled = true
     end
 
     if itemReq and itemAmount and mirrorEnabled then
 
+        -- End early for shards if mm is disabled
         if (itemType == "Shard" and mirrorEnabled.CurrentStage == 0) then
             if ENABLE_ITEMSTATUS_LOG then
-                print(string.format("SetItemStatus: Mirror mode not enabled. Setting shards to 0 and ending early."))
+                print(string.format("SetItemStatus: Mirror Mode not enabled. Setting shards to 0 and ending early."))
             end
             itemAmount.MaxCount = 0
             itemAmount.BadgeText = "0"
@@ -156,12 +165,31 @@ function SetItemStatus(itemType)
             return
         end
 
-        itemAmount.MaxCount = itemReq.AcquiredCount
-        if itemReq.AcquiredCount == 0 then
+        -- Set Orb icon
+        if (itemType == "Orb") then
+            local quantity = itemAmount.AcquiredCount
+            if quantity == 1 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_1.png")
+            elseif quantity == 2 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_2.png")
+            elseif quantity == 3 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_3.png")
+            elseif quantity == 4 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_4.png")
+            elseif quantity == 5 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_5.png")
+            elseif quantity == 6 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_6.png")
+            elseif quantity == 7 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_7.png")
+            elseif quantity == 8 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_8.png")
+            end
+        end
+
+        local max
+        if (itemType == "Button" or itemType == "Shard") then max = itemReq.AcquiredCount
+        elseif (itemType == "Orb") then max = itemReq.CurrentStage
+        end
+        itemAmount.MaxCount = max
+
+        if max == 0 then
             itemAmount.BadgeText = "0"
             itemAmount.BadgeTextColor = "#1fff1f"
             itemAmount.Active = true
-        elseif itemAmount.AcquiredCount < itemReq.AcquiredCount then
+        elseif itemAmount.AcquiredCount < max then
             itemAmount.BadgeTextColor = "#ffffff"
             if itemAmount.AcquiredCount == 0 then
                 itemAmount.Active = false
@@ -170,10 +198,10 @@ function SetItemStatus(itemType)
             itemAmount.BadgeTextColor = "#1fff1f"
         end
         if ENABLE_ITEMSTATUS_LOG then
-            print(string.format("SetItemStatus: Set MaxCount for Factory Buttons to %s", itemReq.AcquiredCount))
+            print(string.format("SetItemStatus: Set MaxCount for %s to %s", itemType, max))
         end
 
     elseif ENABLE_DEBUG_LOG then
-        print(string.format("\nWARNING: SetItemStatus failed check nil for itemReq = %s, itemAmount = %s\n", itemReq, itemAmount))
+        print(string.format("WARNING: SetItemStatus failed check nil.\n\titemReq = %s\n\titemAmount = %s", itemReq, itemAmount))
     end
 end
