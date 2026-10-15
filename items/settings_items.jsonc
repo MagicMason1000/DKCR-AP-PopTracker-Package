@@ -168,7 +168,7 @@
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
-		"initial_stage_idx": 0,
+		"initial_stage_idx": 9, // Max orbs
         "stages": [
             {
                 "name": "0 Rare Orbs Required",
@@ -404,7 +404,7 @@
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
-		"initial_stage_idx": 0, // False
+		"initial_stage_idx": 1, // True
         "stages": [
             {
                 "name": "Randomized Jungle Key Disabled",
@@ -425,7 +425,7 @@
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
-		"initial_stage_idx": 0, // False
+		"initial_stage_idx": 1, // True
         "stages": [
             {
                 "name": "Randomized Beach Key Disabled",
@@ -446,7 +446,7 @@
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
-		"initial_stage_idx": 0, // False
+		"initial_stage_idx": 1, // True
         "stages": [
             {
                 "name": "Randomized Ruins Key Disabled",
@@ -467,7 +467,7 @@
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
-		"initial_stage_idx": 0, // False
+		"initial_stage_idx": 1, // True
         "stages": [
             {
                 "name": "Randomized Cave Key Disabled",
@@ -488,7 +488,7 @@
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
-		"initial_stage_idx": 0, // False
+		"initial_stage_idx": 1, // True
         "stages": [
             {
                 "name": "Randomized Forest Key Disabled",
@@ -509,7 +509,7 @@
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
-		"initial_stage_idx": 0, // False
+		"initial_stage_idx": 1, // True
         "stages": [
             {
                 "name": "Randomized Cliff Key Disabled",
@@ -530,7 +530,7 @@
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
-		"initial_stage_idx": 0, // False
+		"initial_stage_idx": 1, // True
         "stages": [
             {
                 "name": "Randomized Factory Key Disabled",
@@ -551,7 +551,7 @@
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
-		"initial_stage_idx": 0, // False
+		"initial_stage_idx": 1, // True
         "stages": [
             {
                 "name": "Randomized Volcano Key Disabled",
@@ -573,7 +573,7 @@
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
-		"initial_stage_idx": 0, // False
+		"initial_stage_idx": 1, // True
         "stages": [
             {
                 "name": "Smog Clear Disabled",
@@ -594,7 +594,7 @@
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
-		"initial_stage_idx": 0, // False
+		"initial_stage_idx": 1, // True
         "stages": [
             {
                 "name": "7-R Required Disabled",
@@ -615,7 +615,8 @@
         "type": "consumable",
         "img": "images/settings/misc/setting_factory_button.png",
         "codes": "factory_button_setting",
-        "max_quantity": 15
+        "max_quantity": 15,
+        "initial_quantity": 3
     },
     {
         "name": "Feathery Companion",
