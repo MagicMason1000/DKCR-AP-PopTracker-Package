@@ -114,6 +114,17 @@ function apply_slot_data(slot_data)
 		print(string.format("WARNING: apply_slot_data failed check nil.\n\tclearNormalObj = %s\n\tslot_data[\"level_clear_type_resolved\"][\"Normal\"] = %s", clearNormalObj, slot_data["level_clear_type_resolved"]["Normal"]))
 	end
 
+	-- Puzzle Pieces enabled setting
+	local ppSettingObj = Tracker:FindObjectForCode("pp_setting")
+	if ppSettingObj and slot_data["puzzle_pieces"] then
+		ppSettingObj.CurrentStage = slot_data["puzzle_pieces"]
+		if ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: Puzzle Pieces enabled setting set to %s (%s)", slot_data["puzzle_pieces"], abled[1 + slot_data["puzzle_pieces"]]))
+		end
+	elseif ENABLE_DEBUG_LOG then
+		print(string.format("WARNING: apply_slot_data failed check nil for Puzzle Pieces enabled setting.\n\tppSettingObj = %s\n\tslot_data[\"puzzle_pieces\"] = %s", ppSettingObj, slot_data["puzzle_pieces"]))
+	end
+
 	-- Puzzle Piece Boss Requirement settings
 	local ppReqs = {
 		slot_data["jungle_boss_access"],
@@ -135,6 +146,17 @@ function apply_slot_data(slot_data)
 		elseif ENABLE_DEBUG_LOG then
 			print(string.format("WARNING: apply_slot_data failed check nil for boss pp reqs.\n\tppReqObj = %s\n\tworld = %s\n\tppReqs[world] = %s", ppReqObj, world, ppReqs[world]))
 		end
+	end
+
+	-- Puzzle Pieces enabled setting
+	local kSettingObj = Tracker:FindObjectForCode("kong_setting")
+	if kSettingObj and slot_data["kong_letter"] then
+		kSettingObj.CurrentStage = slot_data["kong_letter"]
+		if ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: KONG Letters enabled setting set to %s (%s)", slot_data["kong_letter"], abled[1 + slot_data["kong_letter"]]))
+		end
+	elseif ENABLE_DEBUG_LOG then
+		print(string.format("WARNING: apply_slot_data failed check nil for Puzzle Pieces enabled setting.\n\tkSettingObj = %s\n\tslot_data[\"kong_letter\"] = %s", kSettingObj, slot_data["kong_letter"]))
 	end
 
 	-- K Level Letter Requirement settings
@@ -229,7 +251,6 @@ function apply_slot_data(slot_data)
 		print(string.format("WARNING: apply_slot_data failed check nil for Mirror Shards setting.\n\tmmShardObj = %s\n\tslot_data[\"mirror_mode_shards\"] = %s", mmShardObj, slot_data["mirror_mode_shards"]))
 	end
 	
-
 	-- Golden Temple Enabled setting
 	local gtObj = Tracker:FindObjectForCode("golden_temple_setting")
 	if gtObj and slot_data["golden_temple"] then
@@ -287,8 +308,20 @@ function apply_slot_data(slot_data)
 	elseif ENABLE_DEBUG_LOG then
 		print(string.format("WARNING: apply_slot_data failed check nil for Factory Button setting.\n\tbuttonSetObj = %s\n\tbuttonItemObj = %s\n\tslot_data[\"factory_buttons\"] = %s", buttonSettObj, buttonItemObj, slot_data["factory_buttons"]))
 	end
+	
+	-- Feathery Companion setting
+	local fcObj = Tracker:FindObjectForCode("fc_setting")
+	if fcObj and slot_data["squawks"] then
+		fcObj.CurrentStage = slot_data["squawks"]
+		if ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: Golden Temple enabled setting set to %s (%s)", slot_data["squawks"], abled[1 + slot_data["squawks"]]))
+		end
+	elseif ENABLE_DEBUG_LOG then
+		print(string.format("WARNING: apply_slot_data failed check nil for Golden Temple setting.\n\tfcObj = %s\n\tslot_data[\"squawks\"] = %s", fcObj, slot_data["squawks"]))
+	end
 end
 
+-- MARK: onClear
 -- called right after an AP slot is connected
 function onClear(slot_data)
 	-- use bulk update to pause logic updates until we are done resetting all items/locations
