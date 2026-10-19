@@ -12,6 +12,7 @@ ENABLE_LOLCHECK_LOG    = ENABLE_DEBUG_LOG and false
 ENABLE_LETTERSTATUS_LOG = ENABLE_DEBUG_LOG and false
 ENABLE_PUZZLESTATUS_LOG = ENABLE_DEBUG_LOG and false
 ENABLE_ITEMSTATUS_LOG   = ENABLE_DEBUG_LOG and false
+ENABLE_SETICON_LOG      = ENABLE_DEBUG_LOG and false
 
 -------------------------------------------------------
 print("")
@@ -34,6 +35,7 @@ if ENABLE_DEBUG_LOG then
     print(string.format("Enable SetLetterStatus Logging:\t%s", ENABLE_LETTERSTATUS_LOG))
     print(string.format("Enable SetPuzzleStatus Logging:\t%s", ENABLE_PUZZLESTATUS_LOG))
     print(string.format("Enable SetItemStatus Logging:\t%s", ENABLE_ITEMSTATUS_LOG))
+    print(string.format("Enable SetIcon Logging:\t\t%s", ENABLE_SETICON_LOG))
 end
 print("---------------------------------------------------------------------")
 print("")

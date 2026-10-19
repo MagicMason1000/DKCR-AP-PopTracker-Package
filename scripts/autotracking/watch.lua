@@ -22,8 +22,12 @@ ScriptHost:AddWatchForCode("mirrorSettingWatch", "mirror_mode_setting", function
 -- Watch Feathery Companion setting.
 ScriptHost:AddWatchForCode("fcSettingWatch", "fc_setting", function () SetSquawks() end)
 -- Watch Rare Orb item and setting.
-ScriptHost:AddWatchForCode("orbItemWatch", "rare_orb", function () SetItemStatus("Orb") end)
-ScriptHost:AddWatchForCode("orbSettingWatch", "orbs_setting", function () SetItemStatus("Orb") end)
+ScriptHost:AddWatchForCode("orbItemWatch1", "rare_orb", function () SetItemStatus("Orb") end)
+ScriptHost:AddWatchForCode("orbItemWatch2", "rare_orb", function () SetIcon("Orb") end)
+ScriptHost:AddWatchForCode("orbSettingWatch1", "orbs_setting", function () SetItemStatus("Orb") end)
+ScriptHost:AddWatchForCode("orbSettingWatch2", "orbs_setting", function () SetIcon("Orb") end)
+-- Watch Progressive Boss Unlock item.
+ScriptHost:AddWatchForCode("bossUnlockWatch", "boss_unlock", function () SetIcon("Boss Unlock") end)
 
 -- MARK: Letters
 function SetLetterStatus(settingCode, letterCode)
@@ -135,7 +139,6 @@ function SetItemStatus(itemType)
         print(string.format("\nSetItemStatus: Called for %s.", itemType))
     end
 
-
     local itemReq, itemAmount, mirrorEnabled
     if (itemType == "Button") then
         itemReq = Tracker:FindObjectForCode("factory_button_setting")
@@ -165,20 +168,6 @@ function SetItemStatus(itemType)
             return
         end
 
-        -- Set Orb icon
-        if (itemType == "Orb") then
-            local quantity = itemAmount.AcquiredCount
-            if quantity == 1 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_1.png")
-            elseif quantity == 2 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_2.png")
-            elseif quantity == 3 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_3.png")
-            elseif quantity == 4 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_4.png")
-            elseif quantity == 5 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_5.png")
-            elseif quantity == 6 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_6.png")
-            elseif quantity == 7 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_7.png")
-            elseif quantity == 8 then itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_8.png")
-            end
-        end
-
         local max
         if (itemType == "Button" or itemType == "Shard") then max = itemReq.AcquiredCount
         elseif (itemType == "Orb") then max = itemReq.CurrentStage
@@ -204,4 +193,51 @@ function SetItemStatus(itemType)
     elseif ENABLE_DEBUG_LOG then
         print(string.format("WARNING: SetItemStatus failed check nil.\n\titemReq = %s\n\titemAmount = %s", itemReq, itemAmount))
     end
+end
+
+function SetIcon(itemType)
+    if ENABLE_SETICON_LOG then
+        print(string.format("\nSetIcon: Called for %s.", itemType))
+    end
+
+    local itemObj
+    if (itemType == "Orb") then itemObj = Tracker:FindObjectForCode("rare_orb")
+    elseif (itemType == "Boss Unlock") then itemObj = Tracker:FindObjectForCode("boss_unlock")
+    end
+
+    if itemObj then
+
+        local quantity
+        if (itemType == "Orb") then
+            quantity = itemObj.AcquiredCount
+            if quantity == 1 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_1.png")
+            elseif quantity == 2 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_2.png")
+            elseif quantity == 3 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_3.png")
+            elseif quantity == 4 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_4.png")
+            elseif quantity == 5 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_5.png")
+            elseif quantity == 6 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_6.png")
+            elseif quantity == 7 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_7.png")
+            elseif quantity == 8 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_rare_orb_8.png")
+            end
+        elseif (itemType == "Boss Unlock") then
+            quantity = itemObj.AcquiredCount
+            if quantity == 1 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_boss_unlock_1.png")
+            elseif quantity == 2 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_boss_unlock_2.png")
+            elseif quantity == 3 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_boss_unlock_3.png")
+            elseif quantity == 4 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_boss_unlock_4.png")
+            elseif quantity == 5 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_boss_unlock_5.png")
+            elseif quantity == 6 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_boss_unlock_6.png")
+            elseif quantity == 7 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_boss_unlock_7.png")
+            elseif quantity == 8 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_boss_unlock_8.png")
+            end
+        end
+        if ENABLE_SETICON_LOG then
+            print(string.format("SetIcon: Set icon of %s to %s", itemType, quantity))
+        end
+
+    elseif ENABLE_DEBUG_LOG then
+        print(string.format("WARNING: SetIcon failed check nil.\n\titemObj = %s", itemObj))
+    end
+
+    
 end
