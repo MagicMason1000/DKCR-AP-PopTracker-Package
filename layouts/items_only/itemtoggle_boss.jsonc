@@ -1,0 +1,21 @@
+{
+    "unlockables": {
+        "background": "#1F1F1F",
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "item_size": 4,
+        "item_h_alignment": "center",
+        "h_alignment": "center",
+        "rows": [
+            [
+                "rare_orb",
+                "mirror_shard",
+                "factory_button",
+                "boss_unlock"
+            ],
+            [
+                "squawks"
+            ]
+        ]
+    }
+}

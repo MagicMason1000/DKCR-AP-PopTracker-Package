@@ -55,16 +55,40 @@ end
 -- Layouts
 Tracker:AddLayouts("layouts/world_map_tabs.jsonc")
 Tracker:AddLayouts("layouts/broadcast.jsonc")
-Tracker:AddLayouts("layouts/settings_layout.jsonc")
+Tracker:AddLayouts("layouts/settings.jsonc")
+
+function TogglePuzzleView(togglevariant) -- Switches what item appears in the Puzzle Piece slot based on tracker settings.
+    local settingState = Tracker:FindObjectForCode("pp_setting").CurrentStage
+    local paths = {
+        "layouts/standard/itemtoggle_boss.jsonc",
+        "layouts/standard/itemtoggle_pp.jsonc",
+        "layouts/compact/itemtoggle_boss.jsonc",
+        "layouts/compact/itemtoggle_pp.jsonc",
+        "layouts/io/itemtoggle_boss.jsonc",
+        "layouts/io/itemtoggle_pp.jsonc"
+    }
+    if settingState == 0 then -- Boss Unlocks
+        Tracker:AddLayouts(paths[togglevariant])
+    else -- Puzzle Pieces
+        Tracker:AddLayouts(paths[togglevariant + 1])
+    end
+end
+
 if variant == "standard" then
-    Tracker:AddLayouts("layouts/standard/layout_standard.jsonc")
-    Tracker:AddLayouts("layouts/standard/items_standard.jsonc")
+    Tracker:AddLayouts("layouts/standard/layout.jsonc")
+    Tracker:AddLayouts("layouts/standard/items.jsonc")
+    ScriptHost:AddWatchForCode("itemtoggle_pp_boss_standard", "pp_setting", function () TogglePuzzleView(1) end)
+    TogglePuzzleView(1)
 elseif variant == "compact" then
-    Tracker:AddLayouts("layouts/compact/layout_compact.jsonc")
-    Tracker:AddLayouts("layouts/compact/items_compact.jsonc")
+    Tracker:AddLayouts("layouts/compact/layout.jsonc")
+    Tracker:AddLayouts("layouts/compact/items.jsonc")
+    ScriptHost:AddWatchForCode("itemtoggle_pp_boss_compact", "pp_setting", function () TogglePuzzleView(3) end)
+    TogglePuzzleView(3)
 elseif variant == "items_only" then
-    Tracker:AddLayouts("layouts/items_only/items_io.jsonc")
-    Tracker:AddLayouts("layouts/items_only/layout_io.jsonc")
+    Tracker:AddLayouts("layouts/items_only/items.jsonc")
+    Tracker:AddLayouts("layouts/items_only/layout.jsonc")
+    ScriptHost:AddWatchForCode("itemtoggle_pp_boss_io", "pp_setting", function () TogglePuzzleView(5) end)
+    TogglePuzzleView(5)
 end
 
 -- AutoTracking for Poptracker

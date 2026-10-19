@@ -48,22 +48,9 @@
                         "type": "group",
                         "header": "Unlockables",
                         "content": {
-                            "background": "#1F1F1F",
-                            "type": "itemgrid",
-                            "item_margin": "10, 10",
-                            "item_size": 5,
-                            "h_alignment": "center",
-                            "rows": [
-                                [
-                                    "rare_orb",
-                                    "mirror_shard",
-                                    "factory_button",
-                                    "puzzle_piece"
-                                ],
-                                [
-                                    "squawks"
-                                ]
-                            ]
+                            "type": "layout",
+                            "v_alignment": "center",
+                            "key": "unlockables"
                         }
                     },
                     {

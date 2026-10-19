@@ -27,18 +27,11 @@
                         "type": "text",
                         "dock": "top",
                         "h_alignment": "center",
-                        "text": "Item Tracker"
+                        "text": "Item Tracker\n"
                     },
                     {
-                        "type": "array",
-                        "dock": "bottom",
-                        "orientation": "horizontal",
-                        "content": [
-                            {
-                                "type": "layout",
-                                "key": "items_compact"
-                            }
-                        ]
+                        "type": "layout",
+                        "key": "items_compact"
                     }
                 ]
             },

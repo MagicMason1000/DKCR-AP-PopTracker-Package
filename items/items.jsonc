@@ -153,6 +153,14 @@
         "codes": "letters_8",
         "max_quantity": 28
     },
+    // MARK: Unlockables
+    {
+        "name": "Progressive Boss Level Unlock",
+        "type": "consumable",
+        "img": "images/items/item_boss_unlock_1.png",
+        "codes": "boss_unlock",
+        "max_quantity": 8
+    },
     {
         "name": "Rare Orbs",
         "type": "consumable",
