@@ -16,7 +16,7 @@ function WorldCheck(world, checkType)
     world = tonumber(world)
     checkType = tonumber(checkType)
     
-    local progressVariant = ""
+    local progressVariant
     if VARIANT == "standard" then
         progressVariant = "@World Progress"
     elseif VARIANT == "compact" then
