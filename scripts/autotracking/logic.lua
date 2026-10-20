@@ -282,7 +282,7 @@ function WorldCheck(world, checkType)
     end
 
     if ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: WorldCheck reached end of function without a proper checkType value. checkType was %s", checkType))
+        print(string.format("\27[1;33mWARNING:\27[0m WorldCheck reached end of function without a proper checkType value. checkType was %s", checkType))
     end
     return false
 end
@@ -324,12 +324,12 @@ function BossCheck(world)
                 return true
             end
         elseif ENABLE_DEBUG_LOG then
-            print(string.format("WARNING: BossCheck reached end of loop. World was %s, i was %s, bossReqs[i] was %s.", world, i, bossReqs[i]))
+            print(string.format("\27[1;33mWARNING:\27[0m BossCheck reached end of loop. World was %s, i was %s, bossReqs[i] was %s.", world, i, bossReqs[i]))
         end
     end
 
     if ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: BossCheck reached end of function without a proper return. World was %s, pp was %s.", world, pp))
+        print(string.format("\27[1;33mWARNING:\27[0m BossCheck reached end of function without a proper return. World was %s, pp was %s.", world, pp))
     end
     return false
 end
@@ -367,7 +367,7 @@ function LetterCheck(world)
     end
     
     if ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: LetterCheck reached end of function without a proper return. World was %s, letters was %s.", world, letters))
+        print(string.format("\27[1;33mWARNING:\27[0m LetterCheck reached end of function without a proper return. World was %s, letters was %s.", world, letters))
     end
     return false
 end
@@ -400,12 +400,12 @@ function ShardCheck()
         end
         return true
     elseif ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: ShardCheck had an invalid comparison. shardCount was %s, shardReq was %s.", shardCount, shardReq))
+        print(string.format("\27[1;33mWARNING:\27[0m ShardCheck had an invalid comparison. shardCount was %s, shardReq was %s.", shardCount, shardReq))
         return false
     end
 
     if ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: ShardCheck reached end of function without a proper return. shardCount was %s, shardReq was %s.", shardCount, shardReq))
+        print(string.format("\27[1;33mWARNING:\27[0m ShardCheck reached end of function without a proper return. shardCount was %s, shardReq was %s.", shardCount, shardReq))
     end
     return false
 end
@@ -453,12 +453,12 @@ function OrbCheck()
         end
         return true
     elseif ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: OrbCheck had an invalid comparison. Count was %s, orbReq was %s.", count, orbReq))
+        print(string.format("\27[1;33mWARNING:\27[0m OrbCheck had an invalid comparison. Count was %s, orbReq was %s.", count, orbReq))
         return false
     end
 
     if ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: OrbCheck reached end of function without a proper return. orbReq was %s.", orbReq))
+        print(string.format("\27[1;33mWARNING:\27[0m OrbCheck reached end of function without a proper return. orbReq was %s.", orbReq))
     end
     return false
 end
@@ -491,17 +491,17 @@ function SmogCheck(smogLog)
             return true
         else
             if ENABLE_DEBUG_LOG then
-                print(string.format("WARNING: SmogCheck had an invalid comparison where ffClear = %s", ffClear))
+                print(string.format("\27[1;33mWARNING:\27[0m SmogCheck had an invalid comparison where ffClear = %s", ffClear))
             end
             return false
         end
     elseif ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: SmogCheck could not find object. ffClear = %s", ffClear))
+        print(string.format("\27[1;33mWARNING:\27[0m SmogCheck could not find object. ffClear = %s", ffClear))
         return false
     end
 
     if ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: SmogCheck reached end of function without a proper return. ffClear was %s", ffClear))
+        print(string.format("\27[1;33mWARNING:\27[0m SmogCheck reached end of function without a proper return. ffClear was %s", ffClear))
     end
     return false
 end
@@ -534,16 +534,16 @@ function ButtonCheck(buttonLog)
             end
             return true
         elseif ENABLE_DEBUG_LOG then
-            print(string.format("WARNING: ButtonCheck had an invalid comparison. buttonReq was %s, buttonAmount was %s", buttonReq, buttonAmount))
+            print(string.format("\27[1;33mWARNING:\27[0m ButtonCheck had an invalid comparison. buttonReq was %s, buttonAmount was %s", buttonReq, buttonAmount))
             return false
         end
     elseif ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: ButtonCheck could not find object. buttonReq = %s, buttonAmount = %s", buttonReq, buttonAmount))
+        print(string.format("\27[1;33mWARNING:\27[0m ButtonCheck could not find object. buttonReq = %s, buttonAmount = %s", buttonReq, buttonAmount))
         return false
     end
     
     if ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: ButtonCheck reached end of function without a proper return. buttonReq was %s", buttonReq))
+        print(string.format("\27[1;33mWARNING:\27[0m ButtonCheck reached end of function without a proper return. buttonReq was %s", buttonReq))
     end
     return false
 end
@@ -576,17 +576,17 @@ function LolCheck(lolLog)
             return true
         else
             if ENABLE_DEBUG_LOG then
-                print(string.format("WARNING: LolCheck had an invalid comparison where lolClear = %s", lolClear))
+                print(string.format("\27[1;33mWARNING:\27[0m LolCheck had an invalid comparison where lolClear = %s", lolClear))
             end
             return false
         end
     elseif ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: LolCheck could not find object. lolClear = %s", lolClear))
+        print(string.format("\27[1;33mWARNING:\27[0m LolCheck could not find object. lolClear = %s", lolClear))
         return false
     end
 
     if ENABLE_DEBUG_LOG then
-        print(string.format("WARNING: LolCheck reached end of function without a proper return. lolClear was %s", lolClear))
+        print(string.format("\27[1;33mWARNING:\27[0m LolCheck reached end of function without a proper return. lolClear was %s", lolClear))
     end
     return false
 end

@@ -1,43 +1,82 @@
-local jungle <const>, beach <const>, ruins <const>, cave <const>, forest <const>, cliff <const>, factory <const>, volcano <const>, temple <const> = 0x100, 0x200, 0x300, 0x400, 0x500, 0x600, 0x700, 0x800, 0x900
-local collectables <const>, key <const>, orb <const>, ability <const>, unlock <const>, shop <const>, filler <const> = 0x1000, 0x2000, 0x3000, 0x4000, 0x5000, 0x6000, 0x10000
+-- This links the addresses of the item on the server side to the item on the poptracker side. These constant tables define the addresses.
+local itemType <const> = {
+	Collectables = 0x1000,
+	Key = 0x2000,
+	Orb = 0x3000,
+	Ability = 0x4000,
+	Unlock = 0x5000,
+	Shop = 0x6000,
+	Filler = 0x10000
+}
 
+local item <const> = {
+	PuzzlePiece = 0x1,
+	KONGLetter = 0x2,
+	MirrorShard = 0x1,
+	MirrorModeUnlock = 0x2,
+	FactoryButton = 0x3,
+	BossUnlock = 0x4,
+	Squawks = 0x1,
+	Balloonx1 = 0x1,
+	Balloonx3 = 0x2,
+	Balloonx7 = 0x3,
+	Banana = 0x4,
+	BananaBunch = 0x5,
+	BigBananaBunch = 0x6,
+	Coin = 0x7,
+	Heart = 0x8,
+}
+
+local world <const> = {
+	Jungle = 0x100,
+	Beach = 0x200,
+	Ruins = 0x300,
+	Cave = 0x400,
+	Forest = 0x500,
+	Cliff = 0x600,
+	Factory = 0x700,
+	Volcano = 0x800,
+	GoldenTemple = 0x900
+}
+
+-- MARK: Items
 ITEM_MAPPING = {
-	[collectables + 0x1] = { { "puzzle_piece" } },
-	[collectables + jungle + 0x2]  = { { "letters_1" } },
-	[collectables + beach + 0x2]   = { { "letters_2" } },
-	[collectables + ruins + 0x2]   = { { "letters_3" } },
-	[collectables + cave + 0x2]    = { { "letters_4" } },
-	[collectables + forest + 0x2]  = { { "letters_5" } },
-	[collectables + cliff + 0x2]   = { { "letters_6" } },
-	[collectables + factory + 0x2] = { { "letters_7" } },
-	[collectables + volcano + 0x2] = { { "letters_8" } },
+	[itemType.Collectables + item.PuzzlePiece] = { { "puzzle_piece" } },
+	[itemType.Collectables + item.KONGLetter + world.Jungle]  = { { "letters_1" } },
+	[itemType.Collectables + item.KONGLetter + world.Beach]   = { { "letters_2" } },
+	[itemType.Collectables + item.KONGLetter + world.Ruins]   = { { "letters_3" } },
+	[itemType.Collectables + item.KONGLetter + world.Cave]    = { { "letters_4" } },
+	[itemType.Collectables + item.KONGLetter + world.Forest]  = { { "letters_5" } },
+	[itemType.Collectables + item.KONGLetter + world.Cliff]   = { { "letters_6" } },
+	[itemType.Collectables + item.KONGLetter + world.Factory] = { { "letters_7" } },
+	[itemType.Collectables + item.KONGLetter + world.Volcano] = { { "letters_8" } },
 
-	[key + jungle]  = { { "key_1" } },
-	[key + beach]   = { { "key_2" } },
-	[key + ruins]   = { { "key_3" } },
-	[key + cave]    = { { "key_4" } },
-	[key + forest]  = { { "key_5" } },
-	[key + cliff]   = { { "key_6" } },
-	[key + factory] = { { "key_7" } },
-	[key + volcano] = { { "key_8" } },
+	[itemType.Key + world.Jungle]  = { { "key_1" } },
+	[itemType.Key + world.Beach]   = { { "key_2" } },
+	[itemType.Key + world.Ruins]   = { { "key_3" } },
+	[itemType.Key + world.Cave]    = { { "key_4" } },
+	[itemType.Key + world.Forest]  = { { "key_5" } },
+	[itemType.Key + world.Cliff]   = { { "key_6" } },
+	[itemType.Key + world.Factory] = { { "key_7" } },
+	[itemType.Key + world.Volcano] = { { "key_8" } },
 	
-	[orb] = { { "rare_orb" } },
+	[itemType.Orb] = { { "rare_orb" } },
 	
 	-- Abilities and vehicles here
 	
-	[unlock + 0x1] = { { "mirror_shard" } },
-	[unlock + 0x2] = { { "mirror_mode_unlock" } },
-	[unlock + 0x3] = { { "factory_button" } },
-	[unlock + 0x4] = { { "progressive_boss_unlock" } },
+	[itemType.Unlock + item.MirrorShard] = { { "mirror_shard" } },
+	[itemType.Unlock + item.MirrorModeUnlock] = { { "mirror_mode_unlock" } },
+	[itemType.Unlock + item.FactoryButton] = { { "factory_button" } },
+	[itemType.Unlock + item.BossUnlock] = { { "boss_unlock" } },
 	
-	[shop + 0x1] = { { "squawks" } },
+	[itemType.Shop + item.Squawks] = { { "squawks" } },
 
-	[filler + 0x1] = { { "balloon" } },
-	[filler + 0x2] = { { "balloon", nil, 3 } },
-	[filler + 0x3] = { { "balloon", nil, 7 } },
-	[filler + 0x4] = { { "banana" } },
-	[filler + 0x5] = { { "banana", nil, 10 } },
-	[filler + 0x6] = { { "banana", nil, 25 } },
-	[filler + 0x7] = { { "coin" } },
-	[filler + 0x8] = { { "heart" } },
+	[itemType.Filler + item.Balloonx1] = { { "balloon" } },
+	[itemType.Filler + item.Balloonx3] = { { "balloon", nil, 3 } },
+	[itemType.Filler + item.Balloonx7] = { { "balloon", nil, 7 } },
+	[itemType.Filler + item.Banana] = { { "banana" } },
+	[itemType.Filler + item.BananaBunch] = { { "banana", nil, 10 } },
+	[itemType.Filler + item.BigBananaBunch] = { { "banana", nil, 25 } },
+	[itemType.Filler + item.Coin] = { { "coin" } },
+	[itemType.Filler + item.Heart] = { { "heart" } },
 }
