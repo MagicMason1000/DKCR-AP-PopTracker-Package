@@ -39,12 +39,20 @@ function WorldCheck(world, checkType)
     local numberedLevelsPerWorld = { 1, 9, 18, 26, 33, 43, 53, 62, 71, 72 } -- Total levels with each index indicating a new world. Used to index LEVELS properly.
 
     if (checkType == 1) then -- KONG Letters
-        if (world == 9) then -- end early if golden temple
-            if ENABLE_WORLDCHECK_LOG then
-                print("WorldCheck: Ending early as the Golden Temple does not have KONG Letters.")
-            end
+    
+        -- Checks to end early in certain situations
+        if (world == 9) then
+            if ENABLE_WORLDCHECK_LOG then print("WorldCheck: Ending early as the Golden Temple does not have KONG Letters.") end
             return false
         end
+        local kongSetting = Tracker:FindObjectForCode("kong_setting")
+        if (kongSetting and kongSetting.CurrentStage == 0) then -- end early if kongs disabled or golden temple
+            if ENABLE_WORLDCHECK_LOG then print("WorldCheck: Ending early as KONG Letters are disabled.") end
+            return false
+        elseif ENABLE_DEBUG_LOG then
+            print(string.format("\27[1;31mERROR:\27[0m WorldCheck failed check nil.\n\tkongSetting = %s", kongSetting))
+        end
+
         local access
         local accessibleLetters = false
         local countdown = ((totalLevelsPerWorld[world] - 2) * 4)
@@ -89,6 +97,13 @@ function WorldCheck(world, checkType)
     end
 
     if (checkType == 2) then -- PUZZLE PIECES
+        local ppSetting = Tracker:FindObjectForCode("pp_setting")
+        if ppSetting and ppSetting.CurrentStage == 0 then
+            if ENABLE_WORLDCHECK_LOG then print("WorldCheck: Ending early as Puzzle Pieces are disabled.") end
+            return false
+        elseif ENABLE_DEBUG_LOG then print(string.format("\27[1;31mERROR:\27[0m WorldCheck failed check nil.\n\tppSetting = %s", ppSetting))
+        end
+    
         local totalPP = { 41, 44, 47, 30, 57, 55, 50, 42, 5 }
         local accessiblePP = false
         local countdown = totalPP[world]
@@ -289,49 +304,72 @@ end
 
 -- MARK: BossCheck
 function BossCheck(world)
+    world = tonumber(world)
     if ENABLE_BOSSCHECK_LOG then
         print("")
         print(string.format("BossCheck: Called with world = %s", world))
     end
     
-    world = tonumber(world)
-    local pp = Tracker:FindObjectForCode("puzzle_piece").AcquiredCount
-    local bossReqs = {
-        Tracker:FindObjectForCode("bossreq1").AcquiredCount,
-        Tracker:FindObjectForCode("bossreq2").AcquiredCount,
-        Tracker:FindObjectForCode("bossreq3").AcquiredCount,
-        Tracker:FindObjectForCode("bossreq4").AcquiredCount,
-        Tracker:FindObjectForCode("bossreq5").AcquiredCount,
-        Tracker:FindObjectForCode("bossreq6").AcquiredCount,
-        Tracker:FindObjectForCode("bossreq7").AcquiredCount,
-        Tracker:FindObjectForCode("bossreq8").AcquiredCount
-    }
-    for i = 1, (world + 1) do
-        if (pp < bossReqs[i]) then
-            if ENABLE_BOSSCHECK_LOG then
-                print(string.format("BossCheck: World %s FAILED on World %s.", world, i))
-                print(string.format("BossCheck [FAIL]: Boss requirement NOT satisfied for world %s.", world))
+    local ppSetting = Tracker:FindObjectForCode("pp_setting")
+    if ppSetting then
+
+        if ppSetting.CurrentStage == 0 then -- Progressive Boss Level Unlocks
+            local bossUnlockObj = Tracker:FindObjectForCode("boss_unlock")
+            if bossUnlockObj then
+                if bossUnlockObj.AcquiredCount >= world then
+                    if ENABLE_BOSSCHECK_LOG then
+                        print(string.format("BossCheck [SUCCESS]: Boss requirement satisfied for world %s.", world))
+                    end
+                    return true
+                else
+                    if ENABLE_BOSSCHECK_LOG then
+                        print(string.format("BossCheck [FAIL]: Boss requirement NOT satisfied for world %s.", world))
+                    end
+                    return false
+                end
+            elseif ENABLE_DEBUG_LOG then print(string.format("\27[1;31mERROR:\27[0m BossCheck failed check nil.\n\tbossUnlockObj = %s", bossUnlockObj))
+            end
+        else -- Puzzle Pieces
+            local pp = Tracker:FindObjectForCode("puzzle_piece").AcquiredCount
+            local bossReqs = {
+                Tracker:FindObjectForCode("bossreq1").AcquiredCount,
+                Tracker:FindObjectForCode("bossreq2").AcquiredCount,
+                Tracker:FindObjectForCode("bossreq3").AcquiredCount,
+                Tracker:FindObjectForCode("bossreq4").AcquiredCount,
+                Tracker:FindObjectForCode("bossreq5").AcquiredCount,
+                Tracker:FindObjectForCode("bossreq6").AcquiredCount,
+                Tracker:FindObjectForCode("bossreq7").AcquiredCount,
+                Tracker:FindObjectForCode("bossreq8").AcquiredCount
+            }
+            for i = 1, (world + 1) do
+                if (pp < bossReqs[i]) then
+                    if ENABLE_BOSSCHECK_LOG then
+                        print(string.format("BossCheck: World %s FAILED on World %s.", world, i))
+                        print(string.format("BossCheck [FAIL]: Boss requirement NOT satisfied for world %s.", world))
+                    end
+                    return false
+                elseif (pp >= bossReqs[i]) then
+                    if ENABLE_DETAILED_DEBUG_LOG and ENABLE_BOSSCHECK_LOG then
+                        print(string.format("BossCheck: World %s SUCCEEDED on World %s.", world, i))
+                    end
+                    if i == world then
+                        if ENABLE_BOSSCHECK_LOG then
+                            print(string.format("BossCheck [SUCCESS]: Boss requirement satisfied for world %s.", world))
+                        end
+                        return true
+                    end
+                elseif ENABLE_DEBUG_LOG then
+                    print(string.format("\27[1;33mWARNING:\27[0m BossCheck reached end of loop. World was %s, i was %s, bossReqs[i] was %s.", world, i, bossReqs[i]))
+                end
+            end
+            if ENABLE_DEBUG_LOG then
+                print(string.format("\27[1;33mWARNING:\27[0m BossCheck reached end of function without a proper return.\n\tWorld = %s\n\tpp = %s", world, pp))
             end
             return false
-        elseif (pp >= bossReqs[i]) then
-            if ENABLE_DETAILED_DEBUG_LOG and ENABLE_BOSSCHECK_LOG then
-                print(string.format("BossCheck: World %s SUCCEEDED on World %s.", world, i))
-            end
-            if i == world then
-                if ENABLE_BOSSCHECK_LOG then
-                    print(string.format("BossCheck [SUCCESS]: Boss requirement satisfied for world %s.", world))
-                end
-                return true
-            end
-        elseif ENABLE_DEBUG_LOG then
-            print(string.format("\27[1;33mWARNING:\27[0m BossCheck reached end of loop. World was %s, i was %s, bossReqs[i] was %s.", world, i, bossReqs[i]))
         end
-    end
 
-    if ENABLE_DEBUG_LOG then
-        print(string.format("\27[1;33mWARNING:\27[0m BossCheck reached end of function without a proper return. World was %s, pp was %s.", world, pp))
+    elseif ENABLE_DEBUG_LOG then print(string.format("\27[1;31mERROR:\27[0m BossCheck failed check nil.\n\tppSetting = %s", ppSetting))
     end
-    return false
 end
 
 -- MARK: LetterCheck
