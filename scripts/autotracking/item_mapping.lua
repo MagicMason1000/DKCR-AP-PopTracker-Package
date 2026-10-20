@@ -65,7 +65,7 @@ ITEM_MAPPING = {
 	-- Abilities and vehicles here
 	
 	[itemType.Unlock + item.MirrorShard] = { { "mirror_shard" } },
-	[itemType.Unlock + item.MirrorModeUnlock] = { { "mirror_mode_unlock" } },
+	[itemType.Unlock + item.MirrorModeUnlock] = { { "mirror_shard" } },
 	[itemType.Unlock + item.FactoryButton] = { { "factory_button" } },
 	[itemType.Unlock + item.BossUnlock] = { { "boss_unlock" } },
 	

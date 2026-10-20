@@ -162,8 +162,7 @@ function SetItemStatus(itemType)
                 print(string.format("SetItemStatus: Mirror Mode not enabled. Setting shards to 0 and ending early."))
             end
             itemAmount.MaxCount = 0
-            itemAmount.BadgeText = "0"
-            itemAmount.BadgeTextColor = "#1fff1f"
+            itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/unlockable_mirror_mode_disabled.png")
             itemAmount.Active = true
             return
         end
@@ -174,7 +173,10 @@ function SetItemStatus(itemType)
         end
         itemAmount.MaxCount = max
 
-        if max == 0 then
+        if max == 0 and itemType == "Button" then
+            itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_factory_button_disabled.png")
+            itemAmount.Active = true
+        elseif max == 0 and not itemType == "Button" then
             itemAmount.BadgeText = "0"
             itemAmount.BadgeTextColor = "#1fff1f"
             itemAmount.Active = true
