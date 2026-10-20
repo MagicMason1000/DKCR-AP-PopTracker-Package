@@ -1,13 +1,13 @@
 ENABLE_DEBUG_LOG = true
 ENABLE_DETAILED_DEBUG_LOG = false
 IS_ITEMS_ONLY = false
-local variant
+VARIANT = ""
 if Tracker.ActiveVariantUID == "1" then
-    variant = "standard"
+    VARIANT = "standard"
 elseif Tracker.ActiveVariantUID == "2" then
-    variant = "compact"
+    VARIANT = "compact"
 else
-    variant = "items_only"
+    VARIANT = "items_only"
     IS_ITEMS_ONLY = true
 end
 
@@ -22,7 +22,7 @@ end
 if ENABLE_DETAILED_DEBUG_LOG then
     print("Detailed debug logging is enabled! This has more in-depth logs, but may be pretty spammy. You can change this in init.lua.")
 end
-print(string.format("Loaded variant: %s", variant))
+print(string.format("Loaded variant: %s", VARIANT))
 print("")
 
 -- Utility Script for helper functions etc.
@@ -45,7 +45,7 @@ if not IS_ITEMS_ONLY then -- optimize loading
     Tracker:AddLocations("locations/factory.jsonc")
     Tracker:AddLocations("locations/volcano.jsonc")
     Tracker:AddLocations("locations/golden_temple.jsonc")
-    if variant == "standard" then
+    if VARIANT == "standard" then
         Tracker:AddLocations("locations/world_progress.jsonc")
     else
         Tracker:AddLocations("locations/world_progress_compact.jsonc")
@@ -74,17 +74,17 @@ function TogglePuzzleView(togglevariant) -- Switches what item appears in the Pu
     end
 end
 
-if variant == "standard" then
+if VARIANT == "standard" then
     Tracker:AddLayouts("layouts/standard/layout.jsonc")
     Tracker:AddLayouts("layouts/standard/items.jsonc")
     ScriptHost:AddWatchForCode("itemtoggle_pp_boss_standard", "pp_setting", function () TogglePuzzleView(1) end)
     TogglePuzzleView(1)
-elseif variant == "compact" then
+elseif VARIANT == "compact" then
     Tracker:AddLayouts("layouts/compact/layout.jsonc")
     Tracker:AddLayouts("layouts/compact/items.jsonc")
     ScriptHost:AddWatchForCode("itemtoggle_pp_boss_compact", "pp_setting", function () TogglePuzzleView(3) end)
     TogglePuzzleView(3)
-elseif variant == "items_only" then
+elseif VARIANT == "items_only" then
     Tracker:AddLayouts("layouts/items_only/items.jsonc")
     Tracker:AddLayouts("layouts/items_only/layout.jsonc")
     ScriptHost:AddWatchForCode("itemtoggle_pp_boss_io", "pp_setting", function () TogglePuzzleView(5) end)
