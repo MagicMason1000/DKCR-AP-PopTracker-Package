@@ -176,7 +176,7 @@ function SetItemStatus(itemType)
         if max == 0 and itemType == "Button" then
             itemAmount.Icon = ImageReference:FromPackRelativePath("images/items/item_factory_button_disabled.png")
             itemAmount.Active = true
-        elseif max == 0 and not itemType == "Button" then
+        elseif (max == 0) and not (itemType == "Button") then
             itemAmount.BadgeText = "0"
             itemAmount.BadgeTextColor = "#1fff1f"
             itemAmount.Active = true
