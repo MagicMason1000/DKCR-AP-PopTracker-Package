@@ -1,6 +1,12 @@
 {
 	"versions": [
 		{
+			"package_version": "0.4.0",
+			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.4.0/dkcr_ap_tracker_v0.4.0.zip",
+			"sha256": "70f8df48531c210315373fe3f6227af082db012889c72cba6e493de4819a3f70",
+			"changelog": ["https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/tag/v0.4.0"]
+		},
+		{
 			"package_version": "0.3.2",
 			"download_url": "https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package/releases/download/v0.3.2/dkcr_ap_tracker_v0.3.2.zip",
 			"sha256": "8dbbefede86d94752a78233f4bf9a898cdbec63f76949da37b51a7b59a36bdb5",
