@@ -311,11 +311,12 @@ function apply_slot_data(slot_data)
 	local fcObj = Tracker:FindObjectForCode("fc_setting")
 	if fcObj and slot_data["squawks"] then
 		fcObj.CurrentStage = slot_data["squawks"]
+		SetSquawks() -- called from watch.lua
 		if ENABLE_DEBUG_LOG then
-			print(string.format("apply_slot_data: Golden Temple enabled setting set to %s (%s)", slot_data["squawks"], abled[1 + slot_data["squawks"]]))
+			print(string.format("apply_slot_data: Squawks enabled setting set to %s (%s)", slot_data["squawks"], abled[1 + slot_data["squawks"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Golden Temple setting.\n\tfcObj = %s\n\tslot_data[\"squawks\"] = %s", fcObj, slot_data["squawks"]))
+		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Squawks setting.\n\tfcObj = %s\n\tslot_data[\"squawks\"] = %s", fcObj, slot_data["squawks"]))
 	end
 end
 
