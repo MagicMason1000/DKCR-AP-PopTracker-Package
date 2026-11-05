@@ -9,7 +9,6 @@
 						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["kong_enabled"],
 						"access_rules": ["$WorldCheck|1|1"]
 					},
@@ -17,7 +16,6 @@
 						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["pp_enabled"],
 						"access_rules": ["$WorldCheck|1|2"]
 					}
@@ -39,7 +37,6 @@
 						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
-						"item_count": 1,
 						"access_rules": ["$WorldCheck|1|5"]
 					}
 				],
@@ -59,7 +56,6 @@
 						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
-						"item_count": 1,
 						"visibility_rules": ["normal_clears_enabled"],
 						"access_rules": ["$WorldCheck|1|3"]
 					},
@@ -67,9 +63,8 @@
 						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
-						"item_count": 1,
-						"access_rules": ["$WorldCheck|1|4"],
-						"visibility_rules": ["mirror_mode_enabled"]
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["$WorldCheck|1|4"]
 					}
 				],
 				"map_locations": [
@@ -89,7 +84,6 @@
 						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["kong_enabled"],
 						"access_rules": ["$WorldCheck|2|1"]
 					},
@@ -97,7 +91,6 @@
 						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["pp_enabled"],
 						"access_rules": ["$WorldCheck|2|2"]
 					}
@@ -119,7 +112,6 @@
 						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
-						"item_count": 1,
 						"access_rules": ["$WorldCheck|2|5"]
 					}
 				],
@@ -139,7 +131,6 @@
 						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
-						"item_count": 1,
 						"visibility_rules": ["normal_clears_enabled"],
 						"access_rules": ["$WorldCheck|2|3"]
 					},
@@ -147,9 +138,8 @@
 						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
-						"item_count": 1,
-						"access_rules": ["$WorldCheck|2|4"],
-						"visibility_rules": ["mirror_mode_enabled"]
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["$WorldCheck|2|4"]
 					}
 				],
 				"map_locations": [
@@ -169,7 +159,6 @@
 						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["kong_enabled"],
 						"access_rules": ["$WorldCheck|3|1"]
 					},
@@ -177,7 +166,6 @@
 						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["pp_enabled"],
 						"access_rules": ["$WorldCheck|3|2"]
 					}
@@ -199,7 +187,6 @@
 						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
-						"item_count": 1,
 						"access_rules": ["$WorldCheck|3|5"]
 					}
 				],
@@ -219,7 +206,6 @@
 						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
-						"item_count": 1,
 						"visibility_rules": ["normal_clears_enabled"],
 						"access_rules": ["$WorldCheck|3|3"]
 					},
@@ -227,9 +213,8 @@
 						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
-						"item_count": 1,
-						"access_rules": ["$WorldCheck|3|4"],
-						"visibility_rules": ["mirror_mode_enabled"]
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["$WorldCheck|3|4"]
 					}
 				],
 				"map_locations": [
@@ -249,7 +234,6 @@
 						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["kong_enabled"],
 						"access_rules": ["$WorldCheck|4|1"]
 					},
@@ -257,7 +241,6 @@
 						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["pp_enabled"],
 						"access_rules": ["$WorldCheck|4|2"]
 					}
@@ -279,7 +262,6 @@
 						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
-						"item_count": 1,
 						"access_rules": ["$WorldCheck|4|5"]
 					}
 				],
@@ -299,7 +281,6 @@
 						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
-						"item_count": 1,
 						"visibility_rules": ["normal_clears_enabled"],
 						"access_rules": ["$WorldCheck|4|3"]
 					},
@@ -307,9 +288,8 @@
 						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
-						"item_count": 1,
-						"access_rules": ["$WorldCheck|4|4"],
-						"visibility_rules": ["mirror_mode_enabled"]
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["$WorldCheck|4|4"]
 					}
 				],
 				"map_locations": [
@@ -329,7 +309,6 @@
 						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["kong_enabled"],
 						"access_rules": ["$WorldCheck|5|1"]
 					},
@@ -337,7 +316,6 @@
 						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["pp_enabled"],
 						"access_rules": ["$WorldCheck|5|2"]
 					}
@@ -359,7 +337,6 @@
 						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
-						"item_count": 1,
 						"access_rules": ["$WorldCheck|5|5"]
 					}
 				],
@@ -379,7 +356,6 @@
 						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
-						"item_count": 1,
 						"visibility_rules": ["normal_clears_enabled"],
 						"access_rules": ["$WorldCheck|5|3"]
 					},
@@ -387,9 +363,8 @@
 						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
-						"item_count": 1,
-						"access_rules": ["$WorldCheck|5|4"],
-						"visibility_rules": ["mirror_mode_enabled"]
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["$WorldCheck|5|4"]
 					}
 				],
 				"map_locations": [
@@ -409,7 +384,6 @@
 						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["kong_enabled"],
 						"access_rules": ["$WorldCheck|6|1"]
 					},
@@ -417,7 +391,6 @@
 						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["pp_enabled"],
 						"access_rules": ["$WorldCheck|6|2"]
 					}
@@ -439,7 +412,6 @@
 						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
-						"item_count": 1,
 						"access_rules": ["$WorldCheck|6|5"]
 					}
 				],
@@ -459,7 +431,6 @@
 						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
-						"item_count": 1,
 						"visibility_rules": ["normal_clears_enabled"],
 						"access_rules": ["$WorldCheck|6|3"]
 					},
@@ -467,9 +438,8 @@
 						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
-						"item_count": 1,
-						"access_rules": ["$WorldCheck|6|4"],
-						"visibility_rules": ["mirror_mode_enabled"]
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["$WorldCheck|6|4"]
 					}
 				],
 				"map_locations": [
@@ -489,7 +459,6 @@
 						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["kong_enabled"],
 						"access_rules": ["$WorldCheck|7|1"]
 					},
@@ -497,7 +466,6 @@
 						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["pp_enabled"],
 						"access_rules": ["$WorldCheck|7|2"]
 					}
@@ -519,7 +487,6 @@
 						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
-						"item_count": 1,
 						"access_rules": ["$WorldCheck|7|5"]
 					}
 				],
@@ -539,7 +506,6 @@
 						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
-						"item_count": 1,
 						"visibility_rules": ["normal_clears_enabled"],
 						"access_rules": ["$WorldCheck|7|3"]
 					},
@@ -547,9 +513,8 @@
 						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
-						"item_count": 1,
-						"access_rules": ["$WorldCheck|7|4"],
-						"visibility_rules": ["mirror_mode_enabled"]
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["$WorldCheck|7|4"]
 					}
 				],
 				"map_locations": [
@@ -569,7 +534,6 @@
 						"name": "KONG Letters Accessible",
 						"chest_unopened_img": "images/locations/collectible_kong_letter_set.png",
 						"chest_opened_img": "images/locations/collectible_kong_letter_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["kong_enabled"],
 						"access_rules": ["$WorldCheck|8|1"]
 					},
@@ -577,7 +541,6 @@
 						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["pp_enabled"],
 						"access_rules": ["$WorldCheck|8|2"]
 					}
@@ -599,7 +562,6 @@
 						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
-						"item_count": 1,
 						"access_rules": ["$WorldCheck|8|5"]
 					}
 				],
@@ -619,7 +581,6 @@
 						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
-						"item_count": 1,
 						"visibility_rules": ["normal_clears_enabled"],
 						"access_rules": ["$WorldCheck|8|3"]
 					},
@@ -627,9 +588,8 @@
 						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
-						"item_count": 1,
-						"access_rules": ["$WorldCheck|8|4"],
-						"visibility_rules": ["mirror_mode_enabled"]
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["$WorldCheck|8|4"]
 					}
 				],
 				"map_locations": [
@@ -650,7 +610,6 @@
 						"name": "Puzzle Pieces Accessible",
 						"chest_unopened_img": "images/locations/collectible_pp_set.png",
 						"chest_opened_img": "images/locations/collectible_pp_set_collected.png",
-						"item_count": 1,
 						"visibility_rules": ["pp_enabled"],
 						"access_rules": ["$WorldCheck|9|2"]
 					}
@@ -677,7 +636,6 @@
 						"name": "Medals Accessible",
 						"chest_unopened_img": "images/locations/ta.png",
 						"chest_opened_img": "images/locations/ta_completed.png",
-						"item_count": 1,
 						"access_rules": ["$WorldCheck|9|5"]
 					}
 				],
@@ -698,7 +656,6 @@
 						"name": "Level Completions Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
-						"item_count": 1,
 						"visibility_rules": ["normal_clears_enabled"],
 						"access_rules": ["$WorldCheck|9|3"]
 					},
@@ -706,9 +663,8 @@
 						"name": "Mirror Mode Completions Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
-						"item_count": 1,
-						"access_rules": ["$WorldCheck|9|4"],
-						"visibility_rules": ["mirror_mode_enabled"]
+						"visibility_rules": ["mirror_mode_enabled"],
+						"access_rules": ["$WorldCheck|9|4"]
 					}
 				],
 				"map_locations": [
