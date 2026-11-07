@@ -60,7 +60,7 @@ function SetLetterStatus(settingCode, letterCode)
         end
 
     elseif ENABLE_DEBUG_LOG then
-        print(string.format("\27[1;31mERROR:\27[0m SetLetterStatus failed check nil for letterReq = %s, letterAmount = %s\n", letterReq, letterAmount))
+        print(string.format(ERROR .. "SetLetterStatus failed check nil for letterReq = %s, letterAmount = %s\n", letterReq, letterAmount))
     end
 end
 
@@ -80,7 +80,7 @@ function SetPuzzleStatus()
             end
         else
             if ENABLE_DEBUG_LOG then
-                print(string.format("\27[1;31mERROR:\27[0m SetPuzzleStatus failed check nil for world = %s, bossReqCode = %s\n", world, bossReqCode))
+                print(string.format(ERROR .. "SetPuzzleStatus failed check nil for world = %s, bossReqCode = %s\n", world, bossReqCode))
             end
             return
         end
@@ -112,7 +112,7 @@ function SetPuzzleStatus()
         end
 
     elseif ENABLE_DEBUG_LOG then
-        print(string.format("\27[1;31mERROR:\27[0m SetPuzzleStatus failed check nil for ppAmount = %s\n", ppAmount))
+        print(string.format(ERROR .. "SetPuzzleStatus failed check nil for ppAmount = %s\n", ppAmount))
     end
 end
 
@@ -129,7 +129,7 @@ function SetSquawks()
         end
 
     elseif ENABLE_DEBUG_LOG then
-        print(string.format("\27[1;31mERROR:\27[0m SetSquawks failed check nil.\n\tsettingObj = %s\n\tsquawksObj = %s", settingObj, squawksObj))
+        print(string.format(ERROR .. "SetSquawks failed check nil.\n\tsettingObj = %s\n\tsquawksObj = %s", settingObj, squawksObj))
     end
 end
 
@@ -193,7 +193,7 @@ function SetItemStatus(itemType)
         end
 
     elseif ENABLE_DEBUG_LOG then
-        print(string.format("\27[1;31mERROR:\27[0m SetItemStatus failed check nil.\n\titemReq = %s\n\titemAmount = %s", itemReq, itemAmount))
+        print(string.format(ERROR .. "SetItemStatus failed check nil.\n\titemReq = %s\n\titemAmount = %s", itemReq, itemAmount))
     end
 end
 
@@ -238,7 +238,7 @@ function SetIcon(itemType)
         end
 
     elseif ENABLE_DEBUG_LOG then
-        print(string.format("\27[1;31mERROR:\27[0m SetIcon failed check nil.\n\titemObj = %s", itemObj))
+        print(string.format(ERROR .. "SetIcon failed check nil.\n\titemObj = %s", itemObj))
     end
 
     

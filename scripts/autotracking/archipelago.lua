@@ -6,6 +6,7 @@
 -- if you run into issues when touching A LOT of items/locations here, see the comment about Tracker.AllowDeferredLogicUpdate in autotracking.lua
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+
 -- used for hint tracking to quickly map hint status to a value from the Highlight enum
 HINT_STATUS_MAPPING = {}
 if Highlight then
@@ -53,13 +54,13 @@ function resetItem(item_code, item_type)
 			print(string.format("resetItem: tried to reset static item %s", item_code))
 		elseif item_type == "composite_toggle" and ENABLE_DEBUG_LOG then
 			print(string.format(
-				"\27[1;33mWARNING:\27[0m resetItem tried to reset composite_toggle item %s but composite_toggle cannot be accessed via lua." ..
+				WARNING .. "resetItem tried to reset composite_toggle item %s but composite_toggle cannot be accessed via lua." ..
 				"Please use the respective left/right toggle item codes instead.", item_code))
 		elseif ENABLE_DEBUG_LOG then
-			print(string.format("\27[1;33mWARNING:\27[0m resetItem found unknown item type %s for code %s", item_type, item_code))
+			print(string.format(WARNING .. "resetItem found unknown item type %s for code %s", item_type, item_code))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;33mWARNING:\27[0m resetItem could not find item object for code %s", item_code))
+		print(string.format(WARNING .. "resetItem could not find item object for code %s", item_code))
 	end
 end
 
@@ -87,13 +88,13 @@ function incrementItem(item_code, item_type, multiplier)
 			print(string.format("incrementItem: tried to increment static item %s", item_code))
 		elseif item_type == "composite_toggle" and ENABLE_DEBUG_LOG then
 			print(string.format(
-				"\27[1;33mWARNING:\27[0m incrementItem tried to increment composite_toggle item %s but composite_toggle cannot be access via lua." ..
+				WARNING .. "incrementItem tried to increment composite_toggle item %s but composite_toggle cannot be access via lua." ..
 				"Please use the respective left/right toggle item codes instead.", item_code))
 		elseif ENABLE_DEBUG_LOG then
-			print(string.format("\27[1;33mWARNING:\27[0m incrementItem found unknown item type %s for code %s", item_type, item_code))
+			print(string.format(WARNING .. "incrementItem found unknown item type %s for code %s", item_type, item_code))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;33mWARNING:\27[0m incrementItem could not find object for code %s", item_code))
+		print(string.format(WARNING .. "incrementItem could not find object for code %s", item_code))
 	end
 end
 
@@ -109,7 +110,7 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: set Normal Clear setting to %s (%s)", slot_data["level_clear_type_resolved"]["Normal"], abled[1 + slot_data["level_clear_type_resolved"]["Normal"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Level Clear type settings.\n\tclearNormalObj = %s\n\tslot_data[\"level_clear_type_resolved\"][\"Normal\"] = %s", clearNormalObj, slot_data["level_clear_type_resolved"]["Normal"]))
+		print(string.format(ERROR .. "apply_slot_data failed check nil for Level Clear type settings.\n\tclearNormalObj = %s\n\tslot_data[\"level_clear_type_resolved\"][\"Normal\"] = %s", clearNormalObj, slot_data["level_clear_type_resolved"]["Normal"]))
 	end
 
 	-- Puzzle Pieces enabled setting
@@ -120,7 +121,7 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: Puzzle Pieces enabled setting set to %s (%s)", slot_data["puzzle_pieces"], abled[1 + slot_data["puzzle_pieces"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Puzzle Pieces enabled setting.\n\tppSettingObj = %s\n\tslot_data[\"puzzle_pieces\"] = %s", ppSettingObj, slot_data["puzzle_pieces"]))
+		print(string.format(ERROR .. "apply_slot_data failed check nil for Puzzle Pieces enabled setting.\n\tppSettingObj = %s\n\tslot_data[\"puzzle_pieces\"] = %s", ppSettingObj, slot_data["puzzle_pieces"]))
 	end
 
 	-- Puzzle Piece Boss Requirement settings
@@ -142,7 +143,7 @@ function apply_slot_data(slot_data)
 				print(string.format("apply_slot_data: set boss requirement for World %s to %s Puzzle Pieces", world, ppReqs[world]))
 			end
 		elseif ENABLE_DEBUG_LOG then
-			print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Puzzle Piece requirements.\n\tppReqObj = %s\n\tworld = %s\n\tppReqs[world] = %s", ppReqObj, world, ppReqs[world]))
+			print(string.format(ERROR .. "apply_slot_data failed check nil for Puzzle Piece requirements.\n\tppReqObj = %s\n\tworld = %s\n\tppReqs[world] = %s", ppReqObj, world, ppReqs[world]))
 		end
 	end
 
@@ -154,7 +155,7 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: KONG Letters enabled setting set to %s (%s)", slot_data["kong_letter"], abled[1 + slot_data["kong_letter"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Puzzle Pieces enabled setting.\n\tkSettingObj = %s\n\tslot_data[\"kong_letter\"] = %s", kSettingObj, slot_data["kong_letter"]))
+		print(string.format(ERROR .. "apply_slot_data failed check nil for Puzzle Pieces enabled setting.\n\tkSettingObj = %s\n\tslot_data[\"kong_letter\"] = %s", kSettingObj, slot_data["kong_letter"]))
 	end
 
 	-- K Level Letter Requirement settings
@@ -176,7 +177,7 @@ function apply_slot_data(slot_data)
 				print(string.format("apply_slot_data: set K Level requirement for World %s to %s KONG Letters", world, kReqs[world]))
 			end
 		elseif ENABLE_DEBUG_LOG then
-			print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for K Level reqs.\n\tkReqObj = %s\n\tworld = %s\n\tkReqs[world] = %s", kReqObj, world, kReqs[world]))
+			print(string.format(ERROR .. "apply_slot_data failed check nil for K Level reqs.\n\tkReqObj = %s\n\tworld = %s\n\tkReqs[world] = %s", kReqObj, world, kReqs[world]))
 		end
 	end
 
@@ -199,7 +200,7 @@ function apply_slot_data(slot_data)
 				print(string.format("apply_slot_data: set Randomized Map Key option for World %s to %s (%s)", world, keys[world], abled[1 + keys[world]]))
 			end
 		elseif ENABLE_DEBUG_LOG then
-			print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Map Key settings.\n\tkeyObj = %s\n\tworld = %s\n\tkeys[world] = %s", keyObj, world, keys[world]))
+			print(string.format(ERROR .. "apply_slot_data failed check nil for Map Key settings.\n\tkeyObj = %s\n\tworld = %s\n\tkeys[world] = %s", keyObj, world, keys[world]))
 		end
 	end
 
@@ -220,7 +221,7 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: set Time Attack Shiny Gold Medal setting to %s (%s)", slot_data["time_attack_resolved"]["Shiny Gold"], abled[1 + slot_data["time_attack_resolved"]["Shiny Gold"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Time Attack medals.\n\ttaBronzeObj = %s\n\ttaSilverObj = %s\n\ttaGoldObj = %s\n\ttaShinyGoldObj = %s", taBronzeObj, taSilverObj, taGoldObj, taShinyGoldObj))
+		print(string.format(ERROR .. "apply_slot_data failed check nil for Time Attack medals.\n\ttaBronzeObj = %s\n\ttaSilverObj = %s\n\ttaGoldObj = %s\n\ttaShinyGoldObj = %s", taBronzeObj, taSilverObj, taGoldObj, taShinyGoldObj))
 	end
 
 	-- Mirror Mode Enabled setting
@@ -231,7 +232,7 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: Mirror Mode enabled setting set to %s (%s)", slot_data["level_clear_type_resolved"]["Mirror Mode"], abled[1 + slot_data["level_clear_type_resolved"]["Mirror Mode"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Mirror Mode enabled setting.\n\tmmObj = %s\n\tslot_data[\"level_clear_type_resolved\"][\"Mirror Mode\"] = %s", mmObj, slot_data["level_clear_type_resolved"]["Mirror Mode"]))
+		print(string.format(ERROR .. "apply_slot_data failed check nil for Mirror Mode enabled setting.\n\tmmObj = %s\n\tslot_data[\"level_clear_type_resolved\"][\"Mirror Mode\"] = %s", mmObj, slot_data["level_clear_type_resolved"]["Mirror Mode"]))
 	end
 
 	-- Mirror Mode Shard Amount setting
@@ -246,7 +247,7 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: Mirror Mode unlock amount setting set to %s Mirror Shards", slot_data["mirror_mode_shards"]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Mirror Shards setting.\n\tmmShardObj = %s\n\tslot_data[\"mirror_mode_shards\"] = %s", mmShardObj, slot_data["mirror_mode_shards"]))
+		print(string.format(ERROR .. "apply_slot_data failed check nil for Mirror Shards setting.\n\tmmShardObj = %s\n\tslot_data[\"mirror_mode_shards\"] = %s", mmShardObj, slot_data["mirror_mode_shards"]))
 	end
 	
 	-- Golden Temple Enabled setting
@@ -257,7 +258,7 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: Golden Temple enabled setting set to %s (%s)", slot_data["golden_temple"], abled[1 + slot_data["golden_temple"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Golden Temple setting.\n\tgtObj = %s\n\tslot_data[\"golden_temple\"] = %s", gtObj, slot_data["golden_temple"]))
+		print(string.format(ERROR .. "apply_slot_data failed check nil for Golden Temple setting.\n\tgtObj = %s\n\tslot_data[\"golden_temple\"] = %s", gtObj, slot_data["golden_temple"]))
 	end
 
 	-- Rare Orbs Requirement setting
@@ -268,7 +269,7 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: Golden Temple Orb Requirement set to %s Rare Orbs", slot_data["rare_orbs"]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil on Rare Orb req setting.\n\torbReqObj = %s\n\tslot_data[\"rare_orbs\"] = %s", orbReqObj, slot_data["rare_orbs"]))
+		print(string.format(ERROR .. "apply_slot_data failed check nil on Rare Orb req setting.\n\torbReqObj = %s\n\tslot_data[\"rare_orbs\"] = %s", orbReqObj, slot_data["rare_orbs"]))
 	end
 
 	-- Smog Clear required setting
@@ -279,7 +280,7 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: Smog Clear required setting set to %s (%s)", slot_data["smog_clear"], abled[1 + slot_data["smog_clear"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Smog Clear setting.\n\tsmogObj = %s\n\tslot_data[\"smog_clear\"] = %s", smogObj, slot_data["smog_clear"]))
+		print(string.format(ERROR .. "apply_slot_data failed check nil for Smog Clear setting.\n\tsmogObj = %s\n\tslot_data[\"smog_clear\"] = %s", smogObj, slot_data["smog_clear"]))
 	end
 
 	-- 7-R Required setting
@@ -290,7 +291,7 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: 7-R Required setting set to %s (%s)", slot_data["lift_off_launch"], abled[1 + slot_data["lift_off_launch"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for 7-R setting.\n\tlolObj = %s\n\tslot_data[\"lift_off_launch\"] = %s", lolObj, slot_data["lift_off_launch"]))
+		print(string.format(ERROR .. "apply_slot_data failed check nil for 7-R setting.\n\tlolObj = %s\n\tslot_data[\"lift_off_launch\"] = %s", lolObj, slot_data["lift_off_launch"]))
 	end
 	
 	-- Factory Button Amount setting
@@ -304,7 +305,7 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: Factory Button max item amount set to %s", slot_data["factory_buttons"]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Factory Button setting.\n\tbuttonSetObj = %s\n\tbuttonItemObj = %s\n\tslot_data[\"factory_buttons\"] = %s", buttonSettObj, buttonItemObj, slot_data["factory_buttons"]))
+		print(string.format(ERROR .. "apply_slot_data failed check nil for Factory Button setting.\n\tbuttonSetObj = %s\n\tbuttonItemObj = %s\n\tslot_data[\"factory_buttons\"] = %s", buttonSettObj, buttonItemObj, slot_data["factory_buttons"]))
 	end
 	
 	-- Feathery Companion setting
@@ -316,7 +317,7 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: Squawks enabled setting set to %s (%s)", slot_data["squawks"], abled[1 + slot_data["squawks"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format("\27[1;31mERROR:\27[0m apply_slot_data failed check nil for Squawks setting.\n\tfcObj = %s\n\tslot_data[\"squawks\"] = %s", fcObj, slot_data["squawks"]))
+		print(string.format(ERROR .. "apply_slot_data failed check nil for Squawks setting.\n\tfcObj = %s\n\tslot_data[\"squawks\"] = %s", fcObj, slot_data["squawks"]))
 	end
 end
 
@@ -346,7 +347,7 @@ function onClear(slot_data)
 								obj.Highlight = Highlight.None
 							end
 						elseif ENABLE_DEBUG_LOG then
-							print(string.format("\27[1;33mWARNING:\27[0m onClear could not find location object for code %s", location_code))
+							print(string.format(WARNING .. "onClear could not find location object for code %s", location_code))
 						end
 					else
 						-- reset hosted item
@@ -410,7 +411,7 @@ function onItem(index, item_id, item_name, player_number)
 	local mapping_entry = ITEM_MAPPING[item_id]
 	if not mapping_entry then
 		if ENABLE_DEBUG_LOG then
-			print(string.format("\27[1;33mWARNING:\27[0m onItem could not find item mapping for id %s", item_id))
+			print(string.format(WARNING .. "onItem could not find item mapping for id %s", item_id))
 		end
 		return
 	end
@@ -459,7 +460,7 @@ function onLocation(location_id, location_name)
 	local mapping_entry = LOCATION_MAPPING[location_id]
 	if not mapping_entry then
 		if ENABLE_DEBUG_LOG then
-			print(string.format("\27[1;33mWARNING:\27[0m onLocation could not find location mapping for id %s", location_id))
+			print(string.format(WARNING .. "onLocation could not find location mapping for id %s", location_id))
 		end
 		return
 	end
@@ -477,7 +478,7 @@ function onLocation(location_id, location_name)
 						incrementItem(location_code, item_type)
 					end
 				elseif ENABLE_DEBUG_LOG then
-					print(string.format("\27[1;33mWARNING:\27[0m onLocation could not find object for code %s", location_code))
+					print(string.format(WARNING .. "onLocation could not find object for code %s", location_code))
 				end
 			elseif ENABLE_DEBUG_LOG then
 				print(string.format("onLocation: skipping location_table with no location_code"))
@@ -545,7 +546,7 @@ function updateHint(hint, sections_to_update)
 	end
 	if not highlight_code then
 		if ENABLE_DEBUG_LOG then
-			print(string.format("\27[1;33mWARNING:\27[0m updateHint found unknown hint status %s for hint on location id %s", hint.status,
+			print(string.format(WARNING .. "updateHint found unknown hint status %s for hint on location id %s", hint.status,
 				hint.location))
 		end
 		-- try to "recover" by checking hint.found (older AP versions without hint.status)
@@ -561,7 +562,7 @@ function updateHint(hint, sections_to_update)
 	local mapping_entry = LOCATION_MAPPING[hint.location]
 	if not mapping_entry then
 		if ENABLE_DEBUG_LOG then
-			print(string.format("\27[1;33mWARNING:\27[0m updateHint could not find location mapping for id %s", hint.location))
+			print(string.format(WARNING .. "updateHint could not find location mapping for id %s", hint.location))
 		end
 		return
 	end

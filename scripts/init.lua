@@ -1,5 +1,8 @@
-ENABLE_DEBUG_LOG = false
+ENABLE_DEBUG_LOG = true
 ENABLE_DETAILED_DEBUG_LOG = false
+ERROR = "\27[1;41;97mERROR:\27[0m "
+WARNING = "\27[1;33mWARNING:\27[0m "
+
 IS_ITEMS_ONLY = false
 VARIANT = ""
 if Tracker.ActiveVariantUID == "1" then
