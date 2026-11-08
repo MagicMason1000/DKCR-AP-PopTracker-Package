@@ -205,23 +205,33 @@ function apply_slot_data(slot_data)
 	end
 
 	-- Time Attack Enabled setting
-	local taBronzeObj = Tracker:FindObjectForCode("ta_bronze_setting")
-	local taSilverObj = Tracker:FindObjectForCode("ta_silver_setting")
-	local taGoldObj = Tracker:FindObjectForCode("ta_gold_setting")
-	local taShinyGoldObj = Tracker:FindObjectForCode("ta_shiny_gold_setting")
-	if (taBronzeObj and taSilverObj and taGoldObj and taShinyGoldObj) then
-		taBronzeObj.CurrentStage = slot_data["time_attack_resolved"]["Bronze"]
-		taSilverObj.CurrentStage = slot_data["time_attack_resolved"]["Silver"]
-		taGoldObj.CurrentStage = slot_data["time_attack_resolved"]["Gold"]
-		taShinyGoldObj.CurrentStage = slot_data["time_attack_resolved"]["Shiny Gold"]
-		if ENABLE_DEBUG_LOG then
-			print(string.format("apply_slot_data: set Time Attack Bronze Medal setting to %s (%s)", slot_data["time_attack_resolved"]["Bronze"], abled[1 + slot_data["time_attack_resolved"]["Bronze"]]))
-			print(string.format("apply_slot_data: set Time Attack Silver Medal setting to %s (%s)", slot_data["time_attack_resolved"]["Silver"], abled[1 + slot_data["time_attack_resolved"]["Silver"]]))
-			print(string.format("apply_slot_data: set Time Attack Gold Medal setting to %s (%s)", slot_data["time_attack_resolved"]["Gold"], abled[1 + slot_data["time_attack_resolved"]["Gold"]]))
-			print(string.format("apply_slot_data: set Time Attack Shiny Gold Medal setting to %s (%s)", slot_data["time_attack_resolved"]["Shiny Gold"], abled[1 + slot_data["time_attack_resolved"]["Shiny Gold"]]))
+	if (slot_data["level_clear_type_resolved"]["Time Attack"]) then
+
+		if (slot_data["level_clear_type_resolved"]["Time Attack"] == 0) then
+			local taBronzeObj = Tracker:FindObjectForCode("ta_bronze_setting")
+			local taSilverObj = Tracker:FindObjectForCode("ta_silver_setting")
+			local taGoldObj = Tracker:FindObjectForCode("ta_gold_setting")
+			local taShinyGoldObj = Tracker:FindObjectForCode("ta_shiny_gold_setting")
+			if (taBronzeObj and taSilverObj and taGoldObj and taShinyGoldObj) then
+				taBronzeObj.CurrentStage = slot_data["time_attack_resolved"]["Bronze"]
+				taSilverObj.CurrentStage = slot_data["time_attack_resolved"]["Silver"]
+				taGoldObj.CurrentStage = slot_data["time_attack_resolved"]["Gold"]
+				taShinyGoldObj.CurrentStage = slot_data["time_attack_resolved"]["Shiny Gold"]
+				if ENABLE_DEBUG_LOG then
+					print(string.format("apply_slot_data: set Time Attack Bronze Medal setting to %s (%s)", slot_data["time_attack_resolved"]["Bronze"], abled[1 + slot_data["time_attack_resolved"]["Bronze"]]))
+					print(string.format("apply_slot_data: set Time Attack Silver Medal setting to %s (%s)", slot_data["time_attack_resolved"]["Silver"], abled[1 + slot_data["time_attack_resolved"]["Silver"]]))
+					print(string.format("apply_slot_data: set Time Attack Gold Medal setting to %s (%s)", slot_data["time_attack_resolved"]["Gold"], abled[1 + slot_data["time_attack_resolved"]["Gold"]]))
+					print(string.format("apply_slot_data: set Time Attack Shiny Gold Medal setting to %s (%s)", slot_data["time_attack_resolved"]["Shiny Gold"], abled[1 + slot_data["time_attack_resolved"]["Shiny Gold"]]))
+				end
+			elseif ENABLE_DEBUG_LOG then
+				print(string.format(ERROR .. "apply_slot_data failed check nil for Time Attack medals.\n\ttaBronzeObj = %s\n\ttaSilverObj = %s\n\ttaGoldObj = %s\n\ttaShinyGoldObj = %s", taBronzeObj, taSilverObj, taGoldObj, taShinyGoldObj))
+			end
+		elseif ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: Time Attack not enabled. Skipping medal settings."))		
 		end
+	
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format(ERROR .. "apply_slot_data failed check nil for Time Attack medals.\n\ttaBronzeObj = %s\n\ttaSilverObj = %s\n\ttaGoldObj = %s\n\ttaShinyGoldObj = %s", taBronzeObj, taSilverObj, taGoldObj, taShinyGoldObj))
+		print(string.format(ERROR .. "apply_slot_data failed check nil for Level Clear type settings.\n\tslot_data[\"level_clear_type_resolved\"][\"Time Attack\"] = %s", slot_data["level_clear_type_resolved"]["Time Attack"]))
 	end
 
 	-- Mirror Mode Enabled setting
