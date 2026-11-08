@@ -1509,7 +1509,7 @@
                         "y": 251
                     }
                 ]
-            }/*,
+            },
             { // MARK: BUNDLES
                 "name": "Forest Bundles",
 				"access_rules": ["$BossCheck|4"],
@@ -1576,7 +1576,7 @@
 						"border_thickness": 8
                     }
                 ]
-            }*/
+            }
         ]
     }
 ]

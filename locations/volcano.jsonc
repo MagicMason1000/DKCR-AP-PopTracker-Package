@@ -1280,7 +1280,7 @@
                         "y": 439
                     }
                 ]
-            }/*,
+            },
             { // MARK: BUNDLES
                 "name": "Volcano Bundles",
 				"access_rules": ["$BossCheck|7, $SmogCheck|Volcano Bundles, $ButtonCheck|Volcano Bundles, $LolCheck|Volcano Bundles"],
@@ -1347,7 +1347,7 @@
 						"border_thickness": 8
                     }
                 ]
-            }*/
+            }
         ]
     }
 ]

@@ -29,7 +29,13 @@ local clear <const> = {
 	TABronze = 0x23,
 	TASilver = 0x24,
 	TAGold = 0x25,
-	TAShinyGold = 0x26
+	TAShinyGold = 0x26,
+	NormalBundle = 0x21,
+	MirrorBundle = 0x22,
+	TABronzeBundle = 0x23,
+	TASilverBundle = 0x24,
+	TAGoldBundle = 0x25,
+	TAShinyGoldBundle = 0x26
 }
 
 local special <const> = {
@@ -40,7 +46,6 @@ local special <const> = {
 
 local levels <const> = {
 	K = 0x0,
-	GoldenTemple = 0x0,
 	Boss = 0x100,
 	First = 0x200,
 	Second = 0x300,
@@ -51,7 +56,8 @@ local levels <const> = {
 	Seventh = 0x800,
 	Eighth = 0x900,
 	LiftOffLaunch = 0xA00,
-	Shop = 0xB00
+	Shop = 0xB00,
+	GoldenTemple = 0x200,
 }
 
 local worlds <const> = {
@@ -66,16 +72,27 @@ local worlds <const> = {
 	GoldenTemple = 0x80000
 }
 
+local bundles <const> = {
+	Beach = 0xf00,
+	Cave = 0xf01,
+	Cliff = 0xf02,
+	Factory = 0xf03,
+	Forest = 0xf04,
+	Jungle = 0xf05,
+	Ruins = 0xf06,
+	Volcano = 0xf07
+}
+
 LOCATION_MAPPING = {
 	-- MARK: Jungle
-	--[worlds.Jungle + levels. + ] = { { "@Jungle/Jungle Bundles/Collect All Jungle Puzzle Pieces" } },
-	--[worlds.Jungle + levels. + ] = { { "@Jungle/Jungle Bundles/Collect All Jungle KONG Letters" } },
-	--[worlds.Jungle + levels. + ] = { { "@Jungle/Jungle Bundles/Complete All Jungle Levels" } },
-	--[worlds.Jungle + levels. + ] = { { "@Jungle/Jungle Bundles/Complete All Jungle Levels in Mirror Mode" } },
-	--[worlds.Jungle + levels. + ] = { { "@Jungle/Jungle Bundles/Collect All Jungle Bronze Medals" } },
-	--[worlds.Jungle + levels. + ] = { { "@Jungle/Jungle Bundles/Collect All Jungle Silver Medals" } },
-	--[worlds.Jungle + levels. + ] = { { "@Jungle/Jungle Bundles/Collect All Jungle Gold Medals" } },
-	--[worlds.Jungle + levels. + ] = { { "@Jungle/Jungle Bundles/Collect All Jungle Shiny Gold Medals" } },
+	[worlds.Jungle + bundles.Jungle + pp.Bundle] 				= { { "@Jungle/Jungle Bundles/Collect All Jungle Puzzle Pieces" } },
+	[worlds.Jungle + bundles.Jungle + kong.Bundle] 				= { { "@Jungle/Jungle Bundles/Collect All Jungle KONG Letters" } },
+	[worlds.Jungle + bundles.Jungle + clear.NormalBundle] 		= { { "@Jungle/Jungle Bundles/Complete All Jungle Levels" } },
+	[worlds.Jungle + bundles.Jungle + clear.MirrorBundle] 		= { { "@Jungle/Jungle Bundles/Complete All Jungle Levels in Mirror Mode" } },
+	[worlds.Jungle + bundles.Jungle + clear.TABronzeBundle] 		= { { "@Jungle/Jungle Bundles/Collect All Jungle Bronze Medals" } },
+	[worlds.Jungle + bundles.Jungle + clear.TASilverBundle] 		= { { "@Jungle/Jungle Bundles/Collect All Jungle Silver Medals" } },
+	[worlds.Jungle + bundles.Jungle + clear.TAGoldBundle] 		= { { "@Jungle/Jungle Bundles/Collect All Jungle Gold Medals" } },
+	[worlds.Jungle + bundles.Jungle + clear.TAShinyGoldBundle] 	= { { "@Jungle/Jungle Bundles/Collect All Jungle Shiny Gold Medals" } },
 
 	[worlds.Jungle + levels.First + pp.pp1] = { { "@Jungle/1-1 Jungle Hijinxs/Puzzle Piece 1" } },
 	[worlds.Jungle + levels.First + pp.pp2] = { { "@Jungle/1-1 Jungle Hijinxs/Puzzle Piece 2" } },
@@ -218,14 +235,14 @@ LOCATION_MAPPING = {
 	--[worlds.Jungle + levels.Shop + ] = { { "@Jungle/1-S Cranky Kong's Shop/Jungle Shop Balloons x7" } },
 
 	-- MARK: Beach
-	--[worlds.Beach + levels. + ] = { { "@Beach/Beach Bundles/Collect All Beach Puzzle Pieces" } },
-	--[worlds.Beach + levels. + ] = { { "@Beach/Beach Bundles/Collect All Beach KONG Letters" } },
-	--[worlds.Beach + levels. + ] = { { "@Beach/Beach Bundles/Complete All Beach Levels" } },
-	--[worlds.Beach + levels. + ] = { { "@Beach/Beach Bundles/Complete All Beach Levels in Mirror Mode" } },
-	--[worlds.Beach + levels. + ] = { { "@Beach/Beach Bundles/Collect All Beach Bronze Medals" } },
-	--[worlds.Beach + levels. + ] = { { "@Beach/Beach Bundles/Collect All Beach Silver Medals" } },
-	--[worlds.Beach + levels. + ] = { { "@Beach/Beach Bundles/Collect All Beach Gold Medals" } },
-	--[worlds.Beach + levels. + ] = { { "@Beach/Beach Bundles/Collect All Beach Shiny Gold Medals" } },
+	[worlds.Beach + bundles.Beach + pp.Bundle] 				= { { "@Beach/Beach Bundles/Collect All Beach Puzzle Pieces" } },
+	[worlds.Beach + bundles.Beach + kong.Bundle] 				= { { "@Beach/Beach Bundles/Collect All Beach KONG Letters" } },
+	[worlds.Beach + bundles.Beach + clear.NormalBundle] 		= { { "@Beach/Beach Bundles/Complete All Beach Levels" } },
+	[worlds.Beach + bundles.Beach + clear.MirrorBundle] 		= { { "@Beach/Beach Bundles/Complete All Beach Levels in Mirror Mode" } },
+	[worlds.Beach + bundles.Beach + clear.TABronzeBundle] 		= { { "@Beach/Beach Bundles/Collect All Beach Bronze Medals" } },
+	[worlds.Beach + bundles.Beach + clear.TASilverBundle] 		= { { "@Beach/Beach Bundles/Collect All Beach Silver Medals" } },
+	[worlds.Beach + bundles.Beach + clear.TAGoldBundle] 		= { { "@Beach/Beach Bundles/Collect All Beach Gold Medals" } },
+	[worlds.Beach + bundles.Beach + clear.TAShinyGoldBundle] 	= { { "@Beach/Beach Bundles/Collect All Beach Shiny Gold Medals" } },
 
 	[worlds.Beach + levels.First + pp.pp1] = { { "@Beach/2-1 Poppin' Planks/Puzzle Piece 1" } },
 	[worlds.Beach + levels.First + pp.pp2] = { { "@Beach/2-1 Poppin' Planks/Puzzle Piece 2" } },
@@ -384,14 +401,14 @@ LOCATION_MAPPING = {
 	--[worlds.Beach + levels.Shop + ] = { { "@Beach/2-S Cranky Kong's Shop/Beach Shop Balloons x7" } },
 
 	-- MARK: Ruins
-	--[worlds.Ruins + levels. + ] = { { "@Ruins/Ruins Bundles/Collect All Ruins Puzzle Pieces" } },
-	--[worlds.Ruins + levels. + ] = { { "@Ruins/Ruins Bundles/Collect All Ruins KONG Letters" } },
-	--[worlds.Ruins + levels. + ] = { { "@Ruins/Ruins Bundles/Complete All Ruins Levels" } },
-	--[worlds.Ruins + levels. + ] = { { "@Ruins/Ruins Bundles/Complete All Ruins Levels in Mirror Mode" } },
-	--[worlds.Ruins + levels. + ] = { { "@Ruins/Ruins Bundles/Collect All Ruins Bronze Medals" } },
-	--[worlds.Ruins + levels. + ] = { { "@Ruins/Ruins Bundles/Collect All Ruins Silver Medals" } },
-	--[worlds.Ruins + levels. + ] = { { "@Ruins/Ruins Bundles/Collect All Ruins Gold Medals" } },
-	--[worlds.Ruins + levels. + ] = { { "@Ruins/Ruins Bundles/Collect All Ruins Shiny Gold Medals" } },
+	[worlds.Ruins + bundles.Ruins + pp.Bundle] 				= { { "@Ruins/Ruins Bundles/Collect All Ruins Puzzle Pieces" } },
+	[worlds.Ruins + bundles.Ruins + kong.Bundle] 				= { { "@Ruins/Ruins Bundles/Collect All Ruins KONG Letters" } },
+	[worlds.Ruins + bundles.Ruins + clear.NormalBundle] 		= { { "@Ruins/Ruins Bundles/Complete All Ruins Levels" } },
+	[worlds.Ruins + bundles.Ruins + clear.MirrorBundle] 		= { { "@Ruins/Ruins Bundles/Complete All Ruins Levels in Mirror Mode" } },
+	[worlds.Ruins + bundles.Ruins + clear.TABronzeBundle] 		= { { "@Ruins/Ruins Bundles/Collect All Ruins Bronze Medals" } },
+	[worlds.Ruins + bundles.Ruins + clear.TASilverBundle] 		= { { "@Ruins/Ruins Bundles/Collect All Ruins Silver Medals" } },
+	[worlds.Ruins + bundles.Ruins + clear.TAGoldBundle] 		= { { "@Ruins/Ruins Bundles/Collect All Ruins Gold Medals" } },
+	[worlds.Ruins + bundles.Ruins + clear.TAShinyGoldBundle] 	= { { "@Ruins/Ruins Bundles/Collect All Ruins Shiny Gold Medals" } },
 
 	[worlds.Ruins + levels.First + pp.pp1] = { { "@Ruins/3-1 Wonky Waterway/Puzzle Piece 1" } },
 	[worlds.Ruins + levels.First + pp.pp2] = { { "@Ruins/3-1 Wonky Waterway/Puzzle Piece 2" } },
@@ -540,14 +557,14 @@ LOCATION_MAPPING = {
 	--[worlds.Ruins + levels.Shop + ] = { { "@Ruins/3-S Cranky Kong's Shop/Ruins Shop Balloons x7" } },
 
 	-- MARK: Cave
-	--[worlds.Cave + levels. + ] = { { "@Cave/Cave Bundles/Collect All Cave Puzzle Pieces" } },
-	--[worlds.Cave + levels. + ] = { { "@Cave/Cave Bundles/Collect All Cave KONG Letters" } },
-	--[worlds.Cave + levels. + ] = { { "@Cave/Cave Bundles/Complete All Cave Levels" } },
-	--[worlds.Cave + levels. + ] = { { "@Cave/Cave Bundles/Complete All Cave Levels in Mirror Mode" } },
-	--[worlds.Cave + levels. + ] = { { "@Cave/Cave Bundles/Collect All Cave Bronze Medals" } },
-	--[worlds.Cave + levels. + ] = { { "@Cave/Cave Bundles/Collect All Cave Silver Medals" } },
-	--[worlds.Cave + levels. + ] = { { "@Cave/Cave Bundles/Collect All Cave Gold Medals" } },
-	--[worlds.Cave + levels. + ] = { { "@Cave/Cave Bundles/Collect All Cave Shiny Gold Medals" } },
+	[worlds.Cave + bundles.Cave + pp.Bundle] 					= { { "@Cave/Cave Bundles/Collect All Cave Puzzle Pieces" } },
+	[worlds.Cave + bundles.Cave + kong.Bundle] 				= { { "@Cave/Cave Bundles/Collect All Cave KONG Letters" } },
+	[worlds.Cave + bundles.Cave + clear.NormalBundle] 		= { { "@Cave/Cave Bundles/Complete All Cave Levels" } },
+	[worlds.Cave + bundles.Cave + clear.MirrorBundle] 		= { { "@Cave/Cave Bundles/Complete All Cave Levels in Mirror Mode" } },
+	[worlds.Cave + bundles.Cave + clear.TABronzeBundle] 		= { { "@Cave/Cave Bundles/Collect All Cave Bronze Medals" } },
+	[worlds.Cave + bundles.Cave + clear.TASilverBundle] 		= { { "@Cave/Cave Bundles/Collect All Cave Silver Medals" } },
+	[worlds.Cave + bundles.Cave + clear.TAGoldBundle] 		= { { "@Cave/Cave Bundles/Collect All Cave Gold Medals" } },
+	[worlds.Cave + bundles.Cave + clear.TAShinyGoldBundle] 	= { { "@Cave/Cave Bundles/Collect All Cave Shiny Gold Medals" } },
 
 	[worlds.Cave + levels.First + pp.pp1] = { { "@Cave/4-1 Rickety Rails/Puzzle Piece 1" } },
 	[worlds.Cave + levels.First + pp.pp2] = { { "@Cave/4-1 Rickety Rails/Puzzle Piece 2" } },
@@ -666,14 +683,14 @@ LOCATION_MAPPING = {
 	--[worlds.Cave + levels.Shop + ] = { { "@Cave/4-S Cranky Kong's Shop/Cave Shop Balloons x7" } },
 
 	-- MARK: Forest
-	--[worlds.Forest + levels. + ] = { { "@Forest/Forest Bundles/Collect All Forest Puzzle Pieces" } },
-	--[worlds.Forest + levels. + ] = { { "@Forest/Forest Bundles/Collect All Forest KONG Letters" } },
-	--[worlds.Forest + levels. + ] = { { "@Forest/Forest Bundles/Complete All Forest Levels" } },
-	--[worlds.Forest + levels. + ] = { { "@Forest/Forest Bundles/Complete All Forest Levels in Mirror Mode" } },
-	--[worlds.Forest + levels. + ] = { { "@Forest/Forest Bundles/Collect All Forest Bronze Medals" } },
-	--[worlds.Forest + levels. + ] = { { "@Forest/Forest Bundles/Collect All Forest Silver Medals" } },
-	--[worlds.Forest + levels. + ] = { { "@Forest/Forest Bundles/Collect All Forest Gold Medals" } },
-	--[worlds.Forest + levels. + ] = { { "@Forest/Forest Bundles/Collect All Forest Shiny Gold Medals" } },
+	[worlds.Forest + bundles.Forest + pp.Bundle] 				= { { "@Forest/Forest Bundles/Collect All Forest Puzzle Pieces" } },
+	[worlds.Forest + bundles.Forest + kong.Bundle] 				= { { "@Forest/Forest Bundles/Collect All Forest KONG Letters" } },
+	[worlds.Forest + bundles.Forest + clear.NormalBundle] 		= { { "@Forest/Forest Bundles/Complete All Forest Levels" } },
+	[worlds.Forest + bundles.Forest + clear.MirrorBundle] 		= { { "@Forest/Forest Bundles/Complete All Forest Levels in Mirror Mode" } },
+	[worlds.Forest + bundles.Forest + clear.TABronzeBundle] 	= { { "@Forest/Forest Bundles/Collect All Forest Bronze Medals" } },
+	[worlds.Forest + bundles.Forest + clear.TASilverBundle] 	= { { "@Forest/Forest Bundles/Collect All Forest Silver Medals" } },
+	[worlds.Forest + bundles.Forest + clear.TAGoldBundle] 		= { { "@Forest/Forest Bundles/Collect All Forest Gold Medals" } },
+	[worlds.Forest + bundles.Forest + clear.TAShinyGoldBundle] 	= { { "@Forest/Forest Bundles/Collect All Forest Shiny Gold Medals" } },
 
 	[worlds.Forest + levels.First + pp.pp1] = { { "@Forest/5-1 Vine Valley/Puzzle Piece 1" } },
 	[worlds.Forest + levels.First + pp.pp2] = { { "@Forest/5-1 Vine Valley/Puzzle Piece 2" } },
@@ -858,14 +875,14 @@ LOCATION_MAPPING = {
 	--[worlds.Forest + levels.Shop + ] = { { "@Forest/5-S Cranky Kong's Shop/Forest Shop Balloons x7" } },
 
 	-- MARK: Cliff
-	--[worlds.Cliff + levels. + ] = { { "@Cliff/Cliff Bundles/Collect All Cliff Puzzle Pieces" } },
-	--[worlds.Cliff + levels. + ] = { { "@Cliff/Cliff Bundles/Collect All Cliff KONG Letters" } },
-	--[worlds.Cliff + levels. + ] = { { "@Cliff/Cliff Bundles/Complete All Cliff Levels" } },
-	--[worlds.Cliff + levels. + ] = { { "@Cliff/Cliff Bundles/Complete All Cliff Levels in Mirror Mode" } },
-	--[worlds.Cliff + levels. + ] = { { "@Cliff/Cliff Bundles/Collect All Cliff Bronze Medals" } },
-	--[worlds.Cliff + levels. + ] = { { "@Cliff/Cliff Bundles/Collect All Cliff Silver Medals" } },
-	--[worlds.Cliff + levels. + ] = { { "@Cliff/Cliff Bundles/Collect All Cliff Gold Medals" } },
-	--[worlds.Cliff + levels. + ] = { { "@Cliff/Cliff Bundles/Collect All Cliff Shiny Gold Medals" } },
+	[worlds.Cliff + bundles.Cliff + pp.Bundle] 				= { { "@Cliff/Cliff Bundles/Collect All Cliff Puzzle Pieces" } },
+	[worlds.Cliff + bundles.Cliff + kong.Bundle] 				= { { "@Cliff/Cliff Bundles/Collect All Cliff KONG Letters" } },
+	[worlds.Cliff + bundles.Cliff + clear.NormalBundle] 		= { { "@Cliff/Cliff Bundles/Complete All Cliff Levels" } },
+	[worlds.Cliff + bundles.Cliff + clear.MirrorBundle] 		= { { "@Cliff/Cliff Bundles/Complete All Cliff Levels in Mirror Mode" } },
+	[worlds.Cliff + bundles.Cliff + clear.TABronzeBundle] 		= { { "@Cliff/Cliff Bundles/Collect All Cliff Bronze Medals" } },
+	[worlds.Cliff + bundles.Cliff + clear.TASilverBundle] 		= { { "@Cliff/Cliff Bundles/Collect All Cliff Silver Medals" } },
+	[worlds.Cliff + bundles.Cliff + clear.TAGoldBundle] 		= { { "@Cliff/Cliff Bundles/Collect All Cliff Gold Medals" } },
+	[worlds.Cliff + bundles.Cliff + clear.TAShinyGoldBundle] 	= { { "@Cliff/Cliff Bundles/Collect All Cliff Shiny Gold Medals" } },
 
 	[worlds.Cliff + levels.First + pp.pp1] = { { "@Cliff/6-1 Sticky Situation/Puzzle Piece 1" } },
 	[worlds.Cliff + levels.First + pp.pp2] = { { "@Cliff/6-1 Sticky Situation/Puzzle Piece 2" } },
@@ -1048,14 +1065,14 @@ LOCATION_MAPPING = {
 	--[worlds.Cliff + levels.Shop + ] = { { "@Cliff/6-S Cranky Kong's Shop/Cliff Shop Balloons x7" } },
 
 	-- MARK: Factory
-	--[worlds.Factory + levels. + ] = { { "@Factory/Factory Bundles/Collect All Factory Puzzle Pieces" } },
-	--[worlds.Factory + levels. + ] = { { "@Factory/Factory Bundles/Collect All Factory KONG Letters" } },
-	--[worlds.Factory + levels. + ] = { { "@Factory/Factory Bundles/Complete All Factory Levels" } },
-	--[worlds.Factory + levels. + ] = { { "@Factory/Factory Bundles/Complete All Factory Levels in Mirror Mode" } },
-	--[worlds.Factory + levels. + ] = { { "@Factory/Factory Bundles/Collect All Factory Bronze Medals" } },
-	--[worlds.Factory + levels. + ] = { { "@Factory/Factory Bundles/Collect All Factory Silver Medals" } },
-	--[worlds.Factory + levels. + ] = { { "@Factory/Factory Bundles/Collect All Factory Gold Medals" } },
-	--[worlds.Factory + levels. + ] = { { "@Factory/Factory Bundles/Collect All Factory Shiny Gold Medals" } },
+	[worlds.Factory + bundles.Factory + pp.Bundle] 				= { { "@Factory/Factory Bundles/Collect All Factory Puzzle Pieces" } },
+	[worlds.Factory + bundles.Factory + kong.Bundle] 			= { { "@Factory/Factory Bundles/Collect All Factory KONG Letters" } },
+	[worlds.Factory + bundles.Factory + clear.NormalBundle] 		= { { "@Factory/Factory Bundles/Complete All Factory Levels" } },
+	[worlds.Factory + bundles.Factory + clear.MirrorBundle] 		= { { "@Factory/Factory Bundles/Complete All Factory Levels in Mirror Mode" } },
+	[worlds.Factory + bundles.Factory + clear.TABronzeBundle] 	= { { "@Factory/Factory Bundles/Collect All Factory Bronze Medals" } },
+	[worlds.Factory + bundles.Factory + clear.TASilverBundle] 	= { { "@Factory/Factory Bundles/Collect All Factory Silver Medals" } },
+	[worlds.Factory + bundles.Factory + clear.TAGoldBundle] 		= { { "@Factory/Factory Bundles/Collect All Factory Gold Medals" } },
+	[worlds.Factory + bundles.Factory + clear.TAShinyGoldBundle] = { { "@Factory/Factory Bundles/Collect All Factory Shiny Gold Medals" } },
 
 	[worlds.Factory + levels.First + pp.pp1] = { { "@Factory/7-1 Foggy Fumes/Puzzle Piece 1" } },
 	[worlds.Factory + levels.First + pp.pp2] = { { "@Factory/7-1 Foggy Fumes/Puzzle Piece 2" } },
@@ -1222,14 +1239,14 @@ LOCATION_MAPPING = {
 	--[worlds.Factory + levels.Shop + ] = { { "@Factory/7-S Cranky Kong's Shop/Factory Shop Balloons x7" } },
 
 	-- MARK: Volcano
-	--[worlds.Volcano + levels. + ] = { { "@Volcano/Volcano Bundles/Collect All Volcano Puzzle Pieces" } },
-	--[worlds.Volcano + levels. + ] = { { "@Volcano/Volcano Bundles/Collect All Volcano KONG Letters" } },
-	--[worlds.Volcano + levels. + ] = { { "@Volcano/Volcano Bundles/Complete All Volcano Levels" } },
-	--[worlds.Volcano + levels. + ] = { { "@Volcano/Volcano Bundles/Complete All Volcano Levels in Mirror Mode" } },
-	--[worlds.Volcano + levels. + ] = { { "@Volcano/Volcano Bundles/Collect All Volcano Bronze Medals" } },
-	--[worlds.Volcano + levels. + ] = { { "@Volcano/Volcano Bundles/Collect All Volcano Silver Medals" } },
-	--[worlds.Volcano + levels. + ] = { { "@Volcano/Volcano Bundles/Collect All Volcano Gold Medals" } },
-	--[worlds.Volcano + levels. + ] = { { "@Volcano/Volcano Bundles/Collect All Volcano Shiny Gold Medals" } },
+	[worlds.Volcano + bundles.Volcano + pp.Bundle] 					= { { "@Volcano/Volcano Bundles/Collect All Volcano Puzzle Pieces" } },
+	[worlds.Volcano + bundles.Volcano + kong.Bundle] 				= { { "@Volcano/Volcano Bundles/Collect All Volcano KONG Letters" } },
+	[worlds.Volcano + bundles.Volcano + clear.NormalBundle] 		= { { "@Volcano/Volcano Bundles/Complete All Volcano Levels" } },
+	[worlds.Volcano + bundles.Volcano + clear.MirrorBundle] 		= { { "@Volcano/Volcano Bundles/Complete All Volcano Levels in Mirror Mode" } },
+	[worlds.Volcano + bundles.Volcano + clear.TABronzeBundle] 		= { { "@Volcano/Volcano Bundles/Collect All Volcano Bronze Medals" } },
+	[worlds.Volcano + bundles.Volcano + clear.TASilverBundle] 		= { { "@Volcano/Volcano Bundles/Collect All Volcano Silver Medals" } },
+	[worlds.Volcano + bundles.Volcano + clear.TAGoldBundle] 		= { { "@Volcano/Volcano Bundles/Collect All Volcano Gold Medals" } },
+	[worlds.Volcano + bundles.Volcano + clear.TAShinyGoldBundle] 	= { { "@Volcano/Volcano Bundles/Collect All Volcano Shiny Gold Medals" } },
 
 	[worlds.Volcano + levels.First + pp.pp1] = { { "@Volcano/8-1 Furious Fire/Puzzle Piece 1" } },
 	[worlds.Volcano + levels.First + pp.pp2] = { { "@Volcano/8-1 Furious Fire/Puzzle Piece 2" } },
@@ -1392,11 +1409,11 @@ LOCATION_MAPPING = {
 	[worlds.GoldenTemple + levels.GoldenTemple + pp.pp4] = { { "@Golden Temple/9-1 Golden Temple/Puzzle Piece 4" } },
 	[worlds.GoldenTemple + levels.GoldenTemple + pp.pp5] = { { "@Golden Temple/9-1 Golden Temple/Puzzle Piece 5" } },
 	[worlds.GoldenTemple + levels.GoldenTemple + pp.Set] = { { "@Golden Temple/9-1 Golden Temple/Puzzle Piece Set" } },
-	[worlds.GoldenTemple + levels.GoldenTemple + clear.TABronze] = { { "@Golden Temple/9-1 Golden Temple/Mirror Mode Unlock" } },
 	[worlds.GoldenTemple + levels.GoldenTemple + clear.Normal] = { { "@Golden Temple/9-1 Golden Temple/Complete Level" } },
 	[worlds.GoldenTemple + levels.GoldenTemple + clear.Mirror] = { { "@Golden Temple/9-1 Golden Temple/Beat in Mirror Mode" } },
 	[worlds.GoldenTemple + levels.GoldenTemple + clear.TABronze] = { { "@Golden Temple/9-1 Golden Temple/Time Attack: Bronze" } },
 	[worlds.GoldenTemple + levels.GoldenTemple + clear.TASilver] = { { "@Golden Temple/9-1 Golden Temple/Time Attack: Silver" } },
 	[worlds.GoldenTemple + levels.GoldenTemple + clear.TAGold] = { { "@Golden Temple/9-1 Golden Temple/Time Attack: Gold" } },
-	[worlds.GoldenTemple + levels.GoldenTemple + clear.TAShinyGold] = { { "@Golden Temple/9-1 Golden Temple/Time Attack: Shiny Gold" } }
+	[worlds.GoldenTemple + levels.GoldenTemple + clear.TAShinyGold] = { { "@Golden Temple/9-1 Golden Temple/Time Attack: Shiny Gold" } },
+	[worlds.GoldenTemple + levels.GoldenTemple + special.MirrorModeUnlock] = { { "@Golden Temple/9-1 Golden Temple/Mirror Mode Unlock" } }
 }

@@ -1155,7 +1155,7 @@
 						"y": 550
 					}
 				]
-			}/*,
+			},
             { // MARK: BUNDLES
                 "name": "Jungle Bundles",
 				"access_rules": [""],
@@ -1222,7 +1222,7 @@
 						"border_thickness": 8
                     }
                 ]
-            }*/
+            }
 		]
 	}
 ]
