@@ -67,8 +67,8 @@ function TogglePuzzleView(togglevariant) -- Switches what item appears in the Pu
         "layouts/standard/itemtoggle_pp.jsonc",
         "layouts/compact/itemtoggle_boss.jsonc",
         "layouts/compact/itemtoggle_pp.jsonc",
-        "layouts/io/itemtoggle_boss.jsonc",
-        "layouts/io/itemtoggle_pp.jsonc"
+        "layouts/items_only/itemtoggle_boss.jsonc",
+        "layouts/items_only/itemtoggle_pp.jsonc"
     }
     if settingState == 0 then -- Boss Unlocks
         Tracker:AddLayouts(paths[togglevariant])
