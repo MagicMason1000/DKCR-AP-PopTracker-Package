@@ -147,7 +147,7 @@ function apply_slot_data(slot_data)
 		end
 	end
 
-	-- Puzzle Pieces enabled setting
+	-- KONG Letters enabled setting
 	local kSettingObj = Tracker:FindObjectForCode("kong_setting")
 	if kSettingObj and slot_data["kong_letter"] then
 		kSettingObj.CurrentStage = slot_data["kong_letter"]
@@ -155,7 +155,18 @@ function apply_slot_data(slot_data)
 			print(string.format("apply_slot_data: KONG Letters enabled setting set to %s (%s)", slot_data["kong_letter"], abled[1 + slot_data["kong_letter"]]))
 		end
 	elseif ENABLE_DEBUG_LOG then
-		print(string.format(ERROR .. "apply_slot_data failed check nil for Puzzle Pieces enabled setting.\n\tkSettingObj = %s\n\tslot_data[\"kong_letter\"] = %s", kSettingObj, slot_data["kong_letter"]))
+		print(string.format(ERROR .. "apply_slot_data failed check nil for KONG Letters enabled setting.\n\tkSettingObj = %s\n\tslot_data[\"kong_letter\"] = %s", kSettingObj, slot_data["kong_letter"]))
+	end
+
+	-- K Levels enabled setting
+	local kEnabledObj = Tracker:FindObjectForCode("k_levels_setting")
+	if kEnabledObj and slot_data["k_level"] then
+		kEnabledObj.CurrentStage = slot_data["k_level"]
+		if ENABLE_DEBUG_LOG then
+			print(string.format("apply_slot_data: K Levels enabled setting set to %s (%s)", slot_data["k_level"], abled[1 + slot_data["k_level"]]))
+		end
+	elseif ENABLE_DEBUG_LOG then
+		print(string.format(ERROR .. "apply_slot_data failed check nil for K Levels enabled setting.\n\tkEnabledObj = %s\n\tslot_data[\"k_level\"] = %s", kSettingObj, slot_data["k_level"]))
 	end
 
 	-- K Level Letter Requirement settings
