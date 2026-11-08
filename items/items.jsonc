@@ -284,6 +284,6 @@
         "img": "images/items/filler_heart.png",
         "disabled_img": "images/items/filler_heart_uncollected.png",
         "codes": "heart",
-        "max_quantity": 100
+        "max_quantity": 150
     }
 ]
