@@ -649,7 +649,7 @@
 				]
 			},
 			{
-				"name": "Accessible Golden Temple Level Completions",
+				"name": "Accessible Golden Temple Level Completion",
                 "visibility_rules": ["golden_temple_enabled"],
 				"sections": [
 					{
@@ -660,7 +660,7 @@
 						"access_rules": ["$WorldCheck|9|3"]
 					},
 					{
-						"name": "Mirror Mode Completions Available",
+						"name": "Mirror Mode Completion Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"visibility_rules": ["mirror_mode_enabled"],

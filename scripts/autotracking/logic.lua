@@ -157,6 +157,8 @@ function WorldCheck(world, checkType)
             return false
         end
     
+        local gt = "s"
+        if world == 9 then gt = "" end
         local accessibleGoals = false
         local countdown = totalLevelsPerWorld[world]
         if (world == 7) then
@@ -197,12 +199,12 @@ function WorldCheck(world, checkType)
                 if ENABLE_WORLDCHECK_LOG then
                     print(string.format("WorldCheck [SUCCESS+]: WorldCheck complete. All levels are completed in World %s.", world))
                 end
-                Tracker:FindObjectForCode(progressVariant .. "/Accessible " .. WORLDS[world] .. " Level Completions/Level Completions Available").AvailableChestCount = 0
+                Tracker:FindObjectForCode(progressVariant .. "/Accessible " .. WORLDS[world] .. " Level Completion" .. gt .. "/Level Completion" .. gt .. " Available").AvailableChestCount = 0
             elseif checkType == 4 then
                 if ENABLE_WORLDCHECK_LOG then
                     print(string.format("WorldCheck [SUCCESS+]: WorldCheck complete. All Mirror Mode checks are completed in World %s.", world))
                 end
-                Tracker:FindObjectForCode(progressVariant .. "/Accessible " .. WORLDS[world] .. " Level Completions/Mirror Mode Completions Available").AvailableChestCount = 0
+                Tracker:FindObjectForCode(progressVariant .. "/Accessible " .. WORLDS[world] .. " Level Completion" .. gt .. "/Mirror Mode Completion" .. gt .. " Available").AvailableChestCount = 0
             end
             return true
         elseif accessibleGoals then
@@ -210,12 +212,12 @@ function WorldCheck(world, checkType)
                 if ENABLE_WORLDCHECK_LOG then
                     print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Level Completion checks are available in World %s.", world))
                 end
-                Tracker:FindObjectForCode(progressVariant .. "/Accessible " .. WORLDS[world] .. " Level Completions/Level Completions Available").AvailableChestCount = 1
+                Tracker:FindObjectForCode(progressVariant .. "/Accessible " .. WORLDS[world] .. " Level Completion" .. gt .. "/Level Completion" .. gt .. " Available").AvailableChestCount = 1
             elseif checkType == 4 then
                 if ENABLE_WORLDCHECK_LOG then
                     print(string.format("WorldCheck [SUCCESS]: WorldCheck complete. Mirror Mode checks are available in World %s.", world))
                 end
-                Tracker:FindObjectForCode(progressVariant .. "/Accessible " .. WORLDS[world] .. " Level Completions/Mirror Mode Completions Available").AvailableChestCount = 1
+                Tracker:FindObjectForCode(progressVariant .. "/Accessible " .. WORLDS[world] .. " Level Completion" .. gt .. "/Mirror Mode Completion" .. gt .. " Available").AvailableChestCount = 1
             end
             return true
         else
@@ -223,12 +225,12 @@ function WorldCheck(world, checkType)
                 if ENABLE_WORLDCHECK_LOG then
                     print(string.format("WorldCheck [FAIL]: WorldCheck complete. Level Completion checks are NOT available in World %s.", world))
                 end
-                Tracker:FindObjectForCode(progressVariant .. "/Accessible " .. WORLDS[world] .. " Level Completions/Level Completions Available").AvailableChestCount = 1
+                Tracker:FindObjectForCode(progressVariant .. "/Accessible " .. WORLDS[world] .. " Level Completion" .. gt .. "/Level Completion" .. gt .. " Available").AvailableChestCount = 1
             elseif checkType == 4 then
                 if ENABLE_WORLDCHECK_LOG then
                     print(string.format("WorldCheck [FAIL]: WorldCheck complete. Mirror Mode checks are NOT available in World %s.", world))
                 end
-                Tracker:FindObjectForCode(progressVariant .. "/Accessible " .. WORLDS[world] .. " Level Completions/Mirror Mode Completions Available").AvailableChestCount = 1
+                Tracker:FindObjectForCode(progressVariant .. "/Accessible " .. WORLDS[world] .. " Level Completion" .. gt .. "/Mirror Mode Completion" .. gt .. " Available").AvailableChestCount = 1
             end
             return false
         end
@@ -466,41 +468,21 @@ function OrbCheck()
         return false
     end
 
-    local codes = {
-        Tracker:FindObjectForCode("rare_orb_1").Active,
-        Tracker:FindObjectForCode("rare_orb_2").Active,
-        Tracker:FindObjectForCode("rare_orb_3").Active,
-        Tracker:FindObjectForCode("rare_orb_4").Active,
-        Tracker:FindObjectForCode("rare_orb_5").Active,
-        Tracker:FindObjectForCode("rare_orb_6").Active,
-        Tracker:FindObjectForCode("rare_orb_7").Active,
-        Tracker:FindObjectForCode("rare_orb_8").Active
-    }
-    local orbReq = Tracker:FindObjectForCode("orbs_setting").CurrentStage
-    local count = 0
-    for i = 1, 8 do
-        if codes[i] then
-            count = count + 1
-        end
-    end
+    local orbs = Tracker:FindObjectForCode("rare_orb")
+    local orbReq = Tracker:FindObjectForCode("orbs_setting")
+    if orbs and orbReq then
 
-    if (count < orbReq) then
-        if ENABLE_ORBCHECK_LOG then
-            print("OrbCheck [FAIL]: Not enough Rare Orbs. The Golden Temple is NOT in logic.")
+        print(string.format("OrbCheck: Found %s collected Orbs. Found %s required orbs.", orbs.AcquiredCount, orbReq.CurrentStage))
+        if (orbs.AcquiredCount < orbReq.CurrentStage) then
+            if ENABLE_ORBCHECK_LOG then print("OrbCheck [FAIL]: The Golden Temple is NOT in logic.", orbs.AcquiredCount, orbReq.CurrentStage) end
+            return false
+        elseif (orbs.AcquiredCount >= orbReq.CurrentStage) then
+            if ENABLE_ORBCHECK_LOG then print("OrbCheck [SUCCESS]: The Golden Temple is in logic.") end
+            return true
         end
-        return false
-    elseif (count >= orbReq) then
-        if ENABLE_ORBCHECK_LOG then
-            print("OrbCheck [SUCCESS]: The Golden Temple is in logic.")
-        end
-        return true
+
     elseif ENABLE_DEBUG_LOG then
-        print(string.format(WARNING .. "OrbCheck had an invalid comparison. Count was %s, orbReq was %s.", count, orbReq))
-        return false
-    end
-
-    if ENABLE_DEBUG_LOG then
-        print(string.format(WARNING .. "OrbCheck reached end of function without a proper return. orbReq was %s.", orbReq))
+        print(string.format(ERROR .. "OrbCheck failed check nil.\n\torbs = %s\n\torbReq = %s", orbs, orbReq))
     end
     return false
 end

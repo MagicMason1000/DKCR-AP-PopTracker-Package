@@ -648,14 +648,14 @@
                 "visibility_rules": ["golden_temple_enabled"],
 				"sections": [
 					{
-						"name": "Level Completions Available",
+						"name": "Level Completion Available",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
 						"visibility_rules": ["normal_clears_enabled"],
 						"access_rules": ["$WorldCheck|9|3"]
 					},
 					{
-						"name": "Mirror Mode Completions Available",
+						"name": "Mirror Mode Completion Available",
 						"chest_unopened_img": "images/locations/mirror_mode.png",
 						"chest_opened_img": "images/locations/mirror_mode_completed.png",
 						"visibility_rules": ["mirror_mode_enabled"],
