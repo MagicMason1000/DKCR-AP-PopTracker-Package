@@ -63,6 +63,7 @@ SetPuzzleStatus()
 SetItemStatus("Button")
 SetItemStatus("Shard")
 SetItemStatus("Orb")
+SetIcon("K Level Unlock")
 SetSquawks()
 
 -- Sets global values used by logic.lua.

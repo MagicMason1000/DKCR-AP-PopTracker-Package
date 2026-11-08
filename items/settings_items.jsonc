@@ -335,6 +335,27 @@
         ]
     },
     {
+        "name": "Include K Levels",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+		"initial_stage_idx": 0, // False
+        "stages": [
+            {
+                "name": "K Levels Not Randomized",
+                "img": "images/settings/kong_letters/setting_k_levels_disabled.png",
+                "codes": "k_levels_setting, k_levels_disabled",
+                "inherit_codes": false
+            },
+            {
+                "name": "K Levels Letters Randomized",
+                "img": "images/settings/kong_letters/setting_k_levels_enabled.png",
+                "codes": "k_levels_setting, k_levels_enabled",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "K-Level Letter Requirement (W1)",
         "type": "consumable",
         "img": "images/settings/kong_letters/setting_kReq1.png",

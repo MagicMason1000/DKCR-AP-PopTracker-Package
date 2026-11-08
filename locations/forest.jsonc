@@ -1292,6 +1292,7 @@
             },
             { // MARK: 5-K
                 "name": "5-K Blast & Bounce",
+				"visibility_rules": ["k_levels_enabled"],
 				"access_rules": ["$BossCheck|4, $LetterCheck|5"],
                 "sections": [
 					{
@@ -1338,7 +1339,7 @@
 						"name": "Complete Level",
 						"chest_unopened_img": "images/locations/level_goal.png",
 						"chest_opened_img": "images/locations/level_goal_completed.png",
-						"visibility_rules": ["golden_temple_enabled, normal_clears_enabled"],
+						"visibility_rules": ["normal_clears_enabled"],
 						"item_count": 1,
 						"access_rules": ["skull_barrel, skull-blast_barrel, arrow_barrel"]
 					},
@@ -1346,7 +1347,6 @@
 						"name": "Forest Rare Orb",
 						"chest_unopened_img": "images/items/item_rare_orb_5.png",
 						"chest_opened_img": "images/locations/rare_orb_collected.png",
-						"visibility_rules": ["golden_temple_enabled"],
 						"item_count": 1,
 						"access_rules": ["skull_barrel, skull-blast_barrel, arrow_barrel"]
 					},

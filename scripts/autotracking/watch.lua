@@ -28,6 +28,9 @@ ScriptHost:AddWatchForCode("orbSettingWatch1", "orbs_setting", function () SetIt
 ScriptHost:AddWatchForCode("orbSettingWatch2", "orbs_setting", function () SetIcon("Orb") end)
 -- Watch Progressive Boss Unlock item.
 ScriptHost:AddWatchForCode("bossUnlockWatch", "boss_unlock", function () SetIcon("Boss Unlock") end)
+-- Watch Progressive K Unlock item.
+ScriptHost:AddWatchForCode("kLevelUnlockWatch", "k_level_unlock", function () SetIcon("K Level Unlock") end)
+ScriptHost:AddWatchForCode("kLevelSettingWatch", "k_levels_setting", function () SetIcon("K Level Unlock") end)
 
 -- MARK: Letters
 function SetLetterStatus(settingCode, letterCode)
@@ -202,12 +205,14 @@ function SetIcon(itemType)
         print(string.format("\nSetIcon: Called for %s.", itemType))
     end
 
-    local itemObj
+    local itemObj, itemEnabled
     if (itemType == "Orb") then itemObj = Tracker:FindObjectForCode("rare_orb")
     elseif (itemType == "Boss Unlock") then itemObj = Tracker:FindObjectForCode("boss_unlock")
+    elseif (itemType == "K Level Unlock") then itemObj = Tracker:FindObjectForCode("k_level_unlock")
     end
+    itemEnabled = Tracker:FindObjectForCode("k_levels_enabled")
 
-    if itemObj then
+    if itemObj and itemEnabled then
 
         local quantity
         if (itemType == "Orb") then
@@ -231,6 +236,18 @@ function SetIcon(itemType)
             elseif quantity == 6 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_boss_unlock_6.png")
             elseif quantity == 7 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_boss_unlock_7.png")
             elseif quantity == 8 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_boss_unlock_8.png")
+            end
+        elseif (itemType == "K Level Unlock") then
+            quantity = itemObj.AcquiredCount
+            if (quantity == 0 and itemEnabled.CurrentStage == 0) then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_k_level_unlock_disabled.png")
+            elseif quantity == 1 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_k_level_unlock_1.png")
+            elseif quantity == 2 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_k_level_unlock_2.png")
+            elseif quantity == 3 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_k_level_unlock_3.png")
+            elseif quantity == 4 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_k_level_unlock_4.png")
+            elseif quantity == 5 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_k_level_unlock_5.png")
+            elseif quantity == 6 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_k_level_unlock_6.png")
+            elseif quantity == 7 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_k_level_unlock_7.png")
+            elseif quantity == 8 then itemObj.Icon = ImageReference:FromPackRelativePath("images/items/item_k_level_unlock_8.png")
             end
         end
         if ENABLE_SETICON_LOG then

@@ -162,6 +162,13 @@
         "max_quantity": 8
     },
     {
+        "name": "Progressive K Level Unlock",
+        "type": "consumable",
+        "img": "images/items/item_k_level_unlock_disabled.png",
+        "codes": "k_level_unlock",
+        "max_quantity": 8
+    },
+    {
         "name": "Rare Orbs",
         "type": "consumable",
         "img": "images/items/item_rare_orb_1.png",

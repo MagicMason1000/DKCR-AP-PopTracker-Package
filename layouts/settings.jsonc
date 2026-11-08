@@ -70,7 +70,8 @@
                                 "item_size": "96,96",
                                 "rows": [
                                     [
-                                        "kong_setting"
+                                        "kong_setting",
+                                        "k_levels_setting"
                                     ],
                                     [
                                         "kReq1",
