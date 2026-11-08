@@ -1,4 +1,4 @@
-ENABLE_DEBUG_LOG = true
+ENABLE_DEBUG_LOG = false
 ENABLE_DETAILED_DEBUG_LOG = false
 ERROR = "\27[1;41;97mERROR:\27[0m "
 WARNING = "\27[1;33mWARNING:\27[0m "
@@ -14,11 +14,11 @@ else
     IS_ITEMS_ONLY = true
 end
 
-print("")
+print()
 print("-- Donkey Kong Country Returns — Archipelago PopTracker Package --")
 print("Created by MagicMason1000")
 print("Github Repo: https://github.com/MagicMason1000/DKCR-AP-PopTracker-Package")
-print("")
+print()
 if ENABLE_DEBUG_LOG then
     print("Debug Logging is enabled! You can change this in init.lua.")
 end
